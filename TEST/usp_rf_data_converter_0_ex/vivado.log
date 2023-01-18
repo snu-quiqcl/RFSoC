@@ -1,0 +1,1205 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jan 17 22:56:02 2023
+# Process ID: 1220
+# Current directory: c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex
+# Command line: vivado.exe -notrace -source c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/TEST_RFSoC_2/.Xil/usp_rf_data_converter_0/tmp_usp_rf_data_converter_0.gen/sources_1/ip/usp_rf_data_converter_0/usp_rf_data_converter_0_ex.tcl
+# Log file: c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/vivado.log
+# Journal file: c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/TEST_RFSoC_2/.Xil/usp_rf_data_converter_0/tmp_usp_rf_data_converter_0.gen/sources_1/ip/usp_rf_data_converter_0/usp_rf_data_converter_0_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'usp_rf_data_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'usp_rf_data_converter_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'usp_rf_data_converter_0'...
+INFO: [open_example_project] Adding example synthesis HDL files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Adding simulation HDL files ...
+INFO: [open_example_project] Sourcing example extension scripts ...
+INFO: [open_example_project] Sourcing extension script: tcl/exdes_extension.tcl
+Running RF AMS example design extension script
+Simulator set to XSim
+IPDEF =  xilinx.com:ip:usp_rf_data_converter:2.4
+IP is RFAMS, manual override of sim script
+"/Xilinx/Vivado/2020.2/data/secureip/hsdac/hsdac_001.svp" \
+"/Xilinx/Vivado/2020.2/data/secureip/hsdac/hsdac_002.svp" \
+"/Xilinx/Vivado/2020.2/data/secureip/hsadc/hsadc_001.svp" \
+"/Xilinx/Vivado/2020.2/data/secureip/hsadc/hsadc_002.svp" \
+
+vlog -64 -incr -work xil_defaultlib  \
++define+USE_QUESTA= \
++define+XIL_HSDAC_REAL_PORT= \
++define+XIL_HSDAC_HSDAC_RNM_PORT= \
++define+XIL_HSDAC_HSADC_RNM_PORT= \
++define+XIL_HSADC_REAL_PORT= \
++define+XIL_HSADC_HSADC_RNM_PORT= \
++define+XIL_HSADC_HSDAC_RNM_PORT=  \
+"/Xilinx/Vivado/2020.2/data/secureip/hsdac/hsdac_001.svp" \
+"/Xilinx/Vivado/2020.2/data/secureip/hsdac/hsdac_002.svp" \
+"/Xilinx/Vivado/2020.2/data/secureip/hsadc/hsadc_001.svp" \
+"/Xilinx/Vivado/2020.2/data/secureip/hsadc/hsadc_002.svp" \
+
+
+
+Writing SVP compile command to c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/demo_tb_compile.do.lib.do
+Writing SVP compile command to c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/demo_tb_compile.nc.lib.scr
+Wrote  : <c:\Jeonghyun\Lab\TaehyunKim\RFSoC\TEST\usp_rf_data_converter_0_ex\usp_rf_data_converter_0_ex.srcs\sources_1\bd\rfdc_ex\rfdc_ex.bd> 
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 15625000
+WARNING: [Vivado 12-3672] The is_managed property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+WARNING: [Vivado 12-3670] The generate_synth_checkpoint property should only be queried on the file object representing this IP. Use the get_files command to access file objects.
+ CONFIG.ADC0_Band 0 CONFIG.ADC0_Clock_Dist 0 CONFIG.ADC0_Clock_Source 0 CONFIG.ADC0_Clock_Source_MX 0 CONFIG.ADC0_Enable 0 CONFIG.ADC0_Fabric_Freq 0.0 CONFIG.ADC0_Link_Coupling 0 CONFIG.ADC0_Multi_Tile_Sync false CONFIG.ADC0_Outclk_Freq 15.625 CONFIG.ADC0_PLL_Enable false CONFIG.ADC0_Refclk_Div 1 CONFIG.ADC0_Refclk_Freq 2000.000 CONFIG.ADC0_Sampling_Rate 2.0 CONFIG.ADC1_Band 0 CONFIG.ADC1_Clock_Dist 0 CONFIG.ADC1_Clock_Source 1 CONFIG.ADC1_Clock_Source_MX 1 CONFIG.ADC1_Enable 0 CONFIG.ADC1_Fabric_Freq 0.0 CONFIG.ADC1_Link_Coupling 0 CONFIG.ADC1_Multi_Tile_Sync false CONFIG.ADC1_Outclk_Freq 15.625 CONFIG.ADC1_PLL_Enable false CONFIG.ADC1_Refclk_Div 1 CONFIG.ADC1_Refclk_Freq 2000.000 CONFIG.ADC1_Sampling_Rate 2.0 CONFIG.ADC2_Band 0 CONFIG.ADC2_Clock_Dist 0 CONFIG.ADC2_Clock_Source 2 CONFIG.ADC2_Clock_Source_MX 2 CONFIG.ADC2_Enable 0 CONFIG.ADC2_Fabric_Freq 0.0 CONFIG.ADC2_Link_Coupling 0 CONFIG.ADC2_Multi_Tile_Sync false CONFIG.ADC2_Outclk_Freq 15.625 CONFIG.ADC2_PLL_Enable false CONFIG.ADC2_Refclk_Div 1 CONFIG.ADC2_Refclk_Freq 2000.000 CONFIG.ADC2_Sampling_Rate 2.0 CONFIG.ADC3_Band 0 CONFIG.ADC3_Clock_Dist 0 CONFIG.ADC3_Clock_Source 3 CONFIG.ADC3_Clock_Source_MX 3 CONFIG.ADC3_Enable 0 CONFIG.ADC3_Fabric_Freq 0.0 CONFIG.ADC3_Link_Coupling 0 CONFIG.ADC3_Multi_Tile_Sync false CONFIG.ADC3_Outclk_Freq 15.625 CONFIG.ADC3_PLL_Enable false CONFIG.ADC3_Refclk_Div 1 CONFIG.ADC3_Refclk_Freq 2000.000 CONFIG.ADC3_Sampling_Rate 2.0 CONFIG.ADC224_En false CONFIG.ADC225_En false CONFIG.ADC226_En false CONFIG.ADC227_En false CONFIG.ADC_Bypass_BG_Cal00 false CONFIG.ADC_Bypass_BG_Cal01 false CONFIG.ADC_Bypass_BG_Cal02 false CONFIG.ADC_Bypass_BG_Cal03 false CONFIG.ADC_Bypass_BG_Cal10 false CONFIG.ADC_Bypass_BG_Cal11 false CONFIG.ADC_Bypass_BG_Cal12 false CONFIG.ADC_Bypass_BG_Cal13 false CONFIG.ADC_Bypass_BG_Cal20 false CONFIG.ADC_Bypass_BG_Cal21 false CONFIG.ADC_Bypass_BG_Cal22 false CONFIG.ADC_Bypass_BG_Cal23 false CONFIG.ADC_Bypass_BG_Cal30 false CONFIG.ADC_Bypass_BG_Cal31 false CONFIG.ADC_Bypass_BG_Cal32 false CONFIG.ADC_Bypass_BG_Cal33 false CONFIG.ADC_CalOpt_Mode00 1 CONFIG.ADC_CalOpt_Mode01 1 CONFIG.ADC_CalOpt_Mode02 1 CONFIG.ADC_CalOpt_Mode03 1 CONFIG.ADC_CalOpt_Mode10 1 CONFIG.ADC_CalOpt_Mode11 1 CONFIG.ADC_CalOpt_Mode12 1 CONFIG.ADC_CalOpt_Mode13 1 CONFIG.ADC_CalOpt_Mode20 1 CONFIG.ADC_CalOpt_Mode21 1 CONFIG.ADC_CalOpt_Mode22 1 CONFIG.ADC_CalOpt_Mode23 1 CONFIG.ADC_CalOpt_Mode30 1 CONFIG.ADC_CalOpt_Mode31 1 CONFIG.ADC_CalOpt_Mode32 1 CONFIG.ADC_CalOpt_Mode33 1 CONFIG.ADC_Coarse_Mixer_Freq00 0 CONFIG.ADC_Coarse_Mixer_Freq01 0 CONFIG.ADC_Coarse_Mixer_Freq02 0 CONFIG.ADC_Coarse_Mixer_Freq03 0 CONFIG.ADC_Coarse_Mixer_Freq10 0 CONFIG.ADC_Coarse_Mixer_Freq11 0 CONFIG.ADC_Coarse_Mixer_Freq12 0 CONFIG.ADC_Coarse_Mixer_Freq13 0 CONFIG.ADC_Coarse_Mixer_Freq20 0 CONFIG.ADC_Coarse_Mixer_Freq21 0 CONFIG.ADC_Coarse_Mixer_Freq22 0 CONFIG.ADC_Coarse_Mixer_Freq23 0 CONFIG.ADC_Coarse_Mixer_Freq30 0 CONFIG.ADC_Coarse_Mixer_Freq31 0 CONFIG.ADC_Coarse_Mixer_Freq32 0 CONFIG.ADC_Coarse_Mixer_Freq33 0 CONFIG.ADC_DSA_RTS false CONFIG.ADC_Data_Type00 0 CONFIG.ADC_Data_Type01 0 CONFIG.ADC_Data_Type02 0 CONFIG.ADC_Data_Type03 0 CONFIG.ADC_Data_Type10 0 CONFIG.ADC_Data_Type11 0 CONFIG.ADC_Data_Type12 0 CONFIG.ADC_Data_Type13 0 CONFIG.ADC_Data_Type20 0 CONFIG.ADC_Data_Type21 0 CONFIG.ADC_Data_Type22 0 CONFIG.ADC_Data_Type23 0 CONFIG.ADC_Data_Type30 0 CONFIG.ADC_Data_Type31 0 CONFIG.ADC_Data_Type32 0 CONFIG.ADC_Data_Type33 0 CONFIG.ADC_Data_Width00 8 CONFIG.ADC_Data_Width01 8 CONFIG.ADC_Data_Width02 8 CONFIG.ADC_Data_Width03 8 CONFIG.ADC_Data_Width10 8 CONFIG.ADC_Data_Width11 8 CONFIG.ADC_Data_Width12 8 CONFIG.ADC_Data_Width13 8 CONFIG.ADC_Data_Width20 8 CONFIG.ADC_Data_Width21 8 CONFIG.ADC_Data_Width22 8 CONFIG.ADC_Data_Width23 8 CONFIG.ADC_Data_Width30 8 CONFIG.ADC_Data_Width31 8 CONFIG.ADC_Data_Width32 8 CONFIG.ADC_Data_Width33 8 CONFIG.ADC_Debug false CONFIG.ADC_Decimation_Mode00 0 CONFIG.ADC_Decimation_Mode01 0 CONFIG.ADC_Decimation_Mode02 0 CONFIG.ADC_Decimation_Mode03 0 CONFIG.ADC_Decimation_Mode10 0 CONFIG.ADC_Decimation_Mode11 0 CONFIG.ADC_Decimation_Mode12 0 CONFIG.ADC_Decimation_Mode13 0 CONFIG.ADC_Decimation_Mode20 0 CONFIG.ADC_Decimation_Mode21 0 CONFIG.ADC_Decimation_Mode22 0 CONFIG.ADC_Decimation_Mode23 0 CONFIG.ADC_Decimation_Mode30 0 CONFIG.ADC_Decimation_Mode31 0 CONFIG.ADC_Decimation_Mode32 0 CONFIG.ADC_Decimation_Mode33 0 CONFIG.ADC_Dither00 true CONFIG.ADC_Dither01 true CONFIG.ADC_Dither02 true CONFIG.ADC_Dither03 true CONFIG.ADC_Dither10 true CONFIG.ADC_Dither11 true CONFIG.ADC_Dither12 true CONFIG.ADC_Dither13 true CONFIG.ADC_Dither20 true CONFIG.ADC_Dither21 true CONFIG.ADC_Dither22 true CONFIG.ADC_Dither23 true CONFIG.ADC_Dither30 true CONFIG.ADC_Dither31 true CONFIG.ADC_Dither32 true CONFIG.ADC_Dither33 true CONFIG.ADC_Mixer_Mode00 2 CONFIG.ADC_Mixer_Mode01 2 CONFIG.ADC_Mixer_Mode02 2 CONFIG.ADC_Mixer_Mode03 2 CONFIG.ADC_Mixer_Mode10 2 CONFIG.ADC_Mixer_Mode11 2 CONFIG.ADC_Mixer_Mode12 2 CONFIG.ADC_Mixer_Mode13 2 CONFIG.ADC_Mixer_Mode20 2 CONFIG.ADC_Mixer_Mode21 2 CONFIG.ADC_Mixer_Mode22 2 CONFIG.ADC_Mixer_Mode23 2 CONFIG.ADC_Mixer_Mode30 2 CONFIG.ADC_Mixer_Mode31 2 CONFIG.ADC_Mixer_Mode32 2 CONFIG.ADC_Mixer_Mode33 2 CONFIG.ADC_Mixer_Type00 3 CONFIG.ADC_Mixer_Type01 3 CONFIG.ADC_Mixer_Type02 3 CONFIG.ADC_Mixer_Type03 3 CONFIG.ADC_Mixer_Type10 3 CONFIG.ADC_Mixer_Type11 3 CONFIG.ADC_Mixer_Type12 3 CONFIG.ADC_Mixer_Type13 3 CONFIG.ADC_Mixer_Type20 3 CONFIG.ADC_Mixer_Type21 3 CONFIG.ADC_Mixer_Type22 3 CONFIG.ADC_Mixer_Type23 3 CONFIG.ADC_Mixer_Type30 3 CONFIG.ADC_Mixer_Type31 3 CONFIG.ADC_Mixer_Type32 3 CONFIG.ADC_Mixer_Type33 3 CONFIG.ADC_NCO_Freq00 0.0 CONFIG.ADC_NCO_Freq01 0.0 CONFIG.ADC_NCO_Freq02 0.0 CONFIG.ADC_NCO_Freq03 0.0 CONFIG.ADC_NCO_Freq10 0.0 CONFIG.ADC_NCO_Freq11 0.0 CONFIG.ADC_NCO_Freq12 0.0 CONFIG.ADC_NCO_Freq13 0.0 CONFIG.ADC_NCO_Freq20 0.0 CONFIG.ADC_NCO_Freq21 0.0 CONFIG.ADC_NCO_Freq22 0.0 CONFIG.ADC_NCO_Freq23 0.0 CONFIG.ADC_NCO_Freq30 0.0 CONFIG.ADC_NCO_Freq31 0.0 CONFIG.ADC_NCO_Freq32 0.0 CONFIG.ADC_NCO_Freq33 0.0 CONFIG.ADC_NCO_Phase00 0 CONFIG.ADC_NCO_Phase01 0 CONFIG.ADC_NCO_Phase02 0 CONFIG.ADC_NCO_Phase03 0 CONFIG.ADC_NCO_Phase10 0 CONFIG.ADC_NCO_Phase11 0 CONFIG.ADC_NCO_Phase12 0 CONFIG.ADC_NCO_Phase13 0 CONFIG.ADC_NCO_Phase20 0 CONFIG.ADC_NCO_Phase21 0 CONFIG.ADC_NCO_Phase22 0 CONFIG.ADC_NCO_Phase23 0 CONFIG.ADC_NCO_Phase30 0 CONFIG.ADC_NCO_Phase31 0 CONFIG.ADC_NCO_Phase32 0 CONFIG.ADC_NCO_Phase33 0 CONFIG.ADC_NCO_RTS false CONFIG.ADC_Neg_Quadrature00 false CONFIG.ADC_Neg_Quadrature01 false CONFIG.ADC_Neg_Quadrature02 false CONFIG.ADC_Neg_Quadrature03 false CONFIG.ADC_Neg_Quadrature10 false CONFIG.ADC_Neg_Quadrature11 false CONFIG.ADC_Neg_Quadrature12 false CONFIG.ADC_Neg_Quadrature13 false CONFIG.ADC_Neg_Quadrature20 false CONFIG.ADC_Neg_Quadrature21 false CONFIG.ADC_Neg_Quadrature22 false CONFIG.ADC_Neg_Quadrature23 false CONFIG.ADC_Neg_Quadrature30 false CONFIG.ADC_Neg_Quadrature31 false CONFIG.ADC_Neg_Quadrature32 false CONFIG.ADC_Neg_Quadrature33 false CONFIG.ADC_Nyquist00 0 CONFIG.ADC_Nyquist01 0 CONFIG.ADC_Nyquist02 0 CONFIG.ADC_Nyquist03 0 CONFIG.ADC_Nyquist10 0 CONFIG.ADC_Nyquist11 0 CONFIG.ADC_Nyquist12 0 CONFIG.ADC_Nyquist13 0 CONFIG.ADC_Nyquist20 0 CONFIG.ADC_Nyquist21 0 CONFIG.ADC_Nyquist22 0 CONFIG.ADC_Nyquist23 0 CONFIG.ADC_Nyquist30 0 CONFIG.ADC_Nyquist31 0 CONFIG.ADC_Nyquist32 0 CONFIG.ADC_Nyquist33 0 CONFIG.ADC_OBS00 false CONFIG.ADC_OBS01 false CONFIG.ADC_OBS02 false CONFIG.ADC_OBS03 false CONFIG.ADC_OBS10 false CONFIG.ADC_OBS11 false CONFIG.ADC_OBS12 false CONFIG.ADC_OBS13 false CONFIG.ADC_OBS20 false CONFIG.ADC_OBS21 false CONFIG.ADC_OBS22 false CONFIG.ADC_OBS23 false CONFIG.ADC_OBS30 false CONFIG.ADC_OBS31 false CONFIG.ADC_OBS32 false CONFIG.ADC_OBS33 false CONFIG.ADC_RESERVED_1_00 false CONFIG.ADC_RESERVED_1_01 false CONFIG.ADC_RESERVED_1_02 false CONFIG.ADC_RESERVED_1_03 false CONFIG.ADC_RESERVED_1_10 false CONFIG.ADC_RESERVED_1_11 false CONFIG.ADC_RESERVED_1_12 false CONFIG.ADC_RESERVED_1_13 false CONFIG.ADC_RESERVED_1_20 false CONFIG.ADC_RESERVED_1_21 false CONFIG.ADC_RESERVED_1_22 false CONFIG.ADC_RESERVED_1_23 false CONFIG.ADC_RESERVED_1_30 false CONFIG.ADC_RESERVED_1_31 false CONFIG.ADC_RESERVED_1_32 false CONFIG.ADC_RESERVED_1_33 false CONFIG.ADC_RTS false CONFIG.ADC_Slice00_Enable false CONFIG.ADC_Slice01_Enable false CONFIG.ADC_Slice02_Enable false CONFIG.ADC_Slice03_Enable false CONFIG.ADC_Slice10_Enable false CONFIG.ADC_Slice11_Enable false CONFIG.ADC_Slice12_Enable false CONFIG.ADC_Slice13_Enable false CONFIG.ADC_Slice20_Enable false CONFIG.ADC_Slice21_Enable false CONFIG.ADC_Slice22_Enable false CONFIG.ADC_Slice23_Enable false CONFIG.ADC_Slice30_Enable false CONFIG.ADC_Slice31_Enable false CONFIG.ADC_Slice32_Enable false CONFIG.ADC_Slice33_Enable false CONFIG.ADC_TDD_RTS00 0 CONFIG.ADC_TDD_RTS01 0 CONFIG.ADC_TDD_RTS02 0 CONFIG.ADC_TDD_RTS03 0 CONFIG.ADC_TDD_RTS10 0 CONFIG.ADC_TDD_RTS11 0 CONFIG.ADC_TDD_RTS12 0 CONFIG.ADC_TDD_RTS13 0 CONFIG.ADC_TDD_RTS20 0 CONFIG.ADC_TDD_RTS21 0 CONFIG.ADC_TDD_RTS22 0 CONFIG.ADC_TDD_RTS23 0 CONFIG.ADC_TDD_RTS30 0 CONFIG.ADC_TDD_RTS31 0 CONFIG.ADC_TDD_RTS32 0 CONFIG.ADC_TDD_RTS33 0 CONFIG.AMS_Factory_Var 0 CONFIG.Analog_Detection 1 CONFIG.Auto_Calibration_Freeze false CONFIG.Axiclk_Freq 100.0 CONFIG.Calibration_Freeze false CONFIG.Calibration_Time 10 CONFIG.Clock_Forwarding false CONFIG.Converter_Setup 1 CONFIG.DAC0_Band 0 CONFIG.DAC0_Clock_Dist 0 CONFIG.DAC0_Clock_Source 4 CONFIG.DAC0_Clock_Source_MX 4 CONFIG.DAC0_Enable 1 CONFIG.DAC0_Fabric_Freq 400.000 CONFIG.DAC0_Multi_Tile_Sync false CONFIG.DAC0_Outclk_Freq 50.000 CONFIG.DAC0_PLL_Enable false CONFIG.DAC0_Refclk_Div 1 CONFIG.DAC0_Refclk_Freq 6400.000 CONFIG.DAC0_Sampling_Rate 6.4 CONFIG.DAC0_VOP 20.0 CONFIG.DAC1_Band 0 CONFIG.DAC1_Clock_Dist 0 CONFIG.DAC1_Clock_Source 5 CONFIG.DAC1_Clock_Source_MX 5 CONFIG.DAC1_Enable 0 CONFIG.DAC1_Fabric_Freq 0.0 CONFIG.DAC1_Multi_Tile_Sync false CONFIG.DAC1_Outclk_Freq 50.000 CONFIG.DAC1_PLL_Enable false CONFIG.DAC1_Refclk_Div 1 CONFIG.DAC1_Refclk_Freq 6400.000 CONFIG.DAC1_Sampling_Rate 6.4 CONFIG.DAC1_VOP 20.0 CONFIG.DAC2_Band 0 CONFIG.DAC2_Clock_Dist 0 CONFIG.DAC2_Clock_Source 6 CONFIG.DAC2_Clock_Source_MX 6 CONFIG.DAC2_Enable 0 CONFIG.DAC2_Fabric_Freq 0.0 CONFIG.DAC2_Multi_Tile_Sync false CONFIG.DAC2_Outclk_Freq 50.000 CONFIG.DAC2_PLL_Enable false CONFIG.DAC2_Refclk_Div 1 CONFIG.DAC2_Refclk_Freq 6400.000 CONFIG.DAC2_Sampling_Rate 6.4 CONFIG.DAC2_VOP 20.0 CONFIG.DAC3_Band 0 CONFIG.DAC3_Clock_Dist 0 CONFIG.DAC3_Clock_Source 7 CONFIG.DAC3_Clock_Source_MX 7 CONFIG.DAC3_Enable 0 CONFIG.DAC3_Fabric_Freq 0.0 CONFIG.DAC3_Multi_Tile_Sync false CONFIG.DAC3_Outclk_Freq 50.000 CONFIG.DAC3_PLL_Enable false CONFIG.DAC3_Refclk_Div 1 CONFIG.DAC3_Refclk_Freq 6400.000 CONFIG.DAC3_Sampling_Rate 6.4 CONFIG.DAC3_VOP 20.0 CONFIG.DAC228_En false CONFIG.DAC229_En false CONFIG.DAC230_En false CONFIG.DAC231_En false CONFIG.DAC_Coarse_Mixer_Freq00 0 CONFIG.DAC_Coarse_Mixer_Freq01 0 CONFIG.DAC_Coarse_Mixer_Freq02 0 CONFIG.DAC_Coarse_Mixer_Freq03 0 CONFIG.DAC_Coarse_Mixer_Freq10 0 CONFIG.DAC_Coarse_Mixer_Freq11 0 CONFIG.DAC_Coarse_Mixer_Freq12 0 CONFIG.DAC_Coarse_Mixer_Freq13 0 CONFIG.DAC_Coarse_Mixer_Freq20 0 CONFIG.DAC_Coarse_Mixer_Freq21 0 CONFIG.DAC_Coarse_Mixer_Freq22 0 CONFIG.DAC_Coarse_Mixer_Freq23 0 CONFIG.DAC_Coarse_Mixer_Freq30 0 CONFIG.DAC_Coarse_Mixer_Freq31 0 CONFIG.DAC_Coarse_Mixer_Freq32 0 CONFIG.DAC_Coarse_Mixer_Freq33 0 CONFIG.DAC_Data_Type00 0 CONFIG.DAC_Data_Type01 0 CONFIG.DAC_Data_Type02 0 CONFIG.DAC_Data_Type03 0 CONFIG.DAC_Data_Type10 0 CONFIG.DAC_Data_Type11 0 CONFIG.DAC_Data_Type12 0 CONFIG.DAC_Data_Type13 0 CONFIG.DAC_Data_Type20 0 CONFIG.DAC_Data_Type21 0 CONFIG.DAC_Data_Type22 0 CONFIG.DAC_Data_Type23 0 CONFIG.DAC_Data_Type30 0 CONFIG.DAC_Data_Type31 0 CONFIG.DAC_Data_Type32 0 CONFIG.DAC_Data_Type33 0 CONFIG.DAC_Data_Width00 16 CONFIG.DAC_Data_Width01 16 CONFIG.DAC_Data_Width02 16 CONFIG.DAC_Data_Width03 16 CONFIG.DAC_Data_Width10 16 CONFIG.DAC_Data_Width11 16 CONFIG.DAC_Data_Width12 16 CONFIG.DAC_Data_Width13 16 CONFIG.DAC_Data_Width20 16 CONFIG.DAC_Data_Width21 16 CONFIG.DAC_Data_Width22 16 CONFIG.DAC_Data_Width23 16 CONFIG.DAC_Data_Width30 16 CONFIG.DAC_Data_Width31 16 CONFIG.DAC_Data_Width32 16 CONFIG.DAC_Data_Width33 16 CONFIG.DAC_Debug false CONFIG.DAC_Decoder_Mode00 0 CONFIG.DAC_Decoder_Mode01 0 CONFIG.DAC_Decoder_Mode02 0 CONFIG.DAC_Decoder_Mode03 0 CONFIG.DAC_Decoder_Mode10 0 CONFIG.DAC_Decoder_Mode11 0 CONFIG.DAC_Decoder_Mode12 0 CONFIG.DAC_Decoder_Mode13 0 CONFIG.DAC_Decoder_Mode20 0 CONFIG.DAC_Decoder_Mode21 0 CONFIG.DAC_Decoder_Mode22 0 CONFIG.DAC_Decoder_Mode23 0 CONFIG.DAC_Decoder_Mode30 0 CONFIG.DAC_Decoder_Mode31 0 CONFIG.DAC_Decoder_Mode32 0 CONFIG.DAC_Decoder_Mode33 0 CONFIG.DAC_Interpolation_Mode00 1 CONFIG.DAC_Interpolation_Mode01 0 CONFIG.DAC_Interpolation_Mode02 0 CONFIG.DAC_Interpolation_Mode03 0 CONFIG.DAC_Interpolation_Mode10 0 CONFIG.DAC_Interpolation_Mode11 0 CONFIG.DAC_Interpolation_Mode12 0 CONFIG.DAC_Interpolation_Mode13 0 CONFIG.DAC_Interpolation_Mode20 0 CONFIG.DAC_Interpolation_Mode21 0 CONFIG.DAC_Interpolation_Mode22 0 CONFIG.DAC_Interpolation_Mode23 0 CONFIG.DAC_Interpolation_Mode30 0 CONFIG.DAC_Interpolation_Mode31 0 CONFIG.DAC_Interpolation_Mode32 0 CONFIG.DAC_Interpolation_Mode33 0 CONFIG.DAC_Invsinc_Ctrl00 false CONFIG.DAC_Invsinc_Ctrl01 false CONFIG.DAC_Invsinc_Ctrl02 false CONFIG.DAC_Invsinc_Ctrl03 false CONFIG.DAC_Invsinc_Ctrl10 false CONFIG.DAC_Invsinc_Ctrl11 false CONFIG.DAC_Invsinc_Ctrl12 false CONFIG.DAC_Invsinc_Ctrl13 false CONFIG.DAC_Invsinc_Ctrl20 false CONFIG.DAC_Invsinc_Ctrl21 false CONFIG.DAC_Invsinc_Ctrl22 false CONFIG.DAC_Invsinc_Ctrl23 false CONFIG.DAC_Invsinc_Ctrl30 false CONFIG.DAC_Invsinc_Ctrl31 false CONFIG.DAC_Invsinc_Ctrl32 false CONFIG.DAC_Invsinc_Ctrl33 false CONFIG.DAC_Mixer_Mode00 2 CONFIG.DAC_Mixer_Mode01 2 CONFIG.DAC_Mixer_Mode02 2 CONFIG.DAC_Mixer_Mode03 2 CONFIG.DAC_Mixer_Mode10 2 CONFIG.DAC_Mixer_Mode11 2 CONFIG.DAC_Mixer_Mode12 2 CONFIG.DAC_Mixer_Mode13 2 CONFIG.DAC_Mixer_Mode20 2 CONFIG.DAC_Mixer_Mode21 2 CONFIG.DAC_Mixer_Mode22 2 CONFIG.DAC_Mixer_Mode23 2 CONFIG.DAC_Mixer_Mode30 2 CONFIG.DAC_Mixer_Mode31 2 CONFIG.DAC_Mixer_Mode32 2 CONFIG.DAC_Mixer_Mode33 2 CONFIG.DAC_Mixer_Type00 0 CONFIG.DAC_Mixer_Type01 3 CONFIG.DAC_Mixer_Type02 3 CONFIG.DAC_Mixer_Type03 3 CONFIG.DAC_Mixer_Type10 3 CONFIG.DAC_Mixer_Type11 3 CONFIG.DAC_Mixer_Type12 3 CONFIG.DAC_Mixer_Type13 3 CONFIG.DAC_Mixer_Type20 3 CONFIG.DAC_Mixer_Type21 3 CONFIG.DAC_Mixer_Type22 3 CONFIG.DAC_Mixer_Type23 3 CONFIG.DAC_Mixer_Type30 3 CONFIG.DAC_Mixer_Type31 3 CONFIG.DAC_Mixer_Type32 3 CONFIG.DAC_Mixer_Type33 3 CONFIG.DAC_Mode00 0 CONFIG.DAC_Mode01 0 CONFIG.DAC_Mode02 0 CONFIG.DAC_Mode03 0 CONFIG.DAC_Mode10 0 CONFIG.DAC_Mode11 0 CONFIG.DAC_Mode12 0 CONFIG.DAC_Mode13 0 CONFIG.DAC_Mode20 0 CONFIG.DAC_Mode21 0 CONFIG.DAC_Mode22 0 CONFIG.DAC_Mode23 0 CONFIG.DAC_Mode30 0 CONFIG.DAC_Mode31 0 CONFIG.DAC_Mode32 0 CONFIG.DAC_Mode33 0 CONFIG.DAC_NCO_Freq00 0.0 CONFIG.DAC_NCO_Freq01 0.0 CONFIG.DAC_NCO_Freq02 0.0 CONFIG.DAC_NCO_Freq03 0.0 CONFIG.DAC_NCO_Freq10 0.0 CONFIG.DAC_NCO_Freq11 0.0 CONFIG.DAC_NCO_Freq12 0.0 CONFIG.DAC_NCO_Freq13 0.0 CONFIG.DAC_NCO_Freq20 0.0 CONFIG.DAC_NCO_Freq21 0.0 CONFIG.DAC_NCO_Freq22 0.0 CONFIG.DAC_NCO_Freq23 0.0 CONFIG.DAC_NCO_Freq30 0.0 CONFIG.DAC_NCO_Freq31 0.0 CONFIG.DAC_NCO_Freq32 0.0 CONFIG.DAC_NCO_Freq33 0.0 CONFIG.DAC_NCO_Phase00 0 CONFIG.DAC_NCO_Phase01 0 CONFIG.DAC_NCO_Phase02 0 CONFIG.DAC_NCO_Phase03 0 CONFIG.DAC_NCO_Phase10 0 CONFIG.DAC_NCO_Phase11 0 CONFIG.DAC_NCO_Phase12 0 CONFIG.DAC_NCO_Phase13 0 CONFIG.DAC_NCO_Phase20 0 CONFIG.DAC_NCO_Phase21 0 CONFIG.DAC_NCO_Phase22 0 CONFIG.DAC_NCO_Phase23 0 CONFIG.DAC_NCO_Phase30 0 CONFIG.DAC_NCO_Phase31 0 CONFIG.DAC_NCO_Phase32 0 CONFIG.DAC_NCO_Phase33 0 CONFIG.DAC_NCO_RTS false CONFIG.DAC_Neg_Quadrature00 false CONFIG.DAC_Neg_Quadrature01 false CONFIG.DAC_Neg_Quadrature02 false CONFIG.DAC_Neg_Quadrature03 false CONFIG.DAC_Neg_Quadrature10 false CONFIG.DAC_Neg_Quadrature11 false CONFIG.DAC_Neg_Quadrature12 false CONFIG.DAC_Neg_Quadrature13 false CONFIG.DAC_Neg_Quadrature20 false CONFIG.DAC_Neg_Quadrature21 false CONFIG.DAC_Neg_Quadrature22 false CONFIG.DAC_Neg_Quadrature23 false CONFIG.DAC_Neg_Quadrature30 false CONFIG.DAC_Neg_Quadrature31 false CONFIG.DAC_Neg_Quadrature32 false CONFIG.DAC_Neg_Quadrature33 false CONFIG.DAC_Nyquist00 0 CONFIG.DAC_Nyquist01 0 CONFIG.DAC_Nyquist02 0 CONFIG.DAC_Nyquist03 0 CONFIG.DAC_Nyquist10 0 CONFIG.DAC_Nyquist11 0 CONFIG.DAC_Nyquist12 0 CONFIG.DAC_Nyquist13 0 CONFIG.DAC_Nyquist20 0 CONFIG.DAC_Nyquist21 0 CONFIG.DAC_Nyquist22 0 CONFIG.DAC_Nyquist23 0 CONFIG.DAC_Nyquist30 0 CONFIG.DAC_Nyquist31 0 CONFIG.DAC_Nyquist32 0 CONFIG.DAC_Nyquist33 0 CONFIG.DAC_Output_Current 0 CONFIG.DAC_RESERVED_1_00 false CONFIG.DAC_RESERVED_1_01 false CONFIG.DAC_RESERVED_1_02 false CONFIG.DAC_RESERVED_1_03 false CONFIG.DAC_RESERVED_1_10 false CONFIG.DAC_RESERVED_1_11 false CONFIG.DAC_RESERVED_1_12 false CONFIG.DAC_RESERVED_1_13 false CONFIG.DAC_RESERVED_1_20 false CONFIG.DAC_RESERVED_1_21 false CONFIG.DAC_RESERVED_1_22 false CONFIG.DAC_RESERVED_1_23 false CONFIG.DAC_RESERVED_1_30 false CONFIG.DAC_RESERVED_1_31 false CONFIG.DAC_RESERVED_1_32 false CONFIG.DAC_RESERVED_1_33 false CONFIG.DAC_RTS false CONFIG.DAC_Slice00_Enable true CONFIG.DAC_Slice01_Enable false CONFIG.DAC_Slice02_Enable false CONFIG.DAC_Slice03_Enable false CONFIG.DAC_Slice10_Enable false CONFIG.DAC_Slice11_Enable false CONFIG.DAC_Slice12_Enable false CONFIG.DAC_Slice13_Enable false CONFIG.DAC_Slice20_Enable false CONFIG.DAC_Slice21_Enable false CONFIG.DAC_Slice22_Enable false CONFIG.DAC_Slice23_Enable false CONFIG.DAC_Slice30_Enable false CONFIG.DAC_Slice31_Enable false CONFIG.DAC_Slice32_Enable false CONFIG.DAC_Slice33_Enable false CONFIG.DAC_TDD_RTS00 0 CONFIG.DAC_TDD_RTS01 0 CONFIG.DAC_TDD_RTS02 0 CONFIG.DAC_TDD_RTS03 0 CONFIG.DAC_TDD_RTS10 0 CONFIG.DAC_TDD_RTS11 0 CONFIG.DAC_TDD_RTS12 0 CONFIG.DAC_TDD_RTS13 0 CONFIG.DAC_TDD_RTS20 0 CONFIG.DAC_TDD_RTS21 0 CONFIG.DAC_TDD_RTS22 0 CONFIG.DAC_TDD_RTS23 0 CONFIG.DAC_TDD_RTS30 0 CONFIG.DAC_TDD_RTS31 0 CONFIG.DAC_TDD_RTS32 0 CONFIG.DAC_TDD_RTS33 0 CONFIG.DAC_VOP_Mode 1 CONFIG.DAC_VOP_RTS false CONFIG.PL_Clock_Freq 100.0 CONFIG.PRESET None CONFIG.RESERVED_3 110000 CONFIG.RF_Analyzer 0 CONFIG.Sysref_Source 1 CONFIG.VNC_Include_Fs2_Change true CONFIG.VNC_Include_OIS_Change true CONFIG.VNC_Testing false CONFIG.disable_bg_cal_en 1 CONFIG.mADC_Band 0 CONFIG.mADC_Bypass_BG_Cal00 false CONFIG.mADC_Bypass_BG_Cal01 false CONFIG.mADC_Bypass_BG_Cal02 false CONFIG.mADC_Bypass_BG_Cal03 false CONFIG.mADC_CalOpt_Mode00 1 CONFIG.mADC_CalOpt_Mode01 1 CONFIG.mADC_CalOpt_Mode02 1 CONFIG.mADC_CalOpt_Mode03 1 CONFIG.mADC_Coarse_Mixer_Freq00 0 CONFIG.mADC_Coarse_Mixer_Freq01 0 CONFIG.mADC_Coarse_Mixer_Freq02 0 CONFIG.mADC_Coarse_Mixer_Freq03 0 CONFIG.mADC_Data_Type00 0 CONFIG.mADC_Data_Type01 0 CONFIG.mADC_Data_Type02 0 CONFIG.mADC_Data_Type03 0 CONFIG.mADC_Data_Width00 8 CONFIG.mADC_Data_Width01 8 CONFIG.mADC_Data_Width02 8 CONFIG.mADC_Data_Width03 8 CONFIG.mADC_Decimation_Mode00 0 CONFIG.mADC_Decimation_Mode01 0 CONFIG.mADC_Decimation_Mode02 0 CONFIG.mADC_Decimation_Mode03 0 CONFIG.mADC_Dither00 true CONFIG.mADC_Dither01 true CONFIG.mADC_Dither02 true CONFIG.mADC_Dither03 true CONFIG.mADC_Enable 0 CONFIG.mADC_Fabric_Freq 0.0 CONFIG.mADC_Link_Coupling 0 CONFIG.mADC_Mixer_Mode00 2 CONFIG.mADC_Mixer_Mode01 2 CONFIG.mADC_Mixer_Mode02 2 CONFIG.mADC_Mixer_Mode03 2 CONFIG.mADC_Mixer_Type00 3 CONFIG.mADC_Mixer_Type01 3 CONFIG.mADC_Mixer_Type02 3 CONFIG.mADC_Mixer_Type03 3 CONFIG.mADC_Multi_Tile_Sync false CONFIG.mADC_NCO_Freq00 0.0 CONFIG.mADC_NCO_Freq01 0.0 CONFIG.mADC_NCO_Freq02 0.0 CONFIG.mADC_NCO_Freq03 0.0 CONFIG.mADC_NCO_Phase00 0 CONFIG.mADC_NCO_Phase01 0 CONFIG.mADC_NCO_Phase02 0 CONFIG.mADC_NCO_Phase03 0 CONFIG.mADC_Neg_Quadrature00 false CONFIG.mADC_Neg_Quadrature01 false CONFIG.mADC_Neg_Quadrature02 false CONFIG.mADC_Neg_Quadrature03 false CONFIG.mADC_Nyquist00 0 CONFIG.mADC_Nyquist01 0 CONFIG.mADC_Nyquist02 0 CONFIG.mADC_Nyquist03 0 CONFIG.mADC_OBS00 false CONFIG.mADC_OBS01 false CONFIG.mADC_OBS02 false CONFIG.mADC_OBS03 false CONFIG.mADC_Outclk_Freq 15.625 CONFIG.mADC_PLL_Enable false CONFIG.mADC_RESERVED_1_00 false CONFIG.mADC_RESERVED_1_01 false CONFIG.mADC_RESERVED_1_02 false CONFIG.mADC_RESERVED_1_03 false CONFIG.mADC_Refclk_Div 1 CONFIG.mADC_Refclk_Freq 2000.000 CONFIG.mADC_Sampling_Rate 2.0 CONFIG.mADC_Slice00_Enable false CONFIG.mADC_Slice01_Enable false CONFIG.mADC_Slice02_Enable false CONFIG.mADC_Slice03_Enable false CONFIG.mADC_TDD_RTS00 0 CONFIG.mADC_TDD_RTS01 0 CONFIG.mADC_TDD_RTS02 0 CONFIG.mADC_TDD_RTS03 0 CONFIG.mDAC_Band 0 CONFIG.mDAC_Coarse_Mixer_Freq00 0 CONFIG.mDAC_Coarse_Mixer_Freq01 0 CONFIG.mDAC_Coarse_Mixer_Freq02 0 CONFIG.mDAC_Coarse_Mixer_Freq03 0 CONFIG.mDAC_Data_Type00 0 CONFIG.mDAC_Data_Type01 0 CONFIG.mDAC_Data_Type02 0 CONFIG.mDAC_Data_Type03 0 CONFIG.mDAC_Data_Width00 16 CONFIG.mDAC_Data_Width01 16 CONFIG.mDAC_Data_Width02 16 CONFIG.mDAC_Data_Width03 16 CONFIG.mDAC_Decoder_Mode00 0 CONFIG.mDAC_Decoder_Mode01 0 CONFIG.mDAC_Decoder_Mode02 0 CONFIG.mDAC_Decoder_Mode03 0 CONFIG.mDAC_Enable 0 CONFIG.mDAC_Fabric_Freq 0.0 CONFIG.mDAC_Interpolation_Mode00 0 CONFIG.mDAC_Interpolation_Mode01 0 CONFIG.mDAC_Interpolation_Mode02 0 CONFIG.mDAC_Interpolation_Mode03 0 CONFIG.mDAC_Invsinc_Ctrl00 false CONFIG.mDAC_Invsinc_Ctrl01 false CONFIG.mDAC_Invsinc_Ctrl02 false CONFIG.mDAC_Invsinc_Ctrl03 false CONFIG.mDAC_Mixer_Mode00 2 CONFIG.mDAC_Mixer_Mode01 2 CONFIG.mDAC_Mixer_Mode02 2 CONFIG.mDAC_Mixer_Mode03 2 CONFIG.mDAC_Mixer_Type00 3 CONFIG.mDAC_Mixer_Type01 3 CONFIG.mDAC_Mixer_Type02 3 CONFIG.mDAC_Mixer_Type03 3 CONFIG.mDAC_Mode00 0 CONFIG.mDAC_Mode01 0 CONFIG.mDAC_Mode02 0 CONFIG.mDAC_Mode03 0 CONFIG.mDAC_Multi_Tile_Sync false CONFIG.mDAC_NCO_Freq00 0.0 CONFIG.mDAC_NCO_Freq01 0.0 CONFIG.mDAC_NCO_Freq02 0.0 CONFIG.mDAC_NCO_Freq03 0.0 CONFIG.mDAC_NCO_Phase00 0 CONFIG.mDAC_NCO_Phase01 0 CONFIG.mDAC_NCO_Phase02 0 CONFIG.mDAC_NCO_Phase03 0 CONFIG.mDAC_Neg_Quadrature00 false CONFIG.mDAC_Neg_Quadrature01 false CONFIG.mDAC_Neg_Quadrature02 false CONFIG.mDAC_Neg_Quadrature03 false CONFIG.mDAC_Nyquist00 0 CONFIG.mDAC_Nyquist01 0 CONFIG.mDAC_Nyquist02 0 CONFIG.mDAC_Nyquist03 0 CONFIG.mDAC_Outclk_Freq 50.000 CONFIG.mDAC_PLL_Enable false CONFIG.mDAC_RESERVED_1_00 false CONFIG.mDAC_RESERVED_1_01 false CONFIG.mDAC_RESERVED_1_02 false CONFIG.mDAC_RESERVED_1_03 false CONFIG.mDAC_Refclk_Div 1 CONFIG.mDAC_Refclk_Freq 6400.000 CONFIG.mDAC_Sampling_Rate 6.4 CONFIG.mDAC_Slice00_Enable false CONFIG.mDAC_Slice01_Enable false CONFIG.mDAC_Slice02_Enable false CONFIG.mDAC_Slice03_Enable false CONFIG.mDAC_TDD_RTS00 0 CONFIG.mDAC_TDD_RTS01 0 CONFIG.mDAC_TDD_RTS02 0 CONFIG.mDAC_TDD_RTS03 0 CONFIG.mDAC_VOP 20.0 CONFIG.production_simulation 0 CONFIG.tb_adc_fft true CONFIG.tb_dac_fft true CONFIG.use_bram 1
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 50000000
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi' of definition 'xilinx.com:interface:aximm:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00' of definition 'xilinx.com:interface:axis:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm00' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm0_axis_clock' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm0_axis_clock' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from X_INTERFACE_INFO parameter from HDL file).
+INFO: [IP_Flow 19-5107] Inferred bus interface 's_axi_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm0_div2_axis_clock' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 's_axi'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 's_axi_aresetn'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm0_axis_clock': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm00'.
+INFO: [IP_Flow 19-4728] Bus Interface 's_axi_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'm0_div2_axis_clock' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Setting DAC0 source clock to 400000000.0
+Setting DAC source AXI clock to 100000000
+Slave segment '/dac_source_i/s_axi/reg0' is being assigned into address space '/s_axi' at <0x44A0_0000 [ 64K ]>.
+Slave segment '/usp_rf_data_converter_0/s_axi/Reg' is being assigned into address space '/s_axi' at <0x44A4_0000 [ 256K ]>.
+Simulator set to XSim
+INFO: [open_example_project] Rebuilding all the top level IPs ...
+WARNING: [xilinx.com:ip:smartconnect:1.0-1] rfdc_ex_smartconnect_0_0: IP rfdc_ex_smartconnect_0_0 is configured in Low area mode as all propagated traffic is low-bandwidth (AXI4LITE). One of the SIs has property HAS_BURST == 1. This will be ignored. If wrap transactions are required then turn off Low area mode using ADVANCED_PROPERTIES. Execute following: set_property CONFIG.ADVANCED_PROPERTIES {__experimental_features__ {disable_low_area_mode 1}} [get_bd_cells /rfdc_ex_smartconnect_0_0]
+Wrote  : <c:\Jeonghyun\Lab\TaehyunKim\RFSoC\TEST\usp_rf_data_converter_0_ex\usp_rf_data_converter_0_ex.srcs\sources_1\bd\rfdc_ex\rfdc_ex.bd> 
+Wrote  : <c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/ui/bd_1a0213f.ui> 
+VHDL Output written to : c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.v
+VHDL Output written to : c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/sim/rfdc_ex.v
+VHDL Output written to : c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/hdl/rfdc_ex_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block usp_rf_data_converter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dac_source_i .
+Exporting to file c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/hw_handoff/rfdc_ex_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/hw_handoff/rfdc_ex_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/synth/rfdc_ex_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+Exporting to file c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/hw_handoff/rfdc_ex.hwh
+Generated Block Design Tcl file c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/hw_handoff/rfdc_ex_bd.tcl
+Generated Hardware Definition File c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/synth/rfdc_ex.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1919.492 ; gain = 242.449
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xsim/rfdc_ex.bda'
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/modelsim/rfdc_ex.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/questa/rfdc_ex.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "IES" (Cadence Incisive Enterprise Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/ies/rfdc_ex.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/vcs/rfdc_ex.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/riviera/rfdc_ex.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/activehdl/rfdc_ex.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Script generated: 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/rfdc_ex.sh'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/xlconstant_v1_1_7.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/bd_a15e_one_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/smartconnect.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/smartconnect.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/smartconnect_xtlm.cxx'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/smartconnect_xtlm.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/smartconnect_xtlm_impl.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/rfdc_ex_smartconnect_0_0_sc.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/rfdc_ex_smartconnect_0_0.h'
+INFO: [SIM-utils-43] Exported 'C:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/sim_scripts/rfdc_ex/xcelium/rfdc_ex.bda'
+export_ip_user_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 1937.535 ; gain = 18.043
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+INFO: [Coretcl 2-12] '/s_axi' selected.
+INFO: [Coretcl 2-12] '/dac_source_i/s_axi' selected.
+INFO: [Coretcl 2-12] '/usp_rf_data_converter_0/s_axi' selected.
+set_property -name {xsim.simulate.runtime} -value {100s} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Jeonghyun\Lab\TaehyunKim\RFSoC\TEST\usp_rf_data_converter_0_ex\imports\usp_rf_data_converter_0_example_design.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Jeonghyun\Lab\TaehyunKim\RFSoC\TEST\usp_rf_data_converter_0_ex\usp_rf_data_converter_0_ex.gen\sources_1\bd\rfdc_ex\sim\rfdc_ex.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Jeonghyun\Lab\TaehyunKim\RFSoC\TEST\usp_rf_data_converter_0_ex\imports\demo_tb.sv:]
+launch_simulation
+Command: launch_simulation 
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'demo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L axi_vip_v1_1_8 -L smartconnect_v1_0 -L xilinx_vip -prj demo_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_pkg.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi_vip_pkg.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_if.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi_vip_if.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/clk_vip_if.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/rst_vip_if.sv" into library xilinx_vip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xpm
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_low_latency_handshake
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" into library xpm
+INFO: [VRFC 10-311] analyzing module xpm_fifo_base
+INFO: [VRFC 10-311] analyzing module xpm_fifo_rst
+INFO: [VRFC 10-311] analyzing module xpm_counter_updn
+INFO: [VRFC 10-311] analyzing module xpm_fifo_reg_vec
+INFO: [VRFC 10-311] analyzing module xpm_fifo_reg_bit
+WARNING: [VRFC 10-8426] non-net output port 'd_out' cannot be initialized at declaration in SystemVerilog mode [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1909]
+INFO: [VRFC 10-311] analyzing module xpm_reg_pipe_bit
+INFO: [VRFC 10-311] analyzing module xpm_fifo_sync
+INFO: [VRFC 10-311] analyzing module xpm_fifo_async
+INFO: [VRFC 10-311] analyzing module xpm_fifo_axis
+INFO: [VRFC 10-311] analyzing module xpm_fifo_axif
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:3660]
+INFO: [VRFC 10-311] analyzing module xpm_fifo_axil
+INFO: [VRFC 10-311] analyzing module xpm_fifo_axi_reg_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" into library xpm
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-311] analyzing module asym_bwe_bb
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exdes_xpm_mem_dg
+WARNING: [VRFC 10-8426] non-net output port 'axis_valid' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:70]
+INFO: [VRFC 10-311] analyzing module exdes_xpm_mem_dg_int
+WARNING: [VRFC 10-8426] non-net output port 'axis_valid' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/exdes_xpm_mem_dg.sv:205]
+INFO: [VRFC 10-311] analyzing module xpm_mem_dg_wrap2
+INFO: [VRFC 10-311] analyzing module xpm_mem_dg_sdpram_wrap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dac_exdes_cfg_rfa
+WARNING: [VRFC 10-8426] non-net output port 'start_data' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:67]
+WARNING: [VRFC 10-8426] non-net output port 'enable' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:68]
+WARNING: [VRFC 10-8426] non-net output port 'dg_num_samples' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:69]
+WARNING: [VRFC 10-8426] non-net output port 'timeout_enable' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:70]
+WARNING: [VRFC 10-8426] non-net output port 'timeout_value' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:71]
+WARNING: [VRFC 10-8426] non-net output port 'tile_enable' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_exdes_rfdac_ctrl_rfa.sv:72]
+INFO: [VRFC 10-311] analyzing module rfdac_exdes_ctrl_rfa
+INFO: [VRFC 10-311] analyzing module rfdac_exdes_ctrl_axi_rfa
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/exdes_rfdac_data_bram_stim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module exdes_rfdac_data_bram_stim
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_block
+INFO: [VRFC 10-2458] undeclared symbol adc00_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3924]
+INFO: [VRFC 10-2458] undeclared symbol adc01_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3925]
+INFO: [VRFC 10-2458] undeclared symbol adc02_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3926]
+INFO: [VRFC 10-2458] undeclared symbol adc03_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3927]
+INFO: [VRFC 10-2458] undeclared symbol adc10_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3928]
+INFO: [VRFC 10-2458] undeclared symbol adc11_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3929]
+INFO: [VRFC 10-2458] undeclared symbol adc12_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3930]
+INFO: [VRFC 10-2458] undeclared symbol adc13_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3931]
+INFO: [VRFC 10-2458] undeclared symbol adc20_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3932]
+INFO: [VRFC 10-2458] undeclared symbol adc21_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3933]
+INFO: [VRFC 10-2458] undeclared symbol adc22_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3934]
+INFO: [VRFC 10-2458] undeclared symbol adc23_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3935]
+INFO: [VRFC 10-2458] undeclared symbol adc30_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3936]
+INFO: [VRFC 10-2458] undeclared symbol adc31_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3937]
+INFO: [VRFC 10-2458] undeclared symbol adc32_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3938]
+INFO: [VRFC 10-2458] undeclared symbol adc33_tdd_mode_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3939]
+INFO: [VRFC 10-2458] undeclared symbol adc00_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3940]
+INFO: [VRFC 10-2458] undeclared symbol adc01_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3941]
+INFO: [VRFC 10-2458] undeclared symbol adc02_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3942]
+INFO: [VRFC 10-2458] undeclared symbol adc03_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3943]
+INFO: [VRFC 10-2458] undeclared symbol adc10_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3944]
+INFO: [VRFC 10-2458] undeclared symbol adc11_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3945]
+INFO: [VRFC 10-2458] undeclared symbol adc12_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3946]
+INFO: [VRFC 10-2458] undeclared symbol adc13_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3947]
+INFO: [VRFC 10-2458] undeclared symbol adc20_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3948]
+INFO: [VRFC 10-2458] undeclared symbol adc21_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3949]
+INFO: [VRFC 10-2458] undeclared symbol adc22_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3950]
+INFO: [VRFC 10-2458] undeclared symbol adc23_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3951]
+INFO: [VRFC 10-2458] undeclared symbol adc30_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3952]
+INFO: [VRFC 10-2458] undeclared symbol adc31_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3953]
+INFO: [VRFC 10-2458] undeclared symbol adc32_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3954]
+INFO: [VRFC 10-2458] undeclared symbol adc33_tdd_obs_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_block.v:3955]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_por_fsm_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_por_fsm_top
+INFO: [VRFC 10-2458] undeclared symbol dac2_reset_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_por_fsm_top.sv:1787]
+INFO: [VRFC 10-2458] undeclared symbol dac3_reset_i, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_por_fsm_top.sv:1788]
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_bgt_fsm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_bgt_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_device_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_device_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_por_fsm.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_por_fsm
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_por_fsm_disabled.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_por_fsm_disabled
+INFO: [VRFC 10-2458] undeclared symbol clk_valid, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_por_fsm_disabled.sv:337]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_tile_config.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_tile_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_drp_arbiter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_drp_arbiter
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_register_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_register_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_address_decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_address_decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_axi_lite_ipif.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_axi_lite_ipif
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_counter_f.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_counter_f
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_pselect_f.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_pselect_f
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_slave_attachment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_slave_attachment
+INFO: [VRFC 10-2458] undeclared symbol dpto_cntr_ld_en, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_slave_attachment.v:503]
+INFO: [VRFC 10-2458] undeclared symbol dpto_cnt_en, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_slave_attachment.v:504]
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_rf_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_drp_control_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_drp_control_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_drp_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_drp_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_drp_access_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_drp_access_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_irq_req_ack.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_irq_req_ack
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_irq_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_irq_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0bufg_gt_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_bufg_gt_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_overvol_irq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_overvol_irq
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_powerup_state_irq.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_powerup_state_irq
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0_rst_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0_reset_count
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_usp_rf_data_converter_0_0/synth/rfdc_ex_usp_rf_data_converter_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_usp_rf_data_converter_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_dac_source_i_0/sim/rfdc_ex_dac_source_i_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_dac_source_i_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/fcfc/hdl/xlconstant_v1_1_vl_rfs.v" into library xlconstant_v1_1_7
+INFO: [VRFC 10-311] analyzing module xlconstant_v1_1_7_xlconstant
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_0/sim/bd_a15e_one_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_one_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/25b7/hdl/sc_util_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_fifo
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_vcafifo
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_vcafifo_progfull
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_afifo_meta
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_mux
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_standard_mux16
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_pipeline
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_onehot_to_binary
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_counter
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_sample_cycle_ratio
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_fifo_output_reg
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_xpm_memory_fifo
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/25b7/hdl/sc_util_v1_0_vl_rfs.sv:2751]
+WARNING: [VRFC 10-2821] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/25b7/hdl/sc_util_v1_0_vl_rfs.sv:2821]
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_xpm_fifo_wrapper
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_axic_fifo
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_axi_splitter
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_axi2vector
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_vector2axi
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_axi_reg_stall
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_srl_rtl
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_axic_reg_srl_fifo
+INFO: [VRFC 10-311] analyzing module sc_util_v1_0_4_axic_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/c012/hdl/sc_switchboard_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_switchboard_v1_0_6_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_2/sim/bd_a15e_arinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_arinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_3/sim/bd_a15e_rinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_rinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_4/sim/bd_a15e_awinsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_awinsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_5/sim/bd_a15e_winsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_winsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_6/sim/bd_a15e_binsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_binsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_7/sim/bd_a15e_aroutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_aroutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_8/sim/bd_a15e_routsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_routsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_9/sim/bd_a15e_awoutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_awoutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_10/sim/bd_a15e_woutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_woutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_11/sim/bd_a15e_boutsw_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_boutsw_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/896c/hdl/sc_node_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_arb_alg_rr
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_si_handler
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_reg_fifo
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_reg_fifo_async
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_fifo
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_reg_slice3
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_ingress
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_egress
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_downsizer
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_fi_regulator
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_upsizer
+WARNING: [VRFC 10-8426] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/896c/hdl/sc_node_v1_0_vl_rfs.sv:2588]
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_mi_handler
+INFO: [VRFC 10-311] analyzing module sc_node_v1_0_12_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_12/sim/bd_a15e_arni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_arni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_13/sim/bd_a15e_rni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_rni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_14/sim/bd_a15e_awni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_awni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_15/sim/bd_a15e_wni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_wni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_16/sim/bd_a15e_bni_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_bni_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/ea34/hdl/sc_mmu_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_mmu_v1_0_10_addr_decoder
+INFO: [VRFC 10-311] analyzing module sc_mmu_v1_0_10_decerr_slave
+INFO: [VRFC 10-311] analyzing module sc_mmu_v1_0_10_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_17/sim/bd_a15e_s00mmu_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_s00mmu_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/4fd2/hdl/sc_transaction_regulator_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_transaction_regulator_v1_0_9_singleorder
+INFO: [VRFC 10-311] analyzing module sc_transaction_regulator_v1_0_9_multithread
+INFO: [VRFC 10-311] analyzing module sc_transaction_regulator_v1_0_9_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_18/sim/bd_a15e_s00tr_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_s00tr_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/8047/hdl/sc_si_converter_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_si_converter_v1_0_10_arb_alg_rr
+INFO: [VRFC 10-311] analyzing module sc_si_converter_v1_0_10_offset_fifo
+INFO: [VRFC 10-311] analyzing module sc_si_converter_v1_0_10_splitter
+INFO: [VRFC 10-311] analyzing module sc_si_converter_v1_0_10_wrap_narrow
+INFO: [VRFC 10-311] analyzing module sc_si_converter_v1_0_10_axilite_conv
+INFO: [VRFC 10-311] analyzing module sc_si_converter_v1_0_10_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_19/sim/bd_a15e_s00sic_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_s00sic_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/b89e/hdl/sc_axi2sc_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_axi2sc_v1_0_7_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_20/sim/bd_a15e_s00a2s_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_s00a2s_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_21/sim/bd_a15e_sarn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_sarn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_22/sim/bd_a15e_srn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_srn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_23/sim/bd_a15e_sawn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_sawn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_24/sim/bd_a15e_swn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_swn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_25/sim/bd_a15e_sbn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_sbn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/7005/hdl/sc_sc2axi_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_sc2axi_v1_0_7_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_26/sim/bd_a15e_m00s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_27/sim/bd_a15e_m00arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_28/sim/bd_a15e_m00rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_29/sim/bd_a15e_m00awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_30/sim/bd_a15e_m00wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_31/sim/bd_a15e_m00bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/7bd7/hdl/sc_exit_v1_0_vl_rfs.sv" into library smartconnect_v1_0
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_axi2vector
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_axi3_conv
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_axic_register_slice
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_axi_register_slice
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_axilite_conv
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_exit
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_splitter
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_vector2axi
+INFO: [VRFC 10-311] analyzing module sc_exit_v1_0_11_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_32/sim/bd_a15e_m00e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m00e_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_33/sim/bd_a15e_m01s2a_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01s2a_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_34/sim/bd_a15e_m01arn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01arn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_35/sim/bd_a15e_m01rn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01rn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_36/sim/bd_a15e_m01awn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01awn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_37/sim/bd_a15e_m01wn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01wn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_38/sim/bd_a15e_m01bn_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01bn_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_39/sim/bd_a15e_m01e_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e_m01e_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/sim/bd_a15e.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_a15e
+INFO: [VRFC 10-311] analyzing module clk_map_imp_53WP22
+INFO: [VRFC 10-311] analyzing module i_nodes_imp_1MOXANO
+INFO: [VRFC 10-311] analyzing module m00_exit_pipeline_imp_1T53RB5
+INFO: [VRFC 10-311] analyzing module m00_nodes_imp_1FVDWZ1
+INFO: [VRFC 10-311] analyzing module m01_exit_pipeline_imp_1YGFOOX
+INFO: [VRFC 10-311] analyzing module m01_nodes_imp_B3FGWR
+INFO: [VRFC 10-311] analyzing module s00_entry_pipeline_imp_TE5WJM
+INFO: [VRFC 10-311] analyzing module s00_nodes_imp_YHZNKO
+INFO: [VRFC 10-311] analyzing module switchboards_imp_6K1A8C
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" into library axi_infrastructure_v1_1_0
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axi2vector
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_axic_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_infrastructure_v1_1_0_vector2axi
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/af2c/hdl/axi_register_slice_v2_1_vl_rfs.v" into library axi_register_slice_v2_1_22
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_test_master
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_test_slave
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_tdm_sample
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_auto_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_auto_src
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_auto_dest
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_srl_rtl
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_axic_register_slice
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_multi_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_middle_region_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_source_region_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_dest_region_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_single_slr
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_axic_reg_srl_fifo
+INFO: [VRFC 10-311] analyzing module axi_register_slice_v2_1_22_axi_register_slice
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/94c3/hdl/axi_vip_v1_1_vl_rfs.sv" into library axi_vip_v1_1_8
+INFO: [VRFC 10-311] analyzing module axi_vip_v1_1_8_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/sim/rfdc_ex_smartconnect_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex_smartconnect_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/sim/rfdc_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdc_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_axi4l_decode
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi_transaction_decode_hsams.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_axi_transaction_decode_hsams
+INFO: [VRFC 10-311] analyzing module hsams_axi_decode_address_to_string
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_clk_gen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_clk_gen
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_hsadc_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adc0_demo_tb_hsadc_ctrl_axi
+INFO: [VRFC 10-311] analyzing module adc1_demo_tb_hsadc_ctrl_axi
+INFO: [VRFC 10-311] analyzing module adc2_demo_tb_hsadc_ctrl_axi
+INFO: [VRFC 10-311] analyzing module adc3_demo_tb_hsadc_ctrl_axi
+INFO: [VRFC 10-311] analyzing module adc_demo_tb_cfg
+INFO: [VRFC 10-311] analyzing module demo_tb_hsadc_ctrl_axi
+INFO: [VRFC 10-311] analyzing module demo_tb_hsadc_ctrl_hshk_pls_gen
+INFO: [VRFC 10-311] analyzing module demo_tb_hsadc_ctrl_sync
+INFO: [VRFC 10-311] analyzing module demo_tb_hsadc_ctrl
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_hsdac_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dac0_demo_tb_hsdac_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac1_demo_tb_hsdac_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac2_demo_tb_hsdac_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac3_demo_tb_hsdac_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac_demo_tb_cfg
+INFO: [VRFC 10-311] analyzing module demo_tb_hsdac_ctrl
+INFO: [VRFC 10-311] analyzing module demo_tb_hsdac_ctrl_axi
+INFO: [VRFC 10-311] analyzing module demo_tb_hsdac_ctrl_hshk_pls_gen
+INFO: [VRFC 10-311] analyzing module demo_tb_hsdac_ctrl_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfadc_drp_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfadc_drp_decode
+INFO: [VRFC 10-311] analyzing module hsadc_axi_decode_address_to_string
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_data_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_rfdac_data_source
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_drp_decode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rfdac_drp_decode
+INFO: [VRFC 10-311] analyzing module hsdac_axi_decode_address_to_string
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_sine_wave_lut.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_rfdac_sine_wave_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_tile_source.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dg_slice
+INFO: [VRFC 10-311] analyzing module dg_cell
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_demo_tb_rfdac_ctrl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dac_source_demo_tb_cfg
+INFO: [VRFC 10-311] analyzing module dac0_rfdac_source_demo_tb_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac1_rfdac_source_demo_tb_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac2_rfdac_source_demo_tb_ctrl_axi
+INFO: [VRFC 10-311] analyzing module dac3_rfdac_source_demo_tb_ctrl_axi
+INFO: [VRFC 10-311] analyzing module rfdac_source_demo_tb_ctrl
+INFO: [VRFC 10-311] analyzing module rfdac_source_demo_tb_ctrl_axi
+INFO: [VRFC 10-311] analyzing module rfdac_source_demo_tb_ctrl_hshk_pls_gen
+INFO: [VRFC 10-311] analyzing module rfdac_source_demo_tb_ctrl_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module usp_rf_data_converter_0_example_design
+INFO: [VRFC 10-2458] undeclared symbol dac0_clk_dac, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/usp_rf_data_converter_0_example_design.v:106]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_utils_pkg.svh" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_axi4l_nano_seq
+WARNING: [VRFC 10-8426] non-net output port 'tile_clock_enable' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:200]
+WARNING: [VRFC 10-8426] non-net output port 'axi_message_enable' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:201]
+WARNING: [VRFC 10-8426] non-net output port 'int_axi_aresetn' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:202]
+WARNING: [VRFC 10-8426] non-net output port 'int_tb_aresetn' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:203]
+WARNING: [VRFC 10-8426] non-net output port 'seq_done' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:205]
+INFO: [VRFC 10-311] analyzing module axi4l_ns_rw_2_axi
+WARNING: [VRFC 10-8426] non-net output port 'rd_data' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1743]
+WARNING: [VRFC 10-8426] non-net output port 'axi_aresetn' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1746]
+WARNING: [VRFC 10-8426] non-net output port 'axi_awaddr' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1747]
+WARNING: [VRFC 10-8426] non-net output port 'axi_awvalid' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1748]
+WARNING: [VRFC 10-8426] non-net output port 'axi_wdata' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1751]
+WARNING: [VRFC 10-8426] non-net output port 'axi_wvalid' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1752]
+WARNING: [VRFC 10-8426] non-net output port 'axi_bready' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1757]
+WARNING: [VRFC 10-8426] non-net output port 'axi_araddr' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1759]
+WARNING: [VRFC 10-8426] non-net output port 'axi_arvalid' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1760]
+WARNING: [VRFC 10-8426] non-net output port 'axi_rready' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1766]
+WARNING: [VRFC 10-8426] non-net output port 'access_busy' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv:1769]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_fft_checker.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fft_checker
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfadc_data_source.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_rfadc_data_source
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfadc_tile_source.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_rfadc_tile_source
+INFO: [VRFC 10-311] analyzing module adc_src_slice
+INFO: [VRFC 10-311] analyzing module hsadc_data_source
+INFO: [VRFC 10-311] analyzing module adc_gen_cell
+INFO: [VRFC 10-311] analyzing module demo_tb_rfadc_sine_wave_lut
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_data_sink.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_rfdac_data_sink
+WARNING: [VRFC 10-8426] non-net output port 'done_flag' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_data_sink.sv:76]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_tile_sink.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb_rfdac_tile_sink
+WARNING: [VRFC 10-8426] non-net output port 'done' cannot be initialized at declaration in SystemVerilog mode [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_rfdac_tile_sink.sv:129]
+INFO: [VRFC 10-311] analyzing module hsdac_ts_slice
+INFO: [VRFC 10-311] analyzing module hsdac_data_sink
+INFO: [VRFC 10-311] analyzing module fft_checker_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demo_tb
+INFO: [VRFC 10-2458] undeclared symbol axi_message_enable, assumed default net type wire [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:123]
+INFO: [VRFC 10-311] analyzing module demo_tb_signal_ranges
+INFO: [VRFC 10-311] analyzing module dtb_sig_range_axis
+INFO: [VRFC 10-311] analyzing module dtb_sig_range_analog
+INFO: [VRFC 10-311] analyzing module demo_tb_clk_gen_wrap
+INFO: [VRFC 10-311] analyzing module demo_tb_dut_checker
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj demo_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" into library lib_cdc_v1_0_2
+INFO: [VRFC 10-3107] analyzing entity 'cdc_sync'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.gen/sources_1/bd/rfdc_ex/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd" into library proc_sys_reset_v5_0_13
+INFO: [VRFC 10-3107] analyzing entity 'upcnt_n'
+INFO: [VRFC 10-3107] analyzing entity 'sequence_psr'
+INFO: [VRFC 10-3107] analyzing entity 'lpf'
+INFO: [VRFC 10-3107] analyzing entity 'proc_sys_reset'
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/ip/ip_1/sim/bd_a15e_psr_aclk_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'bd_a15e_psr_aclk_0'
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:27 . Memory (MB): peak = 2095.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '27' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto 5d431b7130a646908c89ab7d2491487c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L xpm -L xlconstant_v1_1_7 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_22 -L axi_vip_v1_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5d431b7130a646908c89ab7d2491487c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L xpm -L xlconstant_v1_1_7 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_22 -L axi_vip_v1_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'vout00_p' [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:656]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'vout00_n' [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:657]
+WARNING: [VRFC 10-5021] port 's_axi_wstrb' is not connected on this instance [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:1032]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/sim/bd_a15e.v:1197]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package smartconnect_v1_0.sc_util_v1_0_4_pkg
+Compiling package secureip.xil_hsdac_pack1
+Compiling package secureip.xil_hsdac_pack0
+Compiling package secureip.xil_hsadc_pack1
+Compiling package secureip.xil_hsadc_pack0
+Compiling package xil_defaultlib.demo_tb_rfdac_utils_pkg
+Compiling package xil_defaultlib.$unit_demo_tb_rfdac_utils_pkg_sv...
+Compiling module xil_defaultlib.axi4l_ns_rw_2_axi
+Compiling module xil_defaultlib.demo_tb_axi4l_nano_seq
+Compiling module xil_defaultlib.demo_tb_clk_gen
+Compiling module xil_defaultlib.demo_tb_clk_gen_wrap
+Compiling module xpm.xpm_memory_base(MEMORY_SIZE=1310...
+Compiling module xpm.xpm_memory_tdpram(MEMORY_SIZE=13...
+Compiling module xil_defaultlib.xpm_mem_dg_sdpram_wrap(wordsInMe...
+Compiling module xil_defaultlib.xpm_mem_dg_wrap2(wordWidth=256,w...
+Compiling module xil_defaultlib.exdes_xpm_mem_dg_int(wordWidth=2...
+Compiling module xil_defaultlib.exdes_xpm_mem_dg(wordWidth=256,m...
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=5,SR...
+Compiling module xil_defaultlib.dac_exdes_cfg_rfa(C_MEMORY_ADDR_...
+Compiling module xil_defaultlib.rfdac_exdes_ctrl_axi_rfa(C_S_AXI...
+Compiling module xil_defaultlib.rfdac_exdes_ctrl_rfa(C_S_AXI_ADD...
+Compiling module xil_defaultlib.exdes_rfdac_data_bram_stim(axi_a...
+Compiling module xil_defaultlib.rfdc_ex_dac_source_i_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.bd_a15e_one_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynqup...]
+Compiling architecture bd_a15e_psr_aclk_0_arch of entity xil_defaultlib.bd_a15e_psr_aclk_0 [bd_a15e_psr_aclk_0_default]
+Compiling module xil_defaultlib.clk_map_imp_53WP22
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=3...
+Compiling module xil_defaultlib.bd_a15e_m00e_0
+Compiling module xil_defaultlib.m00_exit_pipeline_imp_1T53RB5
+Compiling module xil_defaultlib.bd_a15e_m00arn_0
+Compiling module xil_defaultlib.bd_a15e_m00awn_0
+Compiling module xil_defaultlib.bd_a15e_m00bn_0
+Compiling module xil_defaultlib.bd_a15e_m00rn_0
+Compiling module xil_defaultlib.bd_a15e_m00wn_0
+Compiling module xil_defaultlib.m00_nodes_imp_1FVDWZ1
+Compiling module xil_defaultlib.bd_a15e_m00s2a_0
+Compiling module xil_defaultlib.bd_a15e_m01e_0
+Compiling module xil_defaultlib.m01_exit_pipeline_imp_1YGFOOX
+Compiling module xil_defaultlib.bd_a15e_m01arn_0
+Compiling module xil_defaultlib.bd_a15e_m01awn_0
+Compiling module xil_defaultlib.bd_a15e_m01bn_0
+Compiling module xil_defaultlib.bd_a15e_m01rn_0
+Compiling module xil_defaultlib.bd_a15e_m01wn_0
+Compiling module xil_defaultlib.m01_nodes_imp_B3FGWR
+Compiling module xil_defaultlib.bd_a15e_m01s2a_0
+Compiling module xil_defaultlib.bd_a15e_s00a2s_0
+Compiling module xil_defaultlib.bd_a15e_s00mmu_0
+Compiling module xil_defaultlib.bd_a15e_s00sic_0
+Compiling module xil_defaultlib.bd_a15e_s00tr_0
+Compiling module xil_defaultlib.s00_entry_pipeline_imp_TE5WJM
+Compiling module xil_defaultlib.bd_a15e_sarn_0
+Compiling module xil_defaultlib.bd_a15e_sawn_0
+Compiling module xil_defaultlib.bd_a15e_sbn_0
+Compiling module xil_defaultlib.bd_a15e_srn_0
+Compiling module xil_defaultlib.bd_a15e_swn_0
+Compiling module xil_defaultlib.s00_nodes_imp_YHZNKO
+Compiling module xil_defaultlib.bd_a15e_arinsw_0
+Compiling module xil_defaultlib.bd_a15e_aroutsw_0
+Compiling module xil_defaultlib.bd_a15e_awinsw_0
+Compiling module xil_defaultlib.bd_a15e_awoutsw_0
+Compiling module xil_defaultlib.bd_a15e_binsw_0
+Compiling module xil_defaultlib.bd_a15e_boutsw_0
+Compiling module xil_defaultlib.bd_a15e_arni_0
+Compiling module xil_defaultlib.bd_a15e_awni_0
+Compiling module xil_defaultlib.bd_a15e_bni_0
+Compiling module xil_defaultlib.bd_a15e_rni_0
+Compiling module xil_defaultlib.bd_a15e_wni_0
+Compiling module xil_defaultlib.i_nodes_imp_1MOXANO
+Compiling module xil_defaultlib.bd_a15e_rinsw_0
+Compiling module xil_defaultlib.bd_a15e_routsw_0
+Compiling module xil_defaultlib.bd_a15e_winsw_0
+Compiling module xil_defaultlib.bd_a15e_woutsw_0
+Compiling module xil_defaultlib.switchboards_imp_6K1A8C
+Compiling module xil_defaultlib.bd_a15e
+Compiling module xil_defaultlib.rfdc_ex_smartconnect_0_0
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module unisims_ver.HSDAC(XPA_CFG0=1,XPA_NUM_DACS=1,...
+Compiling module unisims_ver.HSDAC(XPA_SAMPLE_RATE_MSPS=6400)
+Compiling module unisims_ver.HSADC(XPA_SAMPLE_RATE_MSPS=2000)
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module unisims_ver.BUFG_GT
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex_usp_rf_data_converter_0_...
+Compiling module xil_defaultlib.rfdc_ex
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.usp_rf_data_converter_0_example_...
+Compiling module xil_defaultlib.demo_tb_axi4l_decode(loweraddrwi...
+Compiling module xil_defaultlib.hsdac_data_sink
+Compiling module xil_defaultlib.fft_checker
+Compiling module xil_defaultlib.fft_checker_wrapper(p_data_type_...
+Compiling module xil_defaultlib.hsdac_ts_slice(p_data_type_width...
+Compiling module xil_defaultlib.hsdac_data_sink(p_slice_number=1...
+Compiling module xil_defaultlib.fft_checker(p_slice_number=1)
+Compiling module xil_defaultlib.fft_checker_wrapper(p_data_type_...
+Compiling module xil_defaultlib.hsdac_ts_slice(p_data_type_width...
+Compiling module xil_defaultlib.hsdac_data_sink(p_slice_number=2...
+Compiling module xil_defaultlib.fft_checker(p_slice_number=2)
+Compiling module xil_defaultlib.fft_checker_wrapper(p_data_type_...
+Compiling module xil_defaultlib.hsdac_ts_slice(p_data_type_width...
+Compiling module xil_defaultlib.hsdac_data_sink(p_slice_number=3...
+Compiling module xil_defaultlib.fft_checker(p_slice_number=3)
+Compiling module xil_defaultlib.fft_checker_wrapper(p_data_type_...
+Compiling module xil_defaultlib.hsdac_ts_slice(p_data_type_width...
+Compiling module xil_defaultlib.demo_tb_rfdac_tile_sink
+Compiling module xil_defaultlib.demo_tb_hsdac_ctrl_axi_default
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FD
+Compiling module xil_defaultlib.demo_tb_hsdac_ctrl_sync
+Compiling module xil_defaultlib.demo_tb_hsdac_ctrl_hshk_pls_gen
+Compiling module xil_defaultlib.dac0_demo_tb_hsdac_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.dac1_demo_tb_hsdac_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.dac2_demo_tb_hsdac_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.dac3_demo_tb_hsdac_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.dac_demo_tb_cfg(C_S_AXI_ADDR_WID...
+Compiling module xil_defaultlib.demo_tb_hsdac_ctrl
+Compiling module xil_defaultlib.demo_tb_rfdac_data_sink
+Compiling module xil_defaultlib.demo_tb_rfadc_sine_wave_lut
+Compiling module xil_defaultlib.adc_gen_cell(p_data_type_width=3...
+Compiling module xil_defaultlib.hsadc_data_source(p_data_type_wi...
+Compiling module xil_defaultlib.adc_src_slice
+Compiling module xil_defaultlib.adc_gen_cell(p_data_type_width=3...
+Compiling module xil_defaultlib.hsadc_data_source(p_data_type_wi...
+Compiling module xil_defaultlib.adc_src_slice(p_slice_number=1)
+Compiling module xil_defaultlib.adc_gen_cell(p_data_type_width=3...
+Compiling module xil_defaultlib.hsadc_data_source(p_data_type_wi...
+Compiling module xil_defaultlib.adc_src_slice(p_slice_number=2)
+Compiling module xil_defaultlib.adc_gen_cell(p_data_type_width=3...
+Compiling module xil_defaultlib.hsadc_data_source(p_data_type_wi...
+Compiling module xil_defaultlib.adc_src_slice(p_slice_number=3)
+Compiling module xil_defaultlib.demo_tb_rfadc_tile_source_defaul...
+Compiling module xil_defaultlib.demo_tb_hsadc_ctrl_axi_default
+Compiling module xil_defaultlib.demo_tb_hsadc_ctrl_sync
+Compiling module xil_defaultlib.demo_tb_hsadc_ctrl_hshk_pls_gen
+Compiling module xil_defaultlib.adc0_demo_tb_hsadc_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.adc1_demo_tb_hsadc_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.adc2_demo_tb_hsadc_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.adc3_demo_tb_hsadc_ctrl_axi(C_S_...
+Compiling module xil_defaultlib.adc_demo_tb_cfg(C_S_AXI_ADDR_WID...
+Compiling module xil_defaultlib.demo_tb_hsadc_ctrl
+Compiling module xil_defaultlib.demo_tb_rfadc_data_source
+Compiling module xil_defaultlib.hsdac_axi_decode_address_to_stri...
+Compiling module xil_defaultlib.rfdac_drp_decode
+Compiling module xil_defaultlib.hsadc_axi_decode_address_to_stri...
+Compiling module xil_defaultlib.rfadc_drp_decode
+Compiling module xil_defaultlib.demo_tb_rfdac_sine_wave_lut
+Compiling module xil_defaultlib.dg_cell(p_con_w=16,p_useable_w=1...
+Compiling module xil_defaultlib.dg_slice(p_con_w=16,p_useable_w=...
+Compiling module xil_defaultlib.rfdac_source_demo_tb_ctrl_axi_de...
+Compiling module xil_defaultlib.dac_source_demo_tb_cfg(C_S_AXI_A...
+Compiling module xil_defaultlib.rfdac_source_demo_tb_ctrl_sync
+Compiling module xil_defaultlib.rfdac_source_demo_tb_ctrl_hshk_p...
+Compiling module xil_defaultlib.dac0_rfdac_source_demo_tb_ctrl_a...
+Compiling module xil_defaultlib.dac1_rfdac_source_demo_tb_ctrl_a...
+Compiling module xil_defaultlib.dac2_rfdac_source_demo_tb_ctrl_a...
+Compiling module xil_defaultlib.dac3_rfdac_source_demo_tb_ctrl_a...
+Compiling module xil_defaultlib.rfdac_source_demo_tb_ctrl
+Compiling module xil_defaultlib.demo_tb_rfdac_data_source(enable...
+Compiling module xil_defaultlib.demo_tb_dut_checker
+Compiling module xil_defaultlib.hsams_axi_decode_address_to_stri...
+Compiling module xil_defaultlib.demo_tb_axi_transaction_decode_h...
+Compiling module xil_defaultlib.dtb_sig_range_analog(p_code_w=14...
+Compiling module xil_defaultlib.dtb_sig_range_axis(p_id="_______...
+Compiling module xil_defaultlib.demo_tb_signal_ranges
+Compiling module xil_defaultlib.demo_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot demo_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim/xsim.dir/demo_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue Jan 17 23:16:18 2023...
+run_program: Time (s): cpu = 00:00:15 ; elapsed = 00:12:34 . Memory (MB): peak = 2095.449 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '754' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "demo_tb_behav -key {Behavioral:sim_1:Functional:demo_tb} -tclbatch {demo_tb.tcl} -protoinst "protoinst_files/bd_a15e.protoinst" -protoinst "protoinst_files/rfdc_ex.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a15e.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/m00_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/m00_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/m01_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/m01_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s_axi
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/rfdc_ex.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//dac_source_i/m00
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//dac_source_i/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//smartconnect_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//smartconnect_0/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//smartconnect_0/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//usp_rf_data_converter_0/s00_axis
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//usp_rf_data_converter_0/s_axi
+Time resolution is 1 ps
+source demo_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 100s
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=           0: Xilinx RF AMS Demo Testbench.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. demo_tb.dut_and_data_i.DUT.usp_rf_data_converter_0_ex_i.dac_source_i.inst.dg_slice_00.\genblk1.exdes_xpm_mem_ds_i .xpm_mem_dg_wrap2_i.xpm_mem_dg_sdpram_wrap_i.Ixpm_memory_tdpram.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/genblk1.exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram/xpm_memory_base_inst/Initial294_23  Scope: demo_tb.dut_and_data_i.DUT.usp_rf_data_converter_0_ex_i.dac_source_i.inst.dg_slice_00.\genblk1.exdes_xpm_mem_ds_i .xpm_mem_dg_wrap2_i.xpm_mem_dg_sdpram_wrap_i.Ixpm_memory_tdpram.xpm_memory_base_inst.config_drc  File: C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 490
+T=              335100: Delay of         40 cycles requested.
+T=      755100: Accelerate SIM startup
+T=      885100 D=      885100 (ps): AXI WRITE: AxiAddr=0x00004100, Decode H= 2 L=   64, Data=0x00000001  DCC0_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1035100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00008100, Decode H= 4 L=   64, Data=0x00000001  DCC1_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1185100 D=      150000 (ps): AXI WRITE: AxiAddr=0x0000c100, Decode H= 6 L=   64, Data=0x00000001  DCC2_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1335100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00010100, Decode H= 8 L=   64, Data=0x00000001  DCC3_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1485100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00014100, Decode H=10 L=   64, Data=0x00000001  ACC0_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1635100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00018100, Decode H=12 L=   64, Data=0x00000001  ACC1_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1785100 D=      150000 (ps): AXI WRITE: AxiAddr=0x0001c100, Decode H=14 L=   64, Data=0x00000001  ACC2_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1935100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00020100, Decode H=16 L=   64, Data=0x00000001  ACC3_SUPPLY_DETECTION_TIMER_ADDR       
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=     1965100: Run state machine configuration stage.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=     2085100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004008, Decode H= 2 L=    2, Data=0x00000001  DCC0_RESTART_STATE_START_ADDR          
+T=     2235100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004004, Decode H= 2 L=    1, Data=0x00000001  DCC0_RESTART_REGISTER_ADDR             
+T=     2265100: Wait for the serial tile configuration to complete before configuring core.
+T=     2265100: This is true once all POR tiles have left stage 0.
+T=     3165100: Tile 02 has reached its end state of 00000000
+T=     3465100: Tile 03 has reached its end state of 00000000
+T=    11565100: Tile 00 has reached its end state of 00000001
+T=    12915100: Tile 04 has reached its end state of 0000000f
+T=    13365100: Tile 05 has reached its end state of 0000000f
+T=    13815100: Tile 06 has reached its end state of 0000000f
+T=    14265100: Tile 07 has reached its end state of 0000000f
+T=    14865100: Tile 01 has reached its end state of 0000000f
+T=    17265100: ADC configuration
+T=    17265100: DAC configuration
+Writing data to channel 0 memory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   179165100: Run state machine until clocks are enabled.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   179285100 D=   177050000 (ps): AXI WRITE: AxiAddr=0x00004008, Decode H= 2 L=    2, Data=0x00000108  DCC0_RESTART_STATE_START_ADDR          
+T=   179435100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004004, Decode H= 2 L=    1, Data=0x00000001  DCC0_RESTART_REGISTER_ADDR             
+T=   180065100: Tile 01 has reached its end state of 0000000f
+T=   180365100: Tile 02 has reached its end state of 00000000
+T=   180665100: Tile 03 has reached its end state of 00000000
+T=   181115100: Tile 04 has reached its end state of 0000000f
+T=   181565100: Tile 05 has reached its end state of 0000000f
+T=   182015100: Tile 06 has reached its end state of 0000000f
+T=   182465100: Tile 07 has reached its end state of 0000000f
+T=   281765100: Tile 00 has reached its end state of 00000008
+Enabling channel 0 memory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   285095100: Run DAC state machine until end stage.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   285215100 D=   105780000 (ps): AXI WRITE: AxiAddr=0x00004008, Decode H= 2 L=    2, Data=0x0000080f  DCC0_RESTART_STATE_START_ADDR          
+T=   285365100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004004, Decode H= 2 L=    1, Data=0x00000001  DCC0_RESTART_REGISTER_ADDR             
+T=   285995100: Tile 01 has reached its end state of 0000000f
+T=   286295100: Tile 02 has reached its end state of 00000000
+T=   286595100: Tile 03 has reached its end state of 00000000
+T=   294095100: Tile 00 has reached its end state of 0000000f
+T=   294995100: Sending tone at 50.000000 MHz to DAC00.
+INSTANCE demo_tb.dut_and_data_i.dac_sink.tile_sink_0_i.ds_slice_0_1.fft_checker_wrapper_i.dac_fft_checker_i :max_tone_level detected = 512.107713, tone_threshold set = 51.210771
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :tonePredict.mag_tones 50000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :tonePredict.mag_tones 6350000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :toneResults.mag_tones 50000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :toneResults.mag_tones 6350000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :**************************************************************************************
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :tonePredPassFail = PASS, error = 0, i_tone_match = 1, q_tone_match = 1, mag_tone_match 1
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :**************************************************************************************
+INSTANCE demo_tb.dut_and_data_i.dac_sink.tile_sink_0_i.ds_slice_0_1.fft_checker_wrapper_i.dac_fft_checker_i :tonePredPassFail TEST PASSED
+       ----->> DAC00 Analog range = 0.500 @         14bit = 14627.7 codes (89.3%)
+       ----->> DAC00 AXI-Stream range =       65462
+SIM-SPEEDUP DAC TILE =           0 disabled
+T=           299215100: Delay of         20 cycles requested.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+** Test Passed
+** Test completed successfully
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+$stop called at time : 299435100 ps : File "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv" Line 428
+run: Time (s): cpu = 00:00:11 ; elapsed = 00:01:17 . Memory (MB): peak = 2147.613 ; gain = 37.051
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:01:22 . Memory (MB): peak = 2147.613 ; gain = 52.164
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'demo_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 100s
+launch_simulation: Time (s): cpu = 00:00:35 ; elapsed = 00:14:26 . Memory (MB): peak = 2147.613 ; gain = 52.164
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'demo_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim/sc_xtlm_rfdc_ex_smartconnect_0_0.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L axi_vip_v1_1_8 -L smartconnect_v1_0 -L xilinx_vip -prj demo_tb_vlog.prj"
+"xvhdl --incr --relax -prj demo_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.sim/sim_1/behav/xsim'
+"xelab -wto 5d431b7130a646908c89ab7d2491487c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L xpm -L xlconstant_v1_1_7 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_22 -L axi_vip_v1_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 5d431b7130a646908c89ab7d2491487c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L xpm -L xlconstant_v1_1_7 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L smartconnect_v1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_22 -L axi_vip_v1_1_8 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip --snapshot demo_tb_behav xil_defaultlib.demo_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'vout00_p' [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:656]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'vout00_n' [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:657]
+WARNING: [VRFC 10-5021] port 's_axi_wstrb' is not connected on this instance [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb.sv:1032]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.ip_user_files/bd/rfdc_ex/ip/rfdc_ex_smartconnect_0_0/bd_0/sim/bd_a15e.v:1197]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:14 ; elapsed = 00:10:13 . Memory (MB): peak = 2392.406 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '613' seconds
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:10:13 . Memory (MB): peak = 2392.406 ; gain = 0.000
+Vivado Simulator 2020.2
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/bd_a15e.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/m00_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/m00_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m00_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/m01_exit/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/m01_exit/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_exit_pipeline/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//m01_sc2axi/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_axi2sc/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/m_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_mmu/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_mmu/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_si_converter/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_si_converter/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_transaction_regulator/M_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s00_transaction_regulator/S_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/smartconnect_0/inst//s00_entry_pipeline/s_axi
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/rfdc_ex.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//dac_source_i/m00
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//dac_source_i/s_axi
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//smartconnect_0/M00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//smartconnect_0/M01_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//smartconnect_0/S00_AXI
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//usp_rf_data_converter_0/s00_axis
+INFO: [Wavedata 42-564]   Found protocol instance at /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i//usp_rf_data_converter_0/s_axi
+Time resolution is 1 ps
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=           0: Xilinx RF AMS Demo Testbench.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's. demo_tb.dut_and_data_i.DUT.usp_rf_data_converter_0_ex_i.dac_source_i.inst.dg_slice_00.\genblk1.exdes_xpm_mem_ds_i .xpm_mem_dg_wrap2_i.xpm_mem_dg_sdpram_wrap_i.Ixpm_memory_tdpram.xpm_memory_base_inst.config_drc  0
+Time: 1 ps  Iteration: 0  Process: /demo_tb/dut_and_data_i/DUT/usp_rf_data_converter_0_ex_i/dac_source_i/inst/dg_slice_00/genblk1.exdes_xpm_mem_ds_i/xpm_mem_dg_wrap2_i/xpm_mem_dg_sdpram_wrap_i/Ixpm_memory_tdpram/xpm_memory_base_inst/Initial294_23  Scope: demo_tb.dut_and_data_i.DUT.usp_rf_data_converter_0_ex_i.dac_source_i.inst.dg_slice_00.\genblk1.exdes_xpm_mem_ds_i .xpm_mem_dg_wrap2_i.xpm_mem_dg_sdpram_wrap_i.Ixpm_memory_tdpram.xpm_memory_base_inst.config_drc  File: C:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 490
+T=              335100: Delay of         40 cycles requested.
+T=      755100: Accelerate SIM startup
+T=      885100 D=      885100 (ps): AXI WRITE: AxiAddr=0x00004100, Decode H= 2 L=   64, Data=0x00000001  DCC0_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1035100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00008100, Decode H= 4 L=   64, Data=0x00000001  DCC1_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1185100 D=      150000 (ps): AXI WRITE: AxiAddr=0x0000c100, Decode H= 6 L=   64, Data=0x00000001  DCC2_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1335100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00010100, Decode H= 8 L=   64, Data=0x00000001  DCC3_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1485100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00014100, Decode H=10 L=   64, Data=0x00000001  ACC0_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1635100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00018100, Decode H=12 L=   64, Data=0x00000001  ACC1_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1785100 D=      150000 (ps): AXI WRITE: AxiAddr=0x0001c100, Decode H=14 L=   64, Data=0x00000001  ACC2_SUPPLY_DETECTION_TIMER_ADDR       
+T=     1935100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00020100, Decode H=16 L=   64, Data=0x00000001  ACC3_SUPPLY_DETECTION_TIMER_ADDR       
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=     1965100: Run state machine configuration stage.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=     2085100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004008, Decode H= 2 L=    2, Data=0x00000001  DCC0_RESTART_STATE_START_ADDR          
+T=     2235100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004004, Decode H= 2 L=    1, Data=0x00000001  DCC0_RESTART_REGISTER_ADDR             
+T=     2265100: Wait for the serial tile configuration to complete before configuring core.
+T=     2265100: This is true once all POR tiles have left stage 0.
+T=     3165100: Tile 02 has reached its end state of 00000000
+T=     3465100: Tile 03 has reached its end state of 00000000
+T=    11565100: Tile 00 has reached its end state of 00000001
+T=    12915100: Tile 04 has reached its end state of 0000000f
+T=    13365100: Tile 05 has reached its end state of 0000000f
+T=    13815100: Tile 06 has reached its end state of 0000000f
+T=    14265100: Tile 07 has reached its end state of 0000000f
+T=    14865100: Tile 01 has reached its end state of 0000000f
+T=    17265100: ADC configuration
+T=    17265100: DAC configuration
+Writing data to channel 0 memory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   179165100: Run state machine until clocks are enabled.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   179285100 D=   177050000 (ps): AXI WRITE: AxiAddr=0x00004008, Decode H= 2 L=    2, Data=0x00000108  DCC0_RESTART_STATE_START_ADDR          
+T=   179435100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004004, Decode H= 2 L=    1, Data=0x00000001  DCC0_RESTART_REGISTER_ADDR             
+T=   180065100: Tile 01 has reached its end state of 0000000f
+T=   180365100: Tile 02 has reached its end state of 00000000
+T=   180665100: Tile 03 has reached its end state of 00000000
+T=   181115100: Tile 04 has reached its end state of 0000000f
+T=   181565100: Tile 05 has reached its end state of 0000000f
+T=   182015100: Tile 06 has reached its end state of 0000000f
+T=   182465100: Tile 07 has reached its end state of 0000000f
+T=   281765100: Tile 00 has reached its end state of 00000008
+Enabling channel 0 memory
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   285095100: Run DAC state machine until end stage.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+T=   285215100 D=   105780000 (ps): AXI WRITE: AxiAddr=0x00004008, Decode H= 2 L=    2, Data=0x0000080f  DCC0_RESTART_STATE_START_ADDR          
+T=   285365100 D=      150000 (ps): AXI WRITE: AxiAddr=0x00004004, Decode H= 2 L=    1, Data=0x00000001  DCC0_RESTART_REGISTER_ADDR             
+T=   285995100: Tile 01 has reached its end state of 0000000f
+T=   286295100: Tile 02 has reached its end state of 00000000
+T=   286595100: Tile 03 has reached its end state of 00000000
+T=   294095100: Tile 00 has reached its end state of 0000000f
+T=   294995100: Sending tone at 50.000000 MHz to DAC00.
+INSTANCE demo_tb.dut_and_data_i.dac_sink.tile_sink_0_i.ds_slice_0_1.fft_checker_wrapper_i.dac_fft_checker_i :max_tone_level detected = 512.107713, tone_threshold set = 51.210771
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :tonePredict.mag_tones 50000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :tonePredict.mag_tones 6350000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :toneResults.mag_tones 50000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :toneResults.mag_tones 6350000000.000000 Hz
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :**************************************************************************************
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :tonePredPassFail = PASS, error = 0, i_tone_match = 1, q_tone_match = 1, mag_tone_match 1
+INSTANCE \$unit_demo_tb_rfdac_utils_pkg_svh .tonePredPassFail :**************************************************************************************
+INSTANCE demo_tb.dut_and_data_i.dac_sink.tile_sink_0_i.ds_slice_0_1.fft_checker_wrapper_i.dac_fft_checker_i :tonePredPassFail TEST PASSED
+       ----->> DAC00 Analog range = 0.500 @         14bit = 14627.7 codes (89.3%)
+       ----->> DAC00 AXI-Stream range =       65462
+SIM-SPEEDUP DAC TILE =           0 disabled
+T=           299215100: Delay of         20 cycles requested.
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+** Test Passed
+** Test completed successfully
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+$stop called at time : 299435100 ps : File "c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/imports/demo_tb_axi4l_nano_seq.sv" Line 428
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:01:18 . Memory (MB): peak = 2392.535 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:00:10 ; elapsed = 00:01:22 . Memory (MB): peak = 2392.535 ; gain = 0.129
+relaunch_sim: Time (s): cpu = 00:00:26 ; elapsed = 00:11:40 . Memory (MB): peak = 2392.535 ; gain = 0.129
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+INFO: [Coretcl 2-12] '/usp_rf_data_converter_0/s_axi' selected.
+INFO: [Coretcl 2-12] '/dac_source_i/s_axi' selected.
+INFO: [Coretcl 2-12] '/s_axi' selected.
+INFO: [Coretcl 2-12] '/s_axi' selected.
+INFO: [Coretcl 2-12] '/s_axi' selected.
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+open_bd_design {c:/Jeonghyun/Lab/TaehyunKim/RFSoC/TEST/usp_rf_data_converter_0_ex/usp_rf_data_converter_0_ex.srcs/sources_1/bd/rfdc_ex/rfdc_ex.bd}
+INFO: [Coretcl 2-12] '/usp_rf_data_converter_0/s_axi' selected.
+INFO: [Common 17-1671] Browser was opened to: http://localhost:56458?key=hZaT4Z
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 18 12:57:12 2023...
