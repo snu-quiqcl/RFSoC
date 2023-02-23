@@ -1,0 +1,312 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2023/02/18 16:37:21
+// Design Name: 
+// Module Name: AXI2FIFO
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 128 bit slave AXI4 to native FIFO interface module
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module AXI2FIFO
+#(
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Configuraiton
+    //////////////////////////////////////////////////////////////////////////////////
+    parameter AXI_ADDR_WIDTH = 6,
+    parameter AXI_DATA_WIDTH = 128,
+    parameter AXI_STROBE_WIDTH = AXI_DATA_WIDTH >> 3,
+    parameter AXI_STROBE_LEN = 4 // LOG(AXI_STROBE_WDITH)
+)
+(
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Address Write
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire [AXI_ADDR_WIDTH - 1:0] s_axi_awaddr,
+    input wire [1:0] s_axi_awburst,
+    input wire [2:0] s_axi_awsize,
+    input wire [7:0] s_axi_awlen,
+    input wire s_axi_awvalid,
+    output wire s_axi_awready,                                                        //Note that ready signal is wire
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Write Response
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire s_axi_bready,
+    output reg [1:0] s_axi_bresp,
+    output reg s_axi_bvalid,
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Data Write
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire [AXI_DATA_WIDTH - 1:0] s_axi_wdata,
+    input wire [AXI_STROBE_WIDTH - 1:0] s_axi_wstrb,
+    input wire s_axi_wvalid,
+    input wire s_axi_wlast,
+    output wire s_axi_wready,                                                        //Note that ready signal is wire
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Address Read
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire [1:0] s_axi_arburst,
+    input wire [7:0] s_axi_arlen,
+    input wire [AXI_ADDR_WIDTH - 1:0] s_axi_araddr,
+    input wire [2:0] s_axi_arsize,
+    input wire s_axi_arvalid,
+    output reg s_axi_arready,
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Data Read
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire s_axi_rready,
+    output reg [AXI_DATA_WIDTH - 1:0] s_axi_rdata,
+    output reg [1:0] s_axi_rresp,
+    output reg s_axi_rvalid,
+    output reg s_axi_rlast,
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Clock
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire s_axi_aclk,
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // AXI4 Reset
+    //////////////////////////////////////////////////////////////////////////////////
+    input wire s_axi_aresetn,
+    
+    //////////////////////////////////////////////////////////////////////////////////
+    // RTO_Core interface
+    //////////////////////////////////////////////////////////////////////////////////
+    output reg rto_core_reset,
+    output reg rto_core_flush,
+    output reg rto_core_write,
+    output reg [127:0] rto_core_fifo_din,
+    
+    input wire rto_core_full,
+    input wire rto_core_empty
+);
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI4 Address Space
+//////////////////////////////////////////////////////////////////////////////////
+parameter AXI_WRITE_FIFO = 17'h00000;
+parameter AXI_FLUSH_FIFO = 17'h00010;
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI4 FSM State & reg definition
+//////////////////////////////////////////////////////////////////////////////////
+
+parameter IDLE = 4'h0;
+parameter READ_ADDRESS = 4'h1;
+parameter READ_DATA = 4'h2;
+parameter WRITE_ADDRESS = 4'h3;
+parameter WRITE_DATA_WRITE_FIFO = 4'h4;
+parameter WRITE_DATA_FLUSH_FIFO = 4'h5;
+parameter ERROR_STATE = 4'h6;
+
+reg[3:0] axi_state_write;
+reg[3:0] axi_state_read;
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI Data Buffer
+//////////////////////////////////////////////////////////////////////////////////
+reg [AXI_ADDR_WIDTH - 1:0] axi_waddr;
+reg [AXI_ADDR_WIDTH - 1:0] axi_waddr_base;
+reg [7:0] axi_wlen;
+reg [7:0] axi_wlen_counter;
+reg [2:0] axi_wsize;
+reg [7:0] axi_wshift_size;
+reg [7:0] axi_wshift_count;
+reg [AXI_STROBE_LEN - 1:0] axi_wunaligned_data_num;
+reg [AXI_STROBE_LEN - 1:0] axi_wunaligned_count;
+reg [1:0] axi_wburst;
+
+reg [AXI_DATA_WIDTH - 1:0] axi_wdata;
+reg [AXI_STROBE_WIDTH - 1:0] axi_wstrb;
+reg axi_wvalid;
+reg axi_wlast;
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI4 FSM State initialization
+//////////////////////////////////////////////////////////////////////////////////
+
+initial begin
+    axi_state_write <= IDLE;
+    axi_state_read <= IDLE;
+end
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI4 Output Assign Logic
+//////////////////////////////////////////////////////////////////////////////////
+assign s_axi_awready = (axi_state_write == IDLE);
+assign s_axi_wready = ((axi_state_write == WRITE_DATA_WRITE_FIFO) && (rto_core_full == 1'b0)) || (axi_state_write == WRITE_DATA_FLUSH_FIFO);
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI4 Write FSM
+//////////////////////////////////////////////////////////////////////////////////
+
+always @(posedge s_axi_aclk) begin
+    if( s_axi_aresetn == 1'b0 ) begin
+        axi_state_write <= IDLE;
+        s_axi_bresp <= 2'b0;
+        s_axi_bvalid <= 1'b0;
+        axi_waddr <= 18'h0;
+        axi_waddr_base <= 18'h0;
+        axi_wlen <= 8'h0;
+        axi_wsize <= 3'h0;
+        axi_wburst <= 2'h0;
+        axi_wlen_counter <= 8'h0;
+        axi_wunaligned_data_num <= 4'h0;
+        axi_wunaligned_count <= 4'h0;
+        axi_wshift_size <= 8'h0;
+        axi_wshift_count <= 8'h0;
+        rto_core_reset <= 1'b1;
+    end
+    
+    else begin
+        case(axi_state_write)
+            IDLE: begin
+                rto_core_write <= 1'b0;
+                if( s_axi_awvalid == 1'b1 ) begin
+                    s_axi_bresp <= 2'b0;
+                    s_axi_bvalid <= 1'b0;
+                    axi_waddr <= 18'h0;
+                    axi_waddr_base <= 18'h0;
+                    axi_wlen <= 8'h0;
+                    axi_wsize <= 3'h0;
+                    axi_wburst <= 2'h0;
+                    axi_wlen_counter <= 8'h0;
+                    axi_wunaligned_data_num <= 4'h0;
+                    axi_wunaligned_count <= 4'h0;
+                    axi_wshift_size <= 8'h0;
+                    axi_wshift_count <= 8'h0;;
+                    
+                    if( s_axi_awaddr == AXI_WRITE_FIFO ) begin
+                        axi_waddr <= s_axi_awaddr;
+                        axi_waddr_base <= s_axi_awaddr;
+                        axi_wlen <= s_axi_awlen;
+                        axi_wsize <= s_axi_awsize;
+                        axi_wburst <= s_axi_awburst;
+                        axi_wlen_counter <= s_axi_awlen;
+                        axi_wshift_size <= 8'h1 << s_axi_awsize;
+                        axi_wshift_count <= 8'h0;
+                        if( rto_core_full == 1'b0 ) begin
+                            axi_state_write <= WRITE_DATA_WRITE_FIFO;
+                        end
+                        
+                        else begin
+                            axi_state_write <= WRITE_DATA_WRITE_FIFO;
+                        end
+                    end
+                    
+                    else if( s_axi_awaddr == AXI_FLUSH_FIFO ) begin
+                        axi_waddr <= s_axi_awaddr;
+                        axi_waddr_base <= s_axi_awaddr;
+                        axi_wlen <= s_axi_awlen;
+                        axi_wsize <= s_axi_awsize;
+                        axi_wburst <= s_axi_awburst;
+                        axi_wlen_counter <= s_axi_awlen;
+                        axi_wshift_size <= 8'h1 << s_axi_awsize;
+                        axi_wshift_count <= 8'h0;
+                        
+                        axi_state_write <= WRITE_DATA_FLUSH_FIFO;
+                    end
+                    
+                    else begin
+                        axi_waddr <= 18'h0;
+                        axi_waddr_base <= 18'h0;
+                        axi_wlen <= 8'h0;
+                        axi_wsize <= 3'h0;
+                        axi_wburst <= 2'h0;
+                        axi_wlen_counter <= 8'h0;
+                        axi_wshift_size <= 8'h0;
+                        axi_wshift_count <= 8'h0;
+                        axi_state_write <= ERROR_STATE;
+                    end
+                end
+                
+                else begin
+                    s_axi_bresp <= 2'b0;
+                    axi_waddr <= 18'h0;
+                    axi_waddr_base <= 18'h0;
+                    axi_wlen <= 8'h0;
+                    axi_wsize <= 3'h0;
+                    axi_wburst <= 2'h0;
+                    axi_wlen_counter <= 8'h0;
+                    axi_wshift_size <= 8'h0;
+                    axi_wshift_count <= 8'h0;
+                    axi_state_write <= IDLE;
+                end
+            end
+            
+            WRITE_DATA_WRITE_FIFO: begin
+                if( rto_core_full == 1'b0 ) begin
+                    if( s_axi_wvalid == 1'b1 ) begin
+                        rto_core_fifo_din <= s_axi_wdata;
+                        rto_core_write <= 1'b1;
+                        if( s_axi_wlast == 1'b1 ) begin
+                            axi_state_write <= IDLE;
+                        end
+                    end
+                    else begin
+                        rto_core_fifo_din <= s_axi_wdata;
+                        rto_core_write <= 1'b0;
+                    end
+                end
+                else begin
+                    rto_core_fifo_din <= 128'h0;
+                    rto_core_write <= 1'b0;
+                end
+            end
+            WRITE_DATA_FLUSH_FIFO: begin
+                if( s_axi_wvalid == 1'b1 ) begin
+                    rto_core_flush <= 1'b1;
+                end
+            end
+            
+            ERROR_STATE: begin
+                axi_state_write <= IDLE;
+            end
+        endcase
+    end
+end
+
+//////////////////////////////////////////////////////////////////////////////////
+// AXI4 Read FSM
+//////////////////////////////////////////////////////////////////////////////////
+
+always @(posedge s_axi_aclk) begin
+    if( s_axi_aresetn == 1'b0 ) begin
+        axi_state_read <= IDLE;
+        s_axi_arready <= 1'b0;
+        s_axi_rdata <= 128'h0;
+        s_axi_rresp <= 2'b0;
+        s_axi_rvalid <= 1'b0;
+        s_axi_rlast <= 1'b0;
+    end
+    
+    else begin
+        case(axi_state_read)
+            IDLE: begin
+            end
+            READ_ADDRESS: begin
+            end
+            READ_DATA: begin
+            end
+        endcase
+    end
+end
+
+endmodule

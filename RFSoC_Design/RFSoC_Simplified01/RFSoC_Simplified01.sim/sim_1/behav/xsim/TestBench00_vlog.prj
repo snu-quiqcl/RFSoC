@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_01_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_RTO_Core0_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
+
+sv xil_defaultlib  --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/ipshared/308c/src/RTO_Core0.sv" \
+"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_RTO_Core0_0_0/sim/RFSoC_Simple_block_01_RTO_Core0_0_0.sv" \
+"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_AXI2FIFO_0_0/sim/RFSoC_Simple_block_01_AXI2FIFO_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/sim/RFSoC_Simple_block_01.v" \
+"../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/hdl/RFSoC_Simple_block_01_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified01.srcs/sim_1/new/TestBench00.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

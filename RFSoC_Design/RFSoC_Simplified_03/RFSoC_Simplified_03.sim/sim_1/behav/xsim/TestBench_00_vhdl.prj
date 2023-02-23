@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../RFSoC_Simplified_03.ip_user_files/bd/RFSoC_Simple_block_03/ip/RFSoC_Simple_block_03_proc_sys_reset_0_0/sim/RFSoC_Simple_block_03_proc_sys_reset_0_0.vhd" \
+
+# Do not sort compile order
+nosort

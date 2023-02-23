@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/RFSoC_Simple_Blck/ip/RFSoC_Simple_Blck_rst_ps8_0_99M_3/sim/RFSoC_Simple_Blck_rst_ps8_0_99M_3.vhd" \
+
+nosort

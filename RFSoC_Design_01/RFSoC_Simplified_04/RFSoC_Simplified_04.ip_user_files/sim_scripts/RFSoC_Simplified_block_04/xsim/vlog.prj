@@ -1,0 +1,20 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/da1e/hdl" \
+"../../../bd/RFSoC_Simplified_block_04/ip/RFSoC_Simplified_block_04_zynq_ultra_ps_e_0_0/sim/RFSoC_Simplified_block_04_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/da1e/hdl" \
+"../../../bd/RFSoC_Simplified_block_04/ipshared/72fb/src/AXI2FIFO.sv" \
+"../../../bd/RFSoC_Simplified_block_04/ip/RFSoC_Simplified_block_04_AXI2FIFO_0_0/sim/RFSoC_Simplified_block_04_AXI2FIFO_0_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/da1e/hdl" \
+"../../../bd/RFSoC_Simplified_block_04/ip/RFSoC_Simplified_block_04_RTO_Core0_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/da1e/hdl" \
+"../../../bd/RFSoC_Simplified_block_04/ipshared/bb14/src/RTO_Core0.sv" \
+"../../../bd/RFSoC_Simplified_block_04/ip/RFSoC_Simplified_block_04_RTO_Core0_0_0/sim/RFSoC_Simplified_block_04_RTO_Core0_0_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_04.gen/sources_1/bd/RFSoC_Simplified_block_04/ipshared/da1e/hdl" \
+"../../../bd/RFSoC_Simplified_block_04/sim/RFSoC_Simplified_block_04.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

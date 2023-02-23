@@ -1,0 +1,23 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0_vip_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0
+INFO: [VRFC 10-2458] undeclared symbol pl_clk1, assumed default net type wire [C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0_vip_wrapper.v:166]
+INFO: [VRFC 10-2458] undeclared symbol pl_clk2, assumed default net type wire [C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0_vip_wrapper.v:168]
+INFO: [VRFC 10-2458] undeclared symbol pl_clk3, assumed default net type wire [C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0_vip_wrapper.v:170]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_AXI2FIFO_0_0/sim/RFSoC_Simple_block_02_AXI2FIFO_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFSoC_Simple_block_02_AXI2FIFO_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_RTO_Core0_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ipshared/308c/src/RTO_Core0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RTO_Core0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_RTO_Core0_0_0/sim/RFSoC_Simple_block_02_RTO_Core0_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFSoC_Simple_block_02_RTO_Core0_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/sim/RFSoC_Simple_block_02.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFSoC_Simple_block_02
+INFO: [VRFC 10-311] analyzing module RFSoC_Simple_block_02_axi_interconnect_0_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_11JSBWS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/hdl/RFSoC_Simple_block_02_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFSoC_Simple_block_02_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.srcs/sim_1/new/TestBench00.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TestBench00
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

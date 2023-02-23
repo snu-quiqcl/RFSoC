@@ -1,0 +1,15 @@
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" \
+"../../../bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_01_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+"../../../bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_RTO_Core0_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
+
+sv xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" \
+"../../../bd/RFSoC_Simple_block_01/ipshared/308c/src/RTO_Core0.sv" \
+"../../../bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_RTO_Core0_0_0/sim/RFSoC_Simple_block_01_RTO_Core0_0_0.sv" \
+"../../../bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_AXI2FIFO_0_0/sim/RFSoC_Simple_block_01_AXI2FIFO_0_0.sv" \
+
+verilog xil_defaultlib --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/ipshared/f511/src" --include "../../../../RFSoC_Simplified01.gen/sources_1/bd/RFSoC_Simple_block_01/AXI2FIFO" \
+"../../../bd/RFSoC_Simple_block_01/sim/RFSoC_Simple_block_01.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
