@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/f511/src" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0/sim/RFSoC_Simple_block_02_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/f511/src" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_AXI2FIFO_0_0/sim/RFSoC_Simple_block_02_AXI2FIFO_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/f511/src" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_RTO_Core0_0_0/src/fifo_generator_0/sim/fifo_generator_0.v" \
+
+sv xil_defaultlib  --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/f511/src" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ipshared/308c/src/RTO_Core0.sv" \
+"../../../../RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_RTO_Core0_0_0/sim/RFSoC_Simple_block_02_RTO_Core0_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/f511/src" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/sim/RFSoC_Simple_block_02.v" \
+"../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/hdl/RFSoC_Simple_block_02_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/ec67/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/da1e/hdl" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/ipshared/f511/src" --include "../../../../RFSoC_Simplified_02.gen/sources_1/bd/RFSoC_Simple_block_02/AXI2FIFO" --include "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Simplified_02.srcs/sim_1/new/TestBench00.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

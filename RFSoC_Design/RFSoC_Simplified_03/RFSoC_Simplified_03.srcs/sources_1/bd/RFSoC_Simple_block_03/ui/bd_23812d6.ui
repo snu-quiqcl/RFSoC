@@ -1,0 +1,30 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.82487",
+   "Default View_TopLeft":"312,-230",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 200 -y 60 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 680 -y -30 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 680 -y 190 -defaultsOSRD
+preplace inst AXI2FIFO_0 -pg 1 -lvl 3 -x 1090 -y -110 -defaultsOSRD
+preplace inst RTO_Core0_0 -pg 1 -lvl 3 -x 1090 -y 130 -defaultsOSRD
+preplace netloc AXI2FIFO_0_rto_core_reset 1 2 2 910 -220 1260
+preplace netloc AXI2FIFO_0_rto_core_flush 1 2 2 930 0 1260
+preplace netloc AXI2FIFO_0_rto_core_write 1 2 2 890 -210 1250
+preplace netloc AXI2FIFO_0_rto_core_fifo_din 1 2 2 920 -10 1250
+preplace netloc RTO_Core0_0_full 1 2 2 880 270 1260
+preplace netloc RTO_Core0_0_empty 1 2 2 900 260 1250
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 3 -90 -30 500 90 870J
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 2 510 -150 850
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 490 60n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 490 -90n
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 860 -150n
+levelinfo -pg 1 -110 200 680 1090 1280
+pagesize -pg 1 -db -bbox -sgen -110 -480 1280 290
+"
+}
+{
+   "da_clkrst_cnt":"3"
+}
