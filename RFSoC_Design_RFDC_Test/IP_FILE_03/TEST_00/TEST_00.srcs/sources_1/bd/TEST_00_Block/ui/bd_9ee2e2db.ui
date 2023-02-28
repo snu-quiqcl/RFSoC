@@ -1,0 +1,42 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.717936",
+   "Default View_TopLeft":"-166,-507",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port dac0_clk_0 -pg 1 -lvl 0 -x -80 -y -40 -defaultsOSRD
+preplace port vout00_0 -pg 1 -lvl 5 -x 1870 -y 90 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 230 -y -120 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 770 -y 10 -defaultsOSRD
+preplace inst DAC_Controller_0 -pg 1 -lvl 3 -x 1210 -y -70 -defaultsOSRD
+preplace inst TimeController_0 -pg 1 -lvl 3 -x 1210 -y 140 -defaultsOSRD
+preplace inst usp_rf_data_converter_0 -pg 1 -lvl 4 -x 1680 -y 140 -defaultsOSRD
+preplace inst rst_ps8_0_96M -pg 1 -lvl 2 -x 770 -y -310 -defaultsOSRD
+preplace netloc DAC_Controller_0_dac00_nco_freq 1 3 1 1470 -100n
+preplace netloc DAC_Controller_0_dac00_nco_phase 1 3 1 1460 -80n
+preplace netloc DAC_Controller_0_dac00_nco_phase_rst 1 3 1 1450 -60n
+preplace netloc DAC_Controller_0_dac00_nco_update_en 1 3 1 1440 -40n
+preplace netloc DAC_Controller_0_dac0_nco_update_req 1 3 1 1430 -20n
+preplace netloc usp_rf_data_converter_0_dac0_nco_update_busy 1 2 2 990 250 1420
+preplace netloc TimeController_0_auto_start 1 2 2 1000 240 1410
+preplace netloc TimeController_0_counter 1 2 2 1010 230 1400
+preplace netloc DAC_Controller_0_dac00_fast_shutdown 1 3 1 1490 -140n
+preplace netloc DAC_Controller_0_dac00_pl_event 1 3 1 1480 -120n
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 4 -60 -210 530 -150 940 270 1400
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 1 1 540 -330n
+preplace netloc rst_ps8_0_96M_peripheral_aresetn 1 1 3 550 -160 980 260 1410
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 970 -130n
+preplace netloc axi_interconnect_0_M01_AXI 1 2 1 950 10n
+preplace netloc axi_interconnect_0_M02_AXI 1 2 2 960J -220 1510
+preplace netloc DAC_Controller_0_s00_axis 1 3 1 1500 -160n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 520 -140n
+preplace netloc dac0_clk_0_1 1 0 4 -60J 220 NJ 220 NJ 220 1420J
+preplace netloc usp_rf_data_converter_0_vout00 1 4 1 1850 90n
+levelinfo -pg 1 -80 230 770 1210 1680 1870
+pagesize -pg 1 -db -bbox -sgen -200 -500 1980 560
+"
+}
+{
+   "da_clkrst_cnt":"6"
+}
