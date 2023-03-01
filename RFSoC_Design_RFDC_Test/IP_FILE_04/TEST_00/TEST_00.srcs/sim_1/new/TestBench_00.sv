@@ -155,7 +155,7 @@ initial begin
     
     //TimeController
     #1000000;
-    //tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0010000, 8'h10, 128'h00000000000000000000000000000000 + 4'b0010, resp2);
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0010000, 8'h10, 128'h00000000000000000000000000000000 + 4'b0010, resp2);
     #1000000;
     tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0010000, 8'h10, 128'h00000000000000000000000000000000 + 4'b1001, resp2);
 end
