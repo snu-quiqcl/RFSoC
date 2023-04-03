@@ -51,6 +51,22 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/TEST_00_Block/ip/TEST_00_Block_xbar_0/sim/TEST_00_Block_xbar_0.v" \
+-endlib
+-makelib ies_lib/axi_protocol_converter_v2_1_22 \
+  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axi_clock_converter_v2_1_21 \
+  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/blk_mem_gen_v8_4_4 \
+  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
+-endlib
+-makelib ies_lib/axi_dwidth_converter_v2_1_22 \
+  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_ds_0/sim/TEST_00_Block_auto_ds_0.v" \
+  "../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_pc_0/sim/TEST_00_Block_auto_pc_0.v" \
   "../../../bd/TEST_00_Block/ip/TEST_00_Block_DAC_Controller_0_0/ip/fifo_generator_3/sim/fifo_generator_3.v" \
   "../../../bd/TEST_00_Block/ip/TEST_00_Block_DAC_Controller_0_0/ip/fifo_generator_2/sim/fifo_generator_2.v" \
   "../../../bd/TEST_00_Block/ip/TEST_00_Block_DAC_Controller_0_0/ip/fifo_generator_1/sim/fifo_generator_1.v" \
@@ -114,21 +130,7 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/TEST_00_Block/ip/TEST_00_Block_rst_ps8_0_96M_0/sim/TEST_00_Block_rst_ps8_0_96M_0.vhd" \
 -endlib
--makelib ies_lib/axi_protocol_converter_v2_1_22 \
-  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/axi_clock_converter_v2_1_21 \
-  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/blk_mem_gen_v8_4_4 \
-  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
--endlib
--makelib ies_lib/axi_dwidth_converter_v2_1_22 \
-  "../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
--endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_ds_0/sim/TEST_00_Block_auto_ds_0.v" \
-  "../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_pc_0/sim/TEST_00_Block_auto_pc_0.v" \
   "../../../bd/TEST_00_Block/sim/TEST_00_Block.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

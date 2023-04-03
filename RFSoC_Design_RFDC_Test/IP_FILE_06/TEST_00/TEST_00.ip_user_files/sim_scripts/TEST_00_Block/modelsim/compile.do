@@ -12,12 +12,12 @@ vlib modelsim_lib/msim/axi_register_slice_v2_1_22
 vlib modelsim_lib/msim/fifo_generator_v13_2_5
 vlib modelsim_lib/msim/axi_data_fifo_v2_1_21
 vlib modelsim_lib/msim/axi_crossbar_v2_1_23
-vlib modelsim_lib/msim/lib_cdc_v1_0_2
-vlib modelsim_lib/msim/proc_sys_reset_v5_0_13
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_22
 vlib modelsim_lib/msim/axi_clock_converter_v2_1_21
 vlib modelsim_lib/msim/blk_mem_gen_v8_4_4
 vlib modelsim_lib/msim/axi_dwidth_converter_v2_1_22
+vlib modelsim_lib/msim/lib_cdc_v1_0_2
+vlib modelsim_lib/msim/proc_sys_reset_v5_0_13
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
 vmap xpm modelsim_lib/msim/xpm
@@ -30,12 +30,12 @@ vmap axi_register_slice_v2_1_22 modelsim_lib/msim/axi_register_slice_v2_1_22
 vmap fifo_generator_v13_2_5 modelsim_lib/msim/fifo_generator_v13_2_5
 vmap axi_data_fifo_v2_1_21 modelsim_lib/msim/axi_data_fifo_v2_1_21
 vmap axi_crossbar_v2_1_23 modelsim_lib/msim/axi_crossbar_v2_1_23
-vmap lib_cdc_v1_0_2 modelsim_lib/msim/lib_cdc_v1_0_2
-vmap proc_sys_reset_v5_0_13 modelsim_lib/msim/proc_sys_reset_v5_0_13
 vmap axi_protocol_converter_v2_1_22 modelsim_lib/msim/axi_protocol_converter_v2_1_22
 vmap axi_clock_converter_v2_1_21 modelsim_lib/msim/axi_clock_converter_v2_1_21
 vmap blk_mem_gen_v8_4_4 modelsim_lib/msim/blk_mem_gen_v8_4_4
 vmap axi_dwidth_converter_v2_1_22 modelsim_lib/msim/axi_dwidth_converter_v2_1_22
+vmap lib_cdc_v1_0_2 modelsim_lib/msim/lib_cdc_v1_0_2
+vmap proc_sys_reset_v5_0_13 modelsim_lib/msim/proc_sys_reset_v5_0_13
 
 vlog -work xilinx_vip  -incr -sv -L axi_vip_v1_1_8 -L zynq_ultra_ps_e_vip_v1_0_8 -L xilinx_vip "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -90,6 +90,22 @@ vlog -work axi_crossbar_v2_1_23  -incr "+incdir+../../../../TEST_00.gen/sources_
 
 vlog -work xil_defaultlib  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/TEST_00_Block/ip/TEST_00_Block_xbar_0/sim/TEST_00_Block_xbar_0.v" \
+
+vlog -work axi_protocol_converter_v2_1_22  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work axi_clock_converter_v2_1_21  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+
+vlog -work blk_mem_gen_v8_4_4  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work axi_dwidth_converter_v2_1_22  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_ds_0/sim/TEST_00_Block_auto_ds_0.v" \
+"../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_pc_0/sim/TEST_00_Block_auto_pc_0.v" \
 "../../../bd/TEST_00_Block/ip/TEST_00_Block_DAC_Controller_0_0/ip/fifo_generator_3/sim/fifo_generator_3.v" \
 "../../../bd/TEST_00_Block/ip/TEST_00_Block_DAC_Controller_0_0/ip/fifo_generator_2/sim/fifo_generator_2.v" \
 "../../../bd/TEST_00_Block/ip/TEST_00_Block_DAC_Controller_0_0/ip/fifo_generator_1/sim/fifo_generator_1.v" \
@@ -153,21 +169,7 @@ vcom -work proc_sys_reset_v5_0_13  -93 \
 vcom -work xil_defaultlib  -93 \
 "../../../bd/TEST_00_Block/ip/TEST_00_Block_rst_ps8_0_96M_0/sim/TEST_00_Block_rst_ps8_0_96M_0.vhd" \
 
-vlog -work axi_protocol_converter_v2_1_22  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
-
-vlog -work axi_clock_converter_v2_1_21  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
-
-vlog -work blk_mem_gen_v8_4_4  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
-
-vlog -work axi_dwidth_converter_v2_1_22  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
-
 vlog -work xil_defaultlib  -incr "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/ec67/hdl" "+incdir+../../../../TEST_00.gen/sources_1/bd/TEST_00_Block/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_ds_0/sim/TEST_00_Block_auto_ds_0.v" \
-"../../../bd/TEST_00_Block/ip/TEST_00_Block_auto_pc_0/sim/TEST_00_Block_auto_pc_0.v" \
 "../../../bd/TEST_00_Block/sim/TEST_00_Block.v" \
 
 vlog -work xil_defaultlib \

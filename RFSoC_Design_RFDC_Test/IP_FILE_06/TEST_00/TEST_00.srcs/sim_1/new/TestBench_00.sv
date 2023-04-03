@@ -150,6 +150,26 @@ initial begin
     #1000000;
     tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000630 << 64) + ( UPDATE << 32 ) + ( 8'b11111111 << 40 ) + ( 1'b1 << 36 ) + 1'b1, resp);
     
+    //Change frequency
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000A00 << 64) + ( DAC00_NCO_FREQ << 32 ) + ( 8'b00000001 << 40 ) + 32'h00000000, resp);
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000A10 << 64) + ( DAC00_NCO_FREQ << 32 ) + ( 8'b00000010 << 40 ) + 32'h00001000, resp);
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000A20 << 64) + ( DAC0_NCO_UPDATE_REQ << 32 ) + ( 8'b11111111 << 40 ) + 16'h0020, resp);
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000A30 << 64) + ( UPDATE << 32 ) + ( 8'b11111111 << 40 ) + ( 1'b1 << 36 ) + 1'b1, resp);
+    
+    //Change Amplitude
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000B00 << 64) + ( S00_AXIS_TDATA << 32 ) + ( 8'b11111111 << 40 ) + 32'h00000000, resp);
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000B10 << 64) + ( UPDATE << 32 ) + ( 8'b11111111 << 40 ) + ( 1'b1 << 36 ) + 1'b1, resp);
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000D00 << 64) + ( S00_AXIS_TDATA << 32 ) + ( 8'b11111111 << 40 ) + 32'h00007fff, resp);
+    #1000000;
+    tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0000000, 8'h10, 128'h00000000000000000000000000000000 + (64'h0000000000000D10 << 64) + ( UPDATE << 32 ) + ( 8'b11111111 << 40 ) + ( 1'b1 << 36 ) + 1'b1, resp);
+    
     //TimeController
     #1000000;
     tb.TEST_00_Block_i.zynq_ultra_ps_e_0.inst.write_data(32'ha0010000, 8'h10, 128'h00000000000000000000000000000000 + 4'b0010, resp2);
