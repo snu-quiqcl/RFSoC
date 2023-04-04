@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'confluence.extra.jira:applinks-bridge', location = '/jira/applinks-bridge-for-spa.js' */
+define("confluence/jim/jira/applinks-bridge-for-spa",["ajs"],function(a){var b="atlassian.net";var d="jira-dev.com";var c=function(e){var g=null;if(a.Editor&&a.Editor.JiraConnector&&a.Editor.JiraConnector.servers){var f=a.Editor.JiraConnector.servers.filter(function(h){return h.id===e});if(f[0]){g=f[0]}}return g};return{isCloudAppLink:function(f){var e=c(f).url;if(e){return e.indexOf(b)!==-1||e.indexOf(d)!==-1}return false},isCloudAppLinkFromUrl:function(e){return e.indexOf(b)!==-1||e.indexOf(d)!==-1},isCloudAppLinkFromServerId:function(f){var e=c(f);if(e){var h=e.displayUrl||e.url;var g=e.rpcUrl;return h.indexOf(b)!==-1||g.indexOf(b)!==-1||h.indexOf(d)!==-1||g.indexOf(d)!==-1}return false},getUrlForKey:function(e,g){var f=c(g);if(f){return f.url+"/browse/"+e}return null}}});
+}catch(e){WRMCB(e)};

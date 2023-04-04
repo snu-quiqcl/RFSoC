@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'confluence.extra.jira:jira-analytics-helper', location = '/jira/analytics-helper.js' */
+define("confluence/jim/jira/analytics-helper",["ajs","wrm","confluence/analytics-support"],function(c,b,a){return{sendAnalyticsEvent:function(d){if(!a.analyticsHandlerExists()){try{b.require("wr!com.atlassian.analytics.analytics-client:js-events").done(function(e){c.trigger("analytics",d)})}catch(f){c.trigger("analytics",d);c.warn("Unable to dynamically load legacy analytics client",f)}}else{c.trigger("analytics",d)}}}});
+}catch(e){WRMCB(e)};

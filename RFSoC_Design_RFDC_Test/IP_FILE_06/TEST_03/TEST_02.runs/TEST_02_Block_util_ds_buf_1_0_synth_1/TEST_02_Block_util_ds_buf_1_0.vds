@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr  4 17:09:42 2023
+# Process ID: 2844
+# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_03/TEST_02.runs/TEST_02_Block_util_ds_buf_1_0_synth_1
+# Command line: vivado.exe -log TEST_02_Block_util_ds_buf_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_02_Block_util_ds_buf_1_0.tcl
+# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_03/TEST_02.runs/TEST_02_Block_util_ds_buf_1_0_synth_1/TEST_02_Block_util_ds_buf_1_0.vds
+# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_03/TEST_02.runs/TEST_02_Block_util_ds_buf_1_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source TEST_02_Block_util_ds_buf_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/DAC_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TimeController'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP TEST_02_Block_util_ds_buf_1_0, cache-ID = d9275cdd8e8c40b8.
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  4 17:09:52 2023...
