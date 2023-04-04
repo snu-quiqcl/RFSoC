@@ -1,0 +1,38 @@
+/*
+ Theme Name:     Twenty Eleven Child
+ Theme URI:      http://example.com/twenty-thirteen-child/
+ Description:    Twenty Eleven Child Theme
+ Author:         Andras Tantos
+ Author URI:     http://example.com
+ Template:       twentyeleven
+ Version:        1.0.0
+*/
+
+/* =Imports styles from the parent theme
+-------------------------------------------------------------- */
+@import url('../twentyeleven/style.css');
+
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+/* Singular */
+.singular #primary {
+	margin: 0;
+}
+.singular #content,
+.left-sidebar.singular #content {
+	margin: 0 7.6%;
+	position: relative;
+	width: auto;
+}
+.singular .entry-header,
+.singular .entry-content,
+.singular footer.entry-meta,
+.singular #comments-title {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.one-column #page {
+	max-width: 1000px;
+}
