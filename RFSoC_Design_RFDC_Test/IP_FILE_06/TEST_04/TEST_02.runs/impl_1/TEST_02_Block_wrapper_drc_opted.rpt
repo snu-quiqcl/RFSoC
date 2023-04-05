@@ -1,0 +1,42 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Apr  4 17:55:52 2023
+| Host         : DESKTOP-MCBJ7EB running 64-bit major release  (build 9200)
+| Command      : report_drc -file TEST_02_Block_wrapper_drc_opted.rpt -pb TEST_02_Block_wrapper_drc_opted.pb -rpx TEST_02_Block_wrapper_drc_opted.rpx
+| Design       : TEST_02_Block_wrapper
+| Device       : xczu28dr-ffvg1517-2-e
+| Speed File   : -2
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 1
++--------+----------+--------------------------+------------+
+| Rule   | Severity | Description              | Violations |
++--------+----------+--------------------------+------------+
+| BIVB-1 | Error    | Bank IO standard Support | 1          |
++--------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BIVB-1#1 Error
+Bank IO standard Support  - IOBank:228
+Bank 228 has incompatible IO(s) because: The DIFF_POD12 I/O standard is not supported for banks of type DAC.  Move the following ports or change their properties:  
+USER_SI570_N and USER_SI570_P
+Related violations: <none>
+
+

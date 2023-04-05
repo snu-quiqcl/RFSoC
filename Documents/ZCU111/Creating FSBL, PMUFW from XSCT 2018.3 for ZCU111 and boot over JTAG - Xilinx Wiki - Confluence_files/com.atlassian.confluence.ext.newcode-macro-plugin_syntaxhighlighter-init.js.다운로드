@@ -1,0 +1,6 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'com.atlassian.confluence.ext.newcode-macro-plugin:syntaxhighlighter-init', location = 'sh/asyncLoader.js' */
+define("confluence/code-macro/async-loader",["wrm","underscore","window"],function(a,b,c){return function(){b.defer(function(){const f=$("#content").find("pre.syntaxhighlighter-pre");const g=[];const d="wr!com.atlassian.confluence.ext.newcode-macro-plugin:";if(f.length>0){const e=d+"sh-theme-";g.push("wrc!code-macro");f.each(function(){g.push(e+$(this).data("theme").toLowerCase());const h=$(this).data("custom-language-resource");if(typeof h!=="undefined"&&g.indexOf(h)===-1){g.push("wr!"+h)}})}else{g.push(d+"code-macro-bidi")}a.require(g).done(function(){if(c.SyntaxHighlighter&&typeof c.SyntaxHighlighter.highlight==="function"){c.SyntaxHighlighter.highlight()}})})}});require("confluence/module-exporter").safeRequire("confluence/code-macro/async-loader",function(a){AJS.toInit(a)});
+}catch(e){WRMCB(e)};

@@ -1,0 +1,8 @@
+WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
+;
+try {
+/* module-key = 'confluence.web.resources:connect-helper', location = 'includes/js/api/connect-helper.js' */
+define("confluence/api/connect-helper",["jquery","window"],function(g,c){return{isConnect:function(){var b=c.frameElement&&c.frameElement.getAttribute("name"),a=c.frameElement&&"true"===c.frameElement.getAttribute("data-is-fallback-mode-iframe");return"undefined"!==typeof c.AP&&"fallback-mode-iframe"!==b&&!a},request:function(b,a){var f=new g.Deferred;"object"===typeof b&&(a=b,b=a.url);a=a||{};var h=a.success||function(){},k=a.error||function(){},d=f.promise();a.success=function(e,c,b){if(a.contentType&&
+"application/json"===a.contentType)try{e=JSON.parse(e)}catch(l){e={},console.error("Unable to convert response to JSON.")}e=[e,c,b];d.status=b.status;d.statusText=b.statusText;d.responseText=b.responseText;h.apply(this,e);f.resolveWith(f,e)};a.error=function(a,b,c){d.status=a.status;d.statusText=a.statusText;d.responseText=a.responseText;k.apply(this,arguments);f.rejectWith(f,arguments)};c.AP.request(b,a);return d}}});
+require("confluence/module-exporter").safeRequire("confluence/api/connect-helper",function(g){window.Confluence=window.Confluence||{};window.Confluence.ConnectHelper=g});
+}catch(e){WRMCB(e)};

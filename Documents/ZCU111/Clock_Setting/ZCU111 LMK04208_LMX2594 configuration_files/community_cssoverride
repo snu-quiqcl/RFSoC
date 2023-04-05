@@ -1,0 +1,96 @@
+/* load custom fonts */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./sfsites/c/resource/crm_img_community/crm_img_community/font-roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./sfsites/c/resource/crm_img_community/crm_img_community/font-roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}  
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./sfsites/c/resource/crm_img_community/crm_img_community/font-roboto/Roboto-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}   
+
+body {
+    font-family: 'Roboto',sans-serif !important;    
+	overflow: visible!important; /*KIRANN: INC0991672*/
+}
+
+/* forum customizations */
+
+.selfServiceBaseSimpleItem .item-title {
+    font-size: var(--lwc-ssFontSizeSmall,0.85rem) !important;
+}
+
+
+/* hide default logo */
+
+.cBrandingLogo {
+    display: none !important;
+}
+
+/* temporarty for help pages */
+.comm-page-custom-guidelines-and-help li.c1 {
+    padding-left: 80px !important;
+}
+
+.comm-leaderboard__item img {
+    margin-right: 5px;
+}
+
+.search-container .search-button{
+    background-color: #e00000 !important;
+    border: 1px solid #e00000 !important;
+}
+/* highlight active tab in featured topics and feeds cmp */ 
+.homeTab .uiTabBar ul li.active a {
+   border-color: #e00000 !important;
+   color: #e00000 !important;
+}
+
+/* case layout - Hides 2nd community case page layout sections (Section to hide case fields in community(must be 2nd section))*/
+.comm-page-detail-500 .test-id__section.slds-section:nth-child(2) {
+    display:none !important;
+}
+
+/* user layout - Hides feed section */
+.comm-page-detail-005 .forceCommunityFeedPublisher{
+    display: none  !important;
+}
+
+/* hide list view rows arrow button (W-001696) */
+.forceVirtualActionMarker.forceVirtualAction{display:none;}
+
+/* email message list view - Hides Status header and column */
+.comm-page-relatedlist-02s thead th[title*=Status]{
+    display: none !important;
+}
+.comm-page-relatedlist-02s tbody td.slds-cell-edit:nth-child(6) {
+    display:none !important;
+}
+
+.comm-page-list-500 .listViewPickerPanel ul li:last-child{
+    display: none;
+}
+
+/* remove case's email message list view footer button 'View All' */
+a[href*=EmailMessages] .slds-card__footer{
+
+    display: none !important;
+
+}
+
+/*remove case details pop-up displayed when hover on Case Subject on Case List View (W-002361,002362)*/
+.comm-page-list-500  .listViewContent .outputSubject .textUnderline.outputLookupLink{
+    pointer-events: none
+}
