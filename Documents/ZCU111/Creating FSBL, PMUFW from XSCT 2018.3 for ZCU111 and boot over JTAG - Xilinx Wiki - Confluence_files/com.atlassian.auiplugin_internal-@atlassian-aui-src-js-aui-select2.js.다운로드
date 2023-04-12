@@ -1,7 +1,0 @@
-WRMCB=function(e){var c=console;if(c&&c.log&&c.error){c.log('Error running batched script.');c.error(e);}}
-;
-try {
-/* module-key = 'com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-select2', location = 'node_modules/@atlassian/aui/src/js/aui/select2.js' */
-("undefined"===typeof window?global:window).__da821ffe404ff55efe9b9266b19461d4=function(){"use strict";var b=__721643a757f869ef0755cbb10da8137f,d=b&&b.__esModule?b:{"default":b};__23582749a3e77cb30f9b927f1a16c238;var e=d.default.fn.select2;d.default.fn.auiSelect2=function(b){var c;if(d.default.isPlainObject(b)){var a=d.default.extend({},b);c=a.hasAvatar?" aui-has-avatar":"";a.containerCssClass="aui-select2-container"+c+(a.containerCssClass?" "+a.containerCssClass:"");a.dropdownCssClass="aui-select2-drop aui-dropdown2 aui-style-default"+
-c+(a.dropdownCssClass?" "+a.dropdownCssClass:"");c=Array.prototype.slice.call(arguments,1);c.unshift(a)}else c=arguments.length?arguments:[{containerCssClass:"aui-select2-container",dropdownCssClass:"aui-select2-drop aui-dropdown2 aui-style-default"}];return e.apply(this,c)};return{}}.call(this);
-}catch(e){WRMCB(e)};
