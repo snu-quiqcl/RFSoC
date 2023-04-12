@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="RFSoC_Design_IP6_06"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+RFSoC_Design_IP6_06
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="RFSoC_Design_IP6_06">
+        <sdx:configuration sdx:name="RFSoC_Design_IP6_06"
+                           sdx:displayName="RFSoC_Design_IP6_06"
+                           sdx:defaultProcessorGroup="standalone_domain"
+                           sdx:runtimes="cpp">
+            <sdx:description>RFSoC_Design_IP6_06</sdx:description>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="RFSoC_Design_IP6_06/boot/RFSoC_Design_IP6_06.bif"
+                            sdx:readme="RFSoC_Design_IP6_06/boot/generic.readme"
+                            sdx:qemuArguments="RFSoC_Design_IP6_06/qemu/pmu_args.txt:RFSoC_Design_IP6_06/qemu/qemu_args.txt"
+                            />
+                <sdx:image sdx:name="standalone_domain"
+                            sdx:bif="RFSoC_Design_IP6_06/boot/RFSoC_Design_IP6_06.bif"
+                            sdx:readme="RFSoC_Design_IP6_06/boot/generic.readme"
+                            sdx:qemuArguments="RFSoC_Design_IP6_06/standalone_domain/qemu/pmu_args.txt:RFSoC_Design_IP6_06/standalone_domain/qemu/qemu_args.txt"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_domain"
+                                sdx:displayName="standalone on psu_cortexa53_0"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:bspLibraryPaths="RFSoC_Design_IP6_06/standalone_domain/bsplib/lib"
+                        sdx:bspIncludePaths="RFSoC_Design_IP6_06/standalone_domain/bspinclude/include"
+                        sdx:bspConfig="RFSoC_Design_IP6_06/standalone_domain/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>

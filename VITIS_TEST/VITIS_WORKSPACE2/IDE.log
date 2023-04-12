@@ -1,0 +1,16 @@
+18:53:28 INFO  : Registering command handlers for Vitis TCF services
+18:53:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE2\temp_xsdb_launch_script.tcl
+18:53:32 INFO  : Platform repository initialization has completed.
+18:53:33 INFO  : XSCT server has started successfully.
+18:53:36 INFO  : plnx-install-location is set to ''
+18:53:36 INFO  : Successfully done setting XSCT server connection channel  
+18:53:36 INFO  : Successfully done query RDI_DATADIR 
+18:53:36 INFO  : Successfully done setting workspace for the tool. 
+18:57:27 INFO  : Result from executing command 'getProjects': RFSoC_Design_IP6_06
+18:57:27 INFO  : Result from executing command 'getPlatforms': 
+18:59:01 ERROR : (XSDB Server)rm: cannot lstat `*.o': Invalid argument
+
+18:59:01 ERROR : (XSDB Server)make: *** [Makefile:42: clean] Error 1
+
+19:01:19 INFO  : Result from executing command 'getProjects': RFSoC_Design_IP6_06
+19:01:19 INFO  : Result from executing command 'getPlatforms': RFSoC_Design_IP6_06|E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_Design_IP6_06/export/RFSoC_Design_IP6_06/RFSoC_Design_IP6_06.xpfm
