@@ -1,0 +1,9 @@
+15:59:11 **** Build of configuration Debug for project RFSoC_IP06_07_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 52659 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_app_system/Debug/system.bif
+sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm --sys_config RFSoC_IP06_07_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_app_system/Debug/system.bif --no_bitstream --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_app/Debug/RFSoC_IP06_07_app.elf,psu_cortexa53_0
+Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_app_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:59:24 Build Finished (took 13s.146ms)
+

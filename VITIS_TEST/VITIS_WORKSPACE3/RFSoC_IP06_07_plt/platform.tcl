@@ -16,3 +16,14 @@ platform write
 platform generate -domains 
 platform active {RFSoC_IP06_07_plt}
 platform generate
+platform active {RFSoC_IP06_07_plt}
+domain active {zynqmp_fsbl}
+bsp reload
+bsp setlib -name libmetal -ver 2.1
+bsp write
+bsp reload
+catch {bsp regenerate}
+bsp write
+platform generate -domains zynqmp_fsbl 
+bsp write
+platform generate -domains 
