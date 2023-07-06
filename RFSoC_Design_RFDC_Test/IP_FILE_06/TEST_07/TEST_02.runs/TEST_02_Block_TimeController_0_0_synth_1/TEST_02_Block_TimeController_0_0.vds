@@ -1,0 +1,283 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr 25 20:08:54 2023
+# Process ID: 5608
+# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/TEST_02_Block_TimeController_0_0_synth_1
+# Command line: vivado.exe -log TEST_02_Block_TimeController_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_02_Block_TimeController_0_0.tcl
+# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/TEST_02_Block_TimeController_0_0_synth_1/TEST_02_Block_TimeController_0_0.vds
+# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/TEST_02_Block_TimeController_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source TEST_02_Block_TimeController_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1162.148 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/DAC_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TimeController'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top TEST_02_Block_TimeController_0_0 -part xczu28dr-ffvg1517-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7712
+load diablo GTM unisim library
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:108]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:109]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:115]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:116]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:117]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:118]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:119]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:120]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:122]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2COM with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:123]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1797.441 ; gain = 185.578
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_TimeController_0_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_TimeController_0_0/synth/TEST_02_Block_TimeController_0_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'TimeController' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/TimeController.sv:23]
+	Parameter AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter AXI_STROBE_WIDTH bound to: 16 - type: integer 
+	Parameter AXI_STROBE_LEN bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI2COM' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:23]
+	Parameter AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter AXI_STROBE_WIDTH bound to: 16 - type: integer 
+	Parameter AXI_STROBE_LEN bound to: 4 - type: integer 
+	Parameter AXI_WRITE_COMMAND bound to: 6'b000000 
+	Parameter AXI_WRITE_OFFSET bound to: 6'b010000 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter WRITE_ADDRESS bound to: 4'b0001 
+	Parameter WRITE_COMMAND bound to: 4'b0010 
+	Parameter WRITE_OFFSET bound to: 4'b0011 
+	Parameter ERROR_STATE bound to: 4'b0110 
+	Parameter WRITE_RESPONSE bound to: 4'b0111 
+	Parameter READ_ADDRESS bound to: 4'b0001 
+	Parameter READ_DATA bound to: 4'b0010 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:200]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:347]
+INFO: [Synth 8-6155] done synthesizing module 'AXI2COM' (1#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/AXI2COM.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Timestamp_Counter' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/Timestamp_Counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Timestamp_Counter' (2#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/Timestamp_Counter.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TimeController' (3#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/39db/TimeController.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_TimeController_0_0' (4#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_TimeController_0_0/synth/TEST_02_Block_TimeController_0_0.sv:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1837.902 ; gain = 226.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1855.832 ; gain = 243.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1855.832 ; gain = 243.969
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1855.832 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1956.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1974.359 ; gain = 17.887
+load diablo GTM unisim library
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1974.359 ; gain = 362.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1974.359 ; gain = 362.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1974.359 ; gain = 362.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_write_reg' in module 'AXI2COM'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_read_reg' in module 'AXI2COM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                             0000
+           WRITE_COMMAND |                            00010 |                             0010
+            WRITE_OFFSET |                            00100 |                             0011
+          WRITE_RESPONSE |                            01000 |                             0111
+             ERROR_STATE |                            10000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_write_reg' using encoding 'one-hot' in module 'AXI2COM'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+               READ_DATA |                                1 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_read_reg' using encoding 'sequential' in module 'AXI2COM'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1974.359 ; gain = 362.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 5     
+	   5 Input   16 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1974.359 ; gain = 362.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2389.348 ; gain = 777.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2389.570 ; gain = 777.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2408.660 ; gain = 796.797
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |     8|
+|2     |LUT1   |     2|
+|3     |LUT2   |    20|
+|4     |LUT3   |   116|
+|5     |LUT4   |     3|
+|6     |LUT5   |     4|
+|7     |FDRE   |   203|
+|8     |FDSE   |     2|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2415.457 ; gain = 685.066
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2415.457 ; gain = 803.594
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2427.469 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2464.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:39 . Memory (MB): peak = 2464.027 ; gain = 1301.879
+INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/TEST_02_Block_TimeController_0_0_synth_1/TEST_02_Block_TimeController_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP TEST_02_Block_TimeController_0_0, cache-ID = c4a589b52da67d7c
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/TEST_02_Block_TimeController_0_0_synth_1/TEST_02_Block_TimeController_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TEST_02_Block_TimeController_0_0_utilization_synth.rpt -pb TEST_02_Block_TimeController_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 20:09:46 2023...

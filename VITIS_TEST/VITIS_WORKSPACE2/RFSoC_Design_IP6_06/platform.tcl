@@ -22,3 +22,11 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform generate
+platform active {RFSoC_Design_IP6_06}
+bsp reload
+domain active {standalone_domain}
+bsp reload
+domain active {zynqmp_fsbl}
+bsp write
+platform generate -domains 

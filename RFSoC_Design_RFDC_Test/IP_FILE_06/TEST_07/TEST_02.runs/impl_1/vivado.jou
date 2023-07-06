@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  6 13:32:57 2023
+# Process ID: 18740
+# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/impl_1
+# Command line: vivado.exe -log TEST_02_Block_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TEST_02_Block_wrapper.tcl -notrace
+# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/impl_1/TEST_02_Block_wrapper.vdi
+# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TEST_02_Block_wrapper.tcl -notrace

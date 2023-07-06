@@ -1,0 +1,21 @@
+12:50:03 **** Incremental Build of configuration Debug for project RFSoC_IP6_06_TEST ****
+make all 
+'Building file: ../src/RFSoC_MAIN.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_Design_IP6_06/export/RFSoC_Design_IP6_06/sw/RFSoC_Design_IP6_06/standalone_domain/bspinclude/include -I"E:\Xilinx\Vitis\2020.2\data\embeddedsw\XilinxProcessorIPLib\drivers" -c -fmessage-length=0 -MT"src/RFSoC_MAIN.o" -D __BAREMETAL__ -MMD -MP -MF"src/RFSoC_MAIN.d" -MT"src/RFSoC_MAIN.d" -o "src/RFSoC_MAIN.o" "../src/RFSoC_MAIN.c"
+'Finished building: ../src/RFSoC_MAIN.c'
+' '
+'Building target: RFSoC_IP6_06_TEST.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_Design_IP6_06/export/RFSoC_Design_IP6_06/sw/RFSoC_Design_IP6_06/standalone_domain/bsplib/lib -o "RFSoC_IP6_06_TEST.elf"  ./src/RFSoC_MAIN.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
+'Finished building target: RFSoC_IP6_06_TEST.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size RFSoC_IP6_06_TEST.elf  |tee "RFSoC_IP6_06_TEST.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43188	  14496	  20820	  78504	  132a8	RFSoC_IP6_06_TEST.elf
+'Finished building: RFSoC_IP6_06_TEST.elf.size'
+' '
+
+12:50:04 Build Finished (took 1s.32ms)
+

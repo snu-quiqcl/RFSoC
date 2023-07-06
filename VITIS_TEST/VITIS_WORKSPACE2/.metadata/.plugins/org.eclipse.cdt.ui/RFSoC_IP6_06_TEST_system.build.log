@@ -1,0 +1,10 @@
+12:28:48 **** Incremental Build of configuration Debug for project RFSoC_IP6_06_TEST_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64018 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_Design_IP6_06/export/RFSoC_Design_IP6_06/RFSoC_Design_IP6_06.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_IP6_06_TEST_system/Debug/system.bif
+sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_Design_IP6_06/export/RFSoC_Design_IP6_06/RFSoC_Design_IP6_06.xpfm --sys_config RFSoC_Design_IP6_06 --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_IP6_06_TEST_system/Debug/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_IP6_06_TEST/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_IP6_06_TEST/Debug/RFSoC_IP6_06_TEST.elf,psu_cortexa53_0
+creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_IP6_06_TEST/_ide/bitstream/TEST_02_Block_wrapper.bit
+Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE2/RFSoC_IP6_06_TEST_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+12:28:57 Build Finished (took 9s.148ms)
+

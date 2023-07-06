@@ -1,0 +1,25 @@
+13:40:20 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE3\temp_xsdb_launch_script.tcl
+13:40:21 INFO  : Registering command handlers for Vitis TCF services
+13:40:23 INFO  : XSCT server has started successfully.
+13:40:23 INFO  : plnx-install-location is set to ''
+13:40:23 INFO  : Successfully done setting XSCT server connection channel  
+13:40:24 INFO  : Platform repository initialization has completed.
+13:40:27 INFO  : Successfully done setting workspace for the tool. 
+13:40:27 INFO  : Successfully done query RDI_DATADIR 
+13:47:06 ERROR : (XSDB Server)ERROR: [Hsi 55-1545] Problem running tcl command ::sw_xilskey_v7_0::post_generate : error deleting "./src/xilskey_epshw.h": permission denied
+    while executing
+"file delete -force ./src/xilskey_epshw.h"
+    (procedure "xgen_opts_file" line 33)
+    invoked from within
+"xgen_opts_file $libhandle"
+    (procedure "::sw_xilskey_v7_0::post_generate" line 3)
+    invoked from within
+"::sw_xilskey_v7_0::post_generate xilskey"
+ERROR: [Hsi 55-1443] Error(s) while running TCL procedure post_generate()
+
+13:47:07 ERROR : Failed to create platform.
+13:47:07 WARN  : An unexpected exception occurred in the module 'platform project logging'
+13:48:33 INFO  : Result from executing command 'getProjects': RFSoC_IP06_07_plt
+13:48:33 INFO  : Result from executing command 'getPlatforms': 
+13:50:56 INFO  : Result from executing command 'getProjects': RFSoC_IP06_07_plt
+13:50:56 INFO  : Result from executing command 'getPlatforms': RFSoC_IP06_07_plt|E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm
