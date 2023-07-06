@@ -27,3 +27,6 @@ bsp write
 platform generate -domains zynqmp_fsbl 
 bsp write
 platform generate -domains 
+platform active {RFSoC_IP06_07_plt}
+platform generate -domains 
+platform active {RFSoC_IP06_07_plt}

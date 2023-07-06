@@ -7926,3 +7926,1010 @@ E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zyn
 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
 
 TRACE::2023-07-06.16:09:30::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:15::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:15::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:15::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:19::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:19::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:19::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:19::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened new HwDB with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWReader::Active system found as  RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:15:28::SCWReader::Handling sysconfig RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:15:28::SCWDomain::checking for install qemu data   : 
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the PMUQEMU args from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWReader::Boot application domain added for zynqmp_fsbl
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-07-06.16:15:28::SCWMssOS::No sw design opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::mss exists loading the mss file  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Opened the sw design from mss  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Adding the swdes entry E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2023-07-06.16:15:28::SCWMssOS::updating the scw layer about changes
+TRACE::2023-07-06.16:15:28::SCWMssOS::Opened the sw design.  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  xilsecure:4.3
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  xilpm:3.2
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  libmetal:2.1
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:15:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:15:28::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:15:28::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-07-06.16:15:28::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWReader::No isolation master present  
+TRACE::2023-07-06.16:15:28::SCWDomain::checking for install qemu data   : 
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the PMUQEMU args from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWReader::Boot application domain added for zynqmp_pmufw
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::No sw design opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::mss exists loading the mss file  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Opened the sw design from mss  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Adding the swdes entry E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2023-07-06.16:15:28::SCWMssOS::updating the scw layer about changes
+TRACE::2023-07-06.16:15:28::SCWMssOS::Opened the sw design.  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  xilfpga:5.3
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  xilsecure:4.3
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS:: library already available in sw design:  xilskey:7.0
+TRACE::2023-07-06.16:15:28::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:15:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:15:28::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:15:28::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-07-06.16:15:28::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWReader::No isolation master present  
+TRACE::2023-07-06.16:15:28::SCWDomain::checking for install qemu data   : 
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2023-07-06.16:15:28::SCWDomain:: Using the PMUQEMU args from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::No sw design opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::mss exists loading the mss file  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Opened the sw design from mss  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Adding the swdes entry E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2023-07-06.16:15:28::SCWMssOS::updating the scw layer about changes
+TRACE::2023-07-06.16:15:28::SCWMssOS::Opened the sw design.  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:15:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:15:28::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:15:28::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-07-06.16:15:28::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:15:28::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:15:28::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:15:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:15:28::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:15:28::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:15:28::SCWReader::No isolation master present  
+LOG::2023-07-06.16:17:04::SCWPlatform::Started generating the artifacts platform RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:17:04::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-07-06.16:17:04::SCWPlatform::Started generating the artifacts for system configuration RFSoC_IP06_07_plt
+LOG::2023-07-06.16:17:04::SCWSystem::Checking the domain zynqmp_fsbl
+LOG::2023-07-06.16:17:04::SCWSystem::Doing application build for :  zynqmp_fsbl
+TRACE::2023-07-06.16:17:04::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-07-06.16:17:04::SCWDomain::Skipping the build for domain :  zynqmp_fsbl
+LOG::2023-07-06.16:17:04::SCWSystem::Checking the domain zynqmp_pmufw
+LOG::2023-07-06.16:17:04::SCWSystem::Doing application build for :  zynqmp_pmufw
+TRACE::2023-07-06.16:17:04::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2023-07-06.16:17:04::SCWDomain::Skipping the build for domain :  zynqmp_pmufw
+LOG::2023-07-06.16:17:04::SCWSystem::Checking the domain standalone_domain
+LOG::2023-07-06.16:17:04::SCWSystem::Not a boot domain 
+LOG::2023-07-06.16:17:04::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2023-07-06.16:17:04::SCWDomain::Generating domain artifcats
+TRACE::2023-07-06.16:17:04::SCWMssOS::Generating standalone artifcats
+TRACE::2023-07-06.16:17:04::SCWMssOS::Copying the qemu file from  E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt To E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/qemu/
+TRACE::2023-07-06.16:17:04::SCWMssOS::Copying the qemu file from  E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt To E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/qemu/
+TRACE::2023-07-06.16:17:04::SCWMssOS::Copying the qemu file from  E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt To E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/qemu/
+TRACE::2023-07-06.16:17:04::SCWMssOS::Copying the qemu file from  E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt To E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/qemu/
+TRACE::2023-07-06.16:17:04::SCWMssOS:: Copying the user libraries. 
+TRACE::2023-07-06.16:17:04::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:04::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:04::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:04::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:17:04::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:04::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:17:04::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:04::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:17:04::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:04::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:17:04::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:04::SCWMssOS::Completed writing the mss file at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2023-07-06.16:17:04::SCWMssOS::Mss edits present, copying mssfile into export location E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:04::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2023-07-06.16:17:04::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2023-07-06.16:17:04::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2023-07-06.16:17:04::SCWMssOS::skipping the bsp build ... 
+TRACE::2023-07-06.16:17:04::SCWMssOS::Copying to export directory.
+TRACE::2023-07-06.16:17:05::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2023-07-06.16:17:05::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2023-07-06.16:17:05::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2023-07-06.16:17:05::SCWSystem::Completed Processing the sysconfig RFSoC_IP06_07_plt
+LOG::2023-07-06.16:17:05::SCWPlatform::Completed generating the artifacts for system configuration RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:17:05::SCWPlatform::Started preparing the platform 
+TRACE::2023-07-06.16:17:05::SCWSystem::Writing the bif file for system config RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:17:05::SCWSystem::dir created 
+TRACE::2023-07-06.16:17:05::SCWSystem::Writing the bif 
+TRACE::2023-07-06.16:17:05::SCWPlatform::Started writing the spfm file 
+TRACE::2023-07-06.16:17:05::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-07-06.16:17:05::SCWPlatform::Completed generating the platform
+TRACE::2023-07-06.16:17:05::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:17:05::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:17:05::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:17:05::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:17:05::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:17:05::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:17:05::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:17:05::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWWriter::formatted JSON is {
+	"platformName":	"RFSoC_IP06_07_plt",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"RFSoC_IP06_07_plt",
+	"platHandOff":	"E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02_Block_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/TEST_02_Block_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP      -Wall -fmessage-length=0 -DARMA53_64 -Os -flto -ffat-lto-objects  ",
+	"pmufwExtraCompilerFlags":	"-MMD -MP      -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v9.2 -mxl-soft-mul -Os -flto -ffat-lto-objects  ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"RFSoC_IP06_07_plt",
+	"systems":	[{
+			"systemName":	"RFSoC_IP06_07_plt",
+			"systemDesc":	"RFSoC_IP06_07_plt",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"RFSoC_IP06_07_plt",
+			"sysActiveDom":	"zynqmp_fsbl",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"b6e65631a5d566a845a107b73fdfbc25",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.4", "xilsecure:4.3", "xilpm:3.2", "libmetal:2.1"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"009afec7dfc5bc5545e74968b44a8470",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.3", "xilsecure:4.3", "xilskey:7.0"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt",
+					"qemuData":	"E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/",
+					"pmuQemuArgs":	"E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.3",
+					"mssFile":	"",
+					"md5Digest":	"aac91ed1f30eb865e568f304161d162c",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-07-06.16:17:05::SCWPlatform::updated the xpfm file.
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:17:05::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:17:05::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:17:05::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:17:05::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:17:05::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:17:05::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:29::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:29::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:29::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:34::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:34::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:34::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:34::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened new HwDB with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWReader::Active system found as  RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:19:42::SCWReader::Handling sysconfig RFSoC_IP06_07_plt
+TRACE::2023-07-06.16:19:42::SCWDomain::checking for install qemu data   : 
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the PMUQEMU args from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWReader::Boot application domain added for zynqmp_fsbl
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2023-07-06.16:19:42::SCWMssOS::No sw design opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::mss exists loading the mss file  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Opened the sw design from mss  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Adding the swdes entry E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2023-07-06.16:19:42::SCWMssOS::updating the scw layer about changes
+TRACE::2023-07-06.16:19:42::SCWMssOS::Opened the sw design.  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  xilffs:4.4
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  xilsecure:4.3
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  xilpm:3.2
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  libmetal:2.1
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:19:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:19:42::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:19:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-07-06.16:19:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWReader::No isolation master present  
+TRACE::2023-07-06.16:19:42::SCWDomain::checking for install qemu data   : 
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the PMUQEMU args from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWReader::Boot application domain added for zynqmp_pmufw
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::No sw design opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::mss exists loading the mss file  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Opened the sw design from mss  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Adding the swdes entry E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2023-07-06.16:19:42::SCWMssOS::updating the scw layer about changes
+TRACE::2023-07-06.16:19:42::SCWMssOS::Opened the sw design.  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  xilfpga:5.3
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  xilsecure:4.3
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS:: library already available in sw design:  xilskey:7.0
+TRACE::2023-07-06.16:19:42::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:19:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:19:42::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:19:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-07-06.16:19:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWReader::No isolation master present  
+TRACE::2023-07-06.16:19:42::SCWDomain::checking for install qemu data   : 
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the QEMU Data from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the QEMU args  from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2023-07-06.16:19:42::SCWDomain:: Using the PMUQEMU args from install at  : E:/Xilinx/Vitis/2020.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::No sw design opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::mss exists loading the mss file  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Opened the sw design from mss  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Adding the swdes entry E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2023-07-06.16:19:42::SCWMssOS::updating the scw layer about changes
+TRACE::2023-07-06.16:19:42::SCWMssOS::Opened the sw design.  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Saving the mss changes E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2023-07-06.16:19:42::SCWMssOS::Completed writemss as part of save.
+TRACE::2023-07-06.16:19:42::SCWMssOS::Commit changes completed.
+TRACE::2023-07-06.16:19:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-07-06.16:19:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to open the hw design at E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA given E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA absoulate path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform::DSA directory E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Platform Path E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa
+TRACE::2023-07-06.16:19:42::SCWPlatform:: Unique name xilinx:zcu111::0.0
+TRACE::2023-07-06.16:19:42::SCWPlatform::Trying to set the existing hwdb with name TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Opened existing hwdb TEST_02_Block_wrapper
+TRACE::2023-07-06.16:19:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-07-06.16:19:42::SCWMssOS::Checking the sw design at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWMssOS::DEBUG:  swdes dump  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2023-07-06.16:19:42::SCWMssOS::Sw design exists and opened at  E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE3/RFSoC_IP06_07_plt/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2023-07-06.16:19:42::SCWReader::No isolation master present  

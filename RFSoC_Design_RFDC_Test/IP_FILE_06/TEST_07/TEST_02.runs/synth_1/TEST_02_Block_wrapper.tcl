@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
@@ -94,25 +95,25 @@ set_property ip_output_repo e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v
+read_verilog -library xil_defaultlib E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v
 add_files E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.srcs/sources_1/bd/TEST_02_Block/TEST_02_Block.bd
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_zynq_ultra_ps_e_0_0/TEST_02_Block_zynq_ultra_ps_e_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_zynq_ultra_ps_e_0_0/TEST_02_Block_zynq_ultra_ps_e_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_xbar_0/TEST_02_Block_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_3/fifo_generator_3.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_2/fifo_generator_2.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_1/fifo_generator_1.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/fifo_generator_0.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/synth/TEST_02_Block_usp_rf_data_converter_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/synth/TEST_02_Block_usp_rf_data_converter_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/synth/TEST_02_Block_usp_rf_data_converter_0_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_auto_pc_0/TEST_02_Block_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/fifo_generator_0.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_1/fifo_generator_1.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_2/fifo_generator_2.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_3/fifo_generator_3.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/synth/TEST_02_Block_usp_rf_data_converter_0_0.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/synth/TEST_02_Block_usp_rf_data_converter_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/synth/TEST_02_Block_usp_rf_data_converter_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/TEST_02_Block_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/data/startup.elf]
 

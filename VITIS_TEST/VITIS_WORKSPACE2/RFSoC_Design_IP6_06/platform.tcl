@@ -30,3 +30,10 @@ bsp reload
 domain active {zynqmp_fsbl}
 bsp write
 platform generate -domains 
+platform active {RFSoC_Design_IP6_06}
+domain active {standalone_domain}
+bsp reload
+bsp reload
+domain active {zynqmp_fsbl}
+bsp write
+platform generate -domains 

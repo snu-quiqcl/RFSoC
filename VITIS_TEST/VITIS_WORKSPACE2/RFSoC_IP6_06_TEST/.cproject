@@ -149,7 +149,7 @@
                                 							
                             </option>
                             							
-                            <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1020577395" superClass="xilinx.gnu.compiler.inferred.swplatform.includes" valueType="includePath"/>
+                            <option id="xilinx.gnu.compiler.inferred.swplatform.includes.1020577395" superClass="xilinx.gnu.compiler.inferred.swplatform.includes"/>
                             							
                             <inputType id="xilinx.gnu.arm.a53.c.compiler.input.444444214" name="C source files" superClass="xilinx.gnu.arm.a53.c.compiler.input"/>
                             						

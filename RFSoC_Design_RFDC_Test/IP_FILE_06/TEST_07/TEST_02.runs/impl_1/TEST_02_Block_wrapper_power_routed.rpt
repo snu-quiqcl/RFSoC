@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Apr 25 20:16:59 2023
+| Date             : Thu Jul  6 16:48:08 2023
 | Host             : DESKTOP-MCBJ7EB running 64-bit major release  (build 9200)
 | Command          : report_power -file TEST_02_Block_wrapper_power_routed.rpt -pb TEST_02_Block_wrapper_power_summary_routed.pb -rpx TEST_02_Block_wrapper_power_routed.rpx
 | Design           : TEST_02_Block_wrapper

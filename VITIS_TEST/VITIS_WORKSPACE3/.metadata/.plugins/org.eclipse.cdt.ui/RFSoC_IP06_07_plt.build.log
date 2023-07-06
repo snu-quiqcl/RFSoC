@@ -1,2 +1,6 @@
-Nothing to build in platform 'RFSoC_IP06_07_plt'
+16:17:02 **** Incremental Build of project RFSoC_IP06_07_plt ****
+buildplatform.bat 61846 RFSoC_IP06_07_plt no_domain_build 
+XSDB Server Channel: tcfchan#2
+
+16:17:05 Build Finished (took 2s.917ms)
 

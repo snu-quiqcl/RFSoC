@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Apr 25 20:12:36 2023
-# Process ID: 9432
+# Start of session at: Thu Jul  6 16:29:54 2023
+# Process ID: 32032
 # Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1
 # Command line: vivado.exe -log TEST_02_Block_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_02_Block_wrapper.tcl
 # Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/TEST_02_Block_wrapper.vds
@@ -21,72 +21,72 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28d
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20644
+INFO: [Synth 8-7075] Helper process launched with PID 29548
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1832.434 ; gain = 186.777
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1831.418 ; gain = 186.539
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_wrapper' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_wrapper' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:13]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_DAC_Controller_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_DAC_Controller_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_DAC_Controller_0_0' (1#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_DAC_Controller_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_DAC_Controller_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_DAC_Controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_DAC_Controller_0_0' (1#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_DAC_Controller_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'dac00_fast_shutdown' of module 'TEST_02_Block_DAC_Controller_0_0' is unconnected for instance 'DAC_Controller_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:164]
 WARNING: [Synth 8-7071] port 'dac00_pl_event' of module 'TEST_02_Block_DAC_Controller_0_0' is unconnected for instance 'DAC_Controller_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:164]
 WARNING: [Synth 8-7071] port 'dac0_sysref_int_gating' of module 'TEST_02_Block_DAC_Controller_0_0' is unconnected for instance 'DAC_Controller_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:164]
 WARNING: [Synth 8-7071] port 'dac0_sysref_int_reenable' of module 'TEST_02_Block_DAC_Controller_0_0' is unconnected for instance 'DAC_Controller_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:164]
 WARNING: [Synth 8-7023] instance 'DAC_Controller_0' of module 'TEST_02_Block_DAC_Controller_0_0' has 50 connections declared, but only 46 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:164]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_TimeController_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_TimeController_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_TimeController_0_0' (2#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_TimeController_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_TimeController_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_TimeController_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_TimeController_0_0' (2#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_TimeController_0_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_axi_interconnect_0_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:465]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1G0K3I8' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1477]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1G0K3I8' (3#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1477]
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_8VT9G4' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1707]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_8VT9G4' (4#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1707]
 INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_O3TJXL' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1937]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_auto_ds_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_auto_ds_0' (5#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_auto_pc_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_auto_pc_0' (6#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_auto_ds_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_auto_ds_0' (5#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_auto_pc_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_auto_pc_0' (6#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_auto_pc_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'TEST_02_Block_auto_pc_0' is unconnected for instance 'auto_pc' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:2288]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'TEST_02_Block_auto_pc_0' is unconnected for instance 'auto_pc' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:2288]
 WARNING: [Synth 8-7023] instance 'auto_pc' of module 'TEST_02_Block_auto_pc_0' has 56 connections declared, but only 54 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:2288]
 INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_O3TJXL' (7#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1937]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_19P10OV' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:2345]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_19P10OV' (8#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:2345]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_xbar_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_xbar_0' (9#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_xbar_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_xbar_0' (9#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_xbar_0_stub.v:6]
 WARNING: [Synth 8-689] width (32) of port connection 'm_axi_aruser' does not match port width (48) of module 'TEST_02_Block_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1406]
 WARNING: [Synth 8-689] width (32) of port connection 'm_axi_awuser' does not match port width (48) of module 'TEST_02_Block_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:1419]
 INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_axi_interconnect_0_0' (10#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:465]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_proc_sys_reset_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_proc_sys_reset_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_proc_sys_reset_0_0' (11#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_proc_sys_reset_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_proc_sys_reset_0_0' (11#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_proc_sys_reset_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'TEST_02_Block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:376]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'TEST_02_Block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:376]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'TEST_02_Block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:376]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'TEST_02_Block_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:376]
 WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'TEST_02_Block_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:376]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_usp_rf_data_converter_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_usp_rf_data_converter_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_usp_rf_data_converter_0_0' (12#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_usp_rf_data_converter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_usp_rf_data_converter_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_usp_rf_data_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_usp_rf_data_converter_0_0' (12#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_usp_rf_data_converter_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'clk_dac0' of module 'TEST_02_Block_usp_rf_data_converter_0_0' is unconnected for instance 'usp_rf_data_converter_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:383]
 WARNING: [Synth 8-7071] port 'irq' of module 'TEST_02_Block_usp_rf_data_converter_0_0' is unconnected for instance 'usp_rf_data_converter_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:383]
 WARNING: [Synth 8-7023] instance 'usp_rf_data_converter_0' of module 'TEST_02_Block_usp_rf_data_converter_0_0' has 38 connections declared, but only 36 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:383]
-INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_zynq_ultra_ps_e_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_zynq_ultra_ps_e_0_0' (13#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-9432-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_zynq_ultra_ps_e_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_zynq_ultra_ps_e_0_0' (13#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/.Xil/Vivado-32032-DESKTOP-MCBJ7EB/realtime/TEST_02_Block_zynq_ultra_ps_e_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block' (14#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/synth/TEST_02_Block.v:13]
-INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_wrapper' (15#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_wrapper' (15#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1875.547 ; gain = 229.891
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1874.340 ; gain = 229.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1893.465 ; gain = 247.809
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1892.254 ; gain = 247.375
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1893.465 ; gain = 247.809
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1892.254 ; gain = 247.375
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1893.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1892.254 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -217,14 +217,14 @@ Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/T
 Finished Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1950.922 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1954.016 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1950.922 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1954.016 ; gain = 0.000
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1950.922 ; gain = 305.266
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1954.016 ; gain = 309.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -232,7 +232,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1950.922 ; gain = 305.266
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1954.016 ; gain = 309.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -256,10 +256,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for TEST_02_Block_i/DAC_Controller_0.
 Applied set_property KEEP_HIERARCHY = SOFT for TEST_02_Block_i/TimeController_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for TEST_02_Block_i/usp_rf_data_converter_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1950.922 ; gain = 305.266
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1954.016 ; gain = 309.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1950.922 ; gain = 305.266
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1954.016 ; gain = 309.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -281,25 +281,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1950.922 ; gain = 305.266
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1954.016 ; gain = 309.137
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2421.816 ; gain = 776.160
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 2419.215 ; gain = 774.336
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2422.559 ; gain = 776.902
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:34 . Memory (MB): peak = 2419.883 ; gain = 775.004
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 2442.344 ; gain = 796.688
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 2439.684 ; gain = 794.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -317,37 +317,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:35 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -381,23 +381,23 @@ Report Cell Usage:
 |8     |TEST_02_Block_zynq_ultra_ps_e_0       |     1|
 +------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2447.770 ; gain = 744.656
-Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2447.770 ; gain = 802.113
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2444.117 ; gain = 737.477
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 2444.117 ; gain = 799.238
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2447.770 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2444.117 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2501.496 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2499.988 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 49 Infos, 119 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 2507.480 ; gain = 1344.969
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2505.992 ; gain = 1342.785
 INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.runs/synth_1/TEST_02_Block_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TEST_02_Block_wrapper_utilization_synth.rpt -pb TEST_02_Block_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr 25 20:13:27 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  6 16:30:58 2023...

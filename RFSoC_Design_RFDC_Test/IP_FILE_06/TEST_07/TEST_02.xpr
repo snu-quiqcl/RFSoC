@@ -82,29 +82,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_zynq_ultra_ps_e_0_0/TEST_02_Block_zynq_ultra_ps_e_0_0.xci">
-          <Proxy FileSetName="TEST_02_Block_zynq_ultra_ps_e_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_xbar_0/TEST_02_Block_xbar_0.xci">
-          <Proxy FileSetName="TEST_02_Block_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0.xci">
-          <Proxy FileSetName="TEST_02_Block_auto_ds_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_auto_pc_0/TEST_02_Block_auto_pc_0.xci">
           <Proxy FileSetName="TEST_02_Block_auto_pc_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_proc_sys_reset_0_0/TEST_02_Block_proc_sys_reset_0_0.xci">
           <Proxy FileSetName="TEST_02_Block_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0.xci">
+          <Proxy FileSetName="TEST_02_Block_auto_ds_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_zynq_ultra_ps_e_0_0/TEST_02_Block_zynq_ultra_ps_e_0_0.xci">
+          <Proxy FileSetName="TEST_02_Block_zynq_ultra_ps_e_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_xbar_0/TEST_02_Block_xbar_0.xci">
+          <Proxy FileSetName="TEST_02_Block_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_usp_rf_data_converter_0_0/TEST_02_Block_usp_rf_data_converter_0_0.xci">
+          <Proxy FileSetName="TEST_02_Block_usp_rf_data_converter_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_TimeController_0_0/TEST_02_Block_TimeController_0_0.xci">
           <Proxy FileSetName="TEST_02_Block_TimeController_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_DAC_Controller_0_0/TEST_02_Block_DAC_Controller_0_0.xci">
           <Proxy FileSetName="TEST_02_Block_DAC_Controller_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="TEST_02_Block.bd" FileRelPathName="ip/TEST_02_Block_usp_rf_data_converter_0_0/TEST_02_Block_usp_rf_data_converter_0_0.xci">
-          <Proxy FileSetName="TEST_02_Block_usp_rf_data_converter_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v">

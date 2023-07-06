@@ -12,6 +12,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Blo
 # IP: bd/TEST_02_Block/ip/TEST_02_Block_xbar_0/TEST_02_Block_xbar_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_xbar_0 || ORIG_REF_NAME==TEST_02_Block_xbar_0} -quiet] -quiet
 
+# IP: bd/TEST_02_Block/ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_auto_ds_0 || ORIG_REF_NAME==TEST_02_Block_auto_ds_0} -quiet] -quiet
+
+# IP: bd/TEST_02_Block/ip/TEST_02_Block_auto_pc_0/TEST_02_Block_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_auto_pc_0 || ORIG_REF_NAME==TEST_02_Block_auto_pc_0} -quiet] -quiet
+
 # IP: bd/TEST_02_Block/ip/TEST_02_Block_axi_interconnect_0_0/TEST_02_Block_axi_interconnect_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_axi_interconnect_0_0 || ORIG_REF_NAME==TEST_02_Block_axi_interconnect_0_0} -quiet] -quiet
 
@@ -26,11 +32,5 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Blo
 
 # IP: bd/TEST_02_Block/ip/TEST_02_Block_usp_rf_data_converter_0_0/TEST_02_Block_usp_rf_data_converter_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_usp_rf_data_converter_0_0 || ORIG_REF_NAME==TEST_02_Block_usp_rf_data_converter_0_0} -quiet] -quiet
-
-# IP: bd/TEST_02_Block/ip/TEST_02_Block_auto_ds_0/TEST_02_Block_auto_ds_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_auto_ds_0 || ORIG_REF_NAME==TEST_02_Block_auto_ds_0} -quiet] -quiet
-
-# IP: bd/TEST_02_Block/ip/TEST_02_Block_auto_pc_0/TEST_02_Block_auto_pc_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==TEST_02_Block_auto_pc_0 || ORIG_REF_NAME==TEST_02_Block_auto_pc_0} -quiet] -quiet
 
 # XDC: e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_07/TEST_02.gen/sources_1/bd/TEST_02_Block/TEST_02_Block_ooc.xdc
