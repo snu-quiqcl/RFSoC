@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RFSoC_IP06_07_app/src/helloworld.c&apos; to &apos;RFSoC_MAIN.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="RFSoC_MAIN.c" stamp="1688697156843" updateReferences="true"/>
+</session>

@@ -1,0 +1,184 @@
+12:05:06 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_app ****
+make all 
+'Building file: ../src/RFSoC_MAIN.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RFSoC_MAIN.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE4/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/RFSoC_MAIN.d" -MT"src/RFSoC_MAIN.o" -o "src/RFSoC_MAIN.o" "../src/RFSoC_MAIN.c"
+../src/RFSoC_MAIN.c: In function 'main':
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:115:44: note: in expansion of macro 'MAKE128CONST'
+  115 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000005,( DAC00_FAST_SHUTDOWN<<32)+((u64)255<<40)));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:117:44: note: in expansion of macro 'MAKE128CONST'
+  117 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000010,( DAC00_PL_EVENT << 32 ) + ( (u64) 255 << 40 )));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:119:44: note: in expansion of macro 'MAKE128CONST'
+  119 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000020,( DAC00_NCO_FREQ << 32 ) + ( (u64) 255 << 40 )));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:121:44: note: in expansion of macro 'MAKE128CONST'
+  121 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000030,( DAC00_NCO_PHASE << 32 ) + ( (u64) 255 << 40 )));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:123:44: note: in expansion of macro 'MAKE128CONST'
+  123 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000040,( DAC00_NCO_PHASE_RST << 32 ) + ( (u64) 255 << 40 )));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:125:44: note: in expansion of macro 'MAKE128CONST'
+  125 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000050,( DAC0_SYSREF_INT_GATING << 32 ) + ( (u64) 255 << 40 )));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:127:44: note: in expansion of macro 'MAKE128CONST'
+  127 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000060,( DAC0_SYSREF_INT_REENABLE << 32 ) + ( (u64) 255 << 40 )));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:129:44: note: in expansion of macro 'MAKE128CONST'
+  129 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000065,( UPDATE << 32 ) + ( (u64) 255 << 40 ) + ( (u64) 1 << 36 ) + (u64)1));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:131:44: note: in expansion of macro 'MAKE128CONST'
+  131 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x00000000000000C0,( S00_AXIS_TDATA << 32 ) + ( (u64) 255 << 40 ) + (u64)0x00007fff));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:133:44: note: in expansion of macro 'MAKE128CONST'
+  133 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x00000000000000D0,( S00_AXIS_TVALID << 32 ) + ( (u64) 255 << 40 ) + (u64)0x00000001));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:135:44: note: in expansion of macro 'MAKE128CONST'
+  135 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x00000000000000E0,( DAC00_NCO_FREQ << 32 ) + ( (u64) 1 << 40 ) +(u64) 0x00000000));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:137:44: note: in expansion of macro 'MAKE128CONST'
+  137 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x00000000000000F0,( DAC00_NCO_FREQ << 32 ) + ( (u64) 2 << 40 ) + (u64)0x00000010));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:139:44: note: in expansion of macro 'MAKE128CONST'
+  139 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000100,( DAC00_NCO_UPDATE_EN << 32 ) + ( (u64) 255 << 40 ) + (u64)7));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:141:44: note: in expansion of macro 'MAKE128CONST'
+  141 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000110,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (u64) 255 << 40 ) + (u64)0x0020));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:143:44: note: in expansion of macro 'MAKE128CONST'
+  143 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000140,( UPDATE << 32 ) + ( (u64) 255 << 40 ) + ( (u64) 1 << 36 ) + (u64)1));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:145:44: note: in expansion of macro 'MAKE128CONST'
+  145 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000600,( DAC00_NCO_FREQ << 32 ) + ( (u64) 1 << 40 ) + (u64)0x00000000));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:147:44: note: in expansion of macro 'MAKE128CONST'
+  147 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000610,( DAC00_NCO_FREQ << 32 ) + ( (u64) 2 << 40 ) + (u64)0x00000001));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:149:44: note: in expansion of macro 'MAKE128CONST'
+  149 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000620,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (u64) 244 << 40 ) + (u64)0x0020));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:151:44: note: in expansion of macro 'MAKE128CONST'
+  151 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000630,( UPDATE << 32 ) + ( (u64) 255 << 40 ) + ( (u64) 1 << 36 ) + (u64)1));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:155:44: note: in expansion of macro 'MAKE128CONST'
+  155 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000A00,( DAC00_NCO_FREQ << 32 ) + ( (u64) 1 << 40 ) + (u64)0x00000000));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:157:44: note: in expansion of macro 'MAKE128CONST'
+  157 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000A10,( DAC00_NCO_FREQ << 32 ) + ( (u64) 2 << 40 ) + (u64)0x00000010));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:159:44: note: in expansion of macro 'MAKE128CONST'
+  159 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000A20,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (u64) 255<< 40 ) + (u64)0x0020));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:161:44: note: in expansion of macro 'MAKE128CONST'
+  161 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000A30,( UPDATE << 32 ) + ( (u64) 255 << 40 ) + ( (u64) 1 << 36 ) + (u64)1));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:165:44: note: in expansion of macro 'MAKE128CONST'
+  165 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000B00,( S00_AXIS_TDATA << 32 ) + ( (u64) 255 << 40 ) + (u64)0x00000000));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:167:44: note: in expansion of macro 'MAKE128CONST'
+  167 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000B10,( UPDATE << 32 ) + ( (u64) 255 << 40 ) + ( (u64) 1 << 36 ) + (u64)1));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:169:44: note: in expansion of macro 'MAKE128CONST'
+  169 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000D00,( S00_AXIS_TDATA << 32 ) + ( (u64) 255 << 40 ) + (u64)0x00007fff));
+      |                                            ^~~~~~~~~~~~
+../src/RFSoC_MAIN.c:85:55: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+   85 | #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | lo))
+      |                                                       ^
+../src/RFSoC_MAIN.c:171:44: note: in expansion of macro 'MAKE128CONST'
+  171 |  Xil_Out128(XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST(0x0000000000000D10,( UPDATE << 32 ) + ( (u64) 255 << 40 ) + ( (u64) 1 << 36 ) + (u64)1));
+      |                                            ^~~~~~~~~~~~
+'Finished building: ../src/RFSoC_MAIN.c'
+' '
+'Building target: RFSoC_IP06_07_app.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE4/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_07_app.elf"  ./src/RFSoC_MAIN.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
+'Finished building target: RFSoC_IP06_07_app.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size RFSoC_IP06_07_app.elf  |tee "RFSoC_IP06_07_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  44740	  14496	  20796	  80032	  138a0	RFSoC_IP06_07_app.elf
+'Finished building: RFSoC_IP06_07_app.elf.size'
+' '
+
+12:05:07 Build Finished (took 890ms)
+
