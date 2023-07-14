@@ -1,0 +1,1264 @@
+!SESSION 2023-07-13 14:28:24.388 -----------------------------------------------
+eclipse.buildId=2020.2
+java.version=11.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\.metadata\.bak_0.log
+Created Time: 2023-07-13 16:23:50.846
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.846
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.856
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.857
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.876
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.877
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.883
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.884
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.902
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.903
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.910
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.911
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.929
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.931
+!MESSAGE XSCT Command: [version -server], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.932
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.933
+!MESSAGE XSCT Command: [version], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.935
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.936
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.943
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.944
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.963
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.964
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.982
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.983
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.985
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.986
+!MESSAGE XSCT Command: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.997
+!MESSAGE XSCT command with result: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:50.998
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:51.195
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:51.196
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:52.437
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:52.438
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.455
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.456
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.602
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.603
+!MESSAGE XSCT Command: [reset_apu], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.651
+!MESSAGE XSCT command with result: [reset_apu], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.667
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.672
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.673
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.692
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.720
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.784
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#4]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.784
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.790
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.791
+!MESSAGE XSCT Command: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.792
+!MESSAGE XSCT command with result: [proc fetch_device_jtag_ctx { node_id } {
+foreach t [jtag ta -ta] {
+if {[dict get $t node_id] == $node_id} {
+return [dict get $t target_ctx]
+}
+}
+error cannot find a jtag device with node id $node_id}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.792
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.798
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.798
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.815
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.815
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 2], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.818
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 2], Result: [null, jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.818
+!MESSAGE XSCT Command: [fetch_device_jtag_ctx 3], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.820
+!MESSAGE XSCT command with result: [fetch_device_jtag_ctx 3], Result: [null, jsn-HW-Z1-ZCU104 FT4232H-65004A-5ba00477-0]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.823
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.862
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:23:55.863
+!MESSAGE XSCT Command: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:15.751
+!MESSAGE XSCT command with result: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:15.766
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:15.778
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:15.779
+!MESSAGE XSCT Command: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.222
+!MESSAGE XSCT command with result: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, TEST_02_Block_wrapper_3]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.223
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.224
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.225
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.230
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.231
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.248
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.249
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.259
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.259
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.282
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.283
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.293
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.294
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.304
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:16.305
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:17.190
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:17.191
+!MESSAGE XSCT Command: [set bp_24_17_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:17.501
+!MESSAGE XSCT command with result: [set bp_24_17_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 0]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:17.501
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.557
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.558
+!MESSAGE XSCT Command: [bpremove $bp_24_17_fsbl_bp], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.571
+!MESSAGE XSCT command with result: [bpremove $bp_24_17_fsbl_bp], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.571
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.581
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.582
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.610
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:18.610
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.123
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.123
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.167
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.297
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.309
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.310
+!MESSAGE XSCT Command: [con], Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:24:20.355
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-37: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:40.896
+!MESSAGE XSCT Command: [disconnect tcfchan#4], Thread: Thread-859
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:40.903
+!MESSAGE XSCT command with result: [disconnect tcfchan#4], Result: [null, ]. Thread: Thread-859
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:41.976
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:41.986
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:41.986
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:41.996
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:41.997
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.002
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.003
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.019
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.023
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.029
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.030
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.047
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.047
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.053
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.053
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.071
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.105
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.111
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.112
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.130
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.131
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.137
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.137
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.155
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.155
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.162
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.162
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.181
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.182
+!MESSAGE XSCT Command: [version -server], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.184
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.184
+!MESSAGE XSCT Command: [version], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.186
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.186
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.194
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.195
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.214
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.214
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.234
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.234
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.236
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.236
+!MESSAGE XSCT Command: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.239
+!MESSAGE XSCT command with result: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.240
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.260
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:42.261
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:43.175
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:43.175
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.189
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.189
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.200
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.201
+!MESSAGE XSCT Command: [reset_apu], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.246
+!MESSAGE XSCT command with result: [reset_apu], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.260
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.265
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.266
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.284
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.284
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.376
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:26:46.376
+!MESSAGE XSCT Command: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:05.987
+!MESSAGE XSCT command with result: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.003
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.015
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.016
+!MESSAGE XSCT Command: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.066
+!MESSAGE XSCT command with result: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, TEST_02_Block_wrapper_3]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.068
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.071
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.073
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.082
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.083
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.108
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.109
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.133
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.134
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.141
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.142
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.158
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.159
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.174
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:06.175
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:07.053
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:07.054
+!MESSAGE XSCT Command: [set bp_27_7_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:07.105
+!MESSAGE XSCT command with result: [set bp_27_7_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 1]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:07.106
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.173
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.174
+!MESSAGE XSCT Command: [bpremove $bp_27_7_fsbl_bp], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.187
+!MESSAGE XSCT command with result: [bpremove $bp_27_7_fsbl_bp], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.188
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.197
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.198
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.222
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:08.222
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.713
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.714
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.732
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.794
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.819
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.819
+!MESSAGE XSCT Command: [con], Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:09.858
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-34: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:50.233
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-926
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:50.258
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-926
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.280
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.285
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#6]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.286
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.295
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.296
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.302
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.302
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.319
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.322
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.328
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.328
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.346
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.346
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.352
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.353
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.370
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.404
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.410
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.411
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.429
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.429
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.435
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.436
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.454
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.454
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.460
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.461
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.478
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.478
+!MESSAGE XSCT Command: [version -server], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.480
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.480
+!MESSAGE XSCT Command: [version], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.481
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.482
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.488
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.489
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.507
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.507
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.525
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.526
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.527
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.528
+!MESSAGE XSCT Command: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.530
+!MESSAGE XSCT command with result: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.530
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.551
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:51.551
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:52.686
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:52.687
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.709
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.713
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.722
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.723
+!MESSAGE XSCT Command: [reset_apu], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.773
+!MESSAGE XSCT command with result: [reset_apu], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.788
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.794
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.794
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.815
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.816
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.905
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:27:55.906
+!MESSAGE XSCT Command: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.504
+!MESSAGE XSCT command with result: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.530
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.548
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.549
+!MESSAGE XSCT Command: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.593
+!MESSAGE XSCT command with result: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, TEST_02_Block_wrapper_3]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.595
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.597
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.600
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.611
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.612
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.633
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.634
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.649
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.651
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.658
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.660
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.678
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.680
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.694
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:15.696
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:16.726
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:16.727
+!MESSAGE XSCT Command: [set bp_28_16_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:16.776
+!MESSAGE XSCT command with result: [set bp_28_16_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 2]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:16.777
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.850
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.851
+!MESSAGE XSCT Command: [bpremove $bp_28_16_fsbl_bp], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.864
+!MESSAGE XSCT command with result: [bpremove $bp_28_16_fsbl_bp], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.865
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.874
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.875
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.892
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:17.892
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.326
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.327
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.350
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.414
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.425
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.426
+!MESSAGE XSCT Command: [con], Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:28:19.435
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-43: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:23.116
+!MESSAGE XSCT Command: [disconnect tcfchan#6], Thread: Thread-994
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:23.142
+!MESSAGE XSCT command with result: [disconnect tcfchan#6], Result: [null, ]. Thread: Thread-994
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.158
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.163
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#7]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.163
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.172
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.173
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.179
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.180
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.196
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.200
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.205
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.206
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.223
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.223
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.230
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.230
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.249
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.284
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.290
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.291
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.309
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.309
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.315
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.316
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.334
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.334
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.340
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.341
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.357
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.357
+!MESSAGE XSCT Command: [version -server], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.359
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2020.2]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.360
+!MESSAGE XSCT Command: [version], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.361
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2020.2
+SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.361
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.372
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.372
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.391
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.392
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.411
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level == 0}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.411
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.413
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.414
+!MESSAGE XSCT Command: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.418
+!MESSAGE XSCT command with result: [source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.419
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.441
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:24.442
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:25.354
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:25.355
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.372
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.374
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.385
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.386
+!MESSAGE XSCT Command: [reset_apu], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.449
+!MESSAGE XSCT command with result: [reset_apu], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.465
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.483
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.483
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.572
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.573
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.622
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:28.623
+!MESSAGE XSCT Command: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.237
+!MESSAGE XSCT command with result: [fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/_ide/bitstream/TEST_02_Block_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.251
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.267
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.268
+!MESSAGE XSCT Command: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.301
+!MESSAGE XSCT command with result: [loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, TEST_02_Block_wrapper_3]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.302
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.315
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.317
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.324
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 65004A]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.325
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.349
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==1}], Result: [null,      2  xczu28dr (idcode 147e0093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.350
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.365
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.366
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.374
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.375
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.399
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.401
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.418
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:48.420
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:49.430
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:49.431
+!MESSAGE XSCT Command: [set bp_32_49_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:49.484
+!MESSAGE XSCT command with result: [set bp_32_49_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 3]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:49.485
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.533
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.534
+!MESSAGE XSCT Command: [bpremove $bp_32_49_fsbl_bp], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.546
+!MESSAGE XSCT command with result: [bpremove $bp_32_49_fsbl_bp], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.546
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.556
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.557
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.588
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:50.589
+!MESSAGE XSCT Command: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:51.979
+!MESSAGE XSCT command with result: [dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_rtos_echo/Debug/RFSoC_IP06_07_rtos_echo.elf], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:51.979
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:52.019
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:52.110
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:52.121
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:52.121
+!MESSAGE XSCT Command: [con], Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-07-13 16:32:52.131
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-33: Launching Debugger_RFSoC_IP06_07_rtos_echo-Default
+
+!ENTRY org.eclipse.tcf 4 0 2023-07-14 04:17:03.216
+!MESSAGE TCF channel terminated
+!STACK 0
+java.net.SocketException: Connection reset
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:186)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:290)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.tcf.core.ChannelTCP.get(ChannelTCP.java:186)
+	at org.eclipse.tcf.core.StreamChannel.read(StreamChannel.java:85)
+	at org.eclipse.tcf.core.AbstractChannel$1.run(AbstractChannel.java:329)

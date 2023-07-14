@@ -207,3 +207,153 @@ con
 
 12:05:49 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE4\RFSoC_IP06_07_app_system\_ide\scripts\debugger_rfsoc_ip06_07_app-default.tcl'
 12:21:21 INFO  : Disconnected from the channel tcfchan#4.
+12:03:45 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE4\temp_xsdb_launch_script.tcl
+12:03:51 INFO  : XSCT server has started successfully.
+12:03:51 INFO  : plnx-install-location is set to ''
+12:03:51 INFO  : Successfully done setting XSCT server connection channel  
+12:03:51 INFO  : Successfully done setting workspace for the tool. 
+12:03:58 INFO  : Platform repository initialization has completed.
+12:03:59 INFO  : Registering command handlers for Vitis TCF services
+12:04:06 INFO  : Successfully done query RDI_DATADIR 
+12:22:04 WARN  : An unexpected exception occurred in the module 'platform project logging'
+12:22:43 INFO  : Result from executing command 'getProjects': RFSoC_IP06_07_plt
+12:22:43 INFO  : Result from executing command 'getPlatforms': RFSoC_IP06_07_plt|E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE4/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm
+12:22:43 WARN  : An unexpected exception occurred in the module 'platform project logging'
+12:22:45 INFO  : Platform 'RFSoC_IP06_07_plt' is added to custom repositories.
+12:25:08 INFO  : No changes in MSS file content so sources will not be generated.
+12:25:18 INFO  : No changes in MSS file content so sources will not be generated.
+13:56:52 INFO  : No changes in MSS file content so sources will not be generated.
+13:59:38 INFO  : No changes in MSS file content so sources will not be generated.
+14:02:30 INFO  : No changes in MSS file content so sources will not be generated.
+14:02:41 INFO  : No changes in MSS file content so sources will not be generated.
+14:02:48 INFO  : No changes in MSS file content so sources will not be generated.
+14:03:16 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE4\temp_xsdb_launch_script.tcl
+14:03:18 INFO  : XSCT server has started successfully.
+14:03:18 INFO  : plnx-install-location is set to ''
+14:03:18 INFO  : Successfully done setting XSCT server connection channel  
+14:03:18 INFO  : Successfully done setting workspace for the tool. 
+14:03:20 INFO  : Successfully done query RDI_DATADIR 
+14:03:22 INFO  : Platform repository initialization has completed.
+14:03:22 INFO  : Registering command handlers for Vitis TCF services
+14:04:42 INFO  : No changes in MSS file content so sources will not be generated.
+14:06:18 INFO  : Example project lwip_example_ws_main_1 has been created successfully.
+14:10:16 ERROR : (XSDB Server)aarch64-none-elf-ar: creating ../../../lib/libxil.a
+
+14:10:33 ERROR : (XSDB Server)lwip-2.1.1/src/core/tcp.c: In function 'tcp_recved':
+lwip-2.1.1/src/core/tcp.c:992:22: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  992 |   } else if (rcv_wnd <= TCP_WND_MAX(pcb)) {
+      |                      ^~
+
+14:10:33 ERROR : (XSDB Server)In file included from ../../../include/lwip/opt.h:52,
+                 from lwip-2.1.1/src/core/tcp.c:100:
+lwip-2.1.1/src/core/tcp.c:996:11: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+  996 |   rcv_wnd <= TCP_WND_MAX(pcb));
+      |           ^~
+../../../include/lwip/debug.h:116:52: note: in definition of macro 'LWIP_ASSERT'
+  116 | #define LWIP_ASSERT(message, assertion) do { if (!(assertion)) { \
+      |                                                    ^~~~~~~~~
+
+14:10:40 ERROR : (XSDB Server)In file included from ../../../include/xemacps.h:329,
+                 from ../../../include/netif/xemacpsif.h:56,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+contrib/ports/xilinx/netif/xemacpsif_dma.c: In function 'init_dma':
+
+14:10:40 ERROR : (XSDB Server)../../../include/xemacps_bd.h:139:62: warning: 'bdrxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  139 |     (*(u32 *)((UINTPTR)(void*)(BaseAddress) + (u32)(Offset)) = (u32)(Data))
+      |                                                              ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:568:14: note: 'bdrxterminate' was declared here
+  568 |  XEmacPs_Bd *bdrxterminate;
+      |              ^~~~~~~~~~~~~
+In file included from ../../../include/xemacps.h:329,
+                 from ../../../include/netif/xemacpsif.h:56,
+                 from contrib/ports/xilinx/netif/xemacpsif_dma.c:37:
+../../../include/xemacps_bd.h:120:12: warning: 'bdtxterminate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  120 |  (*(u32 *)((UINTPTR)((void*)(BaseAddress)) + (u32)(Offset)))
+      |            ^
+contrib/ports/xilinx/netif/xemacpsif_dma.c:567:14: note: 'bdtxterminate' was declared here
+  567 |  XEmacPs_Bd *bdtxterminate;
+      |              ^~~~~~~~~~~~~
+
+14:10:40 ERROR : (XSDB Server)pm_api_sys.c: In function 'XPm_ClockSetRate':
+
+14:10:40 ERROR : (XSDB Server)pm_api_sys.c:1754:46: warning: unused parameter 'clk' [-Wunused-parameter]
+ 1754 | XStatus XPm_ClockSetRate(const enum XPmClock clk, const u32 rate)
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+pm_api_sys.c:1754:61: warning: unused parameter 'rate' [-Wunused-parameter]
+ 1754 | XStatus XPm_ClockSetRate(const enum XPmClock clk, const u32 rate)
+      |                                                   ~~~~~~~~~~^~~~
+
+14:10:40 ERROR : (XSDB Server)pm_api_sys.c: In function 'XPm_ClockGetRate':
+pm_api_sys.c:1771:46: warning: unused parameter 'clk' [-Wunused-parameter]
+ 1771 | XStatus XPm_ClockGetRate(const enum XPmClock clk, u32 *const rate)
+      |                          ~~~~~~~~~~~~~~~~~~~~^~~
+pm_api_sys.c:1771:62: warning: unused parameter 'rate' [-Wunused-parameter]
+ 1771 | XStatus XPm_ClockGetRate(const enum XPmClock clk, u32 *const rate)
+      |                                                   ~~~~~~~~~~~^~~~
+
+14:10:50 ERROR : (XSDB Server)aarch64-none-elf-ar: creating ../../../lib/libfreertos.a
+
+14:12:24 INFO  : Checking for BSP changes to sync application flags for project 'lwip_example_ws_main_1'...
+14:12:24 ERROR : Failed to openhw "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE4/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa"
+Reason: ERROR: [Common 17-39] 'hsi::open_hw_design' failed due to earlier errors.
+
+14:12:24 ERROR : Failed to update application flags from BSP for 'lwip_example_ws_main_1'. Reason: null
+java.lang.NullPointerException
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.<init>(SDxSwPlatform.java:305)
+	at com.xilinx.sdx.sw.internal.SDxSwPlatform.create(SDxSwPlatform.java:214)
+	at com.xilinx.sdx.sdk.core.util.SdkPlatformHelper.getSwPlatform(SdkPlatformHelper.java:61)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.getSwPlatform(SdkMakefileGenerationListener.java:160)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.syncAppFlags(SdkMakefileGenerationListener.java:78)
+	at com.xilinx.sdx.sdk.core.build.SdkMakefileGenerationListener.preMakefileGeneration(SdkMakefileGenerationListener.java:48)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.notifyPreMakefileGenerationListeners(XilinxGnuMakefileGenerator.java:91)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakefileGenerator.regenerateMakefiles(XilinxGnuMakefileGenerator.java:75)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performMakefileGeneration(CommonBuilder.java:1006)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.performPrebuildGeneration(CommonBuilder.java:873)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:748)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+14:15:53 INFO  : No changes in MSS file content so sources will not be generated.
+14:16:23 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE4\temp_xsdb_launch_script.tcl
+14:16:26 INFO  : XSCT server has started successfully.
+14:16:26 INFO  : plnx-install-location is set to ''
+14:16:26 INFO  : Successfully done setting XSCT server connection channel  
+14:16:26 INFO  : Successfully done setting workspace for the tool. 
+14:16:26 INFO  : Successfully done query RDI_DATADIR 
+14:16:30 INFO  : Registering command handlers for Vitis TCF services
+14:16:30 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+14:16:30 INFO  : Platform repository initialization has completed.
+16:06:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE4\temp_xsdb_launch_script.tcl
+16:06:36 INFO  : XSCT server has started successfully.
+16:06:36 INFO  : plnx-install-location is set to ''
+16:06:36 INFO  : Successfully done setting XSCT server connection channel  
+16:06:36 INFO  : Successfully done setting workspace for the tool. 
+16:06:39 INFO  : Successfully done query RDI_DATADIR 
+16:06:42 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+16:06:42 INFO  : Platform repository initialization has completed.
+16:06:42 INFO  : Registering command handlers for Vitis TCF services
+16:17:49 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_echo'...
+16:17:49 ERROR : Failed to get platform details for the project 'RFSoC_IP06_07_echo'. Cannot sync application flags.
+16:18:30 ERROR : Error encountered while updating custom repository paths
+Reason: No Platforms Found.
+
+

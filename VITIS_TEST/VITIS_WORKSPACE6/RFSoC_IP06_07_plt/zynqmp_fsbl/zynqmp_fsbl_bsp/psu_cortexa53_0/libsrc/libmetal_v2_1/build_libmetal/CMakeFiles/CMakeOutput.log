@@ -1,0 +1,16 @@
+The target system is: Generic -  - arm
+The host system is: Windows - 6.2 - AMD64
+Determining if files stdatomic.h exist passed with the following output:
+Change Dir: E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/libmetal_v2_1/build_libmetal/CMakeFiles/CMakeTmp
+
+Run Build Command:"E:/Xilinx/Vitis/2020.2/gnuwin/bin/make.exe" "cmTC_0b81e/fast"
+E:/Xilinx/Vitis/2020.2/gnuwin/bin/make.exe -f CMakeFiles/cmTC_0b81e.dir/build.make CMakeFiles/cmTC_0b81e.dir/build
+make.exe[1]: Entering directory 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/libmetal_v2_1/build_libmetal/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b81e.dir/CheckIncludeFiles.c.obj
+E:/Xilinx/Vitis/2020.2/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-gcc.exe   -O2 -c -g -Wall -Wextra -Os -flto -ffat-lto-objects -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/include -c   -o CMakeFiles/cmTC_0b81e.dir/CheckIncludeFiles.c.obj   -c E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/libmetal_v2_1/build_libmetal/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_0b81e
+E:/Xilinx/Vitis/2020.2/gnu/aarch64/nt/aarch64-none/bin/aarch64-none-elf-gcc.exe  -O2 -c -g -Wall -Wextra -Os -flto -ffat-lto-objects -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/include -c    "CMakeFiles/cmTC_0b81e.dir/CheckIncludeFiles.c.obj"   -o cmTC_0b81e  
+aarch64-xilinx-elf-gcc.exe: warning: CMakeFiles/cmTC_0b81e.dir/CheckIncludeFiles.c.obj: linker input file unused because linking not done
+make.exe[1]: Leaving directory 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/zynqmp_fsbl/zynqmp_fsbl_bsp/psu_cortexa53_0/libsrc/libmetal_v2_1/build_libmetal/CMakeFiles/CMakeTmp'
+
+

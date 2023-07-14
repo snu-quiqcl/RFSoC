@@ -2192,4 +2192,5 @@
 
 /******************************************************************/
 
+#define XPAR_XILPM_ENABLED
 #endif  /* end of protection macro */

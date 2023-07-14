@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="RFSoC_IP06_07_echo" location="E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE4/RFSoC_IP06_07_echo" platform="E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE4/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm" platformUID="xilinx:zcu111::0.0(custom)" systemProject="RFSoC_IP06_07_echo_system" sysConfig="RFSoC_IP06_07_plt" runtime="cpp" cpu="freertos10_xilinx_psu_cortexa53_0" cpuInstance="psu_cortexa53_0" os="freertos10_xilinx" mssSignature="07efa063372b57e13e0dadab65476de4">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1810311719" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.592270962" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="freertos_lwip_tcp_perf_server" hasBspSettings="true"/>
+</sdkproject:SdkProject>
