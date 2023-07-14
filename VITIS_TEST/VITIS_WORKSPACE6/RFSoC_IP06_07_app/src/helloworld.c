@@ -46,64 +46,47 @@
  */
 
 #include <stdio.h>
+#include <string.h>
+#include <xenv_standalone.h>
+#include <xparameters.h>
+#include "platform.h"
+#include "platform_config.h"
 #include "lwip/init.h"
 #include "lwip/netif.h"
 #include "lwip/tcp.h"
 #include "lwip/api.h"
 #include "xuartps.h"
+#include "netif/xadapter.h"
 
-#define SERVER_PORT 5001
+#define SERVER_PORT 8080
 #define BUFFER_SIZE 1024
+#ifdef XPAR_PSU_ETHERNET_3_BASEADDR
+#define EMAC_BASEADDR  XPAR_PSU_ETHERNET_3_BASEADDR
+#else
+#define EMAC_BASEADDR  XPAR_PSU_ETHERNET_3_BASEADDR
+#endif
 
-void tcp_server_thread(void *arg) {
-    struct netconn *conn, *newconn;
-    err_t err;
-    struct netbuf *buf;
-    void *data;
-    u16_t len;
+int main()
+{
+	struct netif *netif, server_netif;
+	ip_addr_t ipaddr, netmask, gw;
+	unsigned char mac_ethernet_address[] =
+		{0x00, 0x0a, 0x35, 0x00, 0x01, 0x02};
+	lwip_init();
+	if (!xemac_add(netif, &ipaddr, &netmask,
+			&gw, mac_ethernet_address,
+			EMAC_BASEADDR)) {
+		print("Error adding N/W interface\n\r");
+		return -1;
+	}
 
-    if (conn == NULL) {
-        printf("Failed to create TCP server connection.\r\n");
-        return;
-    }
+	netif_set_default(netif);
+	platform_enable_interrupts();
+	netif_set_up(netif);
+	//start_application();
 
-    err = netconn_bind(conn, IP_ADDR, SERVER_PORT);
-    if (err != ERR_OK) {
-        printf("Failed to bind TCP server.\r\n");
-        netconn_delete(conn);
-        return;
-    }
-
-    netconn_listen(conn);
-
-    while (1) {
-        err = netconn_accept(conn, &newconn);
-        if (err == ERR_OK) {
-            while ((err = netconn_recv(newconn, &buf)) == ERR_OK) {
-                do {
-                    netbuf_data(buf, &data, &len);
-                    // Echo received data via UART
-                } while (netbuf_next(buf) >= 0);
-                netbuf_delete(buf);
-            }
-
-            netconn_close(newconn);
-            netconn_delete(newconn);
-        }
-    }
-}
-
-int main() {
-    // Initialize UART
-    XUartPs_Config *uart_config;
-    uart_config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
-
-    // Initialize LWIP stack
-    lwip_init();
-
-    // Start the TCP server thread
-    tcp_server_thread(NULL);  // Run the thread function directly
-
-
-    return 0;
+	while (1) {
+		xemacif_input(netif);
+		//transfer_data();
+	}
 }

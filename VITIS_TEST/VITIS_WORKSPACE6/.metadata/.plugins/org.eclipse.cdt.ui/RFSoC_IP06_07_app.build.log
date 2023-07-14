@@ -1,65 +1,34 @@
-15:57:19 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_app ****
+15:01:36 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_app ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'tcp_server_thread':
-../src/helloworld.c:70:11: warning: implicit declaration of function 'netconn_bind' [-Wimplicit-function-declaration]
-   70 |     err = netconn_bind(conn, IP_ADDR_ANY, SERVER_PORT);
-      |           ^~~~~~~~~~~~
-../src/helloworld.c:73:9: warning: implicit declaration of function 'netconn_delete' [-Wimplicit-function-declaration]
-   73 |         netconn_delete(conn);
-      |         ^~~~~~~~~~~~~~
-../src/helloworld.c:77:5: warning: implicit declaration of function 'netconn_listen'; did you mean 'tcp_listen'? [-Wimplicit-function-declaration]
-   77 |     netconn_listen(conn);
-      |     ^~~~~~~~~~~~~~
-      |     tcp_listen
-../src/helloworld.c:80:15: warning: implicit declaration of function 'netconn_accept'; did you mean 'tcp_accept'? [-Wimplicit-function-declaration]
-   80 |         err = netconn_accept(conn, &newconn);
-      |               ^~~~~~~~~~~~~~
-      |               tcp_accept
-../src/helloworld.c:82:27: warning: implicit declaration of function 'netconn_recv' [-Wimplicit-function-declaration]
-   82 |             while ((err = netconn_recv(newconn, &buf)) == ERR_OK) {
-      |                           ^~~~~~~~~~~~
-../src/helloworld.c:84:21: warning: implicit declaration of function 'netbuf_data' [-Wimplicit-function-declaration]
-   84 |                     netbuf_data(buf, &data, &len);
-      |                     ^~~~~~~~~~~
-../src/helloworld.c:86:26: warning: implicit declaration of function 'netbuf_next' [-Wimplicit-function-declaration]
-   86 |                 } while (netbuf_next(buf) >= 0);
-      |                          ^~~~~~~~~~~
-../src/helloworld.c:87:17: warning: implicit declaration of function 'netbuf_delete' [-Wimplicit-function-declaration]
-   87 |                 netbuf_delete(buf);
-      |                 ^~~~~~~~~~~~~
-../src/helloworld.c:90:13: warning: implicit declaration of function 'netconn_close'; did you mean 'tcp_close'? [-Wimplicit-function-declaration]
-   90 |             netconn_close(newconn);
-      |             ^~~~~~~~~~~~~
-      |             tcp_close
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:98:21: warning: variable 'uart_config' set but not used [-Wunused-but-set-variable]
-   98 |     XUartPs_Config *uart_config;
-      |                     ^~~~~~~~~~~
-../src/helloworld.c: In function 'tcp_server_thread':
-../src/helloworld.c:65:8: warning: 'conn' is used uninitialized in this function [-Wuninitialized]
-   65 |     if (conn == NULL) {
-      |        ^
+../src/helloworld.c:90:3: warning: implicit declaration of function 'transfer_data' [-Wimplicit-function-declaration]
+   90 |   transfer_data();
+      |   ^~~~~~~~~~~~~
+../src/helloworld.c:71:23: warning: unused variable 'server_netif' [-Wunused-variable]
+   71 |  struct netif *netif, server_netif;
+      |                       ^~~~~~~~~~~~
+../src/helloworld.c:76:7: warning: 'netif' is used uninitialized in this function [-Wuninitialized]
+   76 |  if (!xemac_add(netif, &ipaddr, &netmask,
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   77 |    &gw, mac_ethernet_address,
+      |    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+   78 |    EMAC_BASEADDR)) {
+      |    ~~~~~~~~~~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building target: RFSoC_IP06_07_app.elf'
 'Invoking: ARM v8 gcc linker'
 aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_07_app.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: ./src/helloworld.o: in function `tcp_server_thread':
-E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:70: undefined reference to `netconn_bind'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:73: undefined reference to `netconn_delete'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:77: undefined reference to `netconn_listen'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:80: undefined reference to `netconn_accept'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:84: undefined reference to `netbuf_data'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:86: undefined reference to `netbuf_next'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:87: undefined reference to `netbuf_delete'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:82: undefined reference to `netconn_recv'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:90: undefined reference to `netconn_close'
-e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:91: undefined reference to `netconn_delete'
+e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: ./src/helloworld.o: in function `main':
+E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/helloworld.c:90: undefined reference to `transfer_data'
+e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: ./src/platform.o: in function `timer_callback':
+E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/platform.c:118: undefined reference to `echo_netif'
+e:/xilinx/vitis/2020.2/gnu/aarch64/nt/aarch64-none/x86_64-oesdk-mingw32/usr/bin/aarch64-xilinx-elf/../../libexec/aarch64-xilinx-elf/gcc/aarch64-xilinx-elf/9.2.0/real-ld.exe: E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_app\Debug/../src/platform.c:118: undefined reference to `echo_netif'
 collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:38: RFSoC_IP06_07_app.elf] Error 1
 
-15:57:20 Build Finished (took 764ms)
+15:01:36 Build Finished (took 760ms)
 

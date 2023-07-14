@@ -14,3 +14,33 @@ timestamp=[2023-07-13 15:57:20], mode=BUILD, duration=0:00:00.784, duration_ms=7
 timestamp=[2023-07-13 16:20:13], mode=APP_CREATION, duration=0:00:17.118, duration_ms=17118, data={name=RFSoC_IP06_07_rtos_echo, project_type=sdk, os=freertos10_xilinx, processor=cortex-a53, runtime=cpp, platform=RFSoC_IP06_07_plt, application_type=application}
 timestamp=[2023-07-13 16:21:48], mode=PLATFORM_GENERATION, duration=0:00:43.221, duration_ms=43221, data={name=RFSoC_IP06_07_plt}
 timestamp=[2023-07-13 16:21:50], mode=BUILD, duration=0:00:01.711, duration_ms=1711, data={name=RFSoC_IP06_07_rtos_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:15:27], mode=WORKBENCH_START, duration=0:00:23.565, duration_ms=23565, data={}
+timestamp=[2023-07-14 14:15:29], mode=WORKBENCH_UI_INIT, duration=0:00:01.522, duration_ms=1522, data={editors_count=12, platform_editors_count=6, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=RFSoC_IP06_07_app,RFSoC_IP06_07_app_system,RFSoC_IP06_07_plt,RFSoC_IP06_07_rtos_echo,RFSoC_IP06_07_rtos_echo_system,RemoteSystemsTempFiles}
+timestamp=[2023-07-14 14:15:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.238, duration_ms=238, data={}
+timestamp=[2023-07-14 14:40:29], mode=PLATFORM_GENERATION, duration=0:01:31.739, duration_ms=91739, data={name=RFSoC_IP06_07_plt}
+timestamp=[2023-07-14 14:40:40], mode=BUILD, duration=0:00:01.022, duration_ms=1022, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:43:47], mode=BUILD, duration=0:00:00.559, duration_ms=559, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:44:01], mode=BUILD, duration=0:00:00.419, duration_ms=419, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:44:42], mode=BUILD, duration=0:00:00.532, duration_ms=532, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:45:21], mode=BUILD, duration=0:00:00.388, duration_ms=388, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:45:44], mode=BUILD, duration=0:00:00.459, duration_ms=459, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:46:07], mode=BUILD, duration=0:00:00.409, duration_ms=409, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:47:16], mode=BUILD, duration=0:00:00.830, duration_ms=830, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:53:55], mode=BUILD, duration=0:00:00.719, duration_ms=719, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:55:35], mode=BUILD, duration=0:00:00.708, duration_ms=708, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:56:00], mode=BUILD, duration=0:00:00.911, duration_ms=911, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 14:56:39], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:01:36], mode=BUILD, duration=0:00:00.772, duration_ms=772, data={name=RFSoC_IP06_07_app, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:04:04], mode=APP_CREATION, duration=0:00:03.399, duration_ms=3399, data={name=RFSoC_IP06_07_baremetal_echo, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=RFSoC_IP06_07_plt, application_type=application}
+timestamp=[2023-07-14 15:04:28], mode=BUILD, duration=0:00:03.434, duration_ms=3434, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:10:09], mode=BUILD, duration=0:00:01.101, duration_ms=1101, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:14:32], mode=BUILD, duration=0:00:01.171, duration_ms=1171, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:21:46], mode=BUILD, duration=0:00:01.167, duration_ms=1167, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:21:56], mode=BUILD, duration=0:00:09.887, duration_ms=9887, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:29:17], mode=BUILD, duration=0:00:01.236, duration_ms=1236, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:29:27], mode=BUILD, duration=0:00:09.377, duration_ms=9377, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:32:52], mode=BUILD, duration=0:00:00.424, duration_ms=424, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:32:59], mode=BUILD, duration=0:00:00.403, duration_ms=403, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:33:09], mode=BUILD, duration=0:00:09.266, duration_ms=9266, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 16:13:51], mode=BUILD, duration=0:00:01.337, duration_ms=1337, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 16:14:01], mode=BUILD, duration=0:00:09.663, duration_ms=9663, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}

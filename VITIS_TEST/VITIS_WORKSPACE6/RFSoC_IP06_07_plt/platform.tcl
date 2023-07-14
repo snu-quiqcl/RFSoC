@@ -36,3 +36,4 @@ domain active {standalone_domain}
 domain active {freertos10_xilinx_psu_cortexa53_0}
 platform generate -quick
 platform generate -domains freertos10_xilinx_psu_cortexa53_0 
+platform generate
