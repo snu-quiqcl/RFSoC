@@ -36,9 +36,7 @@ class TCP_TEST:
         print(self.TCPPort)
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.socket.connect((self.IPAddress,self.TCPPort))
-        self.socket.settimeout(1)
-        connectionInfo = self.socket.recv(100).decode('latin-1').split(':')
-        print(connectionInfo)
+        self.socket.settimeout(20)
         
         
     def disconnect(self):
@@ -69,7 +67,7 @@ class TCP_TEST:
         Returns:
             unicode string: received string
         """
-        return (self.socket.recv(10000).decode('latin-1'))[:-1]
+        return (self.socket.recv(10000).decode('latin-1'))
         #return (self.inst.read())[:-1] # Stripping '\n'
     
 
@@ -79,3 +77,10 @@ if __name__ == "__main__":
     print("Done")
     tcp.write("hello")
     print(tcp.read())
+    while(1):
+        a = input()
+        tcp.write(a)
+        print(tcp.read())
+        if( a == 'q'):
+            break
+    

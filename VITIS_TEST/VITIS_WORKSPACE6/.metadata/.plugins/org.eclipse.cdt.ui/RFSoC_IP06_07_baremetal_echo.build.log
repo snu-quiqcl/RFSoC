@@ -1,8 +1,17 @@
-16:13:49 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
+12:23:19 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
 make all 
+'Building file: ../src/echo.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
+'Finished building: ../src/echo.c'
+' '
 'Building file: ../src/main.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:237:6: warning: unused variable 'a' [-Wunused-variable]
+  237 |  int a = 0;
+      |      ^
 'Finished building: ../src/main.c'
 ' '
 'Building target: RFSoC_IP06_07_baremetal_echo.elf'
@@ -13,9 +22,9 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TES
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_07_baremetal_echo.elf  |tee "RFSoC_IP06_07_baremetal_echo.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 117404	   7504	4346172	4471080	 443928	RFSoC_IP06_07_baremetal_echo.elf
+ 117460	   7504	4346180	4471144	 443968	RFSoC_IP06_07_baremetal_echo.elf
 'Finished building: RFSoC_IP06_07_baremetal_echo.elf.size'
 ' '
 
-16:13:51 Build Finished (took 1s.315ms)
+12:23:20 Build Finished (took 1s.401ms)
 

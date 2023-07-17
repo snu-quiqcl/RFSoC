@@ -71,6 +71,7 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 
 	/* free the received pbuf */
 	pbuf_free(p);
+	xil_printf("recv_callback\n\r");
 
 	return ERR_OK;
 }

@@ -37,3 +37,8 @@ domain active {freertos10_xilinx_psu_cortexa53_0}
 platform generate -quick
 platform generate -domains freertos10_xilinx_psu_cortexa53_0 
 platform generate
+platform generate
+platform active {RFSoC_IP06_07_plt}
+bsp reload
+bsp reload
+platform generate -domains 

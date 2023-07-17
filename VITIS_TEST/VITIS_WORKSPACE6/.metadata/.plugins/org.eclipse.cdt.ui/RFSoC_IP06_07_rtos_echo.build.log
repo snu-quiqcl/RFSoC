@@ -1,4 +1,4 @@
-16:21:48 **** Build of configuration Debug for project RFSoC_IP06_07_rtos_echo ****
+16:57:08 **** Build of configuration Debug for project RFSoC_IP06_07_rtos_echo ****
 make all 
 'Building file: ../src/echo.c'
 'Invoking: ARM v8 gcc compiler'
@@ -12,11 +12,6 @@ aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -D __BA
   128 |     (void*)new_sd,
       |     ^
 'Finished building: ../src/echo.c'
-' '
-'Building file: ../src/iic_phyreset.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/freertos10_xilinx_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
-'Finished building: ../src/iic_phyreset.c'
 ' '
 'Building file: ../src/main.c'
 'Invoking: ARM v8 gcc compiler'
@@ -35,5 +30,5 @@ aarch64-none-elf-size RFSoC_IP06_07_rtos_echo.elf  |tee "RFSoC_IP06_07_rtos_echo
 'Finished building: RFSoC_IP06_07_rtos_echo.elf.size'
 ' '
 
-16:21:50 Build Finished (took 1s.698ms)
+16:57:10 Build Finished (took 1s.710ms)
 

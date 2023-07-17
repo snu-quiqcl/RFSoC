@@ -1,2 +1,5 @@
 128 bit write
 https://developer.arm.com/documentation/ka004805/latest/
+
+ZCU111 RealTek Chip Problem
+https://support.xilinx.com/s/question/0D52E00006hpg1rSAA/cannot-connect-to-lwip-echo-server-on-zynq?language=en_US

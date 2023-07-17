@@ -159,11 +159,13 @@ int main()
 	/*IP4_ADDR(&ipaddr,  169, 254, 241, 99);
 	IP4_ADDR(&netmask, 255, 255,   0,  0);
 	IP4_ADDR(&gw,      192, 168,   0,  1);*/
+	xil_printf("set manual IP\n\r");
 #endif
 #endif
 	print_app_header();
 
 	lwip_init();
+	xil_printf("lwip initialize \n\r");
 
 #if (LWIP_IPV6 == 0)
 	/* Add network interface to the netif_list, and set it as default */
@@ -222,6 +224,7 @@ int main()
 	ipaddr.addr = echo_netif->ip_addr.addr;
 	gw.addr = echo_netif->gw.addr;
 	netmask.addr = echo_netif->netmask.addr;
+	xil_printf("DHCP setting \n\r");
 #endif
 
 	print_ip_settings(&ipaddr, &netmask, &gw);
@@ -231,6 +234,7 @@ int main()
 	start_application();
 
 	/* receive and process packets */
+	int a = 0;
 	while (1) {
 		if (TcpFastTmrFlag) {
 			tcp_fasttmr();
