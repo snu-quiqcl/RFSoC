@@ -1,30 +1,38 @@
-12:23:19 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
+19:37:58 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
 make all 
-'Building file: ../src/echo.c'
+'Building file: ../src/rfdc_controller.c'
 'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-'Finished building: ../src/echo.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:237:6: warning: unused variable 'a' [-Wunused-variable]
-  237 |  int a = 0;
-      |      ^
-'Finished building: ../src/main.c'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfdc_controller.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/rfdc_controller.d" -MT"src/rfdc_controller.o" -o "src/rfdc_controller.o" "../src/rfdc_controller.c"
+../src/rfdc_controller.c: In function 'inst_process':
+../src/rfdc_controller.c:231:6: warning: unused variable 'inst_int' [-Wunused-variable]
+  231 |  u64 inst_int = 0;
+      |      ^~~~~~~~
+../src/rfdc_controller.c:230:6: warning: unused variable 'timestamp_int' [-Wunused-variable]
+  230 |  u64 timestamp_int = 0;
+      |      ^~~~~~~~~~~~~
+../src/rfdc_controller.c:227:6: warning: variable 'fnct_index' set but not used [-Wunused-but-set-variable]
+  227 |  int fnct_index = 0;
+      |      ^~~~~~~~~~
+../src/rfdc_controller.c:224:6: warning: variable 'module_index' set but not used [-Wunused-but-set-variable]
+  224 |  int module_index = 0;
+      |      ^~~~~~~~~~~~
+../src/rfdc_controller.c: In function 'read_sampling_freq':
+../src/rfdc_controller.c:213:1: warning: control reaches end of non-void function [-Wreturn-type]
+  213 | }
+      | ^
+'Finished building: ../src/rfdc_controller.c'
 ' '
 'Building target: RFSoC_IP06_07_baremetal_echo.elf'
 'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_07_baremetal_echo.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_07_baremetal_echo.elf"  ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/sfp.o ./src/si5324.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
 'Finished building target: RFSoC_IP06_07_baremetal_echo.elf'
 ' '
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_07_baremetal_echo.elf  |tee "RFSoC_IP06_07_baremetal_echo.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 117460	   7504	4346180	4471144	 443968	RFSoC_IP06_07_baremetal_echo.elf
+ 147936	  19944	4346132	4514012	 44e0dc	RFSoC_IP06_07_baremetal_echo.elf
 'Finished building: RFSoC_IP06_07_baremetal_echo.elf.size'
 ' '
 
-12:23:20 Build Finished (took 1s.401ms)
+19:37:59 Build Finished (took 1s.293ms)
 

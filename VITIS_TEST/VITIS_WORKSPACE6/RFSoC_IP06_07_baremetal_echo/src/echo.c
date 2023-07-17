@@ -29,10 +29,14 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "lwip/err.h"
-#include "lwip/tcp.h"
 #if defined (__arm__) || defined (__aarch64__)
 #include "xil_printf.h"
+#endif
+#ifndef _RFDC_
+#define _RFDC_
+#include "lwip/err.h"
+#include "lwip/tcp.h"
+#include "rfdc_controller.h"
 #endif
 
 int transfer_data() {
@@ -61,6 +65,9 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 
 	/* indicate that the packet has been received */
 	tcp_recved(tpcb, p->len);
+	xil_printf("%d\r\n",p->len);
+	xil_printf("%s\r\n",p->payload);
+	inst_process(tpcb,p->payload);
 
 	/* echo back the payload */
 	/* in this case, we assume that the payload is < TCP_SND_BUF */

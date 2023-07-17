@@ -1,0 +1,49 @@
+#ifndef XPS_BOARD_ZCU111
+#define XPS_BOARD_ZCU111
+#endif
+
+#ifndef __BAREMETAL__
+#define __BAREMETAL__
+#endif
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "E:\Xilinx\Vitis\2020.2\data\embeddedsw\XilinxProcessorIPLib\drivers\rfdc_v8_1\examples\xrfdc_clk.c"
+#include "E:\Xilinx\Vitis\2020.2\data\embeddedsw\XilinxProcessorIPLib\drivers\rfdc_v8_1\examples\xrfdc_clk.h"
+#include "xparameters.h"
+#include "xil_io.h"
+
+#define RFDC_DEVICE_ID 	XPAR_XRFDC_0_DEVICE_ID
+#define I2CBUS	1
+#define XRFDC_BASE_ADDR		XPAR_XRFDC_0_BASEADDR
+#define RFDC_DEV_NAME    XPAR_XRFDC_0_DEV_NAME
+
+//MUX address
+#define S00_AXIS_TDATA (u64)0x0
+#define S00_AXIS_TVALID (u64)0x1
+#define DAC00_FAST_SHUTDOWN (u64)0x2
+#define DAC00_PL_EVENT (u64)0x3
+#define DAC00_NCO_FREQ (u64)0x4
+#define DAC00_NCO_PHASE (u64)0x5
+#define DAC00_NCO_PHASE_RST (u64)0x6
+#define DAC00_NCO_UPDATE_EN (u64)0x7
+#define DAC0_NCO_UPDATE_REQ (u64)0x8
+#define DAC0_SYSREF_INT_GATING (u64)0x9
+#define DAC0_SYSREF_INT_REENABLE (u64)0xA
+#define UPDATE (u64)0xF
+
+//AXI address
+#define AXI_LEN = 0x10;
+#define M_AXI_HPM0_FPD_ADDR XPAR_AXI_HPM0_FPD_0_S_AXI_BASEADDR
+#define M_AXI_HPM1_FPD_ADDR XPAR_AXI_HPM1_FPD_0_S_AXI_BASEADDR
+
+int inst_process(char * TCP_data);
+
+unsigned int LMK04208_CKin[1][26] = {
+		{0x00160040,0x80140320,0x80140321,0x80140322,
+		0xC0140023,0x40140024,0x80141E05,0x03300006,0x01300007,0x06010008,
+		0x55555549,0x9102410A,0x0401100B,0x1B0C006C,0x2302886D,0x0200000E,
+		0x8000800F,0xC1550410,0x00000058,0x02C9C419,0x8FA8001A,0x10001E1B,
+		0x0021201C,0x0180033D,0x0200033E,0x003F001F }};
+

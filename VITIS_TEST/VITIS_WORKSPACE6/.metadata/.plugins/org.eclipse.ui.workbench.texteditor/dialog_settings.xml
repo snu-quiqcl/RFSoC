@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="(u64 timestamp, u64 instruction);"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="(u64 timestamp, u64 instruction);"/>
+			<item value="&quot;,"/>
+			<item value="void "/>
 			<item value="MACLITE_0_VEC_ID"/>
 			<item value="XPAR_INTC_0_EMACLITE_0_VEC_ID"/>
 			<item value="recv"/>
@@ -20,11 +23,10 @@
 			<item value="tcp_read"/>
 			<item value="write"/>
 			<item value="read("/>
-			<item value="read"/>
-			<item value="start"/>
-			<item value="start_app"/>
 		</list>
 		<list key="replacehistory">
+			<item value="&quot;,"/>
+			<item value="&quot;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

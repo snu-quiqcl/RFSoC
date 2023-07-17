@@ -357,3 +357,15 @@ Reason: No Platforms Found.
 Reason: No Platforms Found.
 
 
+13:59:58 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE4\temp_xsdb_launch_script.tcl
+14:00:01 INFO  : XSCT server has started successfully.
+14:00:01 INFO  : Successfully done setting XSCT server connection channel  
+14:00:01 INFO  : plnx-install-location is set to ''
+14:00:01 INFO  : Successfully done setting workspace for the tool. 
+14:00:06 ERROR : Error encountered while initializing user repository paths
+Reason: No Platforms Found.
+
+
+14:00:06 INFO  : Platform repository initialization has completed.
+14:00:07 INFO  : Registering command handlers for Vitis TCF services
+14:00:08 INFO  : Successfully done query RDI_DATADIR 

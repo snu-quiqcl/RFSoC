@@ -52,7 +52,7 @@ class TCP_TEST:
         Returns:
             None
         """
-        self.socket.send(bytes('w:' + commandWithoutNewline, 'latin-1'))
+        self.socket.send(bytes(commandWithoutNewline, 'latin-1'))
 
         #self.inst.write(commandWithoutNewline)
         
@@ -75,8 +75,6 @@ if __name__ == "__main__":
     tcp = TCP_TEST()
     tcp.connect()
     print("Done")
-    tcp.write("hello")
-    print(tcp.read())
     while(1):
         a = input()
         tcp.write(a)

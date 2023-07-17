@@ -38,7 +38,6 @@
 #include "xil_printf.h"
 #endif
 
-#include "lwip/tcp.h"
 #include "xil_cache.h"
 
 #if LWIP_IPV6==1
@@ -47,6 +46,13 @@
 #if LWIP_DHCP==1
 #include "lwip/dhcp.h"
 #endif
+#endif
+
+#ifndef _RFDC_
+#define _RFDC_
+#include "lwip/err.h"
+#include "lwip/tcp.h"
+#include "rfdc_controller.h"
 #endif
 
 /* defined by each RAW mode application */
@@ -105,7 +111,7 @@ print_ip_settings(ip_addr_t *ip, ip_addr_t *mask, ip_addr_t *gw)
 }
 #endif
 
-#if defined (__arm__) && !defined (ARMR5)
+#if defined (__arm__) && !defined (ARMR5) //We are using APU and this is ARMv8. If we use RPU, then this code would work
 #if XPAR_GIGE_PCS_PMA_SGMII_CORE_PRESENT == 1 || XPAR_GIGE_PCS_PMA_1000BASEX_CORE_PRESENT == 1
 int ProgramSi5324(void);
 int ProgramSfpPhy(void);
@@ -232,9 +238,9 @@ int main()
 #endif
 	/* start the application (web server, rxtest, txtest, etc..) */
 	start_application();
+	set_clock(6400000);
 
 	/* receive and process packets */
-	int a = 0;
 	while (1) {
 		if (TcpFastTmrFlag) {
 			tcp_fasttmr();
