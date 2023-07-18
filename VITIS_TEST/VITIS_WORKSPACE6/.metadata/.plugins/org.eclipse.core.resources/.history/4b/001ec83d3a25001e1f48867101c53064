@@ -1,0 +1,15 @@
+#ifndef XPS_BOARD_ZCU111
+#define XPS_BOARD_ZCU111
+#endif
+
+#ifndef __BAREMETAL__
+#define __BAREMETAL__
+#endif
+
+int inst_process(struct tcp_pcb *tpcb, char * TCP_data);
+unsigned long long int read_sampling_freq(struct tcp_pcb *tpcb);
+char * int642str(int64_t val, char * str_dest);
+char * substring(char * str_dest,char * str,int64_t start,int64_t end);
+int64_t string_count(char* str, int64_t pos, char spc);
+int64_t string2int64(char* str);
+

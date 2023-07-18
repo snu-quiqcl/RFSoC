@@ -32,12 +32,9 @@
 #if defined (__arm__) || defined (__aarch64__)
 #include "xil_printf.h"
 #endif
-#ifndef _RFDC_
-#define _RFDC_
 #include "lwip/err.h"
 #include "lwip/tcp.h"
 #include "rfdc_controller.h"
-#endif
 
 int transfer_data() {
 	return 0;

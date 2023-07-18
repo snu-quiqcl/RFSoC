@@ -1,0 +1,102 @@
+#include <string.h>
+#include "xil_printf.h"
+#include "xil_printf.h"
+#include "E:\Xilinx\Vitis\2020.2\data\embeddedsw\XilinxProcessorIPLib\drivers\rfdc_v8_1\examples\xrfdc_clk.h"
+#include "E:\Xilinx\Vitis\2020.2\data\embeddedsw\XilinxProcessorIPLib\drivers\rfdc_v8_1\examples\xrfdc_clk.c"
+#include "xparameters.h"
+#include "xil_io.h"
+
+#ifndef XPS_BOARD_ZCU111
+#define XPS_BOARD_ZCU111
+#endif
+
+#ifndef __BAREMETAL__
+#define __BAREMETAL__
+#endif
+
+#define RFDC_DEVICE_ID 	XPAR_XRFDC_0_DEVICE_ID
+#define I2CBUS	1
+#define XRFDC_BASE_ADDR		XPAR_XRFDC_0_BASEADDR
+#define RFDC_DEV_NAME    XPAR_XRFDC_0_DEV_NAME
+
+//MUX address
+#define S00_AXIS_TDATA (int64_t)0x0
+#define S00_AXIS_TVALID (int64_t)0x1
+#define DAC00_FAST_SHUTDOWN (int64_t)0x2
+#define DAC00_PL_EVENT (int64_t)0x3
+#define DAC00_NCO_FREQ (int64_t)0x4
+#define DAC00_NCO_PHASE (int64_t)0x5
+#define DAC00_NCO_PHASE_RST (int64_t)0x6
+#define DAC00_NCO_UPDATE_EN (int64_t)0x7
+#define DAC0_NCO_UPDATE_REQ (int64_t)0x8
+#define DAC0_SYSREF_INT_GATING (int64_t)0x9
+#define DAC0_SYSREF_INT_REENABLE (int64_t)0xA
+#define UPDATE (int64_t)0xF
+
+//AXI address
+#define AXI_LEN 0x10;
+#define M_AXI_HPM0_FPD_ADDR XPAR_AXI_HPM0_FPD_0_S_AXI_BASEADDR
+#define M_AXI_HPM1_FPD_ADDR XPAR_AXI_HPM1_FPD_0_S_AXI_BASEADDR
+
+#define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | (lo)))
+#define DEBUG_RFDC 1
+#define MODULE_NUM 3
+#define FNCT_NUM 2
+
+/*
+ * Sampling frequency of DAC
+ */
+static int64_t sampling_freq = 0;
+
+unsigned int LMK04208_CKin[1][26] = {
+		{0x00160040,0x80140320,0x80140321,0x80140322,
+		0xC0140023,0x40140024,0x80141E05,0x03300006,0x01300007,0x06010008,
+		0x55555549,0x9102410A,0x0401100B,0x1B0C006C,0x2302886D,0x0200000E,
+		0x8000800F,0xC1550410,0x00000058,0x02C9C419,0x8FA8001A,0x10001E1B,
+		0x0021201C,0x0180033D,0x0200033E,0x003F001F }};
+/*
+ * list of modules
+ */
+struct module_tuple{
+	int64_t  num;
+	char module_name[128];
+	UINTPTR addr;
+};
+/*
+ * list of functions
+ */
+struct fnct_tuple{
+	int64_t  num;
+	char fnct_name[128];
+};
+
+/*
+ * Instruction Format
+ */
+struct instruction{
+	int64_t  num;
+	char type;
+	char * name;
+	struct instruction* next;
+};
+
+const struct module_tuple MODULE[MODULE_NUM] = {
+	{0,"CPU",0},
+	{1,"BIN",0},
+	{2,"DAC00",XPAR_DAC_CONTROLLER_0_BASEADDR},
+	{3,"TIME_CONT",XPAR_TIMECONTROLLER_0_BASEADDR}
+};
+
+const struct fnct_tuple FNCT[FNCT_NUM] = {
+	{0,"write_fifo"},
+	{1,"set_clock"},
+	{2,"read_sampling_freq"}
+};
+
+int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data);
+int64_t read_sampling_freq(struct tcp_pcb *tpcb);
+char * int642str(int64_t val, char * str_dest);
+char * substring(char * str_dest,char * str,int64_t start,int64_t end);
+int64_t string_count(char* str, int64_t pos, char spc);
+int64_t string2int64(char* str);
+

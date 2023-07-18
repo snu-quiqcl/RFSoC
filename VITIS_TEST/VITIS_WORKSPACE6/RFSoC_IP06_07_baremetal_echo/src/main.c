@@ -48,12 +48,9 @@
 #endif
 #endif
 
-#ifndef _RFDC_
-#define _RFDC_
 #include "lwip/err.h"
 #include "lwip/tcp.h"
 #include "rfdc_controller.h"
-#endif
 
 /* defined by each RAW mode application */
 void print_app_header();
