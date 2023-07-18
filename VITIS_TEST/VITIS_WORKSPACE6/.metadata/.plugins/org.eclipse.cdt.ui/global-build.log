@@ -1,26 +1,26 @@
 Nothing to build in platform 'RFSoC_IP06_07_plt'
 
-19:37:58 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
+12:01:19 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
 make all 
 'Building file: ../src/rfdc_controller.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfdc_controller.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/rfdc_controller.d" -MT"src/rfdc_controller.o" -o "src/rfdc_controller.o" "../src/rfdc_controller.c"
 ../src/rfdc_controller.c: In function 'inst_process':
-../src/rfdc_controller.c:231:6: warning: unused variable 'inst_int' [-Wunused-variable]
-  231 |  u64 inst_int = 0;
+../src/rfdc_controller.c:243:6: warning: unused variable 'inst_int' [-Wunused-variable]
+  243 |  u64 inst_int = 0;
       |      ^~~~~~~~
-../src/rfdc_controller.c:230:6: warning: unused variable 'timestamp_int' [-Wunused-variable]
-  230 |  u64 timestamp_int = 0;
+../src/rfdc_controller.c:242:6: warning: unused variable 'timestamp_int' [-Wunused-variable]
+  242 |  u64 timestamp_int = 0;
       |      ^~~~~~~~~~~~~
-../src/rfdc_controller.c:227:6: warning: variable 'fnct_index' set but not used [-Wunused-but-set-variable]
-  227 |  int fnct_index = 0;
+../src/rfdc_controller.c:239:6: warning: variable 'fnct_index' set but not used [-Wunused-but-set-variable]
+  239 |  int fnct_index = 0;
       |      ^~~~~~~~~~
-../src/rfdc_controller.c:224:6: warning: variable 'module_index' set but not used [-Wunused-but-set-variable]
-  224 |  int module_index = 0;
+../src/rfdc_controller.c:236:6: warning: variable 'module_index' set but not used [-Wunused-but-set-variable]
+  236 |  int module_index = 0;
       |      ^~~~~~~~~~~~
 ../src/rfdc_controller.c: In function 'read_sampling_freq':
-../src/rfdc_controller.c:213:1: warning: control reaches end of non-void function [-Wreturn-type]
-  213 | }
+../src/rfdc_controller.c:225:1: warning: control reaches end of non-void function [-Wreturn-type]
+  225 | }
       | ^
 'Finished building: ../src/rfdc_controller.c'
 ' '
@@ -32,13 +32,13 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TES
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_07_baremetal_echo.elf  |tee "RFSoC_IP06_07_baremetal_echo.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 147936	  19944	4346132	4514012	 44e0dc	RFSoC_IP06_07_baremetal_echo.elf
+ 131136	  19944	4346100	4497180	 449f1c	RFSoC_IP06_07_baremetal_echo.elf
 'Finished building: RFSoC_IP06_07_baremetal_echo.elf.size'
 ' '
-19:38:00 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
+12:01:21 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55805 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
+generate_system_bif.bat 58348 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
 sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm --sys_config RFSoC_IP06_07_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf,psu_cortexa53_0
 creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
 Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

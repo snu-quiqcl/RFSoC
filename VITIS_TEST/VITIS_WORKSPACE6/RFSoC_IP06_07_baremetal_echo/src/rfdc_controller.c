@@ -38,8 +38,8 @@
 
 #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | (lo)))
 #define DEBUG_RFDC 1
-#define MODULE_NUM 2
-#define FNCT_NUM 15
+#define MODULE_NUM 3
+#define FNCT_NUM 2
 
 /*
  * Sampling frequency of DAC
@@ -56,28 +56,42 @@ unsigned int LMK04208_CKin[1][26] = {
  * list of modules
  */
 struct module_tuple{
-	int num;
-	char module_name[1024];
+	u64  num;
+	char module_name[128];
 	UINTPTR addr;
 };
 /*
  * list of functions
  */
 struct fnct_tuple{
-	int num;
-	char fnct_name[1024];
+	u64  num;
+	char fnct_name[128];
+};
+
+/*
+ * Instruction Format
+ */
+struct instruction_form{
+	u64  num;
+	char inst_name[128];
 };
 
 const struct module_tuple MODULE[MODULE_NUM] = {
-	{0,"DAC00",XPAR_DAC_CONTROLLER_0_BASEADDR},
-	{1,"TIME_CONT",XPAR_TIMECONTROLLER_0_BASEADDR}
+	{0,"CPU",0},
+	{1,"BIN",0},
+	{2,"DAC00",XPAR_DAC_CONTROLLER_0_BASEADDR},
+	{3,"TIME_CONT",XPAR_TIMECONTROLLER_0_BASEADDR}
 };
 
 const struct fnct_tuple FNCT[FNCT_NUM] = {
 	{0,"write_fifo"},
-	{1,"set_clock"}
+	{1,"set_clock"},
+	{2,"read_sampling_freq"}
 };
 
+/*
+ * 128bit AXI output function
+ */
 static INLINE void Xil_Out128(UINTPTR Addr, __uint128_t Value)
 {
 	volatile __uint128_t *LocalAddr = (volatile __uint128_t *)Addr;
@@ -215,7 +229,20 @@ u64 read_sampling_freq(struct tcp_pcb *tpcb){
 
 /*
  * TCP data format
- * #{Device}#{function name}#{timestamp}#{inst}#ENDL
+ * 1. Timestamp output format
+ * #{Device}#{function name}#{timestamp}#{inst}#!EOL
+ *
+ * 2. CPU instruction format
+ * #CPU#{function name}#{inst}#!EOL
+ *
+ * 3. binary file send format
+ * #BIN#!EOL
+ *
+ * 4. Branch setting format -> shuold be aligned
+ * #BRANCH#{tag_num}#{Device}#{function name}#{timestamp}#{inst}#!EOL
+ *
+ * 5. Clear branch format
+ * #CLRBRANCH#!EOL
  */
 
 int inst_process(struct tcp_pcb *tpcb, char * TCP_data){

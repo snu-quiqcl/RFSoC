@@ -3569,3 +3569,14 @@ con
 
 19:39:16 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
 19:40:26 INFO  : Disconnected from the channel tcfchan#64.
+11:39:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\temp_xsdb_launch_script.tcl
+11:39:29 INFO  : XSCT server has started successfully.
+11:39:29 INFO  : plnx-install-location is set to ''
+11:39:29 INFO  : Successfully done setting XSCT server connection channel  
+11:39:29 INFO  : Successfully done setting workspace for the tool. 
+11:39:34 INFO  : Platform repository initialization has completed.
+11:39:35 INFO  : Registering command handlers for Vitis TCF services
+11:39:35 INFO  : Successfully done query RDI_DATADIR 
+12:01:09 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
+12:01:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
+

@@ -1,10 +1,10 @@
-19:38:00 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
+12:01:21 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55805 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
+generate_system_bif.bat 58348 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
 sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm --sys_config RFSoC_IP06_07_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf,psu_cortexa53_0
 creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
 Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-19:38:09 Build Finished (took 9s.466ms)
+12:01:35 Build Finished (took 13s.862ms)
 
