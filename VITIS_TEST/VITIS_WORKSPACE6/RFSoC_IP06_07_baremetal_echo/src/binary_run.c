@@ -12,5 +12,7 @@ int64_t save_binary(){
 }
 
 int64_t run_bin_process(struct tcp_pcb *tpcb, int64_t fnct_num){
+#ifdef DEBUG_RFDC
 	xil_printf("BIN %d",fnct_num);
+#endif
 }

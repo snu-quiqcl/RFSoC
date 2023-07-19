@@ -103,9 +103,13 @@ int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data){
 }
 
 int64_t run_cpu_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t param_num){
+#ifdef DEBUG_RFDC
 	xil_printf("CPU %d %d\r\n", fnct_num, param_num);
+#endif
 }
 
 int64_t run_rtio_process(struct tcp_pcb *tpcb, int64_t module_num, int64_t fnct_num, int64_t timestamp_num, int64_t param_num){
+#ifdef DEBUG_RFDC
 	xil_printf("RTIO %d %d %d %d\r\n", module_num, fnct_num, timestamp_num, param_num);
+#endif
 }

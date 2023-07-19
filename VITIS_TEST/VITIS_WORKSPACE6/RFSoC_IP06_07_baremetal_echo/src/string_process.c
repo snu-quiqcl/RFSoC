@@ -44,7 +44,6 @@ int64_t string2int64(char* str){
 int64_t string_count(char* str, int64_t pos, char spc){
 	int64_t i = 0, num = 0;
 	while( *(str+i) != '\0'){
-		xil_printf("%c ",*(str+i));
 		if( *(str+i) == spc){
 			num++;
 		}

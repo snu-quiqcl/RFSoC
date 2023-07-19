@@ -1,44 +1,36 @@
 Nothing to build in platform 'RFSoC_IP06_07_plt'
 
-14:43:40 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
+19:00:29 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
 make all 
 'Building file: ../src/simple_lexer.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simple_lexer.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/simple_lexer.d" -MT"src/simple_lexer.o" -o "src/simple_lexer.o" "../src/simple_lexer.c"
 ../src/simple_lexer.c: In function 'simple_lexer':
-../src/simple_lexer.c:34:4: warning: implicit declaration of function 'run_cpu_process' [-Wimplicit-function-declaration]
-   34 |    run_cpu_process(tpcb,fnct_num,param_num);
-      |    ^~~~~~~~~~~~~~~
-../src/simple_lexer.c:35:4: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
-   35 |    return;
-      |    ^~~~~~
+../src/simple_lexer.c:35:5: warning: implicit declaration of function 'run_cpu_process' [-Wimplicit-function-declaration]
+   35 |     run_cpu_process(tpcb,fnct_num,param_num);
+      |     ^~~~~~~~~~~~~~~
+../src/simple_lexer.c:36:5: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+   36 |     return;
+      |     ^~~~~~
 ../src/simple_lexer.c:6:22: note: declared here
     6 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst){
       |                      ^~~~~~~~~~~~
-../src/simple_lexer.c:42:4: warning: implicit declaration of function 'run_bin_process' [-Wimplicit-function-declaration]
-   42 |    run_bin_process(tpcb,fnct_num);
-      |    ^~~~~~~~~~~~~~~
-../src/simple_lexer.c:43:4: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
-   43 |    return;
-      |    ^~~~~~
+../src/simple_lexer.c:44:5: warning: implicit declaration of function 'run_bin_process' [-Wimplicit-function-declaration]
+   44 |     run_bin_process(tpcb, fnct_num);
+      |     ^~~~~~~~~~~~~~~
+../src/simple_lexer.c:45:5: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+   45 |     return;
+      |     ^~~~~~
 ../src/simple_lexer.c:6:22: note: declared here
     6 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst){
       |                      ^~~~~~~~~~~~
-../src/simple_lexer.c:52:4: warning: implicit declaration of function 'run_rtio_process'; did you mean 'inst_process'? [-Wimplicit-function-declaration]
-   52 |    run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
-      |    ^~~~~~~~~~~~~~~~
-      |    inst_process
-../src/simple_lexer.c: In function 'get_module':
-../src/simple_lexer.c:113:1: warning: control reaches end of non-void function [-Wreturn-type]
-  113 | }
-      | ^
-../src/simple_lexer.c: In function 'get_fnct':
-../src/simple_lexer.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
-  128 | }
-      | ^
+../src/simple_lexer.c:58:5: warning: implicit declaration of function 'run_rtio_process'; did you mean 'inst_process'? [-Wimplicit-function-declaration]
+   58 |     run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
+      |     ^~~~~~~~~~~~~~~~
+      |     inst_process
 ../src/simple_lexer.c: In function 'free_all':
-../src/simple_lexer.c:172:1: warning: control reaches end of non-void function [-Wreturn-type]
-  172 | }
+../src/simple_lexer.c:185:1: warning: control reaches end of non-void function [-Wreturn-type]
+  185 | }
       | ^
 In file included from ../src/simple_lexer.c:4:
 At top level:
@@ -55,13 +47,13 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TES
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_07_baremetal_echo.elf  |tee "RFSoC_IP06_07_baremetal_echo.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 133208	  19944	4346100	4499252	 44a734	RFSoC_IP06_07_baremetal_echo.elf
+ 133464	  19944	4346100	4499508	 44a834	RFSoC_IP06_07_baremetal_echo.elf
 'Finished building: RFSoC_IP06_07_baremetal_echo.elf.size'
 ' '
-14:43:42 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
+19:00:31 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 53574 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
+generate_system_bif.bat 58078 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
 sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm --sys_config RFSoC_IP06_07_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf,psu_cortexa53_0
 creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
 Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

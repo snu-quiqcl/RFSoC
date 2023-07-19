@@ -15,44 +15,51 @@ struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * ins
 		return NULL;
 	}
 
+	fnct_num = get_fnct(token);
 	if( token -> type == 'F'){
-		tokenizer(token->next);
 		return token;
 	}
+	else{
+		module_num = get_module(token);
+		token = token -> next;
 
-	module_num = get_module(token);
-	token = token->next;
+		switch(module_num){
+			case 0: // CPU
+#ifdef DEBUG_RFDC
+				xil_printf("CASE 0 \r\n");
+#endif
+				tokenizer(token);
+				fnct_num = get_fnct(token);
+				tokenizer(token -> next);
+				param_num = get_param(token -> next);
+				run_cpu_process(tpcb,fnct_num,param_num);
+				return;
 
-	switch(module_num){
-		case 0: // CPU
+			case 1: // Binary
 #ifdef DEBUG_RFDC
-			xil_printf("CASE 0 \r\n");
+				xil_printf("CASE 1 \r\n");
 #endif
-			tokenizer(token);
-			fnct_num = get_fnct(token);
-			param_num = get_param(token->next);
-			run_cpu_process(tpcb,fnct_num,param_num);
-			return;
-		case 1: // Binary
+				tokenizer(token);
+				fnct_num = get_fnct(token);
+				run_bin_process(tpcb, fnct_num);
+				return;
+
+			default: // Module
 #ifdef DEBUG_RFDC
-			xil_printf("CASE 1 \r\n");
+				xil_printf("CASE B \r\n");
 #endif
-			fnct_num = get_fnct(token);
-			simple_lexer(tpcb,token);
-			run_bin_process(tpcb,fnct_num);
-			return;
-		default: // Module
-#ifdef DEBUG_RFDC
-			xil_printf("CASE B \r\n");
-#endif
-			token = simple_lexer(tpcb,token);
-			fnct_num = get_fnct(token);
-			timestamp_num = get_param(token->next);
-			param_num = get_param(token-> next -> next);
-			run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
-			free(inst->name);
-			free(inst);
-			return token;
+				token = simple_lexer(tpcb,token);
+				inst -> next = token;
+				fnct_num = get_fnct(token);
+				tokenizer(token -> next);
+				timestamp_num = get_timestamp(token -> next);
+				tokenizer(token -> next -> next);
+				param_num = get_param(token-> next -> next);
+				run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
+				free(inst -> name);
+				free(inst);
+				return token;
+		}
 	}
 }
 
@@ -68,19 +75,20 @@ INLINE struct instruction * tokenizer(struct instruction *inst){
 		return NULL;
 	}
 
-	if( inst -> type == 'N'){
+	xil_printf("tokenizer : inst->name = %s, inst->type = %c\r\n",inst->name, inst->type);
+	if( inst -> type != '!'){
 		return inst;
 	}
 
 	pos = string_count(inst->name,2,'#');
 
 	inst->next = malloc(sizeof(struct instruction));
-	inst->next->name = malloc(sizeof(char)*(strlen(inst->name)-pos));
-	inst->next->type = 'N';
-	substring(inst->next->name,inst->name,pos,strlen(inst->name)+1);
+	inst->next->name = malloc(sizeof(char)*(strlen(inst->name)-pos+1));
+	inst->next->type = '!';
+	substring(inst->next->name,inst->name,pos,strlen(inst->name)+2);
 	inst->next->next = NULL;
 
-	temp_str = malloc(sizeof(char)*(pos));
+	temp_str = malloc(sizeof(char)*(pos+1));
 	substring(temp_str,inst->name,1,pos);
 #ifdef DEBUG_RFDC
 	xil_printf("inst -> name : %s inst->next->name : %s\r\n",inst->name, inst->next->name);
@@ -98,6 +106,7 @@ INLINE struct instruction * tokenizer(struct instruction *inst){
 
 INLINE int64_t get_module(struct instruction * inst){
 	int64_t i = 0;
+	xil_printf("get module : %s\r\n",inst->name);
 	if( inst -> type == 'M'){
 		return inst->num;
 	}
@@ -107,14 +116,15 @@ INLINE int64_t get_module(struct instruction * inst){
 			inst->type = 'M';
 			return inst -> num;
 		}
+		i++;
 	}
-
-
+	return i;
 }
 
 INLINE int64_t get_fnct(struct instruction * inst){
 	int64_t i = 0;
-	if( inst -> type == 'M'){
+	xil_printf("get fnct : %s\r\n",inst->name);
+	if( inst -> type == 'F'){
 		return inst->num;
 	}
 	while(i < FNCT_NUM){
@@ -125,9 +135,11 @@ INLINE int64_t get_fnct(struct instruction * inst){
 		}
 		i++;
 	}
+	return i;
 }
 
 INLINE int64_t get_timestamp(struct instruction *inst){
+	xil_printf("get timestamp : %s\r\n",inst->name);
 	if( inst -> type == 'T'){
 		return inst->num;
 	}
@@ -139,6 +151,7 @@ INLINE int64_t get_timestamp(struct instruction *inst){
 }
 
 INLINE int64_t get_param(struct instruction *inst){
+	xil_printf("get param : %s\r\n",inst->name);
 	if( inst -> type == 'P'){
 		return inst->num;
 	}
