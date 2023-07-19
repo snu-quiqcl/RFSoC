@@ -41,7 +41,9 @@ struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * ins
 #endif
 				tokenizer(token);
 				fnct_num = get_fnct(token);
-				run_bin_process(tpcb, fnct_num);
+				tokenizer(token -> next);
+				param_num = get_param(token -> next);
+				run_bin_process(tpcb, fnct_num,param_num);
 				return;
 
 			default: // Module

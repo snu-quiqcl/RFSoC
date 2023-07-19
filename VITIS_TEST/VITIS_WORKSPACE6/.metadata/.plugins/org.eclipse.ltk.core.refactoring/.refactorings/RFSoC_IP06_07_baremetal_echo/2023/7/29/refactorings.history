@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RFSoC_IP06_07_baremetal_echo/src/binary_run.c&apos; to &apos;run_binary.c&apos;" description="Rename resource &apos;binary_run.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/binary_run.c" name="run_binary.c" stamp="1689762193639" updateReferences="true"/>
+</session>

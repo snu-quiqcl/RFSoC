@@ -13,9 +13,11 @@ const struct module_tuple MODULE[MODULE_NUM] = {
 };
 
 const struct fnct_tuple FNCT[FNCT_NUM] = {
-	{0,"write_fifo"},
-	{1,"set_clock"},
-	{2,"read_sampling_freq"}
+	{0,"write_fifo"},					//RTIO
+	{1,"set_clock"},					//CPU
+	{2,"read_sampling_freq"},			//CPU
+	{3,"save_binary"},					//BIN
+	{4,"run_binary"}					//BIN
 };
 
 unsigned int LMK04208_CKin[1][26] = {
@@ -86,30 +88,73 @@ int64_t read_sampling_freq(struct tcp_pcb *tpcb){
  * #CPU#{Function name}#{Param}#!EOL
  *
  * 3. binary file send format
- * #BIN#{Function name}#!EOL
+ * #BIN#{Function name}#{Param = Total page num}#!EOL
  */
 
 int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data){
-	struct instruction * inst = malloc(sizeof(struct instruction));
-	inst->name = malloc(sizeof(char)*(strlen(TCP_data) + 1));
-	strcpy(inst->name, TCP_data);
-	inst->type = '!';
-	inst->num = 0;
-	inst->next = NULL;
-	simple_lexer(tpcb,inst);
+	if( binary_mode == 0){
+		struct instruction * inst = malloc(sizeof(struct instruction));
+		inst->name = malloc(sizeof(char)*(strlen(TCP_data) + 1));
+		strcpy(inst->name, TCP_data);
+		inst->type = '!';
+		inst->num = 0;
+		inst->next = NULL;
+		simple_lexer(tpcb,inst);
 
-	free_all(inst);
-	return 0;
+		free_all(inst);
+		return 0;
+	}
+	else{
+		save_binary(tpcb, TCP_data);
+	}
 }
 
 int64_t run_cpu_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t param_num){
 #ifdef DEBUG_RFDC
 	xil_printf("CPU %d %d\r\n", fnct_num, param_num);
 #endif
+	switch(fnct_num){
+		case 1:
+			set_clock(param_num);
+			break;
+		case 2:
+			read_sampling_freq(tpcb);
+			break;
+		default:
+			xil_printf("No matching function\r\n");
+			break;
+	}
 }
 
 int64_t run_rtio_process(struct tcp_pcb *tpcb, int64_t module_num, int64_t fnct_num, int64_t timestamp_num, int64_t param_num){
 #ifdef DEBUG_RFDC
 	xil_printf("RTIO %d %d %d %d\r\n", module_num, fnct_num, timestamp_num, param_num);
 #endif
+	switch(fnct_num){
+		case 0:
+			write_fifo(module_num, timestamp_num, param_num);
+			break;
+		default:
+			xil_printf("No matching function\r\n");
+			break;
+	}
+}
+
+
+int64_t run_bin_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t param_num){
+#ifdef DEBUG_RFDC
+	xil_printf("BIN %d",fnct_num);
+#endif
+	switch(fnct_num){
+		case 4:
+			total_page_num = param_num;
+			binary_mode = 1;
+			break;
+		case 5:
+			run_binary();
+			break;
+		default:
+			xil_printf("No matching function\r\n");
+			break;
+	}
 }

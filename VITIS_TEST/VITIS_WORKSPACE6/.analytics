@@ -361,3 +361,12 @@ timestamp=[2023-07-19 18:54:21], mode=BUILD, duration=0:00:01.340, duration_ms=1
 timestamp=[2023-07-19 18:54:30], mode=BUILD, duration=0:00:09.366, duration_ms=9366, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
 timestamp=[2023-07-19 19:00:31], mode=BUILD, duration=0:00:01.413, duration_ms=1413, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
 timestamp=[2023-07-19 19:00:40], mode=BUILD, duration=0:00:09.423, duration_ms=9423, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 19:17:43], mode=WORKBENCH_START, duration=0:00:11.435, duration_ms=11435, data={}
+timestamp=[2023-07-19 19:17:44], mode=WORKBENCH_UI_INIT, duration=0:00:00.925, duration_ms=925, data={editors_count=1, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=RFSoC_IP06_07_app,RFSoC_IP06_07_app_system,RFSoC_IP06_07_baremetal_echo,RFSoC_IP06_07_baremetal_echo_system,RFSoC_IP06_07_plt,RFSoC_IP06_07_rtos_echo,RFSoC_IP06_07_rtos_echo_system,RemoteSystemsTempFiles}
+timestamp=[2023-07-19 19:17:44], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.066, duration_ms=66, data={}
+timestamp=[2023-07-19 19:41:35], mode=BUILD, duration=0:00:00.392, duration_ms=392, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=true}
+timestamp=[2023-07-19 19:41:46], mode=BUILD, duration=0:00:02.932, duration_ms=2932, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 19:42:40], mode=BUILD, duration=0:00:02.542, duration_ms=2542, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 19:42:52], mode=BUILD, duration=0:00:11.653, duration_ms=11653, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 19:43:35], mode=BUILD, duration=0:00:02.703, duration_ms=2703, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 19:43:45], mode=BUILD, duration=0:00:09.197, duration_ms=9197, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}

@@ -43,12 +43,14 @@
 #define DEBUG_RFDC
 #endif
 #define MODULE_NUM 4
-#define FNCT_NUM 3
+#define FNCT_NUM 5
 
 /*
  * Sampling frequency of DAC
  */
 static int64_t sampling_freq;
+static int64_t binary_mode;
+static total_page_num;
 
 struct module_tuple{
 	int64_t  num;

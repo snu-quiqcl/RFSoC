@@ -236,6 +236,8 @@ int main()
 	/* start the application (web server, rxtest, txtest, etc..) */
 	start_application();
 	set_clock(6400000);
+	/* set binary mode false*/
+	binary_mode = 0;
 
 	/* receive and process packets */
 	while (1) {
