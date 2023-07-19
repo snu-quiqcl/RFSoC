@@ -39,9 +39,11 @@
 #define M_AXI_HPM1_FPD_ADDR XPAR_AXI_HPM1_FPD_0_S_AXI_BASEADDR
 
 #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | (lo)))
+
 #ifndef DEBUG_RFDC
 #define DEBUG_RFDC
 #endif
+
 #define MODULE_NUM 4
 #define FNCT_NUM 5
 

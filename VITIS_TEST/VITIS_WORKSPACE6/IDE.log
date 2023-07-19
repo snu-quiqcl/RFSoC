@@ -5750,3 +5750,956 @@ con
 19:43:33 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
 19:43:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
 
+19:56:24 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\temp_xsdb_launch_script.tcl
+19:56:27 INFO  : XSCT server has started successfully.
+19:56:27 INFO  : plnx-install-location is set to ''
+19:56:27 INFO  : Successfully done setting XSCT server connection channel  
+19:56:27 INFO  : Successfully done setting workspace for the tool. 
+19:56:33 INFO  : Registering command handlers for Vitis TCF services
+19:56:33 INFO  : Platform repository initialization has completed.
+19:56:34 INFO  : Successfully done query RDI_DATADIR 
+19:58:02 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
+19:58:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
+
+20:12:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:12:41 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:12:41 INFO  : 'jtag frequency' command is executed.
+20:12:41 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:12:41 INFO  : Context for 'APU' is selected.
+20:12:43 INFO  : System reset is completed.
+20:12:46 INFO  : 'after 3000' command is executed.
+20:12:46 INFO  : Context for 'APU' is selected.
+20:12:46 INFO  : Cleared APU and A53 resets
+20:12:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:13:06 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:13:06 INFO  : Context for 'APU' is selected.
+20:13:07 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:13:07 INFO  : 'configparams force-mem-access 1' command is executed.
+20:13:07 INFO  : Context for 'APU' is selected.
+20:13:07 INFO  : Boot mode is read from the target.
+20:13:07 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:13:07 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:13:08 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:13:08 INFO  : 'set bp_13_8_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:13:09 INFO  : 'con -block -timeout 60' command is executed.
+20:13:09 INFO  : 'bpremove $bp_13_8_fsbl_bp' command is executed.
+20:13:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:13:09 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:13:10 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:13:10 INFO  : 'configparams force-mem-access 0' command is executed.
+20:13:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_13_8_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_13_8_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:13:10 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:13:10 INFO  : 'con' command is executed.
+20:13:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:13:10 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:15:58 INFO  : Disconnected from the channel tcfchan#2.
+20:15:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:15:58 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:15:58 INFO  : 'jtag frequency' command is executed.
+20:15:58 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:15:58 INFO  : Context for 'APU' is selected.
+20:16:00 INFO  : System reset is completed.
+20:16:03 INFO  : 'after 3000' command is executed.
+20:16:03 INFO  : Context for 'APU' is selected.
+20:16:03 INFO  : Cleared APU and A53 resets
+20:16:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:16:22 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:16:22 INFO  : Context for 'APU' is selected.
+20:16:34 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:16:34 INFO  : 'configparams force-mem-access 1' command is executed.
+20:16:34 INFO  : Context for 'APU' is selected.
+20:16:34 INFO  : Boot mode is read from the target.
+20:16:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:16:34 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:16:35 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:16:35 INFO  : 'set bp_16_35_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:16:36 INFO  : 'con -block -timeout 60' command is executed.
+20:16:36 INFO  : 'bpremove $bp_16_35_fsbl_bp' command is executed.
+20:16:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:16:36 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:16:37 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:16:37 INFO  : 'configparams force-mem-access 0' command is executed.
+20:16:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_16_35_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_16_35_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:16:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:16:37 INFO  : 'con' command is executed.
+20:16:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:16:37 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:20:25 INFO  : Disconnected from the channel tcfchan#3.
+20:20:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:20:25 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:20:25 INFO  : 'jtag frequency' command is executed.
+20:20:25 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:20:25 INFO  : Context for 'APU' is selected.
+20:20:27 INFO  : System reset is completed.
+20:20:30 INFO  : 'after 3000' command is executed.
+20:20:30 INFO  : Context for 'APU' is selected.
+20:20:30 INFO  : Cleared APU and A53 resets
+20:20:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:20:49 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:20:50 INFO  : Context for 'APU' is selected.
+20:20:59 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:20:59 INFO  : 'configparams force-mem-access 1' command is executed.
+20:20:59 INFO  : Context for 'APU' is selected.
+20:20:59 INFO  : Boot mode is read from the target.
+20:20:59 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:20:59 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:21:00 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:21:00 INFO  : 'set bp_21_0_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:21:01 INFO  : 'con -block -timeout 60' command is executed.
+20:21:01 INFO  : 'bpremove $bp_21_0_fsbl_bp' command is executed.
+20:21:01 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:21:01 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:21:02 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:21:02 INFO  : 'configparams force-mem-access 0' command is executed.
+20:21:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_21_0_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_21_0_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:21:02 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:21:02 INFO  : 'con' command is executed.
+20:21:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:21:02 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:24:00 INFO  : Disconnected from the channel tcfchan#4.
+20:24:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:24:00 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:24:00 INFO  : 'jtag frequency' command is executed.
+20:24:00 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:24:00 INFO  : Context for 'APU' is selected.
+20:24:01 INFO  : System reset is completed.
+20:24:04 INFO  : 'after 3000' command is executed.
+20:24:04 INFO  : Context for 'APU' is selected.
+20:24:04 INFO  : Cleared APU and A53 resets
+20:24:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:24:24 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:24:24 INFO  : Context for 'APU' is selected.
+20:24:36 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:24:36 INFO  : 'configparams force-mem-access 1' command is executed.
+20:24:36 INFO  : Context for 'APU' is selected.
+20:24:36 INFO  : Boot mode is read from the target.
+20:24:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:24:36 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:24:37 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:24:37 INFO  : 'set bp_24_37_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:24:38 INFO  : 'con -block -timeout 60' command is executed.
+20:24:38 INFO  : 'bpremove $bp_24_37_fsbl_bp' command is executed.
+20:24:38 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:24:38 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:24:39 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:24:39 INFO  : 'configparams force-mem-access 0' command is executed.
+20:24:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_24_37_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_24_37_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:24:39 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:24:39 INFO  : 'con' command is executed.
+20:24:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:24:39 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:26:14 INFO  : Disconnected from the channel tcfchan#5.
+20:26:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:26:15 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:26:15 INFO  : 'jtag frequency' command is executed.
+20:26:15 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:26:15 INFO  : Context for 'APU' is selected.
+20:26:16 INFO  : System reset is completed.
+20:26:19 INFO  : 'after 3000' command is executed.
+20:26:19 INFO  : Context for 'APU' is selected.
+20:26:19 INFO  : Cleared APU and A53 resets
+20:26:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:26:39 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:26:39 INFO  : Context for 'APU' is selected.
+20:26:47 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:26:47 INFO  : 'configparams force-mem-access 1' command is executed.
+20:26:47 INFO  : Context for 'APU' is selected.
+20:26:47 INFO  : Boot mode is read from the target.
+20:26:47 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:26:47 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:26:48 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:26:48 INFO  : 'set bp_26_48_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:26:49 INFO  : 'con -block -timeout 60' command is executed.
+20:26:49 INFO  : 'bpremove $bp_26_48_fsbl_bp' command is executed.
+20:26:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:26:49 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:26:50 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:26:50 INFO  : 'configparams force-mem-access 0' command is executed.
+20:26:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_26_48_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_26_48_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:26:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:26:50 INFO  : 'con' command is executed.
+20:26:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:26:50 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:28:32 INFO  : Disconnected from the channel tcfchan#6.
+20:28:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:28:33 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:28:33 INFO  : 'jtag frequency' command is executed.
+20:28:33 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:28:33 INFO  : Context for 'APU' is selected.
+20:28:34 INFO  : System reset is completed.
+20:28:37 INFO  : 'after 3000' command is executed.
+20:28:37 INFO  : Context for 'APU' is selected.
+20:28:37 INFO  : Cleared APU and A53 resets
+20:28:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:28:57 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:28:57 INFO  : Context for 'APU' is selected.
+20:29:06 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:29:06 INFO  : 'configparams force-mem-access 1' command is executed.
+20:29:06 INFO  : Context for 'APU' is selected.
+20:29:06 INFO  : Boot mode is read from the target.
+20:29:06 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:29:06 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:29:07 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:29:07 INFO  : 'set bp_29_7_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:29:08 INFO  : 'con -block -timeout 60' command is executed.
+20:29:08 INFO  : 'bpremove $bp_29_7_fsbl_bp' command is executed.
+20:29:08 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:29:08 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:29:09 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:29:09 INFO  : 'configparams force-mem-access 0' command is executed.
+20:29:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_29_7_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_29_7_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:29:09 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:29:09 INFO  : 'con' command is executed.
+20:29:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:29:09 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:34:50 INFO  : Disconnected from the channel tcfchan#7.
+20:34:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:34:51 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:34:51 INFO  : 'jtag frequency' command is executed.
+20:34:51 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:34:51 INFO  : Context for 'APU' is selected.
+20:34:52 INFO  : System reset is completed.
+20:34:55 INFO  : 'after 3000' command is executed.
+20:34:55 INFO  : Context for 'APU' is selected.
+20:34:55 INFO  : Cleared APU and A53 resets
+20:34:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:35:15 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:35:15 INFO  : Context for 'APU' is selected.
+20:35:23 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:35:23 INFO  : 'configparams force-mem-access 1' command is executed.
+20:35:23 INFO  : Context for 'APU' is selected.
+20:35:23 INFO  : Boot mode is read from the target.
+20:35:23 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:35:23 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:35:24 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:35:24 INFO  : 'set bp_35_24_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:35:25 INFO  : 'con -block -timeout 60' command is executed.
+20:35:25 INFO  : 'bpremove $bp_35_24_fsbl_bp' command is executed.
+20:35:25 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:35:25 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:35:26 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:35:27 INFO  : 'configparams force-mem-access 0' command is executed.
+20:35:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_35_24_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_35_24_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:35:27 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:35:27 INFO  : 'con' command is executed.
+20:35:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:35:27 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:37:17 INFO  : Disconnected from the channel tcfchan#8.
+20:37:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:37:18 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:37:18 INFO  : 'jtag frequency' command is executed.
+20:37:18 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:37:18 INFO  : Context for 'APU' is selected.
+20:37:18 INFO  : System reset is completed.
+20:37:22 INFO  : 'after 3000' command is executed.
+20:37:22 INFO  : Context for 'APU' is selected.
+20:37:22 INFO  : Cleared APU and A53 resets
+20:37:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:37:41 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:37:41 INFO  : Context for 'APU' is selected.
+20:37:50 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:37:50 INFO  : 'configparams force-mem-access 1' command is executed.
+20:37:50 INFO  : Context for 'APU' is selected.
+20:37:50 INFO  : Boot mode is read from the target.
+20:37:50 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:37:50 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:37:51 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:37:51 INFO  : 'set bp_37_51_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:37:52 INFO  : 'con -block -timeout 60' command is executed.
+20:37:52 INFO  : 'bpremove $bp_37_51_fsbl_bp' command is executed.
+20:37:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:37:52 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:37:53 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:37:53 INFO  : 'configparams force-mem-access 0' command is executed.
+20:37:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_37_51_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_37_51_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:37:53 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:37:53 INFO  : 'con' command is executed.
+20:37:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:37:53 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:43:10 INFO  : Disconnected from the channel tcfchan#9.
+20:43:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:43:11 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:43:11 INFO  : 'jtag frequency' command is executed.
+20:43:11 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:43:11 INFO  : Context for 'APU' is selected.
+20:43:12 INFO  : System reset is completed.
+20:43:15 INFO  : 'after 3000' command is executed.
+20:43:15 INFO  : Context for 'APU' is selected.
+20:43:15 INFO  : Cleared APU and A53 resets
+20:43:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:43:34 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:43:34 INFO  : Context for 'APU' is selected.
+20:43:43 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:43:43 INFO  : 'configparams force-mem-access 1' command is executed.
+20:43:43 INFO  : Context for 'APU' is selected.
+20:43:43 INFO  : Boot mode is read from the target.
+20:43:43 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:43:43 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:43:44 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:43:44 INFO  : 'set bp_43_44_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:43:45 INFO  : 'con -block -timeout 60' command is executed.
+20:43:45 INFO  : 'bpremove $bp_43_44_fsbl_bp' command is executed.
+20:43:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:43:45 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:43:46 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:43:46 INFO  : 'configparams force-mem-access 0' command is executed.
+20:43:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_43_44_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_43_44_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:43:46 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:43:46 INFO  : 'con' command is executed.
+20:43:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:43:46 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:46:17 INFO  : Disconnected from the channel tcfchan#10.
+20:46:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:46:17 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:46:17 INFO  : 'jtag frequency' command is executed.
+20:46:17 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:46:17 INFO  : Context for 'APU' is selected.
+20:46:18 INFO  : System reset is completed.
+20:46:21 INFO  : 'after 3000' command is executed.
+20:46:21 INFO  : Context for 'APU' is selected.
+20:46:21 INFO  : Cleared APU and A53 resets
+20:46:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:46:41 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:46:41 INFO  : Context for 'APU' is selected.
+20:46:49 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:46:49 INFO  : 'configparams force-mem-access 1' command is executed.
+20:46:49 INFO  : Context for 'APU' is selected.
+20:46:49 INFO  : Boot mode is read from the target.
+20:46:49 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:46:49 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:46:50 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:46:50 INFO  : 'set bp_46_50_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:46:51 INFO  : 'con -block -timeout 60' command is executed.
+20:46:51 INFO  : 'bpremove $bp_46_50_fsbl_bp' command is executed.
+20:46:51 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:46:51 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:46:52 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:46:52 INFO  : 'configparams force-mem-access 0' command is executed.
+20:46:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_46_50_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_46_50_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:46:52 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:46:52 INFO  : 'con' command is executed.
+20:46:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:46:52 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+20:48:38 INFO  : Disconnected from the channel tcfchan#11.
+20:48:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:48:39 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+20:48:39 INFO  : 'jtag frequency' command is executed.
+20:48:39 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+20:48:39 INFO  : Context for 'APU' is selected.
+20:48:40 INFO  : System reset is completed.
+20:48:43 INFO  : 'after 3000' command is executed.
+20:48:43 INFO  : Context for 'APU' is selected.
+20:48:43 INFO  : Cleared APU and A53 resets
+20:48:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+20:49:03 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+20:49:03 INFO  : Context for 'APU' is selected.
+20:49:13 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+20:49:13 INFO  : 'configparams force-mem-access 1' command is executed.
+20:49:13 INFO  : Context for 'APU' is selected.
+20:49:13 INFO  : Boot mode is read from the target.
+20:49:13 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:49:13 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:49:14 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:49:14 INFO  : 'set bp_49_14_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+20:49:15 INFO  : 'con -block -timeout 60' command is executed.
+20:49:15 INFO  : 'bpremove $bp_49_14_fsbl_bp' command is executed.
+20:49:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:49:15 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+20:49:16 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+20:49:16 INFO  : 'configparams force-mem-access 0' command is executed.
+20:49:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_49_14_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_49_14_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:49:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+20:49:16 INFO  : 'con' command is executed.
+20:49:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+20:49:16 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+21:01:45 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
+21:01:52 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
+
+21:02:44 INFO  : Disconnected from the channel tcfchan#12.
+21:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:45 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+21:02:45 INFO  : 'jtag frequency' command is executed.
+21:02:45 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+21:02:45 INFO  : Context for 'APU' is selected.
+21:02:46 INFO  : System reset is completed.
+21:02:49 INFO  : 'after 3000' command is executed.
+21:02:49 INFO  : Context for 'APU' is selected.
+21:02:49 INFO  : Cleared APU and A53 resets
+21:02:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+21:03:09 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+21:03:09 INFO  : Context for 'APU' is selected.
+21:03:19 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+21:03:19 INFO  : 'configparams force-mem-access 1' command is executed.
+21:03:19 INFO  : Context for 'APU' is selected.
+21:03:19 INFO  : Boot mode is read from the target.
+21:03:19 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:03:19 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:03:20 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:03:20 INFO  : 'set bp_3_20_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:03:21 INFO  : 'con -block -timeout 60' command is executed.
+21:03:21 INFO  : 'bpremove $bp_3_20_fsbl_bp' command is executed.
+21:03:21 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:03:21 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:03:22 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:03:22 INFO  : 'configparams force-mem-access 0' command is executed.
+21:03:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_3_20_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_3_20_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:03:22 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:03:22 INFO  : 'con' command is executed.
+21:03:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+21:03:22 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+21:04:49 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
+21:04:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
+
+21:05:08 INFO  : Disconnected from the channel tcfchan#14.
+21:05:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:08 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+21:05:08 INFO  : 'jtag frequency' command is executed.
+21:05:08 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+21:05:08 INFO  : Context for 'APU' is selected.
+21:05:09 INFO  : System reset is completed.
+21:05:12 INFO  : 'after 3000' command is executed.
+21:05:12 INFO  : Context for 'APU' is selected.
+21:05:12 INFO  : Cleared APU and A53 resets
+21:05:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+21:05:32 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+21:05:32 INFO  : Context for 'APU' is selected.
+21:05:42 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+21:05:42 INFO  : 'configparams force-mem-access 1' command is executed.
+21:05:42 INFO  : Context for 'APU' is selected.
+21:05:42 INFO  : Boot mode is read from the target.
+21:05:42 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:05:42 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:05:43 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:05:43 INFO  : 'set bp_5_43_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:05:44 INFO  : 'con -block -timeout 60' command is executed.
+21:05:44 INFO  : 'bpremove $bp_5_43_fsbl_bp' command is executed.
+21:05:44 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:05:44 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:05:45 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:05:45 INFO  : 'configparams force-mem-access 0' command is executed.
+21:05:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_5_43_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_5_43_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:05:45 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:05:45 INFO  : 'con' command is executed.
+21:05:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+21:05:45 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+21:08:23 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
+21:08:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
+
+21:08:41 INFO  : Disconnected from the channel tcfchan#16.
+21:08:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:08:41 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+21:08:41 INFO  : 'jtag frequency' command is executed.
+21:08:41 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+21:08:41 INFO  : Context for 'APU' is selected.
+21:08:42 INFO  : System reset is completed.
+21:08:45 INFO  : 'after 3000' command is executed.
+21:08:45 INFO  : Context for 'APU' is selected.
+21:08:45 INFO  : Cleared APU and A53 resets
+21:08:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+21:09:05 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+21:09:05 INFO  : Context for 'APU' is selected.
+21:09:15 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+21:09:15 INFO  : 'configparams force-mem-access 1' command is executed.
+21:09:15 INFO  : Context for 'APU' is selected.
+21:09:15 INFO  : Boot mode is read from the target.
+21:09:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:09:15 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:09:16 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:09:16 INFO  : 'set bp_9_16_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:09:17 INFO  : 'con -block -timeout 60' command is executed.
+21:09:17 INFO  : 'bpremove $bp_9_16_fsbl_bp' command is executed.
+21:09:17 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:09:17 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:09:18 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:09:18 INFO  : 'configparams force-mem-access 0' command is executed.
+21:09:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_9_16_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_9_16_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:09:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:09:18 INFO  : 'con' command is executed.
+21:09:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+21:09:18 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+21:11:34 INFO  : Checking for BSP changes to sync application flags for project 'RFSoC_IP06_07_baremetal_echo'...
+21:11:38 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa is already opened
+
+21:11:51 INFO  : Disconnected from the channel tcfchan#18.
+21:11:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:11:51 INFO  : Jtag cable 'Xilinx HW-Z1-ZCU104 FT4232H 65004A' is selected.
+21:11:51 INFO  : 'jtag frequency' command is executed.
+21:11:51 INFO  : Sourcing of 'E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl' is done.
+21:11:51 INFO  : Context for 'APU' is selected.
+21:11:52 INFO  : System reset is completed.
+21:11:55 INFO  : 'after 3000' command is executed.
+21:11:55 INFO  : Context for 'APU' is selected.
+21:11:55 INFO  : Cleared APU and A53 resets
+21:11:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}' command is executed.
+21:12:15 INFO  : Device configured successfully with "E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit"
+21:12:15 INFO  : Context for 'APU' is selected.
+21:12:26 INFO  : Hardware design and registers information is loaded from 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa'.
+21:12:26 INFO  : 'configparams force-mem-access 1' command is executed.
+21:12:26 INFO  : Context for 'APU' is selected.
+21:12:26 INFO  : Boot mode is read from the target.
+21:12:26 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:12:26 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:12:27 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:12:27 INFO  : 'set bp_12_27_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:12:28 INFO  : 'con -block -timeout 60' command is executed.
+21:12:28 INFO  : 'bpremove $bp_12_27_fsbl_bp' command is executed.
+21:12:28 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:12:28 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+21:12:29 INFO  : The application 'E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf' is downloaded to processor 'psu_cortexa53_0'.
+21:12:29 INFO  : 'configparams force-mem-access 0' command is executed.
+21:12:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source E:/Xilinx/Vitis/2020.2/scripts/vitis/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*"}
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 65004A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-65004A-147e0093-0"}
+fpga -file E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/hw/TEST_02_Block_wrapper.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+set mode [expr [mrd -value 0xFF5E0200] & 0xf]
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/boot/fsbl.elf
+set bp_12_27_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_12_27_fsbl_bp
+targets -set -nocase -filter {name =~ "*A53*#0"}
+rst -processor
+dow E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:12:30 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+21:12:30 INFO  : 'con' command is executed.
+21:12:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A53*#0"}
+con
+----------------End of Script----------------
+
+21:12:30 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE6\RFSoC_IP06_07_baremetal_echo_system\_ide\scripts\systemdebugger_rfsoc_ip06_07_baremetal_echo_system_standalone.tcl'
+21:14:27 INFO  : Disconnected from the channel tcfchan#20.

@@ -82,12 +82,12 @@ char * int642str(int64_t val, char * str_dest){
 	while(i >= 0){
 		*(str_dest + i) = inverse_str[len-i];
 #ifdef DEBUG_RFDC
-		xil_printf("str_dest :%d %c\r\n",i,*(str_dest + i));
+		//xil_printf("str_dest :%d %c\r\n",i,*(str_dest + i));
 #endif
 		i--;
 	}
 #ifdef DEBUG_RFDC
-	xil_printf("int642str : %s\r\n",str_dest);
+	//xil_printf("int642str : %s\r\n",str_dest);
 #endif
 	return str_dest;
 }

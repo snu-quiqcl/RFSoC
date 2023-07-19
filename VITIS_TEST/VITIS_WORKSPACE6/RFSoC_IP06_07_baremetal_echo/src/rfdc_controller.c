@@ -102,6 +102,7 @@ int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data){
 		simple_lexer(tpcb,inst);
 
 		free_all(inst);
+		xil_printf("END\r\n");
 		return 0;
 	}
 	else{
