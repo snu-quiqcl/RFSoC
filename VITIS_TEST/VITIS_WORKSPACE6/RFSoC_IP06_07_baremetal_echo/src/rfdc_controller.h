@@ -39,7 +39,9 @@
 #define M_AXI_HPM1_FPD_ADDR XPAR_AXI_HPM1_FPD_0_S_AXI_BASEADDR
 
 #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | (lo)))
-#define DEBUG_RFDC 1
+#ifndef DEBUG_RFDC
+#define DEBUG_RFDC
+#endif
 #define MODULE_NUM 4
 #define FNCT_NUM 3
 
@@ -47,6 +49,7 @@
  * Sampling frequency of DAC
  */
 static int64_t sampling_freq;
+
 struct module_tuple{
 	int64_t  num;
 	char module_name[128];
@@ -76,9 +79,23 @@ void LMX2594ClockConfig(int XIicBus, int XFrequency);
 void LMK04208ClockConfig(int XIicBus, unsigned int LMK04208_CKin[1][26]);
 int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data);
 int64_t read_sampling_freq(struct tcp_pcb *tpcb);
+/*
+ * String Process
+ */
 char * int642str(int64_t val, char * str_dest);
 char * substring(char * str_dest,char * str,int64_t start,int64_t end);
 int64_t string_count(char* str, int64_t pos, char spc);
 int64_t string2int64(char* str);
+/*
+ * Simple Lexer
+ */
+struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst);
+struct instruction * tokenizer(struct instruction *inst);
+int64_t get_module(struct instruction * inst);
+int64_t get_fnct(struct instruction * inst);
+int64_t get_timestamp(struct instruction *inst);
+int64_t get_param(struct instruction *inst);
+int64_t is_end(struct instruction *inst);
+int64_t free_all(struct instruction *inst);
 
 #endif

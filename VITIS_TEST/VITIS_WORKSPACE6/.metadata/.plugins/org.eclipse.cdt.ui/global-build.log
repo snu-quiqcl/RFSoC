@@ -1,105 +1,67 @@
 Nothing to build in platform 'RFSoC_IP06_07_plt'
 
-17:34:37 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
+14:43:40 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo ****
 make all 
-'Building file: ../src/clock_config.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/clock_config.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/clock_config.d" -MT"src/clock_config.o" -o "src/clock_config.o" "../src/clock_config.c"
-'Finished building: ../src/clock_config.c'
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-In file included from ../src/echo.c:37:
-../src/rfdc_controller.h:49:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   49 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/echo.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:238:2: warning: implicit declaration of function 'set_clock' [-Wimplicit-function-declaration]
-  238 |  set_clock(6400000);
-      |  ^~~~~~~~~
-In file included from ../src/main.c:53:
-At top level:
-../src/rfdc_controller.h:49:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   49 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/rfdc_controller.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfdc_controller.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/rfdc_controller.d" -MT"src/rfdc_controller.o" -o "src/rfdc_controller.o" "../src/rfdc_controller.c"
-../src/rfdc_controller.c: In function 'inst_process':
-../src/rfdc_controller.c:99:2: warning: implicit declaration of function 'simple_lexer' [-Wimplicit-function-declaration]
-   99 |  simple_lexer(tpcb,inst);
-      |  ^~~~~~~~~~~~
-../src/rfdc_controller.c:101:2: warning: implicit declaration of function 'free_all' [-Wimplicit-function-declaration]
-  101 |  free_all(inst);
-      |  ^~~~~~~~
-../src/rfdc_controller.c: In function 'read_sampling_freq':
-../src/rfdc_controller.c:72:1: warning: control reaches end of non-void function [-Wreturn-type]
-   72 | }
-      | ^
-'Finished building: ../src/rfdc_controller.c'
-' '
 'Building file: ../src/simple_lexer.c'
 'Invoking: ARM v8 gcc compiler'
 aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simple_lexer.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/simple_lexer.d" -MT"src/simple_lexer.o" -o "src/simple_lexer.o" "../src/simple_lexer.c"
-../src/simple_lexer.c: In function 'get_device':
-../src/simple_lexer.c:29:10: warning: variable 'pos' set but not used [-Wunused-but-set-variable]
-   29 |  int64_t pos = 0;
-      |          ^~~
+../src/simple_lexer.c: In function 'simple_lexer':
+../src/simple_lexer.c:34:4: warning: implicit declaration of function 'run_cpu_process' [-Wimplicit-function-declaration]
+   34 |    run_cpu_process(tpcb,fnct_num,param_num);
+      |    ^~~~~~~~~~~~~~~
+../src/simple_lexer.c:35:4: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+   35 |    return;
+      |    ^~~~~~
+../src/simple_lexer.c:6:22: note: declared here
+    6 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst){
+      |                      ^~~~~~~~~~~~
+../src/simple_lexer.c:42:4: warning: implicit declaration of function 'run_bin_process' [-Wimplicit-function-declaration]
+   42 |    run_bin_process(tpcb,fnct_num);
+      |    ^~~~~~~~~~~~~~~
+../src/simple_lexer.c:43:4: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
+   43 |    return;
+      |    ^~~~~~
+../src/simple_lexer.c:6:22: note: declared here
+    6 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst){
+      |                      ^~~~~~~~~~~~
+../src/simple_lexer.c:52:4: warning: implicit declaration of function 'run_rtio_process'; did you mean 'inst_process'? [-Wimplicit-function-declaration]
+   52 |    run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
+      |    ^~~~~~~~~~~~~~~~
+      |    inst_process
 ../src/simple_lexer.c: In function 'get_module':
-../src/simple_lexer.c:35:10: warning: variable 'pos' set but not used [-Wunused-but-set-variable]
-   35 |  int64_t pos = 0;
-      |          ^~~
-../src/simple_lexer.c: In function 'get_timestamp':
-../src/simple_lexer.c:41:10: warning: variable 'pos' set but not used [-Wunused-but-set-variable]
-   41 |  int64_t pos = 0;
-      |          ^~~
-../src/simple_lexer.c: In function 'get_inst':
-../src/simple_lexer.c:47:10: warning: variable 'pos' set but not used [-Wunused-but-set-variable]
-   47 |  int64_t pos = 0;
-      |          ^~~
+../src/simple_lexer.c:113:1: warning: control reaches end of non-void function [-Wreturn-type]
+  113 | }
+      | ^
+../src/simple_lexer.c: In function 'get_fnct':
+../src/simple_lexer.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
+  128 | }
+      | ^
 ../src/simple_lexer.c: In function 'free_all':
-../src/simple_lexer.c:59:1: warning: control reaches end of non-void function [-Wreturn-type]
-   59 | }
+../src/simple_lexer.c:172:1: warning: control reaches end of non-void function [-Wreturn-type]
+  172 | }
       | ^
 In file included from ../src/simple_lexer.c:4:
 At top level:
-../src/rfdc_controller.h:49:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   49 | static int64_t sampling_freq;
+../src/rfdc_controller.h:51:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
+   51 | static int64_t sampling_freq;
       |                ^~~~~~~~~~~~~
 'Finished building: ../src/simple_lexer.c'
 ' '
-'Building file: ../src/string_process.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/string_process.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/string_process.d" -MT"src/string_process.o" -o "src/string_process.o" "../src/string_process.c"
-In file included from ../src/string_process.c:4:
-../src/rfdc_controller.h:49:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   49 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/string_process.c'
-' '
 'Building target: RFSoC_IP06_07_baremetal_echo.elf'
 'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_07_baremetal_echo.elf"  ./src/clock_config.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/sw/RFSoC_IP06_07_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_07_baremetal_echo.elf"  ./src/binary_run.o ./src/clock_config.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
 'Finished building target: RFSoC_IP06_07_baremetal_echo.elf'
 ' '
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_07_baremetal_echo.elf  |tee "RFSoC_IP06_07_baremetal_echo.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 131600	  19944	4346108	4497652	 44a0f4	RFSoC_IP06_07_baremetal_echo.elf
+ 133208	  19944	4346100	4499252	 44a734	RFSoC_IP06_07_baremetal_echo.elf
 'Finished building: RFSoC_IP06_07_baremetal_echo.elf.size'
 ' '
-17:34:40 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
+14:43:42 **** Incremental Build of configuration Debug for project RFSoC_IP06_07_baremetal_echo_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 59642 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
+generate_system_bif.bat 53574 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif
 sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_plt/export/RFSoC_IP06_07_plt/RFSoC_IP06_07_plt.xpfm --sys_config RFSoC_IP06_07_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/Debug/RFSoC_IP06_07_baremetal_echo.elf,psu_cortexa53_0
 creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo/_ide/bitstream/TEST_02_Block_wrapper.bit
 Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE6/RFSoC_IP06_07_baremetal_echo_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

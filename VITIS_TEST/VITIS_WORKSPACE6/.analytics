@@ -310,3 +310,23 @@ timestamp=[2023-07-18 17:29:51], mode=BUILD, duration=0:00:02.110, duration_ms=2
 timestamp=[2023-07-18 17:29:55], mode=BUILD, duration=0:00:03.365, duration_ms=3365, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
 timestamp=[2023-07-18 17:34:39], mode=BUILD, duration=0:00:02.613, duration_ms=2613, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
 timestamp=[2023-07-18 17:34:49], mode=BUILD, duration=0:00:09.287, duration_ms=9287, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 11:23:56], mode=WORKBENCH_START, duration=0:00:12.626, duration_ms=12626, data={}
+timestamp=[2023-07-19 11:23:57], mode=WORKBENCH_UI_INIT, duration=0:00:01.223, duration_ms=1223, data={editors_count=14, platform_editors_count=2, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=RFSoC_IP06_07_app,RFSoC_IP06_07_app_system,RFSoC_IP06_07_baremetal_echo,RFSoC_IP06_07_baremetal_echo_system,RFSoC_IP06_07_plt,RFSoC_IP06_07_rtos_echo,RFSoC_IP06_07_rtos_echo_system,RemoteSystemsTempFiles}
+timestamp=[2023-07-19 11:23:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.112, duration_ms=112, data={}
+timestamp=[2023-07-19 14:13:47], mode=BUILD, duration=0:00:01.992, duration_ms=1992, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:14:00], mode=BUILD, duration=0:00:11.837, duration_ms=11837, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:17:19], mode=BUILD, duration=0:00:01.178, duration_ms=1178, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:17:28], mode=BUILD, duration=0:00:09.263, duration_ms=9263, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:20:01], mode=BUILD, duration=0:00:02.678, duration_ms=2678, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:20:10], mode=BUILD, duration=0:00:09.178, duration_ms=9178, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:23:57], mode=BUILD, duration=0:00:01.586, duration_ms=1586, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:24:07], mode=BUILD, duration=0:00:09.925, duration_ms=9925, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:29:29], mode=BUILD, duration=0:00:02.620, duration_ms=2620, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:29:38], mode=BUILD, duration=0:00:09.061, duration_ms=9061, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:33:47], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:34:01], mode=BUILD, duration=0:00:01.172, duration_ms=1172, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:34:10], mode=BUILD, duration=0:00:09.298, duration_ms=9298, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:43:28], mode=BUILD, duration=0:00:00.682, duration_ms=682, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:43:37], mode=BUILD, duration=0:00:09.175, duration_ms=9175, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:43:41], mode=BUILD, duration=0:00:01.241, duration_ms=1241, data={name=RFSoC_IP06_07_baremetal_echo, configuration=Debug, clean_build=false}
+timestamp=[2023-07-19 14:43:51], mode=BUILD, duration=0:00:09.213, duration_ms=9213, data={name=RFSoC_IP06_07_baremetal_echo_system, configuration=Debug, clean_build=false}
