@@ -76,162 +76,211 @@ class TCP_TEST:
             unicode string: received string
         """
         return (self.socket.recv(10000).decode('latin-1'))
+
+class RFSoC:
+    def __init__(self):    
+        self.tcp = TCP_TEST()
+        
+    def connect(self):
+        self.tcp.connect()
+        print("Done")
+        
+    def initialize(self):
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000005#"+str((DAC00_FAST_SHUTDOWN<<32)+(255<<40))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a) 
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000010#"+str((DAC00_PL_EVENT << 32 ) + (  255 << 40 ))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000020#"+str((DAC00_NCO_FREQ << 32 ) + (  255 << 40 ))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000030#"+str((DAC00_NCO_PHASE << 32 ) + (  255 << 40 ))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000040#"+str((DAC00_NCO_PHASE_RST << 32 ) + (  255 << 40 ))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000050#"+str((DAC0_SYSREF_INT_GATING << 32 ) + (  255 << 40 ))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000060#"+str((DAC0_SYSREF_INT_REENABLE << 32 ) + (  255 << 40 ))+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000065#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x00000000000000C0#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x00000000000000D0#"+str((S00_AXIS_TVALID << 32 ) + (  255 << 40 ) + 0x00000001)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x00000000000000E0#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x00000000000000F0#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000100#"+str((DAC00_NCO_UPDATE_EN << 32 ) + (  255 << 40 ) + 7)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000110#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255 << 40 ) + 0x0020)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000140#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000600#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000610#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000001)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000620#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  244 << 40 ) + 0x0020)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000630#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        #Change frequency
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000A00#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000A10#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000A20#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255<< 40 ) + 0x0020)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000A30#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        #Change Amplitude
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000B00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000B10#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000D10#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+    def auto_start(self):
+        #TimeController
+        self.tcp.write("#TIME_CONT#write_fifo#0#2#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#TIME_CONT#write_fifo#0#9#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+    def set_amp(self,timestamp,amp):
+        amp_binary = int(amp * (1 << 15)) & 0x7fff
+        self.tcp.write("#DAC00#write_fifo#" + str(timestamp) + "#" + str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#" + str(timestamp + 10) + "#" + str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+    def set_freq(self,timestamp,freq):
+        #Change frequency
+        freq_float = freq/(6.4E9)
+        freq_binary = int(freq_float * (1 << 48)) & 0xffffffffffff
+        self.tcp.write("#DAC00#write_fifo#" + str(timestamp) + "#" + str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + freq_binary & 0xffffffff)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#" + str(timestamp + 10) + "#" + str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + ( freq_binary >> 32 ) & 0x0000ffff)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#" + str(timestamp + 20) + "#" + str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255<< 40 ) + 0x0020)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#DAC00#write_fifo#" + str(timestamp + 30) + "#" + str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
     
 
-if __name__ == "__main__":    
-    tcp = TCP_TEST()
-    tcp.connect()
-    print("Done")
-    tcp.write("#DAC00#write_fifo#0x0000000000000005#"+str((DAC00_FAST_SHUTDOWN<<32)+(255<<40))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a) 
+if __name__ == "__main__": 
+    RFSoC = RFSoC()
     
-    tcp.write("#DAC00#write_fifo#0x0000000000000010#"+str((DAC00_PL_EVENT << 32 ) + (  255 << 40 ))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
+    for i in range(40):
+        RFSoC.set_amp(0x1000000*( 1 + i ), i/40 )
     
-    tcp.write("#DAC00#write_fifo#0x0000000000000020#"+str((DAC00_NCO_FREQ << 32 ) + (  255 << 40 ))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000030#"+str((DAC00_NCO_PHASE << 32 ) + (  255 << 40 ))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000040#"+str((DAC00_NCO_PHASE_RST << 32 ) + (  255 << 40 ))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000050#"+str((DAC0_SYSREF_INT_GATING << 32 ) + (  255 << 40 ))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000060#"+str((DAC0_SYSREF_INT_REENABLE << 32 ) + (  255 << 40 ))+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000065#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x00000000000000C0#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x00000000000000D0#"+str((S00_AXIS_TVALID << 32 ) + (  255 << 40 ) + 0x00000001)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x00000000000000E0#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x00000000000000F0#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000100#"+str((DAC00_NCO_UPDATE_EN << 32 ) + (  255 << 40 ) + 7)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000110#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255 << 40 ) + 0x0020)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000140#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000600#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000610#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000001)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000620#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  244 << 40 ) + 0x0020)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000630#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    #Change frequency
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000A00#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000A10#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000A20#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255<< 40 ) + 0x0020)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000A30#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    #Change Amplitude
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000B00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000B10#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#DAC00#write_fifo#0x0000000000000D10#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-       	
-    #TimeController
-    
-    tcp.write("#TIME_CONT#write_fifo#0#2#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
-    tcp.write("#TIME_CONT#write_fifo#0#9#!EOL")
-    time.sleep(0.1)
-    a = tcp.read()
-    print(a)
-    
+    for i in range(40):
+        RFSoC.set_amp(0x1000000*( 51 + i ), i/40 * 10E7 )
        	
     #a = input()
     #tcp.write(a)
