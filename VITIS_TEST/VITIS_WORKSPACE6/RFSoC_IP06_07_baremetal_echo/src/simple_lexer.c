@@ -33,7 +33,7 @@ struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * ins
 				tokenizer(token -> next);
 				param_num = get_param(token -> next);
 				run_cpu_process(tpcb,fnct_num,param_num);
-				return;
+				return token;
 
 			case 1: // Binary
 #ifdef DEBUG_RFDC
@@ -44,7 +44,7 @@ struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * ins
 				tokenizer(token -> next);
 				param_num = get_param(token -> next);
 				run_bin_process(tpcb, fnct_num,param_num);
-				return;
+				return token;
 
 			default: // Module
 #ifdef DEBUG_RFDC
@@ -59,7 +59,9 @@ struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * ins
 				param_num = get_param(token-> next -> next);
 				run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
 				free(inst -> name);
+				inst -> name = NULL;
 				free(inst);
+				inst = NULL;
 				return token;
 		}
 	}
@@ -67,13 +69,15 @@ struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * ins
 
 INLINE struct instruction * tokenizer(struct instruction *inst){
 	int64_t pos = 0;
-	char * temp_str;
+	char * temp_str = NULL;
 	if( is_end(inst) ){
 #ifdef DEBUG_RFDC
 		xil_printf("!EOL reached \r\n");
 #endif
 		free(inst->name);
+		inst->name = NULL;
 		free(inst);
+		inst = NULL;
 		return NULL;
 	}
 
@@ -84,20 +88,50 @@ INLINE struct instruction * tokenizer(struct instruction *inst){
 
 	pos = string_count(inst->name,2,'#');
 
-	inst->next = malloc(sizeof(struct instruction));
-	inst->next->name = malloc(sizeof(char)*(strlen(inst->name)-pos+1));
+	inst->next = (struct instruction *)malloc(sizeof(struct instruction));
+	if( inst -> next == NULL ){
+		xil_printf("memory allocation failed\r\n");
+	}
+	xil_printf("inst->next Addr :%d\r\n",inst->next);
+	inst -> next -> name = NULL;
+
+	inst->next->name = (char *)malloc(sizeof(char)*(strlen(inst->name)-pos+2));
+	if( inst -> next -> name == NULL ){
+		xil_printf("memory allocation failed\r\n");
+	}
+	xil_printf("inst->next->name Addr :%d\r\n",inst->next->name);
+
+	xil_printf("inst->next->name malloc size %d\r\n",strlen(inst->name)-pos+2);
 	inst->next->type = '!';
 	substring(inst->next->name,inst->name,pos,strlen(inst->name)+2);
 	inst->next->next = NULL;
 
-	temp_str = malloc(sizeof(char)*(pos+1));
+	temp_str = (char *)malloc(sizeof(char)*(pos+2));
+	if( temp_str == NULL ){
+		xil_printf("memory allocation failed\r\n");
+	}
+
+	xil_printf("temp_str malloc size : %d\r\n",sizeof(char)*(pos+2));
+
 	substring(temp_str,inst->name,1,pos);
+
 #ifdef DEBUG_RFDC
 	xil_printf("inst -> name : %s inst->next->name : %s\r\n",inst->name, inst->next->name);
 #endif
 
-	free(inst->name);
-	inst->name = temp_str;
+	if( inst->name != NULL ){
+		// Error Point
+		xil_printf("Free inst->name Addr : %d\r\n",inst->name);
+		free(inst->name);
+		inst-> name = temp_str;
+		//realloc(inst->name, sizeof(char)*(pos+2));
+		//strcpy(inst->name,temp_str);
+		//free(temp_str);
+		xil_printf("Now inst->name : %s\r\n",inst->name);
+	}
+	else{
+		xil_printf("NULL pointer cannot be freed\r\n");
+	}
 
 #ifdef DEBUG_RFDC
 	xil_printf("Return inst -> name : %s\r\n",inst->name);
@@ -184,4 +218,6 @@ int64_t free_all(struct instruction *inst){
 		free_all(inst->next);
 	}
 	inst->next = NULL;
+	free(inst);
+	return;
 }

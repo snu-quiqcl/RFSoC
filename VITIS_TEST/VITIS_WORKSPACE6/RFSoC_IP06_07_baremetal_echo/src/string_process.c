@@ -12,6 +12,7 @@ int64_t string2int64(char* str){
 	if( str[0] == '0' && (str[1] == 'x' || str[1] == 'X')){
 		i=2;
 		while( str[i] != '\0'){
+			xil_printf("%c ",str[i]);
 			if( '0' <= str[i] && str[i] <= '9' ) num = num*16 + (str[i]-'0');
 			else if( 'A' <= str[i] && str[i] <= 'F' ) num = num*16 + (str[i]-'A')+10;
 			else if( 'a' <= str[i] && str[i] <= 'f' ) num = num*16 + (str[i]-'a')+10;
@@ -21,9 +22,11 @@ int64_t string2int64(char* str){
 			}
 			i++;
 		}
+		xil_printf("\r\n");
 	}
 	else{
 		while( str[i] != '\0'){
+			xil_printf("%c ",str[i]);
 			if( str[i] < '0' || str[i] > '9'){
 				xil_printf("TYPE ERROR\r\n");
 				return 0;
@@ -31,6 +34,7 @@ int64_t string2int64(char* str){
 			num = num*10 + (str[i]-'0');
 			i++;
 		}
+		xil_printf("\r\n");
 	}
 
 	return num;
@@ -59,9 +63,11 @@ int64_t string_count(char* str, int64_t pos, char spc){
 char * substring(char * str_dest,char * str,int64_t start,int64_t end){
 	int64_t i = 0;
 	for( i = 0; i < end-start;i++){
+		//xil_printf("Copying : %c\r\n",str[i]);
 		*(str_dest+i) = *(str+start+i);
 	}
 	*(str_dest+end-start) = '\0';
+	//xil_printf("\r\nCopied string : %s\r\n",str_dest);
 	return str_dest;
 }
 

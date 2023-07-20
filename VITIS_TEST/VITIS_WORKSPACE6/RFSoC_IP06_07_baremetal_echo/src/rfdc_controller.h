@@ -6,6 +6,7 @@
 #endif
 
 #include <string.h>
+#include <malloc.h>
 #include "xil_printf.h"
 #include "xparameters.h"
 #include "xil_io.h"

@@ -63,7 +63,6 @@ class TCP_TEST:
         """
         self.socket.send(bytes(commandWithoutNewline, 'latin-1'))
 
-        #self.inst.write(commandWithoutNewline)
         
         
 
@@ -77,7 +76,6 @@ class TCP_TEST:
             unicode string: received string
         """
         return (self.socket.recv(10000).decode('latin-1'))
-        #return (self.inst.read())[:-1] # Stripping '\n'
     
 
 if __name__ == "__main__":    
@@ -175,12 +173,10 @@ if __name__ == "__main__":
     print(a)
     
     tcp.write("#DAC00#write_fifo#0x0000000000000630#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-   	
-    #Change frequency
-       
     time.sleep(0.1)
     a = tcp.read()
     print(a)
+    #Change frequency
     
     tcp.write("#DAC00#write_fifo#0x0000000000000A00#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
     time.sleep(0.1)
@@ -198,12 +194,11 @@ if __name__ == "__main__":
     print(a)
     
     tcp.write("#DAC00#write_fifo#0x0000000000000A30#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-       	
-    #Change Amplitude
-       
     time.sleep(0.1)
     a = tcp.read()
     print(a)
+    
+    #Change Amplitude
     
     tcp.write("#DAC00#write_fifo#0x0000000000000B00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL")
     time.sleep(0.1)
@@ -221,12 +216,11 @@ if __name__ == "__main__":
     print(a)
     
     tcp.write("#DAC00#write_fifo#0x0000000000000D10#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
-       	
-    #TimeController
-       
     time.sleep(0.1)
     a = tcp.read()
     print(a)
+       	
+    #TimeController
     
     tcp.write("#TIME_CONT#write_fifo#0#2#!EOL")
     time.sleep(0.1)

@@ -93,13 +93,13 @@ int64_t read_sampling_freq(struct tcp_pcb *tpcb){
 
 int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data){
 	if( binary_mode == 0){
-		struct instruction * inst = malloc(sizeof(struct instruction));
-		inst->name = malloc(sizeof(char)*(strlen(TCP_data) + 1));
+		struct instruction * inst = (struct instruction *)malloc(sizeof(struct instruction));
+		inst->name = (char *) malloc(sizeof(char)*(strlen(TCP_data) + 1));
 		strcpy(inst->name, TCP_data);
 		inst->type = '!';
 		inst->num = 0;
 		inst->next = NULL;
-		simple_lexer(tpcb,inst);
+		inst = simple_lexer(tpcb,inst);
 
 		free_all(inst);
 		xil_printf("END\r\n");
