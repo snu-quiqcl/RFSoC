@@ -12,7 +12,7 @@ int64_t string2int64(char* str){
 	if( str[0] == '0' && (str[1] == 'x' || str[1] == 'X')){
 		i=2;
 		while( str[i] != '\0'){
-			xil_printf("%c ",str[i]);
+			//xil_printf("%c ",str[i]);
 			if( '0' <= str[i] && str[i] <= '9' ) num = num*16 + (str[i]-'0');
 			else if( 'A' <= str[i] && str[i] <= 'F' ) num = num*16 + (str[i]-'A')+10;
 			else if( 'a' <= str[i] && str[i] <= 'f' ) num = num*16 + (str[i]-'a')+10;
@@ -26,7 +26,7 @@ int64_t string2int64(char* str){
 	}
 	else{
 		while( str[i] != '\0'){
-			xil_printf("%c ",str[i]);
+			//xil_printf("%c ",str[i]);
 			if( str[i] < '0' || str[i] > '9'){
 				xil_printf("TYPE ERROR\r\n");
 				return 0;
