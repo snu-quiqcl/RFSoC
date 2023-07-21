@@ -3,3 +3,15 @@ https://developer.arm.com/documentation/ka004805/latest/
 
 ZCU111 RealTek Chip Problem
 https://support.xilinx.com/s/question/0D52E00006hpg1rSAA/cannot-connect-to-lwip-echo-server-on-zynq?language=en_US
+
+Dual Core Arm in Zynq
+https://www.hackster.io/whitney-knitter/dual-arm-hello-world-on-zynq-using-vitis-9fc8b7
+
+AMP
+https://www.techdesignforums.com/practice/technique/enabling-embedded-multicore-systems-with-multiple-oses-and-critical-goals/
+
+OpenAMP
+https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=neos_rtos&logNo=220547309327
+
+Virtualizaiton of ARM aarch64
+file:///E:/RFSoC/GIT/RFSoC/Documents/Memory/Virtualization/learn_the_architecture_-_aarch64_memory_management_examples_102416_0100_01_en.pdf
