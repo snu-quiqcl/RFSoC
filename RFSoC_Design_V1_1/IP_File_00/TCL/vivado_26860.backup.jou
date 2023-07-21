@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul 21 13:16:48 2023
+# Process ID: 26860
+# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL
+# Command line: vivado.exe -mode batch -source IP_File00.tcl
+# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL/vivado.log
+# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL\vivado.jou
+#-----------------------------------------------------------
+source IP_File00.tcl
