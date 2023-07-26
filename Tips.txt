@@ -1,7 +1,7 @@
 128 bit write
 https://developer.arm.com/documentation/ka004805/latest/
 
-ZCU111 RealTek Chip Problem
+ZCU111 RealTek Chip Problem -> It was not problem! Set your IP 192.168.1.X, where X != 10!!! (Same as Artiq setting)
 https://support.xilinx.com/s/question/0D52E00006hpg1rSAA/cannot-connect-to-lwip-echo-server-on-zynq?language=en_US
 
 Dual Core Arm in Zynq
@@ -10,13 +10,15 @@ https://www.hackster.io/whitney-knitter/dual-arm-hello-world-on-zynq-using-vitis
 AMP
 https://www.techdesignforums.com/practice/technique/enabling-embedded-multicore-systems-with-multiple-oses-and-critical-goals/
 
-OpenAMP
+OpenAMP->Used in Sandia.
 https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=neos_rtos&logNo=220547309327
 
-Virtualizaiton of ARM aarch64
+Virtualizaiton of ARM aarch64 using onchip MMU of ARM core.
 file:///E:/RFSoC/GIT/RFSoC/Documents/Memory/Virtualization/learn_the_architecture_-_aarch64_memory_management_examples_102416_0100_01_en.pdf
 
 Look \RFSoC\GIT\RFSoC\PCB\Document\Differential2Single for Differential to Single Ended Conversion Circuit
 
 Standalone write read SDCard
 https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18841881/Zynq+SD+Standalone+driver
+
+For SD Card Boot, SD Card should be partitioned into smaller than charateristic capacity!!! (e.g. Partition0 1GB FAT32, Partition1 not allocated). Note that ZCU111 does not recognize 119GB SD Card!!!
