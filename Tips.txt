@@ -17,3 +17,6 @@ Virtualizaiton of ARM aarch64
 file:///E:/RFSoC/GIT/RFSoC/Documents/Memory/Virtualization/learn_the_architecture_-_aarch64_memory_management_examples_102416_0100_01_en.pdf
 
 Look \RFSoC\GIT\RFSoC\PCB\Document\Differential2Single for Differential to Single Ended Conversion Circuit
+
+Standalone write read SDCard
+https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18841881/Zynq+SD+Standalone+driver

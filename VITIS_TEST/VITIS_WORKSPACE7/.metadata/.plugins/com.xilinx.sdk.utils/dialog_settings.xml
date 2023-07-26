@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item key="scw_hwspec" value="E:\RFSoC\GIT\RFSoC\RFSoC_Design_RFDC_Test\IP_FILE_06\TEST_10"/>
+	<item key="bootgen_files_selection" value="E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE7\SDCARD"/>
 </section>

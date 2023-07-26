@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="RFSoC_IP06_10_DelayExp_app_system-imgFile" value="E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/sd_card/BOOT.BIN"/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-offSet" value=""/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-initFile" value="E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/boot/fsbl.elf"/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-flashType" value="nand-x8-dual"/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-verifyFlash" value="false"/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-blankCheck" value="false"/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-device" value="Auto Detect"/>
+	<item key="RFSoC_IP06_10_DelayExp_app_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="RFSoC_IP06_10_DelayExp_app_system"/>
+</section>

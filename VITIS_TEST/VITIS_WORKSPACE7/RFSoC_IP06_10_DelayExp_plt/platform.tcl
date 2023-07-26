@@ -41,3 +41,8 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate -domains standalone_domain 
+platform active {RFSoC_IP06_10_DelayExp_plt}
+platform generate -domains 
+domain active {zynqmp_fsbl}
+bsp reload
+bsp reload
