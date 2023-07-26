@@ -1,0 +1,559 @@
+
+*** Running vivado
+    with args -log TEST_02_Block_DAC_Controller_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TEST_02_Block_DAC_Controller_0_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source TEST_02_Block_DAC_Controller_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/DAC_Controller'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TimeController'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top TEST_02_Block_DAC_Controller_0_0 -part xczu28dr-ffvg1517-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 22756
+load diablo GTM unisim library
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:110]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:111]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:117]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:118]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:119]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:120]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:121]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:122]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:124]
+WARNING: [Synth 8-2507] parameter declaration becomes local in AXI2FIFO with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:125]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:137]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:138]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:139]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:140]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:141]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:142]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:143]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:144]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:145]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:146]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:147]
+WARNING: [Synth 8-2507] parameter declaration becomes local in RFDC_Contoller with formal parameter declaration list [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:148]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1803.055 ; gain = 186.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TEST_02_Block_DAC_Controller_0_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/synth/TEST_02_Block_DAC_Controller_0_0.sv:58]
+INFO: [Synth 8-6157] synthesizing module 'DAC_Controller' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/DAC_Controller.sv:23]
+	Parameter AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter AXI_STROBE_WIDTH bound to: 16 - type: integer 
+	Parameter AXI_STROBE_LEN bound to: 4 - type: integer 
+	Parameter INDEX bound to: 0 - type: integer 
+	Parameter DEST_VAL bound to: 16'b0000000000000000 
+	Parameter CHANNEL_LENGTH bound to: 12 - type: integer 
+	Parameter AXIS_DATA_WIDTH bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'AXI2FIFO' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:23]
+	Parameter AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter AXI_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter AXI_STROBE_WIDTH bound to: 16 - type: integer 
+	Parameter AXI_STROBE_LEN bound to: 4 - type: integer 
+	Parameter AXI_WRITE_FIFO bound to: 6'b000000 
+	Parameter AXI_FLUSH_FIFO bound to: 6'b010000 
+	Parameter IDLE bound to: 4'b0000 
+	Parameter WRITE_ADDRESS bound to: 4'b0001 
+	Parameter WRITE_DATA_WRITE_FIFO bound to: 4'b0010 
+	Parameter WRITE_DATA_FLUSH_FIFO bound to: 4'b0011 
+	Parameter ERROR_STATE bound to: 4'b0100 
+	Parameter WRITE_RESPONSE bound to: 4'b0101 
+	Parameter READ_ADDRESS bound to: 4'b0001 
+	Parameter READ_DATA bound to: 4'b0010 
+INFO: [Synth 8-155] case statement is not full and has no default [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:198]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:366]
+INFO: [Synth 8-6155] done synthesizing module 'AXI2FIFO' (1#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/AXI2FIFO.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RTO_Core' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RTO_Core.sv:23]
+	Parameter INDEX bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_generator_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/synth/fifo_generator_0.vhd:77]
+	Parameter C_COMMON_CLOCK bound to: 1 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 128 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 128 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 1 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 0 - type: integer 
+	Parameter C_HAS_SRST bound to: 1 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 1 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 6 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 4 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 0 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 1 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 8kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 4 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 5 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 8100 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 8099 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 1 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter C_RD_DEPTH bound to: 8192 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 13 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 1 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 13 - type: integer 
+	Parameter C_WR_DEPTH bound to: 8192 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 13 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 512x72 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_5' declared at 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_5' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/synth/fifo_generator_0.vhd:545]
+INFO: [Synth 8-256] done synthesizing module 'fifo_generator_0' (11#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/synth/fifo_generator_0.vhd:77]
+WARNING: [Synth 8-7071] port 'full' of module 'fifo_generator_0' is unconnected for instance 'RTO_Core_FIFO0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RTO_Core.sv:91]
+WARNING: [Synth 8-7071] port 'wr_rst_busy' of module 'fifo_generator_0' is unconnected for instance 'RTO_Core_FIFO0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RTO_Core.sv:91]
+WARNING: [Synth 8-7071] port 'rd_rst_busy' of module 'fifo_generator_0' is unconnected for instance 'RTO_Core_FIFO0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RTO_Core.sv:91]
+WARNING: [Synth 8-7023] instance 'RTO_Core_FIFO0' of module 'fifo_generator_0' has 13 connections declared, but only 10 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RTO_Core.sv:91]
+INFO: [Synth 8-6155] done synthesizing module 'RTO_Core' (12#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RTO_Core.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'RFDC_Contoller' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:22]
+	Parameter DEST_VAL bound to: 16'b0000000000000000 
+	Parameter CHANNEL_LENGTH bound to: 12 - type: integer 
+	Parameter AXIS_DATA_WIDTH bound to: 256 - type: integer 
+	Parameter S00_AXIS_TDATA bound to: 4'b0000 
+	Parameter S00_AXIS_TVALID bound to: 4'b0001 
+	Parameter DAC00_FAST_SHUTDOWN bound to: 4'b0010 
+	Parameter DAC00_PL_EVENT bound to: 4'b0011 
+	Parameter DAC00_NCO_FREQ bound to: 4'b0100 
+	Parameter DAC00_NCO_PHASE bound to: 4'b0101 
+	Parameter DAC00_NCO_PHASE_RST bound to: 4'b0110 
+	Parameter DAC00_NCO_UPDATE_EN bound to: 4'b0111 
+	Parameter DAC0_NCO_UPDATE_REQ bound to: 4'b1000 
+	Parameter DAC0_SYSREF_INT_GATING bound to: 4'b1001 
+	Parameter DAC0_SYSREF_INT_REENABLE bound to: 4'b1010 
+	Parameter UPDATE bound to: 4'b1111 
+INFO: [Synth 8-6157] synthesizing module 'GPO_Core' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/GPO_Core.sv:23]
+	Parameter DEST_VAL bound to: 16'b0000000000000000 
+	Parameter CHANNEL_LENGTH bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'GPO_Core' (13#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/GPO_Core.sv:23]
+INFO: [Synth 8-155] case statement is not full and has no default [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:193]
+INFO: [Synth 8-6155] done synthesizing module 'RFDC_Contoller' (14#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/RFDC_Controller.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'DAC_Controller' (15#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ipshared/6f90/new/DAC_Controller.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'TEST_02_Block_DAC_Controller_0_0' (16#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/synth/TEST_02_Block_DAC_Controller_0_0.sv:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:24 . Memory (MB): peak = 1954.738 ; gain = 337.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1954.738 ; gain = 337.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1954.738 ; gain = 337.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1954.738 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/rto_core_0/RTO_Core_FIFO0/U0'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_0/fifo_generator_0.xdc] for cell 'inst/rto_core_0/RTO_Core_FIFO0/U0'
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_1'. The XDC file e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_1/fifo_generator_1.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_2'. The XDC file e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_2/fifo_generator_2.xdc will not be read for any cell of this module.
+CRITICAL WARNING: [Designutils 20-1280] Could not find module 'fifo_generator_3'. The XDC file e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/ip/TEST_02_Block_DAC_Controller_0_0/ip/fifo_generator_3/fifo_generator_3.xdc will not be read for any cell of this module.
+Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.runs/TEST_02_Block_DAC_Controller_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.runs/TEST_02_Block_DAC_Controller_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.runs/TEST_02_Block_DAC_Controller_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TEST_02_Block_DAC_Controller_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TEST_02_Block_DAC_Controller_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2049.543 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2050.328 ; gain = 0.785
+load diablo GTM unisim library
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2050.328 ; gain = 433.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 2050.328 ; gain = 433.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rto_core_0/RTO_Core_FIFO0/U0. (constraint file  E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.runs/TEST_02_Block_DAC_Controller_0_0_synth_1/dont_touch.xdc, line 29).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rto_core_0/RTO_Core_FIFO0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:32 . Memory (MB): peak = 2050.328 ; gain = 433.496
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_write_reg' in module 'AXI2FIFO'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_state_read_reg' in module 'AXI2FIFO'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 |                             0000
+   WRITE_DATA_WRITE_FIFO |                            00010 |                             0010
+   WRITE_DATA_FLUSH_FIFO |                            00100 |                             0011
+          WRITE_RESPONSE |                            01000 |                             0101
+             ERROR_STATE |                            10000 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_write_reg' using encoding 'one-hot' in module 'AXI2FIFO'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                                0 |                             0000
+               READ_DATA |                                1 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_state_read_reg' using encoding 'sequential' in module 'AXI2FIFO'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2050.328 ; gain = 433.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
++---Registers : 
+	              256 Bit    Registers := 2     
+	              128 Bit    Registers := 7     
+	               64 Bit    Registers := 1     
+	               48 Bit    Registers := 2     
+	               37 Bit    Registers := 1     
+	               18 Bit    Registers := 2     
+	               16 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 28    
++---Muxes : 
+	   2 Input  256 Bit        Muxes := 1     
+	  12 Input  256 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 2     
+	   5 Input  128 Bit        Muxes := 1     
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 1     
+	  12 Input   48 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	   5 Input   16 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 12    
+	  12 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 2050.328 ; gain = 433.496
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 2413.609 ; gain = 796.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:49 . Memory (MB): peak = 2415.051 ; gain = 798.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:49 . Memory (MB): peak = 2434.148 ; gain = 817.316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |     7|
+|2     |FIFO36E2 |    28|
+|3     |LUT1     |    68|
+|4     |LUT2     |    26|
+|5     |LUT3     |   175|
+|6     |LUT4     |    74|
+|7     |LUT5     |    19|
+|8     |LUT6     |    55|
+|9     |FDRE     |  1008|
+|10    |FDSE     |     4|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 2441.828 ; gain = 729.406
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:51 . Memory (MB): peak = 2441.828 ; gain = 824.996
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.088 . Memory (MB): peak = 2441.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2492.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 26 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:01:05 . Memory (MB): peak = 2492.645 ; gain = 1329.926
+INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.runs/TEST_02_Block_DAC_Controller_0_0_synth_1/TEST_02_Block_DAC_Controller_0_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 71 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.runs/TEST_02_Block_DAC_Controller_0_0_synth_1/TEST_02_Block_DAC_Controller_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TEST_02_Block_DAC_Controller_0_0_utilization_synth.rpt -pb TEST_02_Block_DAC_Controller_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 25 16:59:52 2023...

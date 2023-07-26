@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 25 16:54:12 2023
+# Process ID: 8684
+# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5184 E:\RFSoC\GIT\RFSoC\RFSoC_Design_RFDC_Test\IP_FILE_06\TEST_10\TEST_02.xpr
+# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/vivado.log
+# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.xpr
+update_compile_order -fileset sources_1
+open_bd_design {E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.srcs/sources_1/bd/TEST_02_Block/TEST_02_Block.bd}
+create_bd_port -dir O OOO
+set_property name DACIO_00 [get_bd_ports OOO]
+connect_bd_net [get_bd_ports DACIO_00] [get_bd_pins DAC_Controller_0/dac0_nco_update_req]
+save_bd_design
+make_wrapper -files [get_files E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.srcs/sources_1/bd/TEST_02_Block/TEST_02_Block.bd] -top
+add_files -norecurse e:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02.gen/sources_1/bd/TEST_02_Block/hdl/TEST_02_Block_wrapper.v
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file E:/RFSoC/GIT/RFSoC/RFSoC_Design_RFDC_Test/IP_FILE_06/TEST_10/TEST_02_Block_wrapper.xsa

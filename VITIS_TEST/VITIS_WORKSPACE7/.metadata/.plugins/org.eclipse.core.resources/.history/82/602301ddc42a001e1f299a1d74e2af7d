@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="RFSoC_IP06_10_DelayExp_app" location="E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app" platform="E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm" platformUID="xilinx:zcu111::0.0(custom)" systemProject="RFSoC_IP06_10_DelayExp_app_system" sysConfig="RFSoC_IP06_10_DelayExp_plt" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="ce4d469eba58413a4176c57711c3f592">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1191089051">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1815143844" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

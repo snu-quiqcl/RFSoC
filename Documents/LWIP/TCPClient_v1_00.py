@@ -126,8 +126,8 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x00000000000000C0#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL")
-        # self.tcp.write("#DAC00#write_fifo#0x00000000000000C0#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL")
+        # self.tcp.write("#DAC00#write_fifo#0x00000000000000C0#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL")
+        self.tcp.write("#DAC00#write_fifo#0x00000000000000C0#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
@@ -183,22 +183,22 @@ class RFSoC:
         print(a)
         #Change frequency
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000A00#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000700#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000A10#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000710#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000A20#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255<< 40 ) + 0x0020)+"#!EOL")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000720#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255<< 40 ) + 0x0020)+"#!EOL")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000A30#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000730#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)

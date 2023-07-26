@@ -15,3 +15,5 @@ https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=neos_rtos&lo
 
 Virtualizaiton of ARM aarch64
 file:///E:/RFSoC/GIT/RFSoC/Documents/Memory/Virtualization/learn_the_architecture_-_aarch64_memory_management_examples_102416_0100_01_en.pdf
+
+Look \RFSoC\GIT\RFSoC\PCB\Document\Differential2Single for Differential to Single Ended Conversion Circuit
