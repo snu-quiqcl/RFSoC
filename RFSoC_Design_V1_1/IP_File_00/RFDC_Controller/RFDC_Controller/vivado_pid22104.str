@@ -1,0 +1,129 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 22104
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jul 27 14:45:26 KST 2023
+Time zone: 	Korean Standard Time (Asia/Seoul)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	E:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	E:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	QC109_4
+User home directory: C:/Users/QC109_4
+User working directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller
+User country: 	KR
+User language: 	ko
+User locale: 	ko_KR
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2020.2
+RDI_DATADIR: E:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/QC109_4/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/QC109_4/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/QC109_4/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller/vivado.log
+Vivado journal file location: 	E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller/vivado.jou
+Engine tmp dir: 	E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller/.Xil/Vivado-22104-DESKTOP-MCBJ7EB
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2020.2
+XILINX_SDK: E:/Xilinx/Vitis/2020.2
+XILINX_VITIS: E:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,160 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 84 MB (+86119kb) [00:00:05]
+// [Engine Memory]: 1,160 MB (+1064495kb) [00:00:05]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_Controller\RFDC_Controller\RFDC_Controller.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller/RFDC_Controller.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,160 MB. GUI used memory: 55 MB. Current time: 7/27/23, 2:45:27 PM KST
+// TclEventType: LOAD_FEATURE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 203 MB (+119612kb) [00:00:14]
+// WARNING: HEventQueue.dispatchEvent() is taking  3141 ms.
+// Tcl Message: open_project E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller/RFDC_Controller.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1168.969 ; gain = 7.348 
+// Project name: RFDC_Controller; location: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_Controller/RFDC_Controller; part: xczu28dr-ffvg1517-2-e
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 221 MB (+8016kb) [00:00:59]
+// Elapsed time: 54 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DAC_Controller (DAC_Controller.sv)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DAC_Controller (DAC_Controller.sv), axi2fifo_0 : AXI2FIFO (AXI2FIFO.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DAC_Controller (DAC_Controller.sv), axi2fifo_0 : AXI2FIFO (AXI2FIFO.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 233 MB (+1300kb) [00:05:51]
+// Elapsed time: 289 seconds
+selectCodeEditor("AXI2FIFO.sv", 397, 367); // bP
+// Elapsed time: 45 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DAC_Controller (DAC_Controller.sv), rto_core_0 : RTO_Core (RTO_Core.sv)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DAC_Controller (DAC_Controller.sv), rto_core_0 : RTO_Core (RTO_Core.sv)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1308179 ms. Increasing delay to 3924537 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,215 MB. GUI used memory: 170 MB. Current time: 7/27/23, 3:26:21 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,215 MB. GUI used memory: 67 MB. Current time: 7/27/23, 3:56:25 PM KST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,215 MB. GUI used memory: 67 MB. Current time: 7/27/23, 4:26:26 PM KST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 6 ms. Decreasing delay to 2006 ms.
