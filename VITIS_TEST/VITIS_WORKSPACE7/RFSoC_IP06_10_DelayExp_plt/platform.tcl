@@ -46,3 +46,9 @@ platform generate -domains
 domain active {zynqmp_fsbl}
 bsp reload
 bsp reload
+platform active {RFSoC_IP06_10_DelayExp_plt}
+domain active {zynqmp_fsbl}
+bsp reload
+domain active {standalone_domain}
+bsp reload
+platform generate
