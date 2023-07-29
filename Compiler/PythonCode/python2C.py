@@ -47,6 +47,9 @@ class Basic_Statement:
         elif isinstance(node, ast.Expr):
             return f"{self.normal_statement(node.value)};"
         
+        elif isinstance(node, ast.Subscript):
+            return f"{self.normal_statement(node.value)}[{self.normal_statement(node.slice)}]"
+        
         elif isinstance(node, ast.Call):
             if hasattr(node.func, 'value'):
                 if node.func.value.id in self.declared_class:
@@ -112,7 +115,7 @@ class Basic_Statement:
     
 
     def handle_if_block(self, node):
-        print(ast.dump(node, indent=4))
+        # print(ast.dump(node, indent=4))
         condition = self.normal_statement(node.test)
         c_code = make_indent()+ f"if ({condition}) {{\n"
     
@@ -122,7 +125,7 @@ class Basic_Statement:
                 c_code += self.normal_statement(stmt)
                     
             elif isinstance(stmt, ast.Expression):
-                c_code += make_indent()+f"{stmt.body.value};\n"
+                c_code += make_indent()+f"{self.normal_statement(stmt.body.value)};\n"
             
             elif isinstance(stmt, ast.Expr):
                 var_value = self.normal_statement(stmt.value)
@@ -169,7 +172,7 @@ class Basic_Statement:
                     c_code += self.normal_statement(stmt)
                         
                 elif isinstance(stmt, ast.Expression):
-                    c_code += make_indent()+f"{stmt.body.value};\n"
+                    c_code += make_indent()+f"{self.normal_statement(stmt.body.value)};\n"
                 
                 elif isinstance(stmt, ast.Expr):
                     var_value = self.normal_statement(stmt.value)
@@ -211,6 +214,131 @@ class Basic_Statement:
             return ""
     
         return c_code
+    
+    def general_statement(self, node):
+        c_code = ""
+        for stmt in node.body:
+            if isinstance(stmt, ast.AnnAssign):
+                if hasattr(stmt.value,'func') and stmt.value.func.id == 'list':
+                    var_name = stmt.target.id
+                    if var_name not in self.declared_vars:
+                        c_code += make_indent() + f"{stmt.annotation.id} * {var_name};\n"
+                        self.declared_vars.add(var_name)
+                
+                elif isinstance(stmt.value,ast.List):
+                    var_name = stmt.target.id
+                    if var_name not in self.declared_vars:
+                        c_code += make_indent() + f"{stmt.annotation.id} {var_name}[] = {{"
+                        self.declared_vars.add(var_name)
+                        param_num = len(stmt.value.elts)
+                        param_index = 0
+                        for elt in stmt.value.elts:
+                            c_code += self.normal_statement(elt)
+                            param_index += 1
+                            if param_index != param_num:
+                                c_code += ', '
+                        c_code += '};'
+                    else:
+                        param_num = len(stmt.value.elts)
+                        param_index = 0
+                        for elt in stmt.value.elts:
+                            c_code += make_indent() + f"{var_name}[{param_index}] = {self.normal_statement(elt)};\n"
+                            param_index += 1
+                else:
+                    self.declared_vars.add(stmt.target.id)
+                    c_code += make_indent()+f"{stmt.annotation.id} {stmt.target.id};\n"
+                    
+                    var_name = stmt.target.id
+                    if hasattr(stmt,'value') and stmt.value != None:
+                        var_value = self.normal_statement(stmt.value)
+                        c_code += make_indent()+f"{var_name} = {var_value};\n"
+                
+            
+            elif isinstance(stmt, ast.BinOp):
+                c_code += self.normal_statement(stmt)
+                    
+            elif isinstance(stmt, ast.Expression):
+                c_code += make_indent() + f"{self.normal_statement(stmt.body.value)};\n"
+            
+            elif isinstance(stmt, ast.Expr):
+                var_value = self.normal_statement(stmt.value)
+                c_code += make_indent() +  f"{var_value};\n"
+                    
+            elif isinstance(stmt, ast.Assign):
+                for target in stmt.targets: #target can be multiple?
+                    if isinstance(target, ast.Name):
+                        if hasattr(stmt.value,'func') and (stmt.value.func.id in classes_id):
+                            var_name = target.id
+                            var_value = self.normal_statement(stmt.value)
+                            c_code += make_indent() + f"{var_name} = {var_value};\n"
+                            self.declared_class[var_name] = stmt.value.func.id
+                        
+                        elif isinstance(stmt.value,ast.List):
+                            var_name = target.id
+                            if var_name not in self.declared_vars:
+                                c_code += make_indent() + f"{stmt.annotation.id} {var_name}[] = {{"
+                                self.declared_vars.add(var_name)
+                                param_num = len(stmt.value.elts)
+                                param_index = 0
+                                for elt in stmt.value.elts:
+                                    c_code += self.normal_statement(elt)
+                                    param_index += 1
+                                    if param_index != param_num:
+                                        c_code += ', '
+                                c_code += '};'
+                            else:
+                                param_num = len(stmt.value.elts)
+                                param_index = 0
+                                for elt in stmt.value.elts:
+                                    c_code += make_indent() + f"{var_name}[{param_index}] = {self.normal_statement(elt)};\n"
+                                    param_index += 1
+                        else:
+                            var_name = target.id
+                            if var_name not in self.declared_vars:
+                                c_code += make_indent() + f"int {var_name};\n"
+                                self.declared_vars.add(var_name)
+
+                            for target in stmt.targets:
+                                var_name = target.id
+                                var_value = self.normal_statement(stmt.value)
+                                c_code += make_indent() + f"{var_name} = {var_value};\n"
+                                
+            elif isinstance(stmt, ast.Return):
+                return_value = self.normal_statement(stmt.value)
+                c_code += make_indent() + f"return {return_value};\n"
+            
+            elif isinstance(stmt, ast.If):
+                c_code += self.handle_if_block(stmt)
+                
+            elif isinstance(stmt, ast.For):
+                # print(ast.dump(stmt, indent=4))
+                loop_var = stmt.target.id
+                if len(stmt.iter.args) == 3:
+                    start = self.normal_statement(stmt.iter.args[0])
+                    end = self.normal_statement(stmt.iter.args[1])
+                    step = self.normal_statement(stmt.iter.args[2])
+                elif len(stmt.iter.args) == 2:
+                    start = self.normal_statement(stmt.iter.args[0])
+                    end = self.normal_statement(stmt.iter.args[1])
+                    step = "1"
+                
+                else:
+                    start = "0"
+                    end = self.normal_statement(stmt.iter.args[0])
+                    step = "1"
+        
+                c_code += make_indent() + f"for (int {loop_var} = {start}; {loop_var} < {end}; {loop_var} += {step}) {{\n"
+                
+                inc_indent()
+                c_code += self.translate_function(stmt)
+                dec_indent()
+        
+                c_code += make_indent() + "}\n"
+                
+        
+        c_code += make_indent()+"}\n"
+        
+        return c_code
 
 class Class_Maker(Basic_Statement):
     def __init__(self):
@@ -245,7 +373,7 @@ class Class_Maker(Basic_Statement):
                                 c_code += self.normal_statement(stmt)
                                     
                             elif isinstance(stmt, ast.Expression):
-                                c_code += make_indent() + f"{stmt.body.value};\n"
+                                c_code += make_indent() + f"{self.normal_statement(stmt.body.value)};\n"
                             
                             elif isinstance(stmt, ast.Expr):
                                 var_value = self.normal_statement(stmt.value)
@@ -281,7 +409,7 @@ class Class_Maker(Basic_Statement):
                                 c_code += " = " + str(stmt.args.defaults[param_num].value) + " "
                             param_num += 1
                             param_index += 1
-                            if param_index != len(stmt.args.args):
+                            if param_index != (len(stmt.args.args)-1):
                                 c_code += ","
                     
                     c_code += ") {\n"
@@ -311,14 +439,14 @@ class Class_Maker(Basic_Statement):
                             self.normal_statement(sub_stmt)
                                 
                         elif isinstance(sub_stmt, ast.Expression):
-                            c_code += f"    {sub_stmt.body.value};\n"
+                            c_code += f"    {self.normal_statement(sub_stmt.body.value)};\n"
                         
                         elif isinstance(sub_stmt, ast.Expr):
                             var_value = self.normal_statement(sub_stmt.value)
                             c_code += f"    {var_value};\n"
                                 
                         elif isinstance(sub_stmt, ast.Assign):
-                            for target in sub_stmt.targets:
+                            for target in sub_stmt.targets: #target can be multiple?
                                 if isinstance(target, ast.Name):
                                     if hasattr(sub_stmt.value,'func') and (sub_stmt.value.func.id in classes_id):
                                         var_name = target.id
@@ -362,7 +490,7 @@ class Func_Maker(Basic_Statement):
             
             self.func_name = node.name
             #For check delcared variable
-            # print(ast.dump(node, indent=4))
+            print(ast.dump(node, indent=4))
             
             param_num = -len(node.args.defaults)
             param_index = 0
@@ -382,154 +510,15 @@ class Func_Maker(Basic_Statement):
                 self.declared_vars.add(arg.arg) 
                 
             inc_indent()
-            
-    
-            for stmt in node.body:
-                if isinstance(stmt, ast.AnnAssign):
-                    self.declared_vars.add(stmt.target.id)
-                    c_code += make_indent()+f"{stmt.annotation.id} {stmt.target.id};\n"
-                    
-                    var_name = stmt.target.id
-                    var_value = self.normal_statement(stmt.value)
-                    c_code += make_indent()+f"{var_name} = {var_value};\n"
-                    
-                
-                elif isinstance(stmt, ast.BinOp):
-                    c_code += self.normal_statement(stmt)
-                        
-                elif isinstance(stmt, ast.Expression):
-                    c_code += make_indent() + f"{stmt.body.value};\n"
-                
-                elif isinstance(stmt, ast.Expr):
-                    var_value = self.normal_statement(stmt.value)
-                    c_code += make_indent() +  f"{var_value};\n"
-                        
-                elif isinstance(stmt, ast.Assign):
-                    for target in stmt.targets:
-                        if isinstance(target, ast.Name):
-                            if hasattr(stmt.value,'func') and (stmt.value.func.id in classes_id):
-                                var_name = target.id
-                                var_value = self.normal_statement(stmt.value)
-                                c_code += make_indent() + f"{var_name} = {var_value};\n"
-                                self.declared_class[var_name] = stmt.value.func.id
-                            else:
-                                var_name = target.id
-                                if var_name not in self.declared_vars:
-                                    c_code += make_indent() + f"int {var_name};\n"
-                                    self.declared_vars.add(var_name)
-    
-                                for target in stmt.targets:
-                                    var_name = target.id
-                                    var_value = self.normal_statement(stmt.value)
-                                    c_code += make_indent() + f"{var_name} = {var_value};\n"
-                elif isinstance(stmt, ast.Return):
-                    return_value = self.normal_statement(stmt.value)
-                    c_code += make_indent() + f"return {return_value};\n"
-                
-                elif isinstance(stmt, ast.If):
-                    c_code += self.handle_if_block(stmt)
-                    
-                elif isinstance(stmt, ast.For):
-                    print(ast.dump(stmt, indent=4))
-                    loop_var = stmt.target.id
-                    if len(stmt.iter.args) == 3:
-                        start = self.normal_statement(stmt.iter.args[0])
-                        end = self.normal_statement(stmt.iter.args[1])
-                        step = self.normal_statement(stmt.iter.args[2])
-                    elif len(stmt.iter.args) == 2:
-                        start = self.normal_statement(stmt.iter.args[0])
-                        end = self.normal_statement(stmt.iter.args[1])
-                        step = "1"
-                    
-                    else:
-                        start = "0"
-                        end = self.normal_statement(stmt.iter.args[0])
-                        step = "1"
-            
-                    c_code += make_indent() + f"for (int {loop_var} = {start}; {loop_var} < {end}; {loop_var} += {step}) {{\n"
-                    
-                    inc_indent()
-                    c_code += self.translate_function(stmt)
-                    dec_indent()
-            
-                    c_code += make_indent() + "}\n"
-                    
+            c_code += self.general_statement(node)
             dec_indent()
-            c_code += make_indent()+"}\n"
-            
             return c_code
         
         else:
             c_code = ""
-            for stmt in node.body:
-                if isinstance(stmt, ast.AnnAssign):
-                    self.declared_vars.add(stmt.target.id)
-                    c_code += make_indent()+f"{stmt.annotation.id} {stmt.target.id};\n"
-                    
-                    var_name = stmt.target.id
-                    var_value = self.normal_statement(stmt.value)
-                    c_code += make_indent()+f"{var_name} = {var_value};\n"
-                    
-                
-                elif isinstance(stmt, ast.BinOp):
-                    c_code += self.normal_statement(stmt)
-                        
-                elif isinstance(stmt, ast.Expression):
-                    c_code += make_indent() + f"{stmt.body.value};\n"
-                
-                elif isinstance(stmt, ast.Expr):
-                    var_value = self.normal_statement(stmt.value)
-                    c_code += make_indent() + f"{var_value};\n"
-                        
-                elif isinstance(stmt, ast.Assign):
-                    for target in stmt.targets:
-                        if isinstance(target, ast.Name):
-                            if hasattr(stmt.value,'func') and (stmt.value.func.id in classes_id):
-                                var_name = target.id
-                                var_value = self.normal_statement(stmt.value)
-                                c_code += make_indent() + f"{var_name} = {var_value};\n"
-                                self.declared_class[var_name] = stmt.value.func.id
-                            else:
-                                var_name = target.id
-                                if var_name not in self.declared_vars:
-                                    c_code += make_indent() + f"int {var_name};\n"
-                                    self.declared_vars.add(var_name)
-    
-                                for target in stmt.targets:
-                                    var_name = target.id
-                                    var_value = self.normal_statement(stmt.value)
-                                    c_code += make_indent() + f"{var_name} = {var_value};\n"
-                elif isinstance(stmt, ast.Return):
-                    return_value = self.normal_statement(stmt.value)
-                    c_code += make_indent() + f"return {return_value};\n"
-                
-                elif isinstance(stmt, ast.If):
-                    c_code += self.handle_if_block(stmt)
-                    
-                elif isinstance(stmt, ast.For):
-                    print(ast.dump(stmt, indent=4))
-                    loop_var = stmt.target.id
-                    if len(stmt.iter.args) == 3:
-                        start = self.normal_statement(stmt.iter.args[0])
-                        end = self.normal_statement(stmt.iter.args[1])
-                        step = self.normal_statement(stmt.iter.args[2])
-                    elif len(stmt.iter.args) == 2:
-                        start = self.normal_statement(stmt.iter.args[0])
-                        end = self.normal_statement(stmt.iter.args[1])
-                        step = "1"
-                    
-                    else:
-                        start = "0"
-                        end = self.normal_statement(stmt.iter.args[0])
-                        step = "1"
-            
-                    c_code += make_indent() + f"for (int {loop_var} = {start}; {loop_var} < {end}; {loop_var} += {step}) {{\n"
-                    
-                    inc_indent()
-                    c_code += self.translate_function(stmt)
-                    dec_indent()
-            
-                    c_code += make_indent() + "}\n"
+            inc_indent()
+            c_code += self.general_statement(node)
+            dec_indent()
                     
             return c_code
 
@@ -579,14 +568,23 @@ class dds:
         print(self.a)
         if b < 0:
             print("oh")
-        if self.a > 0 and b < 10 and 3 == 4:
+        elif self.a > 0 and b < 10 and 3 == 4:
             print("hello")
+            
+        else:
+            print("END")
             
 def foo( a:int = 10 ):
     new_dds = dds(30+40,50)
     new_dds.out(30,40)
+    num_list:int = list()
+    new_list:int = [1,2,3]
     x:int = new_dds.out(20,30,60) + 20
     x = (30 + 50)
+    
+    new_list = [5,9,10]
+    
+    new_list[1+10] =3
     
     i:int;
     k:int =10
