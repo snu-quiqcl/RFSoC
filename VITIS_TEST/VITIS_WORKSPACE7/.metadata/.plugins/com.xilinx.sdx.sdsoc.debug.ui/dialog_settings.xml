@@ -3,4 +3,5 @@
 	<item key="enabletrace_RFSoC_IP06_10_DelayExp_app_Debug" value="false"/>
 	<item key="emulatorarguments_RFSoC_IP06_10_DelayExp_app_Debug" value=""/>
 	<item key="waveform_RFSoC_IP06_10_DelayExp_app_Debug" value="false"/>
+	<item key="waveform_RFSoC_IP06_10_DelayExp_app_Release" value="false"/>
 </section>

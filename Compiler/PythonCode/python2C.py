@@ -1,4 +1,7 @@
+# make file : https://code4human.tistory.com/110
+# Compiler : https://igotit.tistory.com/entry/GNU-Arm-Embedded-Toolchain-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%84%A4%EC%B9%98-%EC%84%A4%EC%A0%95
 import ast
+import subprocess
 
 classes = []
 classes_id = []
@@ -26,8 +29,51 @@ def collect_classes(node):
             if isinstance(item, ast.ClassDef):
                 classes.append(item)
         return classes
-    
 
+class Compiler:
+    def __init__(self):
+        print('compiler')
+        self.elf_data = None
+        
+    def read_elf_file(self, filename):
+        with open(filename, 'rb') as f:
+            self.elf_data = f.read()
+        return self.elf_data
+    
+    def create_c_code_array(self, data):
+        c_code_array = []
+        for byte in data:
+            c_code_array.append(hex(byte))
+    
+        # Group the bytes into 16 bytes per line for better readability
+        c_code_lines = [', '.join(c_code_array[i:i+16]) for i in range(0, len(c_code_array), 16)]
+        
+        # Join the lines with newlines and add C code array syntax
+        c_code = "const unsigned char elf_data[] = {\n"
+        c_code += ",\n".join(c_code_lines)
+        c_code += "\n};\n"
+        
+        print(c_code)
+    
+        return c_code
+    
+    def save_c_code_to_file(self, c_code, output_filename):
+        with open(output_filename, 'w') as f:
+            f.write(c_code)
+            
+    def compile_code(self):
+        # Define the command to be executed
+        command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld hello.cpp -o hello.elf"
+
+        # Execute the command
+        result = subprocess.run(command, shell=True)
+
+        # Check the return code
+        if result.returncode == 0:
+            print("Compilation successful.")
+        else:
+            print("Compilation failed.")
+        
 class Basic_Statement:
     def __init__(self):
         print('basic')
@@ -594,3 +640,19 @@ def foo( a:int = 10 ):
     print('##################################################################')
     print('##################################################################')
     print(c_code)
+    
+    do_compile = False
+    
+    comp = Compiler()
+    input_elf_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.elf"
+    output_c_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/output.c"
+
+    # Read the ELF file
+    elf_data = comp.read_elf_file(input_elf_file)
+
+    # Convert to C code array representation
+    c_code = comp.create_c_code_array(elf_data)
+
+    # Save the C code to a file
+    comp.save_c_code_to_file(c_code, output_c_file)
+

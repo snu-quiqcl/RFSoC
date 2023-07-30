@@ -233,6 +233,10 @@ int main()
 	print_ip_settings(&ipaddr, &netmask, &gw);
 
 #endif
+	// TEMP
+	callee_function();
+	xil_printf("calle_end\r\n");
+	xil_printf("############################################################\r\n");
 	/* start the application (web server, rxtest, txtest, etc..) */
 	start_application();
 	set_clock(6400000);
