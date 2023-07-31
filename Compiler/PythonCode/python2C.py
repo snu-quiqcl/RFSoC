@@ -3,6 +3,8 @@
 # Compile Script : aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld hello.cpp -o hello.elf
 # Link with library(.a file) aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf
 # Mini ELF Loader https://w3.cs.jmu.edu/lam2mo/cs261_2019_08/p2-load.html
+# How to load ELF file to memory. https://ourembeddeds.github.io/blog/2020/08/16/elf-loader/
+# Note that ELF file is composed of header and text section.
 import ast
 import subprocess
 from elftools.elf.elffile import ELFFile
@@ -59,7 +61,13 @@ class Compiler:
                 print(f"  {section.name} (type: {section['sh_type']}, size: {section['sh_size']})")
             
             entry_point = elf_file.header.e_entry
-            # Iterate over all sections in the elf_file file
+            
+            output_file = "ELF_BIN.txt"
+            with open(output_file, 'w') as output_f:
+                output_f.write("Contents of ELF file:\n")
+                hex_dump = [" ".join(f"{b:02X}" for b in self.elf_data[i:i+16]) for i in range(0, len(self.elf_data), 16)]
+                for line in hex_dump:
+                    output_f.write(line + "\n")
             
             for section in elf_file.iter_sections():
                 # Check if the section is of type SHT_SYMTAB (symbol table)
@@ -107,7 +115,7 @@ class Compiler:
                     md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
                     
                     print("Assembly Instructions:")
-                    for insn in md.disasm(data, 0x1000):  # Replace 0x1000 with the address of the start of the section
+                    for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
                         elf_text += f"    {insn.mnemonic} {insn.op_str}\n"
                         # print(f"    {insn.mnemonic} {insn.op_str}")
                         f.write(elf_text)
