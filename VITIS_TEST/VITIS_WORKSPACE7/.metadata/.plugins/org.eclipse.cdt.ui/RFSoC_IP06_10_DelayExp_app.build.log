@@ -1,29 +1,8 @@
-00:03:16 **** Incremental Build of configuration Debug for project RFSoC_IP06_10_DelayExp_app ****
+16:36:37 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
 make all 
-'Building file: ../src/clock_config.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/clock_config.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/clock_config.d" -MT"src/clock_config.o" -o "src/clock_config.o" "../src/clock_config.c"
-'Finished building: ../src/clock_config.c'
-' '
-'Building file: ../src/echo.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/echo.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "../src/echo.c"
-In file included from ../src/echo.c:37:
-../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/rfdc_controller.h:56:8: warning: 'total_page_num' defined but not used [-Wunused-variable]
-../src/rfdc_controller.h:55:16: warning: 'binary_mode' defined but not used [-Wunused-variable]
-   55 | static int64_t binary_mode;
-      |                ^~~~~~~~~~~
-../src/rfdc_controller.h:54:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   54 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/echo.c'
-' '
 'Building file: ../src/elf_exp.c'
 'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/elf_exp.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/elf_exp.d" -MT"src/elf_exp.o" -o "src/elf_exp.o" "../src/elf_exp.c"
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/elf_exp.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/elf_exp.d" -MT"src/elf_exp.o" -o "src/elf_exp.o" "../src/elf_exp.c"
 In file included from ../src/elf_exp.c:1:
 ../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
    56 | static total_page_num;
@@ -37,6 +16,29 @@ In file included from ../src/elf_exp.c:1:
 ../src/rfdc_controller.h:99:42: warning: 'struct tcp_pcb' declared inside parameter list will not be visible outside of this definition or declaration
    99 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst);
       |                                          ^~~~~~~
+../src/elf_exp.c: In function 'callee_function':
+../src/elf_exp.c:6601:29: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+ 6601 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
+      |                             ^~~~~~~~
+      |                             |
+      |                             unsigned char *
+In file included from ../src/rfdc_controller.h:8,
+                 from ../src/elf_exp.c:1:
+e:\xilinx\vitis\2020.2\gnu\aarch64\nt\aarch64-none\aarch64-xilinx-elf\usr\include\string.h:36:14: note: expected 'const char *' but argument is of type 'unsigned char *'
+   36 | int  strcmp (const char *, const char *);
+      |              ^~~~~~~~~~~~
+../src/elf_exp.c:6601:38: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+ 6601 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
+      |                                      ^~~~~~~~
+      |                                      |
+      |                                      const unsigned char *
+In file included from ../src/rfdc_controller.h:8,
+                 from ../src/elf_exp.c:1:
+e:\xilinx\vitis\2020.2\gnu\aarch64\nt\aarch64-none\aarch64-xilinx-elf\usr\include\string.h:36:28: note: expected 'const char *' but argument is of type 'const unsigned char *'
+   36 | int  strcmp (const char *, const char *);
+      |                            ^~~~~~~~~~~~
+In file included from ../src/elf_exp.c:1:
+At top level:
 ../src/rfdc_controller.h:56:8: warning: 'total_page_num' defined but not used [-Wunused-variable]
    56 | static total_page_num;
       |        ^~~~~~~~~~~~~~
@@ -48,187 +50,6 @@ In file included from ../src/elf_exp.c:1:
       |                ^~~~~~~~~~~~~
 'Finished building: ../src/elf_exp.c'
 ' '
-'Building file: ../src/i2c_access.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_access.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "../src/i2c_access.c"
-'Finished building: ../src/i2c_access.c'
-' '
-'Building file: ../src/iic_phyreset.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "../src/iic_phyreset.c"
-'Finished building: ../src/iic_phyreset.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-In file included from ../src/main.c:53:
-../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/rfdc_controller.h:56:8: warning: 'total_page_num' defined but not used [-Wunused-variable]
-../src/rfdc_controller.h:54:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   54 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/platform.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
-' '
-'Building file: ../src/platform_mb.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_mb.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "../src/platform_mb.c"
-'Finished building: ../src/platform_mb.c'
-' '
-'Building file: ../src/platform_ppc.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_ppc.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "../src/platform_ppc.c"
-'Finished building: ../src/platform_ppc.c'
-' '
-'Building file: ../src/platform_zynq.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynq.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "../src/platform_zynq.c"
-'Finished building: ../src/platform_zynq.c'
-' '
-'Building file: ../src/platform_zynqmp.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "../src/platform_zynqmp.c"
-../src/platform_zynqmp.c: In function 'platform_clear_interrupt':
-../src/platform_zynqmp.c:137:6: warning: variable 'StatusEvent' set but not used [-Wunused-but-set-variable]
-  137 |  u32 StatusEvent;
-      |      ^~~~~~~~~~~
-'Finished building: ../src/platform_zynqmp.c'
-' '
-'Building file: ../src/rfdc_controller.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/rfdc_controller.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/rfdc_controller.d" -MT"src/rfdc_controller.o" -o "src/rfdc_controller.o" "../src/rfdc_controller.c"
-In file included from ../src/rfdc_controller.c:3:
-../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/rfdc_controller.c: In function 'inst_process':
-../src/rfdc_controller.c:109:3: warning: implicit declaration of function 'save_binary' [-Wimplicit-function-declaration]
-  109 |   save_binary(tpcb, TCP_data);
-      |   ^~~~~~~~~~~
-../src/rfdc_controller.c: In function 'run_bin_process':
-../src/rfdc_controller.c:155:4: warning: implicit declaration of function 'run_binary' [-Wimplicit-function-declaration]
-  155 |    run_binary();
-      |    ^~~~~~~~~~
-../src/rfdc_controller.c: In function 'read_sampling_freq':
-../src/rfdc_controller.c:74:1: warning: control reaches end of non-void function [-Wreturn-type]
-   74 | }
-      | ^
-../src/rfdc_controller.c: In function 'inst_process':
-../src/rfdc_controller.c:111:1: warning: control reaches end of non-void function [-Wreturn-type]
-  111 | }
-      | ^
-../src/rfdc_controller.c: In function 'run_cpu_process':
-../src/rfdc_controller.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
-  128 | }
-      | ^
-../src/rfdc_controller.c: In function 'run_rtio_process':
-../src/rfdc_controller.c:142:1: warning: control reaches end of non-void function [-Wreturn-type]
-  142 | }
-      | ^
-../src/rfdc_controller.c: In function 'run_bin_process':
-../src/rfdc_controller.c:161:1: warning: control reaches end of non-void function [-Wreturn-type]
-  161 | }
-      | ^
-'Finished building: ../src/rfdc_controller.c'
-' '
-'Building file: ../src/run_binary.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/run_binary.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/run_binary.d" -MT"src/run_binary.o" -o "src/run_binary.o" "../src/run_binary.c"
-In file included from ../src/run_binary.c:4:
-../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/run_binary.c:11:8: warning: type defaults to 'int' in declaration of 'page_num' [-Wimplicit-int]
-   11 | static page_num = 0;
-      |        ^~~~~~~~
-../src/run_binary.c:12:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   12 | static total_page_num = 0;
-      |        ^~~~~~~~~~~~~~
-../src/run_binary.c: In function 'run_binary':
-../src/run_binary.c:20:1: warning: control reaches end of non-void function [-Wreturn-type]
-   20 | }
-      | ^
-../src/run_binary.c: In function 'save_binary':
-../src/run_binary.c:37:1: warning: control reaches end of non-void function [-Wreturn-type]
-   37 | }
-      | ^
-In file included from ../src/run_binary.c:4:
-At top level:
-../src/rfdc_controller.h:54:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   54 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/run_binary.c'
-' '
-'Building file: ../src/sfp.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sfp.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "../src/sfp.c"
-'Finished building: ../src/sfp.c'
-' '
-'Building file: ../src/si5324.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/si5324.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "../src/si5324.c"
-'Finished building: ../src/si5324.c'
-' '
-'Building file: ../src/simple_lexer.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/simple_lexer.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/simple_lexer.d" -MT"src/simple_lexer.o" -o "src/simple_lexer.o" "../src/simple_lexer.c"
-In file included from ../src/simple_lexer.c:4:
-../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/simple_lexer.c: In function 'simple_lexer':
-../src/simple_lexer.c:32:5: warning: implicit declaration of function 'run_cpu_process' [-Wimplicit-function-declaration]
-   32 |     run_cpu_process(tpcb,fnct_num,param_num);
-      |     ^~~~~~~~~~~~~~~
-../src/simple_lexer.c:40:5: warning: implicit declaration of function 'run_bin_process' [-Wimplicit-function-declaration]
-   40 |     run_bin_process(tpcb, fnct_num,param_num);
-      |     ^~~~~~~~~~~~~~~
-../src/simple_lexer.c:51:5: warning: implicit declaration of function 'run_rtio_process'; did you mean 'inst_process'? [-Wimplicit-function-declaration]
-   51 |     run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
-      |     ^~~~~~~~~~~~~~~~
-      |     inst_process
-../src/simple_lexer.c: In function 'free_all':
-../src/simple_lexer.c:191:2: warning: 'return' with no value, in function returning non-void [-Wreturn-type]
-  191 |  return;
-      |  ^~~~~~
-../src/simple_lexer.c:180:9: note: declared here
-  180 | int64_t free_all(struct instruction *inst){
-      |         ^~~~~~~~
-In file included from ../src/simple_lexer.c:4:
-At top level:
-../src/rfdc_controller.h:56:8: warning: 'total_page_num' defined but not used [-Wunused-variable]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/rfdc_controller.h:55:16: warning: 'binary_mode' defined but not used [-Wunused-variable]
-   55 | static int64_t binary_mode;
-      |                ^~~~~~~~~~~
-../src/rfdc_controller.h:54:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   54 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/simple_lexer.c'
-' '
-'Building file: ../src/string_process.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/string_process.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/string_process.d" -MT"src/string_process.o" -o "src/string_process.o" "../src/string_process.c"
-In file included from ../src/string_process.c:4:
-../src/rfdc_controller.h:56:8: warning: type defaults to 'int' in declaration of 'total_page_num' [-Wimplicit-int]
-   56 | static total_page_num;
-      |        ^~~~~~~~~~~~~~
-../src/rfdc_controller.h:56:8: warning: 'total_page_num' defined but not used [-Wunused-variable]
-../src/rfdc_controller.h:55:16: warning: 'binary_mode' defined but not used [-Wunused-variable]
-   55 | static int64_t binary_mode;
-      |                ^~~~~~~~~~~
-../src/rfdc_controller.h:54:16: warning: 'sampling_freq' defined but not used [-Wunused-variable]
-   54 | static int64_t sampling_freq;
-      |                ^~~~~~~~~~~~~
-'Finished building: ../src/string_process.c'
-' '
 'Building target: RFSoC_IP06_10_DelayExp_app.elf'
 'Invoking: ARM v8 gcc linker'
 aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_10_DelayExp_app.elf"  ./src/clock_config.o ./src/echo.o ./src/elf_exp.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/run_binary.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
@@ -237,9 +58,9 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TES
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_10_DelayExp_app.elf  |tee "RFSoC_IP06_10_DelayExp_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 200752	  19944	4280604	4501300	 44af34	RFSoC_IP06_10_DelayExp_app.elf
+ 238152	  19944	4346132	4604228	 464144	RFSoC_IP06_10_DelayExp_app.elf
 'Finished building: RFSoC_IP06_10_DelayExp_app.elf.size'
 ' '
 
-00:03:22 Build Finished (took 5s.522ms)
+16:36:39 Build Finished (took 1s.546ms)
 

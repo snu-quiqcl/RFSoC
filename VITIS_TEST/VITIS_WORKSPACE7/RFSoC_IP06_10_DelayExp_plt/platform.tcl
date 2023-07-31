@@ -52,3 +52,6 @@ bsp reload
 domain active {standalone_domain}
 bsp reload
 platform generate
+platform active {RFSoC_IP06_10_DelayExp_plt}
+platform generate -domains 
+platform generate

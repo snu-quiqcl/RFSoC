@@ -1,7 +1,12 @@
 # make file : https://code4human.tistory.com/110
 # Compiler : https://igotit.tistory.com/entry/GNU-Arm-Embedded-Toolchain-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%84%A4%EC%B9%98-%EC%84%A4%EC%A0%95
+# Compile Script : aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld hello.cpp -o hello.elf
+# Link with library(.a file) aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf
+# Mini ELF Loader https://w3.cs.jmu.edu/lam2mo/cs261_2019_08/p2-load.html
 import ast
 import subprocess
+from elftools.elf.elffile import ELFFile
+from capstone import Cs, CS_ARCH_ARM64, CS_MODE_ARM
 
 classes = []
 classes_id = []
@@ -34,10 +39,80 @@ class Compiler:
     def __init__(self):
         print('compiler')
         self.elf_data = None
+        self.do_compile = False
         
     def read_elf_file(self, filename):
         with open(filename, 'rb') as f:
             self.elf_data = f.read()
+            elf_file = ELFFile(f)
+
+            # Print information about the ELF file
+            print("ELF file information:")
+            print(f"  Entry point: 0x{elf_file.header.e_entry:x}")
+            print(f"  Architecture: {elf_file.get_machine_arch()}")
+            print(f"  Number of sections: {elf_file.num_sections()}")
+            print(f"  Number of segments: {elf_file.num_segments()}")
+
+            # Iterate over the sections and print information about each section
+            # print("\nSections:")
+            for section in elf_file.iter_sections():
+                print(f"  {section.name} (type: {section['sh_type']}, size: {section['sh_size']})")
+            
+            entry_point = elf_file.header.e_entry
+            # Iterate over all sections in the elf_file file
+            
+            for section in elf_file.iter_sections():
+                # Check if the section is of type SHT_SYMTAB (symbol table)
+                if section.header['sh_type'] == 'SHT_SYMTAB':
+                    # Iterate over all symbols in the symbol table
+                    for symbol in section.iter_symbols():
+                        # Check if the symbol name is 'main'
+                        print(symbol.name)
+                        if symbol.name == '_START':
+                            # Get the address of the 'main' function
+                            main_address = symbol.entry.st_value
+                            print(f'MAIN : {hex(main_address)}')
+                        # Check if the symbol name is '_stack'
+                        elif symbol.name == '__stack_start':
+                            # Get the address of the stack pointer
+                            stack_pointer = symbol.entry.st_value
+                            print(f'STACK_START : {hex(stack_pointer)}')
+                        elif symbol.name == '_stack_end':
+                            # Get the address of the stack pointer
+                            stack_pointer = symbol.entry.st_value
+                            print(f'STACK_END : {hex(stack_pointer)}')
+                        elif symbol.name == '_heap_start':
+                            # Get the address of the heap start pointer
+                            heap_start_pointer = symbol.entry.st_value
+                            print(f'HEAP_SATRT : {hex(heap_start_pointer)}')
+                        elif symbol.name == '_heap_end':
+                            # Get the address of the heap end pointer
+                            heap_end_pointer = symbol.entry.st_value
+                            print(f'HEAP_END : {hex(heap_end_pointer)}')
+
+            # # You can also access the symbol table and print information about symbols
+            # if '.symtab' in elf_file:
+            #     print("\nSymbol table:")
+            #     for symbol in elf_file.get_section_by_name('.symtab').iter_symbols():
+            #         print(f"  {symbol.name} (value: 0x{symbol['st_value']:x}, size: {symbol['st_size']})")
+            
+            text_section = elf_file.get_section_by_name('.text')
+            elf_text = ""
+            with open("Instruction.txt", 'w') as f:
+                if text_section:
+                    # Get the data from the section
+                    data = text_section.data()
+                    
+                    # Create a Capstone disassembler for ARM64 architecture
+                    md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
+                    
+                    print("Assembly Instructions:")
+                    for insn in md.disasm(data, 0x1000):  # Replace 0x1000 with the address of the start of the section
+                        elf_text += f"    {insn.mnemonic} {insn.op_str}\n"
+                        # print(f"    {insn.mnemonic} {insn.op_str}")
+                        f.write(elf_text)
+                else:
+                    print("No .text section found in the ELF file.")
         return self.elf_data
     
     def create_c_code_array(self, data):
@@ -53,7 +128,7 @@ class Compiler:
         c_code += ",\n".join(c_code_lines)
         c_code += "\n};\n"
         
-        print(c_code)
+        # print(c_code)
     
         return c_code
     
@@ -62,17 +137,22 @@ class Compiler:
             f.write(c_code)
             
     def compile_code(self):
-        # Define the command to be executed
-        command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld hello.cpp -o hello.elf"
-
-        # Execute the command
-        result = subprocess.run(command, shell=True)
-
-        # Check the return code
-        if result.returncode == 0:
-            print("Compilation successful.")
+        if self.do_compile == True:
+            # Define the command to be executed
+            #command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.ld E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.cpp -o E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.elf".replace('/','\\')
+            command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf"
+    
+            # Execute the command
+            result = subprocess.run(command, shell=True)
+    
+            # Check the return code
+            if result.returncode == 0:
+                print("Compilation successful.")
+            else:
+                print("Compilation failed.")
+                print(result)
         else:
-            print("Compilation failed.")
+            print("No Compile")
         
 class Basic_Statement:
     def __init__(self):
@@ -641,12 +721,15 @@ def foo( a:int = 10 ):
     print('##################################################################')
     print(c_code)
     
-    do_compile = False
+    do_compile = True
     
     comp = Compiler()
     input_elf_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.elf"
     output_c_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/output.c"
-
+    #Compile C Code
+    comp.do_compile = do_compile
+    comp.compile_code()
+    
     # Read the ELF file
     elf_data = comp.read_elf_file(input_elf_file)
 
