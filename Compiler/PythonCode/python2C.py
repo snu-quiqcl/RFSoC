@@ -8,8 +8,6 @@
 # aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/_sbrk.o ./lib/sbrk.o ./lib/read.o ./lib/write.o ./lib/lseek.o ./lib/close.o ./lib/libxil.a  -o hello.elf
 import ast
 import subprocess
-from elftools.elf.elffile import ELFFile
-from capstone import *
 
 classes = []
 classes_id = []
@@ -37,130 +35,6 @@ def collect_classes(node):
             if isinstance(item, ast.ClassDef):
                 classes.append(item)
         return classes
-
-class Compiler:
-    def __init__(self):
-        print('compiler')
-        self.elf_data = None
-        self.do_compile = False
-        
-    def read_elf_file(self, filename):
-        with open(filename, 'rb') as f:
-            self.elf_data = f.read()
-            elf_file = ELFFile(f)
-
-            # Print information about the ELF file
-            print("ELF file information:")
-            print(f"  Entry point: 0x{elf_file.header.e_entry:x}")
-            print(f"  Architecture: {elf_file.get_machine_arch()}")
-            print(f"  Number of sections: {elf_file.num_sections()}")
-            print(f"  Number of segments: {elf_file.num_segments()}")
-
-            # Iterate over the sections and print information about each section
-            # print("\nSections:")
-            for section in elf_file.iter_sections():
-                print(f"  {section.name} (type: {section['sh_type']}, size: {section['sh_size']})")
-            
-            entry_point = elf_file.header.e_entry
-            
-            output_file = "ELF_BIN.txt"
-            with open(output_file, 'w') as output_f:
-                output_f.write("Contents of ELF file:\n")
-                hex_dump = [" ".join(f"{b:02X}" for b in self.elf_data[i:i+16]) for i in range(0, len(self.elf_data), 16)]
-                for line in hex_dump:
-                    output_f.write(line + "\n")
-            
-            for section in elf_file.iter_sections():
-                # Check if the section is of type SHT_SYMTAB (symbol table)
-                if section.header['sh_type'] == 'SHT_SYMTAB':
-                    # Iterate over all symbols in the symbol table
-                    for symbol in section.iter_symbols():
-                        # Check if the symbol name is 'main'
-                        if symbol.name == '_START':
-                            # Get the address of the 'main' function
-                            start_address = symbol.entry.st_value
-                            print(f'_START : {hex(start_address)}')
-                        elif symbol.name == 'MAIN':
-                            # Get the address of the 'main' function
-                            main_address = symbol.entry.st_value
-                            print(f'MAIN : {hex(main_address)}')
-                        # Check if the symbol name is '_stack'
-                        elif symbol.name == '__stack_start':
-                            # Get the address of the stack pointer
-                            stack_pointer = symbol.entry.st_value
-                            print(f'STACK_START : {hex(stack_pointer)}')
-                        elif symbol.name == '_stack_end':
-                            # Get the address of the stack pointer
-                            stack_pointer = symbol.entry.st_value
-                            print(f'STACK_END : {hex(stack_pointer)}')
-                        elif symbol.name == '_heap_start':
-                            # Get the address of the heap start pointer
-                            heap_start_pointer = symbol.entry.st_value
-                            print(f'HEAP_SATRT : {hex(heap_start_pointer)}')
-                        elif symbol.name == '_heap_end':
-                            # Get the address of the heap end pointer
-                            heap_end_pointer = symbol.entry.st_value
-                            print(f'HEAP_END : {hex(heap_end_pointer)}')
-
-            # # You can also access the symbol table and print information about symbols
-            # if '.symtab' in elf_file:
-            #     print("\nSymbol table:")
-            #     for symbol in elf_file.get_section_by_name('.symtab').iter_symbols():
-            #         print(f"  {symbol.name} (value: 0x{symbol['st_value']:x}, size: {symbol['st_size']})")
-            
-            text_section = elf_file.get_section_by_name('.text')
-            elf_text = ""
-            if text_section:
-                # Get the data from the section
-                data = text_section.data()
-                
-                md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
-                for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
-                    elf_text += f"{insn.address}    {insn.mnemonic} {insn.op_str}\n"
-                with open("Instruction.txt", 'w') as f:
-                    f.write(elf_text)
-            else:
-                print("No .text section found in the ELF file.")
-        return self.elf_data
-    
-    def create_c_code_array(self, data):
-        c_code_array = []
-        for byte in data:
-            c_code_array.append(hex(byte))
-    
-        # Group the bytes into 16 bytes per line for better readability
-        c_code_lines = [', '.join(c_code_array[i:i+16]) for i in range(0, len(c_code_array), 16)]
-        
-        # Join the lines with newlines and add C code array syntax
-        c_code = "const unsigned char elf_data[] = {\n"
-        c_code += ",\n".join(c_code_lines)
-        c_code += "\n};\n"
-        
-        # print(c_code)
-    
-        return c_code
-    
-    def save_c_code_to_file(self, c_code, output_filename):
-        with open(output_filename, 'w') as f:
-            f.write(c_code)
-            
-    def compile_code(self):
-        if self.do_compile == True:
-            # Define the command to be executed
-            #command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.ld E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.cpp -o E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.elf".replace('/','\\')
-            command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf"
-    
-            # Execute the command
-            result = subprocess.run(command, shell=True)
-    
-            # Check the return code
-            if result.returncode == 0:
-                print("Compilation successful.")
-            else:
-                print("Compilation failed.")
-                print(result)
-        else:
-            print("No Compile")
         
 class Basic_Statement:
     def __init__(self):
@@ -637,26 +511,34 @@ class Func_Maker(Basic_Statement):
                     
             return c_code
 
-def python_to_c(source_code):
-    tree = ast.parse(source_code)
-
-    c_code = ""
-    global classes
-    global classes_id
-    classes = collect_classes(tree)
-    for classes_ in classes:
-        classes_id.append(classes_.name)
-    for node in ast.walk(tree):
-        if isinstance(node, ast.ClassDef):
-            temp_class_maker = Class_Maker()
-            c_code += temp_class_maker.translate_class(node)
-        elif isinstance(node, ast.FunctionDef) and node not in (func_node for class_node in classes for func_node in class_node.body):
-            print(node.name)
-            temp_func_maker = Func_Maker()
-            c_code += temp_func_maker.translate_function(node)
-            print(ast.dump(node, indent=4))
-
-    return c_code
+class interpreter:
+    def __inint__(self):
+        print("python 2 C")
+        
+    def python_to_c(self,source_code):
+        tree = ast.parse(source_code)
+    
+        c_code = ""
+        global classes
+        global classes_id
+        classes = collect_classes(tree)
+        for classes_ in classes:
+            classes_id.append(classes_.name)
+        for node in ast.walk(tree):
+            if isinstance(node, ast.ClassDef):
+                temp_class_maker = Class_Maker()
+                c_code += temp_class_maker.translate_class(node)
+            elif isinstance(node, ast.FunctionDef) and node not in (func_node for class_node in classes for func_node in class_node.body):
+                print(node.name)
+                temp_func_maker = Func_Maker()
+                c_code += temp_func_maker.translate_function(node)
+                print(ast.dump(node, indent=4))
+    
+        return c_code
+    
+    def save_c_code_to_file(self, c_code, output_filename):
+        with open(output_filename, 'w') as f:
+            f.write(c_code)
 
 if __name__ == "__main__":
 #     python_code = """
@@ -721,29 +603,11 @@ def foo( a:int = 10 ):
         
     print(a)
 """
-
-    c_code = python_to_c(python_code)
+    interp = interpreter()
+    c_code = interp.python_to_c(python_code)
     print('Converted C')
     print('##################################################################')
     print('##################################################################')
     print('##################################################################')
     print(c_code)
-    
-    do_compile = True
-    
-    comp = Compiler()
-    input_elf_file = "hello.elf"
-    output_c_file = "output.c"
-    #Compile C Code
-    comp.do_compile = do_compile
-    comp.compile_code()
-    
-    # Read the ELF file
-    elf_data = comp.read_elf_file(input_elf_file)
-
-    # Convert to C code array representation
-    c_code = comp.create_c_code_array(elf_data)
-
-    # Save the C code to a file
-    comp.save_c_code_to_file(c_code, output_c_file)
 
