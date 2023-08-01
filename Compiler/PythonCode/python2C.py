@@ -2,21 +2,9 @@
 # Compiler : https://igotit.tistory.com/entry/GNU-Arm-Embedded-Toolchain-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-%EC%84%A4%EC%B9%98-%EC%84%A4%EC%A0%95
 # Compile Script : aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld hello.cpp -o hello.elf
 # Link with library(.a file) aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf
-# aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a ./lib/lib64/libc.a ./lib/lib64/libg.a ./lib/lib64/libgcc.a ./lib/lib64/libgcov.a ./lib/lib64/libm.a ./lib/lib64/libnosys.a ./lib/lib64/librdimon.a ./lib/lib64/libstdc++.a ./lib/lib64/libsupc++.a ./lib/lib64/aarch64-xilinx-elf/9.2.0/libgcc.a ./lib/lib64/aarch64-xilinx-elf/9.2.0/libgcov.a -o hello.elf
 # Mini ELF Loader https://w3.cs.jmu.edu/lam2mo/cs261_2019_08/p2-load.html
 # How to load ELF file to memory. https://ourembeddeds.github.io/blog/2020/08/16/elf-loader/
-# Compiler Direcotry : C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10
 # Note that ELF file is composed of header and text section.
-
-# E:\RFSoC\GIT\RFSoC\Compiler\PythonCode2\libsrc\standalone_v7_3\src Makefile
-# CC=$(COMPILER)
-# AR=$(ARCHIVER)
-# CP=cp
-# COMPILER_FLAGS=
-# EXTRA_COMPILER_FLAGS=
-# LIB=libxil.a
-# CC_FLAGS = $(subst -pg, -DPROFILING, $(COMPILER_FLAGS))
-# ECC_FLAGS = $(subst -pg, -DPROFILING, $(EXTRA_COMPILER_FLAGS))
 import ast
 import subprocess
 from elftools.elf.elffile import ELFFile
@@ -744,8 +732,8 @@ def foo( a:int = 10 ):
     do_compile = True
     
     comp = Compiler()
-    input_elf_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.elf"
-    output_c_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/output.c"
+    input_elf_file = "hello.elf"
+    output_c_file = "output.c"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code()

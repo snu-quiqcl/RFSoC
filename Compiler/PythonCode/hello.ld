@@ -41,7 +41,6 @@ SECTIONS
    __bss_start__ = .;
    *(.bss)
    *(.bss.*)
-   *(COMMON)
    . = ALIGN(64);
    __bss_end__ = .;
 } > psu_ddr_0_MEM_0

@@ -1,6 +1,6 @@
 Nothing to build in platform 'RFSoC_IP06_10_DelayExp_plt'
 
-12:30:52 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
+15:30:47 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
 make all 
 'Building file: ../src/elf_exp.c'
 'Invoking: ARM v8 gcc compiler'
@@ -19,8 +19,8 @@ In file included from ../src/elf_exp.c:1:
    99 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst);
       |                                          ^~~~~~~
 ../src/elf_exp.c: In function 'callee_function':
-../src/elf_exp.c:12384:29: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
-12384 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
+../src/elf_exp.c:6612:29: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+ 6612 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
       |                             ^~~~~~~~
       |                             |
       |                             unsigned char *
@@ -29,8 +29,8 @@ In file included from ../src/rfdc_controller.h:8,
 e:\xilinx\vitis\2020.2\gnu\aarch64\nt\aarch64-none\aarch64-xilinx-elf\usr\include\string.h:36:14: note: expected 'const char *' but argument is of type 'unsigned char *'
    36 | int  strcmp (const char *, const char *);
       |              ^~~~~~~~~~~~
-../src/elf_exp.c:12384:38: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
-12384 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
+../src/elf_exp.c:6612:38: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+ 6612 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
       |                                      ^~~~~~~~
       |                                      |
       |                                      const unsigned char *
@@ -60,13 +60,13 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TES
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_10_DelayExp_app.elf  |tee "RFSoC_IP06_10_DelayExp_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 330744	  19944	4346148	4696836	 47ab04	RFSoC_IP06_10_DelayExp_app.elf
+ 238328	  19944	4346148	4604420	 464204	RFSoC_IP06_10_DelayExp_app.elf
 'Finished building: RFSoC_IP06_10_DelayExp_app.elf.size'
 ' '
-12:30:54 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app_system ****
+15:30:49 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 58675 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif
+generate_system_bif.bat 50503 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif
 sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm --sys_config RFSoC_IP06_10_DelayExp_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/Release/RFSoC_IP06_10_DelayExp_app.elf,psu_cortexa53_0
 creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit
 Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
