@@ -19,6 +19,7 @@ Python code : E:\RFSoC\GIT\RFSoC\Compiler\PythonCode\python2C.py
 -> Simple function, python class to struct and function coversion done
 class method call should be made
 e.g. dds0.out(30) => dds_out(&dds0,30);
+Compiler : using 'aarch64-none-elf-gcc' which xilinx uses to compile C file to ELF file format. TCP packet data can be made without ELF header which has 64kB.
 
 TODO:
 SD Card Boot -> Done
