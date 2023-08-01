@@ -5,6 +5,7 @@
 # Mini ELF Loader https://w3.cs.jmu.edu/lam2mo/cs261_2019_08/p2-load.html
 # How to load ELF file to memory. https://ourembeddeds.github.io/blog/2020/08/16/elf-loader/
 # Note that ELF file is composed of header and text section.
+# aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/_sbrk.o ./lib/sbrk.o ./lib/read.o ./lib/write.o ./lib/lseek.o ./lib/close.o ./lib/libxil.a  -o hello.elf
 import ast
 import subprocess
 from elftools.elf.elffile import ELFFile
@@ -105,22 +106,22 @@ class Compiler:
             #         print(f"  {symbol.name} (value: 0x{symbol['st_value']:x}, size: {symbol['st_size']})")
             
             text_section = elf_file.get_section_by_name('.text')
-            elf_text = ""
-            with open("Instruction.txt", 'w') as f:
-                if text_section:
-                    # Get the data from the section
-                    data = text_section.data()
+            # elf_text = ""
+            # with open("Instruction.txt", 'w') as f:
+            #     if text_section:
+            #         # Get the data from the section
+            #         data = text_section.data()
                     
-                    # Create a Capstone disassembler for ARM64 architecture
-                    md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
+            #         # Create a Capstone disassembler for ARM64 architecture
+            #         md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
                     
-                    print("Assembly Instructions:")
-                    for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
-                        elf_text += f"    {insn.mnemonic} {insn.op_str}\n"
-                        # print(f"    {insn.mnemonic} {insn.op_str}")
-                        f.write(elf_text)
-                else:
-                    print("No .text section found in the ELF file.")
+            #         print("Assembly Instructions:")
+            #         for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
+            #             elf_text += f"    {insn.mnemonic} {insn.op_str}\n"
+            #             # print(f"    {insn.mnemonic} {insn.op_str}")
+            #             f.write(elf_text)
+            #     else:
+            #         print("No .text section found in the ELF file.")
         return self.elf_data
     
     def create_c_code_array(self, data):
@@ -729,7 +730,7 @@ def foo( a:int = 10 ):
     print('##################################################################')
     print(c_code)
     
-    do_compile = True
+    do_compile = False
     
     comp = Compiler()
     input_elf_file = "hello.elf"

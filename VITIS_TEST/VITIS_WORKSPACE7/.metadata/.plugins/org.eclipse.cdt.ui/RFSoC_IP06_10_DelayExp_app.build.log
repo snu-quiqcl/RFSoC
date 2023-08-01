@@ -1,4 +1,4 @@
-15:30:47 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
+16:02:18 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
 make all 
 'Building file: ../src/elf_exp.c'
 'Invoking: ARM v8 gcc compiler'
@@ -17,8 +17,8 @@ In file included from ../src/elf_exp.c:1:
    99 | struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst);
       |                                          ^~~~~~~
 ../src/elf_exp.c: In function 'callee_function':
-../src/elf_exp.c:6612:29: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
- 6612 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
+../src/elf_exp.c:14038:29: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness [-Wpointer-sign]
+14038 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
       |                             ^~~~~~~~
       |                             |
       |                             unsigned char *
@@ -27,8 +27,8 @@ In file included from ../src/rfdc_controller.h:8,
 e:\xilinx\vitis\2020.2\gnu\aarch64\nt\aarch64-none\aarch64-xilinx-elf\usr\include\string.h:36:14: note: expected 'const char *' but argument is of type 'unsigned char *'
    36 | int  strcmp (const char *, const char *);
       |              ^~~~~~~~~~~~
-../src/elf_exp.c:6612:38: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
- 6612 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
+../src/elf_exp.c:14038:38: warning: pointer targets in passing argument 2 of 'strcmp' differ in signedness [-Wpointer-sign]
+14038 |  xil_printf("%d\r\n",strcmp(dram_ptr,elf_data));
       |                                      ^~~~~~~~
       |                                      |
       |                                      const unsigned char *
@@ -58,9 +58,9 @@ aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TES
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size RFSoC_IP06_10_DelayExp_app.elf  |tee "RFSoC_IP06_10_DelayExp_app.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 238328	  19944	4346148	4604420	 464204	RFSoC_IP06_10_DelayExp_app.elf
+ 357136	  19944	4346124	4723204	 481204	RFSoC_IP06_10_DelayExp_app.elf
 'Finished building: RFSoC_IP06_10_DelayExp_app.elf.size'
 ' '
 
-15:30:49 Build Finished (took 1s.414ms)
+16:02:19 Build Finished (took 1s.666ms)
 
