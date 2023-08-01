@@ -9,7 +9,7 @@
 import ast
 import subprocess
 from elftools.elf.elffile import ELFFile
-from capstone import Cs, CS_ARCH_ARM64, CS_MODE_ARM
+from capstone import *
 
 classes = []
 classes_id = []
@@ -76,8 +76,11 @@ class Compiler:
                     # Iterate over all symbols in the symbol table
                     for symbol in section.iter_symbols():
                         # Check if the symbol name is 'main'
-                        print(symbol.name)
                         if symbol.name == '_START':
+                            # Get the address of the 'main' function
+                            start_address = symbol.entry.st_value
+                            print(f'_START : {hex(start_address)}')
+                        elif symbol.name == 'MAIN':
                             # Get the address of the 'main' function
                             main_address = symbol.entry.st_value
                             print(f'MAIN : {hex(main_address)}')
@@ -106,22 +109,18 @@ class Compiler:
             #         print(f"  {symbol.name} (value: 0x{symbol['st_value']:x}, size: {symbol['st_size']})")
             
             text_section = elf_file.get_section_by_name('.text')
-            # elf_text = ""
-            # with open("Instruction.txt", 'w') as f:
-            #     if text_section:
-            #         # Get the data from the section
-            #         data = text_section.data()
-                    
-            #         # Create a Capstone disassembler for ARM64 architecture
-            #         md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
-                    
-            #         print("Assembly Instructions:")
-            #         for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
-            #             elf_text += f"    {insn.mnemonic} {insn.op_str}\n"
-            #             # print(f"    {insn.mnemonic} {insn.op_str}")
-            #             f.write(elf_text)
-            #     else:
-            #         print("No .text section found in the ELF file.")
+            elf_text = ""
+            if text_section:
+                # Get the data from the section
+                data = text_section.data()
+                
+                md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
+                for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
+                    elf_text += f"{insn.address}    {insn.mnemonic} {insn.op_str}\n"
+                with open("Instruction.txt", 'w') as f:
+                    f.write(elf_text)
+            else:
+                print("No .text section found in the ELF file.")
         return self.elf_data
     
     def create_c_code_array(self, data):
@@ -730,7 +729,7 @@ def foo( a:int = 10 ):
     print('##################################################################')
     print(c_code)
     
-    do_compile = False
+    do_compile = True
     
     comp = Compiler()
     input_elf_file = "hello.elf"

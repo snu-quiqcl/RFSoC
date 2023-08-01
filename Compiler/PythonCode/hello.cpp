@@ -2,12 +2,33 @@
 #include "xil_printf.h"
 
 void xil_printf( const char8 *ctrl1, ...);
+class A{
+    public:
+        int a;
+    public:
+        A(int a);
+        void class_made(int c);
+
+};
+
+
+A::A(int a){
+    this->a = a;
+}
+
+void A::class_made(int c){
+    xil_printf("%d\r\n",a+c);
+    return;
+}
 
 int main(){
     int a;
     a = 30;
     xil_printf("hello\r\n");
-    xil_printf("Do next job\r\n");
-    int k = 30;
-    xil_printf("%d",a+k);
+
+    xil_printf("hello2\r\n");
+
+    A a_class(a);
+    a_class.class_made(20);
 }
+
