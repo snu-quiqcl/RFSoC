@@ -1,10 +1,10 @@
-19:01:57 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app_system ****
+12:30:54 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 58708 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif
+generate_system_bif.bat 58675 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif
 sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm --sys_config RFSoC_IP06_10_DelayExp_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/Release/RFSoC_IP06_10_DelayExp_app.elf,psu_cortexa53_0
 creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit
 Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
 
-19:02:08 Build Finished (took 10s.737ms)
+12:31:03 Build Finished (took 9s.470ms)
 

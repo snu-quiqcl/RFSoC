@@ -3,20 +3,15 @@
 # Compile Script : aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld hello.cpp -o hello.elf
 # Link with library(.a file) aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf
 # aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a ./lib/lib64/libc.a ./lib/lib64/libg.a ./lib/lib64/libgcc.a ./lib/lib64/libgcov.a ./lib/lib64/libm.a ./lib/lib64/libnosys.a ./lib/lib64/librdimon.a ./lib/lib64/libstdc++.a ./lib/lib64/libsupc++.a ./lib/lib64/aarch64-xilinx-elf/9.2.0/libgcc.a ./lib/lib64/aarch64-xilinx-elf/9.2.0/libgcov.a -o hello.elf
+# ->Not work
 # Mini ELF Loader https://w3.cs.jmu.edu/lam2mo/cs261_2019_08/p2-load.html
 # How to load ELF file to memory. https://ourembeddeds.github.io/blog/2020/08/16/elf-loader/
 # Compiler Direcotry : C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2021.10
+# aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf ./lib/abort.o ./lib/close.o ./lib/cpputest_time.o ./lib/errno.o ./lib/fcntl.o ./lib/fstat.o ./lib/getpid.o ./lib/inbyte.o ./lib/initialise_monitor_handles.o ./lib/isatty.o ./lib/kill.o ./lib/lseek.o ./lib/open.o ./lib/outbyte.o ./lib/print.o ./lib/putnum.o ./lib/read.o ./lib/sbrk.o ./lib/sleep.o ./lib/unlink.o ./lib/vectors.o ./lib/write.o ./lib/xil_assert.o ./lib/xil_cache.o ./lib/xil_clocking.o ./lib/xil_exception.o ./lib/xil_mem.o ./lib/xil_printf.o ./lib/xil_sleepcommon.o ./lib/xil_sleeptimer.o ./lib/xil_smc.o xil_testcache.o ./lib/xil_testio.o ./lib/xil_testmem.o ./lib/xil_util.o ./lib/xplatform_info.o ./lib/xtime_l.o ./lib/_exit.o ./lib/_open.o ./lib/_sbrk.o
 # Note that ELF file is composed of header and text section.
 
 # E:\RFSoC\GIT\RFSoC\Compiler\PythonCode2\libsrc\standalone_v7_3\src Makefile
-# CC=$(COMPILER)
-# AR=$(ARCHIVER)
-# CP=cp
-# COMPILER_FLAGS=
-# EXTRA_COMPILER_FLAGS=
-# LIB=libxil.a
-# CC_FLAGS = $(subst -pg, -DPROFILING, $(COMPILER_FLAGS))
-# ECC_FLAGS = $(subst -pg, -DPROFILING, $(EXTRA_COMPILER_FLAGS))
+# -> goto standalone_compile and write 'make' in console(in Window)
 import ast
 import subprocess
 from elftools.elf.elffile import ELFFile
@@ -87,12 +82,11 @@ class Compiler:
                     # Iterate over all symbols in the symbol table
                     for symbol in section.iter_symbols():
                         # Check if the symbol name is 'main'
-                        print(symbol.name)
                         if symbol.name == '_START':
                             # Get the address of the 'main' function
                             main_address = symbol.entry.st_value
                             print(f'MAIN : {hex(main_address)}')
-                        # Check if the symbol name is '_stack'
+                            # Check if the symbol name is '_stack'
                         elif symbol.name == '__stack_start':
                             # Get the address of the stack pointer
                             stack_pointer = symbol.entry.st_value
@@ -115,24 +109,6 @@ class Compiler:
             #     print("\nSymbol table:")
             #     for symbol in elf_file.get_section_by_name('.symtab').iter_symbols():
             #         print(f"  {symbol.name} (value: 0x{symbol['st_value']:x}, size: {symbol['st_size']})")
-            
-            text_section = elf_file.get_section_by_name('.text')
-            elf_text = ""
-            with open("Instruction.txt", 'w') as f:
-                if text_section:
-                    # Get the data from the section
-                    data = text_section.data()
-                    
-                    # Create a Capstone disassembler for ARM64 architecture
-                    md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
-                    
-                    print("Assembly Instructions:")
-                    for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
-                        elf_text += f"    {insn.mnemonic} {insn.op_str}\n"
-                        # print(f"    {insn.mnemonic} {insn.op_str}")
-                        f.write(elf_text)
-                else:
-                    print("No .text section found in the ELF file.")
         return self.elf_data
     
     def create_c_code_array(self, data):
@@ -163,16 +139,22 @@ class Compiler:
             command = "aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld -I./include hello.cpp ./lib/libxil.a  -o hello.elf"
     
             # Execute the command
-            result = subprocess.run(command, shell=True)
-    
-            # Check the return code
-            if result.returncode == 0:
+            try:
+                result = subprocess.run(
+                    command,
+                    shell=True,
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                    check=True
+                )
                 print("Compilation successful.")
-            else:
-                print("Compilation failed.")
-                print(result)
-        else:
-            print("No Compile")
+                print(result.stdout)
+                print(result.stderr)
+            except subprocess.CalledProcessError as e:
+                print(e)
+                print(f"Error: {e.returncode}")
+                print(f"Output: {e.output}")
         
 class Basic_Statement:
     def __init__(self):
@@ -741,11 +723,11 @@ def foo( a:int = 10 ):
     print('##################################################################')
     print(c_code)
     
-    do_compile = True
+    do_compile = False
     
     comp = Compiler()
-    input_elf_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/hello.elf"
-    output_c_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode/output.c"
+    input_elf_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode2/hello.elf"
+    output_c_file = "E:/RFSoC/GIT/RFSoC/Compiler/PythonCode2/output.c"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code()

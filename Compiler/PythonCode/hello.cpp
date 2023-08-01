@@ -1,7 +1,7 @@
 #include <stdio.h>
-//#include <stdlib.h>
+#include <vector>
 #include "xil_printf.h"
-#include <malloc.h>
+using namespace std;
 
 void xil_printf( const char8 *ctrl1, ...);
 
@@ -9,8 +9,9 @@ int main(){
     int a;
     a = 30;
     xil_printf("hello\r\n");
-
-    int * ptr = (int *)malloc(sizeof(int));
-    xil_printf("PTR ADDR:%d",ptr);
-    free(ptr);
+    vector<int> v;
+    for(int i=0; i<=64; i++){
+        v.push_back(i+1);
+    }
+    return 0;    
 }
