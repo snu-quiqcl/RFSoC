@@ -63,11 +63,9 @@ int64_t string_count(char* str, int64_t pos, char spc){
 char * substring(char * str_dest,char * str,int64_t start,int64_t end){
 	int64_t i = 0;
 	for( i = 0; i < end-start;i++){
-		//xil_printf("Copying : %c\r\n",str[i]);
 		*(str_dest+i) = *(str+start+i);
 	}
 	*(str_dest+end-start) = '\0';
-	//xil_printf("\r\nCopied string : %s\r\n",str_dest);
 	return str_dest;
 }
 
@@ -87,17 +85,17 @@ char * int642str(int64_t val, char * str_dest){
 
 	while(i >= 0){
 		*(str_dest + i) = inverse_str[len-i];
-#ifdef DEBUG_RFDC
-		//xil_printf("str_dest :%d %c\r\n",i,*(str_dest + i));
-#endif
 		i--;
 	}
-#ifdef DEBUG_RFDC
-	//xil_printf("int642str : %s\r\n",str_dest);
-#endif
 	return str_dest;
 }
 
-
+int64_t wolc_strcmp(const char * str1, const char * str2){
+	int64_t i = 0;
+	while( (str1[i] != '\0') && (str2[i] != '\0') ){
+		i++;
+	}
+	return (str1[i] - str2[i]);
+}
 
 

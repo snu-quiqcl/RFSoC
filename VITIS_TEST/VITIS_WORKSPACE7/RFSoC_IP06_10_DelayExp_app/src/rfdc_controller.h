@@ -39,6 +39,9 @@
 #define M_AXI_HPM0_FPD_ADDR XPAR_AXI_HPM0_FPD_0_S_AXI_BASEADDR
 #define M_AXI_HPM1_FPD_ADDR XPAR_AXI_HPM1_FPD_0_S_AXI_BASEADDR
 
+//Memory address
+#define DRAM_BASE_ADDRESS 0xf00000
+
 #define MAKE128CONST(hi,lo) ((((__uint128_t)hi << 64) | (lo)))
 
 #ifndef DEBUG_RFDC
@@ -47,13 +50,6 @@
 
 #define MODULE_NUM 4
 #define FNCT_NUM 5
-
-/*
- * Sampling frequency of DAC
- */
-static int64_t sampling_freq;
-static int64_t binary_mode;
-static total_page_num;
 
 struct module_tuple{
 	int64_t  num;
@@ -71,12 +67,6 @@ struct fnct_tuple{
 /*
  * Instruction Format
  */
-struct instruction{
-	int64_t  num;
-	char type;
-	char * name;
-	struct instruction* next;
-};
 extern const struct module_tuple MODULE[MODULE_NUM];
 extern const struct fnct_tuple FNCT[FNCT_NUM];
 
@@ -93,17 +83,15 @@ char * int642str(int64_t val, char * str_dest);
 char * substring(char * str_dest,char * str,int64_t start,int64_t end);
 int64_t string_count(char* str, int64_t pos, char spc);
 int64_t string2int64(char* str);
+int64_t wolc_strcmp(const char * str1, const char * str2);
 /*
  * Simple Lexer
  */
-struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst);
-struct instruction * tokenizer(struct instruction *inst);
-int64_t get_module(struct instruction * inst);
-int64_t get_fnct(struct instruction * inst);
-int64_t get_timestamp(struct instruction *inst);
-int64_t get_param(struct instruction *inst);
-int64_t is_end(struct instruction *inst);
-int64_t free_all(struct instruction *inst);
-int callee_function();
+int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst);
+void set_current_binary_mode(int64_t mode);
+int64_t get_module(const char * inst);
+int64_t get_fnct(const char * inst);
+int64_t get_param(const char * inst, int64_t start_index, int64_t end_index);
+int64_t is_end(const char * inst, int64_t start_index, int64_t end_index);
 
 #endif

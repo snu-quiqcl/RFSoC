@@ -1,0 +1,26 @@
+#include <string.h>
+#include "lwip/err.h"
+#include "lwip/tcp.h"
+#include "rfdc_controller.h"
+#include "xil_exception.h"
+#include "xil_cache.h"
+
+#define DRAM_BASE_ADDRESS 0xf00000
+
+static int64_t entry_point;
+static int64_t stack_start;
+static int64_t stack_end;
+static int64_t heap_start;
+static int64_t heap_end;
+static int64_t packet_number;
+
+static unsigned char * buffer;
+
+int64_t run_binary(){
+	//Xil_DCacheFlush();
+}
+
+int64_t save_binary(struct tcp_pcb *tpcb, int64_t entry_point, int64_t stack_start, int64_t stack_end, int64_t heap_start, int64_t heap_end, int64_t packet_number){
+
+}
+

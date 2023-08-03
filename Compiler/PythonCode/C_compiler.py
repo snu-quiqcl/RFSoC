@@ -132,23 +132,26 @@ class Compiler:
         data_packets = []
         
         elf_list = []
-        data = ""
+        data = "#BIN"
         header_data = ""
         for byte in self.elf_data:
             elf_list.append(hex(byte))
         for i in range(16*4096,len(elf_list)):
             if (len(data) + len(str(elf_list[i]))) > 512:
+                data += '#!EOL#'
                 data_packets.append(data)
-                data = ""
+                data = "#BIN"
             data += f'#{str(elf_list[i])}'
         if data != "":
+            data += '#!EOL#'
             data_packets.append(data)
-        header_data += f'#BIN_DATA#{hex(self.entry_point)}'
+        header_data += f'#BIN#save_binary#{hex(self.entry_point)}'
         header_data += f'#{hex(self.stack_start)}'
         header_data += f'#{hex(self.stack_end)}'
         header_data += f'#{hex(self.heap_start)}'
         header_data += f'#{hex(self.heap_end)}'
         header_data += f'#{hex(len(data_packets))}'
+        header_data += f'#!EOL#'
         data_packets.insert(0,header_data)
         
         return data_packets

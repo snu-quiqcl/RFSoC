@@ -3,190 +3,142 @@
 #include "lwip/tcp.h"
 #include "rfdc_controller.h"
 
-struct instruction * simple_lexer(struct tcp_pcb *tpcb, struct instruction * inst){
-	struct instruction * token = NULL;
+
+static int64_t binary_mode;
+
+int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 	int64_t module_num = 0;
 	int64_t fnct_num = 0;
 	int64_t param_num = 0;
 	int64_t timestamp_num = 0;
+	int64_t entry_point = 0;
+	int64_t stack_start = 0;
+	int64_t stack_end = 0;
+	int64_t heap_start = 0;
+	int64_t heap_end = 0;
+	static int64_t packet_number = 0;
+	static unsigned char * current_addr;
+	static int64_t current_packet_num;
+	module_num = get_module(inst);
 
-	token = tokenizer(inst);
-	if( token == NULL ){
-		return NULL;
+	switch(module_num){
+		case 0: // CPU
+			fnct_num = get_fnct(inst);
+			param_num = get_param(inst,3,4);
+			run_cpu_process(tpcb,fnct_num,param_num);
+			break;
+
+		case 1: // Binary
+			xil_printf("BIN %d\r\n",binary_mode);
+			if(binary_mode == 0){
+				fnct_num = get_fnct(inst);
+				if( fnct_num == 3 ){
+					entry_point = get_param(inst,3,4);
+					stack_start = get_param(inst,4,5);
+					stack_end = get_param(inst,5,6);
+					heap_start = get_param(inst,6,7);
+					heap_end = get_param(inst,7,8);
+					packet_number = get_param(inst,8,9);
+					run_bin_process(tpcb, fnct_num, entry_point, stack_start, stack_end, heap_start, heap_end, packet_number);
+					binary_mode = 1;
+					current_addr = DRAM_BASE_ADDRESS;
+					current_packet_num = 0;
+				}
+				else if( fnct_num == 4 ){
+					run_bin_process(tpcb, fnct_num, 0, 0, 0, 0, 0, 0);
+				}
+			}
+			else if(binary_mode == 1){
+				int64_t i = 0;
+				while( is_end(inst,i+2,i+3)!= 1 ){
+					*(current_addr) = get_param(inst,i+2,i+3);
+					current_addr++;
+					i++;
+					//xil_printf("%d ",*(current_addr));
+				}
+				current_packet_num++;
+				xil_printf("\r\nPACKET NUM : %d\r\n",current_packet_num);
+				if( current_packet_num == packet_number){
+					xil_printf("\r\nEND PACKET NUM : %d\r\n",current_packet_num);
+					binary_mode = 0;
+				}
+			}
+			break;
+
+		default: // Module
+			fnct_num = get_fnct(inst);
+			timestamp_num = get_param(inst,3,4);
+			param_num = get_param(inst,4,5);
+			run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
+			break;
 	}
 
-	fnct_num = get_fnct(token);
-	if( token -> type == 'F'){
-		return token;
-	}
-	else{
-		module_num = get_module(token);
-		token = token -> next;
-
-		switch(module_num){
-			case 0: // CPU
-				tokenizer(token);
-				fnct_num = get_fnct(token);
-				tokenizer(token -> next);
-				param_num = get_param(token -> next);
-				run_cpu_process(tpcb,fnct_num,param_num);
-				return token;
-
-			case 1: // Binary
-				tokenizer(token);
-				fnct_num = get_fnct(token);
-				tokenizer(token -> next);
-				param_num = get_param(token -> next);
-				run_bin_process(tpcb, fnct_num,param_num);
-				return token;
-
-			default: // Module
-				token = simple_lexer(tpcb,token);
-				inst -> next = token;
-				fnct_num = get_fnct(token);
-				tokenizer(token -> next);
-				timestamp_num = get_timestamp(token -> next);
-				tokenizer(token -> next -> next);
-				param_num = get_param(token-> next -> next);
-				run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
-				free(inst -> name);
-				inst -> name = NULL;
-				free(inst);
-				inst = NULL;
-				return token;
-		}
-	}
 }
 
-INLINE struct instruction * tokenizer(struct instruction *inst){
-	int64_t pos = 0;
-	char * temp_str = NULL;
-	if( is_end(inst) ){
-		free(inst->name);
-		inst->name = NULL;
-		free(inst);
-		inst = NULL;
-		return NULL;
-	}
-
-	//xil_printf("tokenizer : inst->name = %s, inst->type = %c\r\n",inst->name, inst->type);
-	if( inst -> type != '!'){
-		return inst;
-	}
-
-	pos = string_count(inst->name,2,'#');
-
-	inst->next = (struct instruction *)malloc(sizeof(struct instruction));
-	if( inst -> next == NULL ){
-		xil_printf("memory allocation failed\r\n");
-	}
-	inst -> next -> name = NULL;
-
-	inst->next->name = (char *)malloc(sizeof(char)*(strlen(inst->name)-pos+2));
-	if( inst -> next -> name == NULL ){
-		xil_printf("memory allocation failed\r\n");
-	}
-
-	inst->next->type = '!';
-	substring(inst->next->name,inst->name,pos,strlen(inst->name)+2);
-	inst->next->next = NULL;
-
-	temp_str = (char *)malloc(sizeof(char)*(pos+2));
-	if( temp_str == NULL ){
-		xil_printf("memory allocation failed\r\n");
-	}
-
-	substring(temp_str,inst->name,1,pos);
-
-
-	if( inst->name != NULL ){
-		free(inst->name);
-		inst-> name = temp_str;
-	}
-	else{
-		xil_printf("NULL pointer cannot be freed\r\n");
-	}
-
-#ifdef DEBUG_RFDC
-	//xil_printf("Return inst -> name : %s\r\n",inst->name);
-#endif
-
-	return inst;
+void set_current_binary_mode(int64_t mode){
+	binary_mode = mode;
+	return;
 }
 
-INLINE int64_t get_module(struct instruction * inst){
+INLINE int64_t get_module(const char * inst){
 	int64_t i = 0;
-	if( inst -> type == 'M'){
-		return inst->num;
-	}
+	int64_t pos1 = 0;
+	int64_t pos2 = 0;
+	pos1 = string_count(inst,1,'#')+1;
+	pos2 = string_count(inst,2,'#');
+	char temp_str[1024] = {'\0'};
+	substring(temp_str,inst,pos1,pos2);
 	while(i < MODULE_NUM){
-		if(strcmp((const char *)(inst->name),MODULE[i].module_name) == 0){
-			inst->num = MODULE[i].num;
-			inst->type = 'M';
-			return inst -> num;
+		if(strcmp(temp_str,MODULE[i].module_name) == 0){
+			i = MODULE[i].num;
+			return i;
 		}
 		i++;
 	}
 	return i;
 }
 
-INLINE int64_t get_fnct(struct instruction * inst){
+INLINE int64_t get_fnct(const char * inst){
 	int64_t i = 0;
-	if( inst -> type == 'F'){
-		return inst->num;
-	}
+	int64_t pos1 = 0;
+	int64_t pos2 = 0;
+	pos1 = string_count(inst,2,'#')+1;
+	pos2 = string_count(inst,3,'#');
+	char temp_str[1024] = {'\0'};
+	substring(temp_str,inst,pos1,pos2);
 	while(i < FNCT_NUM){
-		if(strcmp((const char *)(inst->name),FNCT[i].fnct_name) == 0){
-			inst->num = FNCT[i].num;
-			inst->type = 'F';
-			return inst -> num;
+		if(strcmp(temp_str,FNCT[i].fnct_name) == 0){
+			i = FNCT[i].num;
+			return i;
 		}
 		i++;
 	}
 	return i;
 }
 
-INLINE int64_t get_timestamp(struct instruction *inst){
-	if( inst -> type == 'T'){
-		return inst->num;
-	}
-	else{
-		inst->type = 'T';
-		inst->num = string2int64(inst->name);
-		return inst->num;
-	}
+INLINE int64_t get_param(const char *inst, int64_t start_index, int64_t end_index){
+	int64_t pos1 = 0;
+	int64_t pos2 = 0;
+	int64_t num = 0;
+	pos1 = string_count(inst,start_index,'#')+1;
+	pos2 = string_count(inst,end_index,'#');
+	char temp_str[1024] = {'\0'};
+	substring(temp_str,inst,pos1,pos2);
+	num = string2int64(temp_str);
+	return num;
 }
 
-INLINE int64_t get_param(struct instruction *inst){
-	if( inst -> type == 'P'){
-		return inst->num;
-	}
-	else{
-		inst->type = 'P';
-		inst->num = string2int64(inst->name);
-		return inst->num;
-	}
-}
-
-INLINE int64_t is_end(struct instruction *inst){
-	if( strcmp(inst -> name,"#!EOL") == 0 ){
+INLINE int64_t is_end(const char * inst, int64_t start_index, int64_t end_index){
+	int64_t pos1 = 0;
+	int64_t pos2 = 0;
+	pos1 = string_count(inst,start_index,'#')+1;
+	pos2 = string_count(inst,end_index,'#');
+	char temp_str[1024] = {'\0'};
+	substring(temp_str,inst,pos1,pos2);
+	if( strcmp(temp_str,"!EOL") == 0 ){
 		return 1;
 	}
 	else{
 		return 0;
 	}
-}
-
-int64_t free_all(struct instruction *inst){
-	if( inst == NULL ){
-		return 0;
-	}
-	free(inst->name);
-	inst->name = NULL;
-	if(inst->next != NULL ){
-		free_all(inst->next);
-	}
-	inst->next = NULL;
-	free(inst);
-	return;
 }

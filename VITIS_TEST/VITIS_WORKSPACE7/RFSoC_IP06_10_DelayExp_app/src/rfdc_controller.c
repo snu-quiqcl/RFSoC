@@ -35,6 +35,10 @@ static INLINE void Xil_Out128(UINTPTR Addr, __uint128_t Value)
 	volatile __uint128_t *LocalAddr = (volatile __uint128_t *)Addr;
 	*LocalAddr = Value;
 }
+/*
+ * Sampling frequency of DAC
+ */
+static int64_t sampling_freq;
 
 void set_clock(int64_t freq){
 	print("\n Configuring the Clock \r\n");
@@ -92,22 +96,9 @@ int64_t read_sampling_freq(struct tcp_pcb *tpcb){
  */
 
 int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data){
-	if( binary_mode == 0){
-		struct instruction * inst = (struct instruction *)malloc(sizeof(struct instruction));
-		inst->name = (char *) malloc(sizeof(char)*(strlen(TCP_data) + 1));
-		strcpy(inst->name, TCP_data);
-		inst->type = '!';
-		inst->num = 0;
-		inst->next = NULL;
-		inst = simple_lexer(tpcb,inst);
-
-		free_all(inst);
-		xil_printf("END\r\n");
-		return 0;
-	}
-	else{
-		save_binary(tpcb, TCP_data);
-	}
+	simple_lexer(tpcb,TCP_data);
+	xil_printf("END\r\n");
+	return 0;
 }
 
 int64_t run_cpu_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t param_num){
@@ -141,17 +132,20 @@ int64_t run_rtio_process(struct tcp_pcb *tpcb, int64_t module_num, int64_t fnct_
 	}
 }
 
-
-int64_t run_bin_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t param_num){
-#ifdef DEBUG_RFDC
-	xil_printf("BIN %d",fnct_num);
-#endif
+int64_t run_bin_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t entry_point, int64_t stack_start, int64_t stack_end, int64_t heap_start, int64_t heap_end, int64_t packet_number){
 	switch(fnct_num){
-		case 4:
-			total_page_num = param_num;
-			binary_mode = 1;
+		case 3:
+			xil_printf("SAVE BINARY\r\n");
+			xil_printf("BIN %d\r\n",fnct_num);
+			xil_printf("BIN ENT %d\r\n",entry_point);
+			xil_printf("BIN STACK START%d\r\n",stack_start);
+			xil_printf("BIN %d\r\n",stack_end);
+			xil_printf("BIN %d\r\n",heap_start);
+			xil_printf("BIN %d\r\n",heap_end);
+			xil_printf("BIN %d\r\n",packet_number);
+			save_binary(tpcb, entry_point, stack_start, stack_end, heap_start, heap_end, packet_number);
 			break;
-		case 5:
+		case 4:
 			run_binary();
 			break;
 		default:
