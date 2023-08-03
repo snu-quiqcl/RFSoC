@@ -97,7 +97,7 @@ int64_t read_sampling_freq(struct tcp_pcb *tpcb){
 
 int64_t inst_process(struct tcp_pcb *tpcb, char * TCP_data){
 	simple_lexer(tpcb,TCP_data);
-	xil_printf("END\r\n");
+	//xil_printf("END\r\n");
 	return 0;
 }
 
@@ -138,7 +138,7 @@ int64_t run_bin_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t entry_po
 			xil_printf("SAVE BINARY\r\n");
 			xil_printf("BIN %d\r\n",fnct_num);
 			xil_printf("BIN ENT %d\r\n",entry_point);
-			xil_printf("BIN STACK START%d\r\n",stack_start);
+			xil_printf("BIN STACK START %d\r\n",stack_start);
 			xil_printf("BIN %d\r\n",stack_end);
 			xil_printf("BIN %d\r\n",heap_start);
 			xil_printf("BIN %d\r\n",heap_end);

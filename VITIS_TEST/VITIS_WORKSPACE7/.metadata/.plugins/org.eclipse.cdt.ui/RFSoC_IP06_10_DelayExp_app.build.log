@@ -1,36 +1,6 @@
-13:57:28 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
+16:43:30 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
 make all 
-'Building file: ../src/run_binary.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/run_binary.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/run_binary.d" -MT"src/run_binary.o" -o "src/run_binary.o" "../src/run_binary.c"
-In file included from ../src/run_binary.c:4:
-../src/run_binary.c: In function 'run_binary':
-../src/rfdc_controller.h:43:27: warning: initialization of 'unsigned char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-   43 | #define DRAM_BASE_ADDRESS 0xf00000
-      |                           ^~~~~~~~
-../src/run_binary.c:24:30: note: in expansion of macro 'DRAM_BASE_ADDRESS'
-   24 |  unsigned char * base_addr = DRAM_BASE_ADDRESS;
-      |                              ^~~~~~~~~~~~~~~~~
-../src/run_binary.c:117:1: warning: control reaches end of non-void function [-Wreturn-type]
-  117 | }
-      | ^
-../src/run_binary.c: In function 'save_binary':
-../src/run_binary.c:125:1: warning: control reaches end of non-void function [-Wreturn-type]
-  125 | }
-      | ^
-'Finished building: ../src/run_binary.c'
-' '
-'Building target: RFSoC_IP06_10_DelayExp_app.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_10_DelayExp_app.elf"  ./src/clock_config.o ./src/echo.o ./src/elf_exp.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/run_binary.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
-'Finished building target: RFSoC_IP06_10_DelayExp_app.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size RFSoC_IP06_10_DelayExp_app.elf  |tee "RFSoC_IP06_10_DelayExp_app.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 211420	  19944	4346132	4577496	 45d8d8	RFSoC_IP06_10_DelayExp_app.elf
-'Finished building: RFSoC_IP06_10_DelayExp_app.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-13:57:29 Build Finished (took 1s.288ms)
+16:43:31 Build Finished (took 453ms)
 

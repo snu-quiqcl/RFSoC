@@ -13,7 +13,7 @@ class RFSoC_Mgr:
         self.interpreter = interpreter.interpreter()
         self.comp = elf_maker.Compiler()
         self.RFSoC = TCP.RFSoC()
-        self.file_name = 'hello'
+        self.file_name = 'RFSoC_Driver'
         self.do_compile = True
         self.comp.do_compile = self.do_compile
         
@@ -41,4 +41,11 @@ class RFSoC_Mgr:
 if __name__ == "__main__":
     RFSoC_Mgr = RFSoC_Mgr()
     RFSoC_Mgr.connect()
-    RFSoC_Mgr.run_RFSoC()
+    while(True):
+        a = input()
+        if a == '1':
+            RFSoC_Mgr.run_RFSoC()
+        elif a =='q':
+            RFSoC_Mgr.RFSoC.tcp.close()
+        else:
+            RFSoC_Mgr.RFSoC.initialize()

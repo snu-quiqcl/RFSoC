@@ -93,5 +93,6 @@ int64_t get_module(const char * inst);
 int64_t get_fnct(const char * inst);
 int64_t get_param(const char * inst, int64_t start_index, int64_t end_index);
 int64_t is_end(const char * inst, int64_t start_index, int64_t end_index);
+void clear_DRAM();
 
 #endif

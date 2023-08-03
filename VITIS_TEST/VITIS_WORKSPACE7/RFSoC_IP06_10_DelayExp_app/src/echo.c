@@ -62,8 +62,6 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 
 	/* indicate that the packet has been received */
 	tcp_recved(tpcb, p->len);
-	xil_printf("%d\r\n",p->len);
-	xil_printf("%s\r\n",p->payload);
 	inst_process(tpcb,p->payload);
 
 	/* echo back the payload */
@@ -75,7 +73,6 @@ err_t recv_callback(void *arg, struct tcp_pcb *tpcb,
 
 	/* free the received pbuf */
 	pbuf_free(p);
-	xil_printf("recv_callback\n\r");
 
 	return ERR_OK;
 }

@@ -5,7 +5,8 @@ CFLAGS = -march=armv8-a -mcpu=cortex-a53 -nostartfiles -I ./include
 # Define the linker and linker flags
 LD = aarch64-none-elf-gcc
 LDFLAGS = -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T hello.ld  -I ./include
-ADD_LIB =./lib/libxil.a
+#ADD_LIB =./lib/libxil.a
+ADD_LIB =
 
 # List all source files (cpp files) in the current folder
 SRCS := $(shell dir /b /a-d .\*.c)

@@ -35,8 +35,8 @@ class Compiler:
 
             # Iterate over the sections and print information about each section
             # print("\nSections:")
-            for section in elf_file.iter_sections():
-                print(f"  {section.name} (type: {section['sh_type']}, size: {section['sh_size']})")
+            # for section in elf_file.iter_sections():
+            #     print(f"  {section.name} (type: {section['sh_type']}, size: {section['sh_size']})")
             
             self.entry_point = elf_file.header.e_entry
             
@@ -115,7 +115,7 @@ class Compiler:
     def compile_code(self, file_name):
         if self.do_compile == True:
             # Define the command to be executed
-            command = f"aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T {file_name}.ld -I./include {file_name}.cpp ./lib/libxil.a  -o {file_name}.elf"
+            command = f"aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T {file_name}.ld -I./include {file_name}.cpp ./lib/libxil.a ./lib/libmetal.a ./lib/libxilpm.a -o {file_name}.elf"
     
             # Execute the command
             result = subprocess.run(command, shell=True)

@@ -188,7 +188,7 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000710#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL#")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000710#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000001)+"#!EOL#")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
@@ -215,8 +215,8 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL#")
-        # self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL#")
+        # self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL#")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL#")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
@@ -234,6 +234,17 @@ class RFSoC:
         print(a)
         
         self.tcp.write("#TIME_CONT#write_fifo#0#9#!EOL#")
+        # time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+    def auto_end(self):
+        #TimeController
+        self.tcp.write("#TIME_CONT#write_fifo#0#0#!EOL#")
+        # time.sleep(0.1)
+        a = self.tcp.read()
+        print(a)
+        
+        self.tcp.write("#TIME_CONT#write_fifo#0#2#!EOL#")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
@@ -279,20 +290,19 @@ class RFSoC:
         for i in range(len(data_list)):
             self.tcp.write(data_list[i])
             a = self.tcp.read()
-            if( i == 1 or i == 2 or i == 3):
-                print(a)
     
 
 if __name__ == "__main__": 
     RFSoC = RFSoC()
     RFSoC.connect()
+    RFSoC.auto_end()
     RFSoC.initialize()
     
     time.sleep(0.1)
     
-    for i in range(40):
-        #RFSoC.set_amp(0x0000000000000D10 + 100 * ( 1 + i ), i/41 )
-        RFSoC.set_amp(0x0000000000000D10 + 100 * ( 1 + i ), ( i % 4 )/3.01 )
+    # for i in range(40):
+    #     #RFSoC.set_amp(0x0000000000000D10 + 100 * ( 1 + i ), i/41 )
+    #     RFSoC.set_amp(0x0000000000000D10 + 100 * ( 1 + i ), ( i % 4 )/3.01 )
     
     # for i in range(40):
     #     RFSoC.set_freq(0x30000000*( 51 + i ), ((i+1)/42) * 10E7 )

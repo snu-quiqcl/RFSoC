@@ -28,6 +28,8 @@ int main(){
 
     xil_printf("hello2\r\n");
 
+    xil_printf("hello3\r\n");
+
     a_class = A(a);
     a_class.class_made(20);
 }

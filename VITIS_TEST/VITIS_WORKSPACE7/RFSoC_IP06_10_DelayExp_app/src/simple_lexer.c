@@ -5,6 +5,7 @@
 
 
 static int64_t binary_mode;
+static unsigned char * current_addr;
 
 int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 	int64_t module_num = 0;
@@ -17,7 +18,6 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 	int64_t heap_start = 0;
 	int64_t heap_end = 0;
 	static int64_t packet_number = 0;
-	static unsigned char * current_addr;
 	static int64_t current_packet_num;
 	module_num = get_module(inst);
 
@@ -29,10 +29,10 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 			break;
 
 		case 1: // Binary
-			xil_printf("BIN %d\r\n",binary_mode);
 			if(binary_mode == 0){
 				fnct_num = get_fnct(inst);
 				if( fnct_num == 3 ){
+					xil_printf("SAVE DATA\r\n");
 					entry_point = get_param(inst,3,4);
 					stack_start = get_param(inst,4,5);
 					stack_end = get_param(inst,5,6);
@@ -54,10 +54,8 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 					*(current_addr) = get_param(inst,i+2,i+3);
 					current_addr++;
 					i++;
-					//xil_printf("%d ",*(current_addr));
 				}
 				current_packet_num++;
-				xil_printf("\r\nPACKET NUM : %d\r\n",current_packet_num);
 				if( current_packet_num == packet_number){
 					xil_printf("\r\nEND PACKET NUM : %d\r\n",current_packet_num);
 					binary_mode = 0;
@@ -73,6 +71,15 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 			break;
 	}
 
+}
+
+void clear_DRAM(){
+	unsigned char * addr = DRAM_BASE_ADDRESS;
+	do{
+		*(addr) = 0;
+		addr++;
+	}while( addr != current_addr);
+	xil_printf("DRAM CELANED\r\n");
 }
 
 void set_current_binary_mode(int64_t mode){

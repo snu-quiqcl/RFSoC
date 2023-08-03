@@ -5,6 +5,12 @@
 #include "xil_exception.h"
 #include "xil_cache.h"
 
+#define STACK_START_PTR_ADDR 0x700010
+#define STACK_END_PTR_ADDR 0x700020
+#define HEAP_START_PTR_ADDR 0x700030
+#define HEAP_END_PTR_ADDR 0x700040
+#define ENTRY_PTR_ADDR 0x700050
+
 static int64_t bin_entry_point;
 static int64_t bin_stack_start;
 static int64_t bin_stack_end;
@@ -17,18 +23,21 @@ int64_t run_binary(){
 	// Set the stack pointer to STACK_END
 	uint64_t sp_val = DRAM_BASE_ADDRESS + bin_stack_start;
 	uint64_t main_addr = bin_entry_point;
-
-	xil_printf("STACK : %d\r\n",bin_stack_start);
-	xil_printf("ENTRY: %d\r\n",bin_entry_point);
-	int64_t i = 0;
 	unsigned char * base_addr = DRAM_BASE_ADDRESS;
+	int64_t * reg_addr;
+	reg_addr = STACK_START_PTR_ADDR;
+	*(reg_addr) = DRAM_BASE_ADDRESS + bin_stack_start;
+	xil_printf("STACK : %d\r\n",*(reg_addr));
+	reg_addr = STACK_END_PTR_ADDR;
+	*(reg_addr) = DRAM_BASE_ADDRESS + bin_stack_end;
+	reg_addr = HEAP_START_PTR_ADDR;
+	*(reg_addr) = DRAM_BASE_ADDRESS + bin_heap_start;
+	reg_addr = HEAP_END_PTR_ADDR;
+	*(reg_addr) = DRAM_BASE_ADDRESS + bin_heap_start;
+	reg_addr = ENTRY_PTR_ADDR;
+	*(reg_addr) = DRAM_BASE_ADDRESS + bin_entry_point;
+	xil_printf("ENTRY: %d\r\n",*(reg_addr));
 
-	for( i = 0 ; i < 1024; i++){
-		xil_printf("%d ",*(base_addr + i));
-		if( i % 8 == 0){
-			xil_printf("\r\n");
-		}
-	}
 	__asm__ __volatile__ (
 		"sub sp, sp, #256\n\t"
 		"str x0, [sp, #8]\n\t"
@@ -62,16 +71,20 @@ int64_t run_binary(){
 		"str x28, [sp, #232]\n\t"
 		"str x29, [sp, #240]\n\t"
 		"str x30, [sp, #248]\n\t"
-		"mov x0, %0\n\t"    // Move DRAM_BASE_ADDRESS to x0
-		"mov x1, %1\n\t"    // Move MAIN to x1
-		"add x1, x1, x0\n\t"// Add DRAM_BASE_ADDRESS to MAIN and store the result in x1
 			/*save SP*/
 		"mov x0, sp\n\t"
 		"mov x2, #0x700000\n\t"
 		"str x0, [x2]\n\t"
 			/*save END*/
-		"mov sp, %2\n\t"    // Move sp_val to stack pointer (sp)
-		"blr x1\n\t"         // Branch to the address in x1 (MAIN function)
+		"mov x2, #0x700000\n\t"	// Set address which has sp value address to x2
+		"add x2, x2, #0x10\n\t"
+		"ldr x1, [x2]\n\t"    	// Load sp value to x1
+		"mov sp, x1\n\t"		// Move sp value to stack pointer (sp)
+		"mov x2, #0x700000\n\t" // Set address which has main address to x2
+		"add x2, x2, #0x50\n\t"
+		"ldr x1, [x2]\n\t"		// Load main address to x1
+			/*####JUMP TO MAIN####*/
+		"blr x1\n\t"         	// Branch to the address in x1 (MAIN function)
 			/*return SP*/
 		"mov x2, #0x700000\n\t"
 		"ldr x0, [x2]\n\t"
@@ -110,10 +123,11 @@ int64_t run_binary(){
 		"ldr x30, [sp, #248]\n\t"
 		"add sp, sp, #256\n\t"
 		:                // No output operands
-		: "r" (DRAM_BASE_ADDRESS), "r" (main_addr), "r" (sp_val) // Input operands
+		:
 		:
 	);
 	xil_printf("\r\nELF DONE\r\n");
+	clear_DRAM();
 }
 
 int64_t save_binary(struct tcp_pcb *tpcb, int64_t entry_point, int64_t stack_start, int64_t stack_end, int64_t heap_start, int64_t heap_end, int64_t packet_number){
