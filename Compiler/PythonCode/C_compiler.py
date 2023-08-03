@@ -115,17 +115,33 @@ class Compiler:
     def compile_code(self, file_name):
         if self.do_compile == True:
             # Define the command to be executed
-            command = f"aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T {file_name}.ld -I./include {file_name}.cpp ./lib/libxil.a ./lib/libmetal.a ./lib/libxilpm.a -o {file_name}.elf"
+            # command = f"aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T {file_name}.ld -I./include {file_name}.cpp ./lib/libxil.a ./lib/libmetal.a ./lib/libxilpm.a -o {file_name}.elf"
+            cmd = [
+                        'aarch64-none-elf-gcc',
+                        '-march=armv8-a',
+                        '-mcpu=cortex-a53',
+                        '-nostartfiles',
+                        '-w',
+                        '-T', f'{file_name}.ld',
+                        '-I./include',
+                        f'{file_name}.cpp',
+                        './lib/libxil.a',
+                        './lib/libmetal.a',
+                        './lib/libxilpm.a',
+                        '-o', f'{file_name}.elf'
+                    ]
     
             # Execute the command
-            result = subprocess.run(command, shell=True)
+            process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+            stdout, stderr = process.communicate()
     
             # Check the return code
-            if result.returncode == 0:
-                print("Compilation successful.")
+            if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: {file_name}.elf has a LOAD segment with RWX permissions\n"):
+                print("Error Code")
+                print(stderr)
             else:
-                print("Compilation failed.")
-                print(result)
+                print("Compilation successful.")
+                
         else:
             print("No Compile")
     def create_TCP_packet(self):
@@ -160,7 +176,7 @@ if __name__ == "__main__":
     do_compile = True
     
     comp = Compiler()
-    file_name = "hello"
+    file_name = "RFSoC_Driver"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code(file_name)
