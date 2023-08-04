@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "xparameters.h"
-#include "xil_io.h"
 
 //MUX address
 #define S00_AXIS_TDATA (int64_t)0x0
@@ -126,8 +125,8 @@ void TimeController::auto_stop(){
 
 int main(){
 	/*
-    DAC dac00 = DAC((volatile __uint128_t *)(volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,6400000000);
-    TimeController tc = TimeController((volatile __uint128_t *)XPAR_TIMECONTROLLER_0_BASEADDR);
+    DAC dac00 = DAC((__uint128_t *)(__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,6400000000);
+    TimeController tc = TimeController((__uint128_t *)XPAR_TIMECONTROLLER_0_BASEADDR);
     tc.auto_stop();
     tc.reset();
     dac00.initialize((uint64_t)10);
@@ -137,63 +136,65 @@ int main(){
     tc.auto_start();
     */
 
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000005,( DAC00_FAST_SHUTDOWN<<32)+((uint64_t)255<<40)));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR + (uint64_t)0x10,MAKE128CONST((uint64_t)0, (uint64_t)1));
+
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000005,( DAC00_FAST_SHUTDOWN<<32)+((uint64_t)255<<40)));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000010,( DAC00_PL_EVENT << 32 ) + ( (uint64_t) 255 << 40 )));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000010,( DAC00_PL_EVENT << 32 ) + ( (uint64_t) 255 << 40 )));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000020,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 255 << 40 )));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000020,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 255 << 40 )));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000030,( DAC00_NCO_PHASE << 32 ) + ( (uint64_t) 255 << 40 )));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000030,( DAC00_NCO_PHASE << 32 ) + ( (uint64_t) 255 << 40 )));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000040,( DAC00_NCO_PHASE_RST << 32 ) + ( (uint64_t) 255 << 40 )));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000040,( DAC00_NCO_PHASE_RST << 32 ) + ( (uint64_t) 255 << 40 )));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000050,( DAC0_SYSREF_INT_GATING << 32 ) + ( (uint64_t) 255 << 40 )));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000050,( DAC0_SYSREF_INT_GATING << 32 ) + ( (uint64_t) 255 << 40 )));
    
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000060,( DAC0_SYSREF_INT_REENABLE << 32 ) + ( (uint64_t) 255 << 40 )));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000060,( DAC0_SYSREF_INT_REENABLE << 32 ) + ( (uint64_t) 255 << 40 )));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000065,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000065,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
    
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000C0,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000C0,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000D0,( S00_AXIS_TVALID << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00000001));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000D0,( S00_AXIS_TVALID << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00000001));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000E0,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) +(uint64_t) 0x00000000));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000E0,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) +(uint64_t) 0x00000000));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000F0,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000015));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x00000000000000F0,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000015));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000100,( DAC00_NCO_UPDATE_EN << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)7));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000100,( DAC00_NCO_UPDATE_EN << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)7));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000110,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x0005));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000110,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x0005));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000140,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000140,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000600,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)0x00000000));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000600,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)0x00000000));
    
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000610,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000001));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000610,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000001));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000620,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 244 << 40 ) + (uint64_t)0x0005));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000620,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 244 << 40 ) + (uint64_t)0x0005));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000630,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000630,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
     
     //Change frequency
 
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A00,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)0x00000000));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A00,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)0x00000000));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A10,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000002));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A10,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000002));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A20,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255<< 40 ) + (uint64_t)0x0010));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A20,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255<< 40 ) + (uint64_t)0x0010));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A30,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000A30,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
     
     //Change Amplitude
  
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000D00,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000D00,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000D10,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
+    Xil_Out128((__uint128_t *)XPAR_DAC_CONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0x0000000000000D10,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1));
     
     //TimeController
 
-    Xil_Out128((volatile __uint128_t *)XPAR_TIMECONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0,(uint64_t)2));
+    Xil_Out128((__uint128_t *)XPAR_TIMECONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0,(uint64_t)2));
     
-    Xil_Out128((volatile __uint128_t *)XPAR_TIMECONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0,(uint64_t)9));
+    Xil_Out128((__uint128_t *)XPAR_TIMECONTROLLER_0_BASEADDR,MAKE128CONST((uint64_t)0,(uint64_t)9));
 }

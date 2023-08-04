@@ -142,7 +142,7 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x00000000000000F0#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000010)+"#!EOL#")
+        self.tcp.write("#DAC00#write_fifo#0x00000000000000F0#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000000)+"#!EOL#")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
@@ -162,47 +162,6 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000600#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000610#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000001)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000620#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  244 << 40 ) + 0x0020)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000630#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        #Change frequency
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000700#"+str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + 0x00000000)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000710#"+str((DAC00_NCO_FREQ << 32 ) + (  2 << 40 ) + 0x00000001)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000720#"+str((DAC0_NCO_UPDATE_REQ << 32 ) + (  255<< 40 ) + 0x0020)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000730#"+str((UPDATE << 32 ) + (  255 << 40 ) + (  1 << 36 ) + 1)+"#!EOL#")
-        # time.sleep(0.1)
-        a = self.tcp.read()
-        print(a)
-        
         #Change Amplitude
         
         self.tcp.write("#DAC00#write_fifo#0x0000000000000B00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL#")
@@ -215,8 +174,8 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
-        # self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL#")
-        self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL#")
+        self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00000000)+"#!EOL#")
+        # self.tcp.write("#DAC00#write_fifo#0x0000000000000D00#"+str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + 0x00007fff)+"#!EOL#")
         # time.sleep(0.1)
         a = self.tcp.read()
         print(a)
@@ -250,7 +209,7 @@ class RFSoC:
         print(a)
         
     def set_amp(self,timestamp,amp):
-        amp_binary = int(amp * (1 << 15)) & 0x7fff
+        amp_binary = int(amp * ((1 << 15)-1)) & 0x7fff
         self.tcp.write("#DAC00#write_fifo#" + str(timestamp) + "#" + str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + amp_binary)+"#!EOL#")
         # self.tcp.write("#DAC00#write_fifo#" + str(timestamp) + "#" + str((S00_AXIS_TDATA << 32 ) + (  255 << 40 ) + amp_binary)+"#!EOL#")
         # time.sleep(0.1)
@@ -262,10 +221,12 @@ class RFSoC:
         a = self.tcp.read()
         print(a)
         
+        
+        
     def set_freq(self,timestamp,freq):
         #Change frequency
         freq_float = freq/(6.4E9)
-        freq_binary = int(freq_float * (1 << 48)) & 0xffffffffffff
+        freq_binary = int(freq_float * ((1 << 48)-1)) & 0xffffffffffff
         self.tcp.write("#DAC00#write_fifo#" + str(timestamp) + "#" + str((DAC00_NCO_FREQ << 32 ) + (  1 << 40 ) + (freq_binary & 0xffffffff))+"#!EOL#")
         # time.sleep(0.1)
         a = self.tcp.read()
@@ -306,7 +267,117 @@ if __name__ == "__main__":
     
     # for i in range(40):
     #     RFSoC.set_freq(0x30000000*( 51 + i ), ((i+1)/42) * 10E7 )
-        
+    RFSoC.set_freq(0xD00, 0 )
+    i = 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.0)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.2)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.4)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.6)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 1.0)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.6)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.4)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.2)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.0)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.2)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.4)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.6)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 1.0)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    RFSoC.set_amp(0x0000000000000D10 + i, 0.8)
+    i += 100
+    
     RFSoC.auto_start()
        	
     #a = input()
