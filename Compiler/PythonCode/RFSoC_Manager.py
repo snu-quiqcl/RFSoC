@@ -13,7 +13,7 @@ class RFSoC_Mgr:
         self.interpreter = interpreter.interpreter()
         self.comp = elf_maker.Compiler()
         self.RFSoC = TCP.RFSoC()
-        self.file_name = 'RFSoC_Driver2'
+        self.file_name = 'RFSoC_Driver3'
         self.do_compile = True
         self.comp.do_compile = self.do_compile
         

@@ -104,13 +104,13 @@ void DAC::initialize(uint64_t timestamp = 0){
     
     reg128_write(this-> addr,(uint64_t)110 + timestamp,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) +(uint64_t) 0x00000000);
     
-    reg128_write(this-> addr,(uint64_t)120 + timestamp,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000100);
+    reg128_write(this-> addr,(uint64_t)120 + timestamp,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000000);
     
     reg128_write(this-> addr,(uint64_t)130 + timestamp,( DAC00_NCO_UPDATE_EN << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)7);
     
     reg128_write(this-> addr,(uint64_t)140 + timestamp,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)10); // last value is update signal width
     
-    reg128_write(this-> addr,(uint64_t)160 + timestamp,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff);
+    reg128_write(this-> addr,(uint64_t)160 + timestamp,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00000000);
     
     reg128_write(this-> addr,(uint64_t)170 + timestamp,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
 }
@@ -122,22 +122,17 @@ void DAC::set_freq(uint64_t timestamp,uint64_t freq){
     
     reg128_write(this-> addr,timestamp + (uint64_t)20,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)((input_val >> 32) & 0xffff));
 
-    reg128_write(this-> addr,timestamp + (uint64_t)30,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)(0x00000000));
+    reg128_write(this-> addr,timestamp + (uint64_t)30,( DAC00_NCO_UPDATE_EN << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)7);
 
-    reg128_write(this-> addr,timestamp + (uint64_t)40,( DAC00_NCO_UPDATE_EN << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)7);
-
-    reg128_write(this-> addr,timestamp + (uint64_t)50,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 244 << 40 ) + (uint64_t)0x0010);
-
-    xil_printf("FREQ : %llx\r\n",input_val);
+    reg128_write(this-> addr,timestamp + (uint64_t)40,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 244 << 40 ) + (uint64_t)0x0010);
     
-    reg128_write(this-> addr,timestamp + (uint64_t)60,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
+    reg128_write(this-> addr,timestamp + (uint64_t)50,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
 }
 
 void DAC::set_amp(uint64_t timestamp, long double amp){
     uint64_t input_val;
     input_val = (uint64_t)(amp * ((1 << 15) - 1));
     reg128_write(this-> addr,timestamp,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)(input_val & (0x00007fff)));
-    xil_printf("AMP : %llx\r\n",input_val);
     
     reg128_write(this-> addr,timestamp + (uint64_t)10,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
 }
@@ -152,7 +147,6 @@ void TimeController::auto_start(){
 
 void TimeController::auto_stop(){
     reg128_write(this-> addr,(uint64_t)0,(uint64_t)0);
-    xil_printf("TC : %llx\r\n",this->addr);
 }
 
 int main(){
@@ -161,70 +155,41 @@ int main(){
     tc.auto_stop();
     tc.reset();
     dac00.initialize((uint64_t)1000);
-    //dac00.set_freq((uint64_t)5000,(uint64_t)10000);
-    //dac00.set_amp((uint64_t)6000,(long double)0.90);
+    dac00.set_freq((uint64_t)5000,(uint64_t)0x000);
+    dac00.set_amp((uint64_t)6000,(long double)0.90);
     tc.reset();
     tc.auto_start();
-   /* 
-    reg128_write(XPAR_TIMECONTROLLER_0_BASEADDR,(uint64_t)0,(uint64_t)0);
-    reg128_write(XPAR_TIMECONTROLLER_0_BASEADDR,(uint64_t)0,(uint64_t)2);
-
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000005,( DAC00_FAST_SHUTDOWN<<32)+((uint64_t)255<<40));
     
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000010,( DAC00_PL_EVENT << 32 ) + ( (uint64_t) 255 << 40 ));
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000020,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 255 << 40 ));
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000030,( DAC00_NCO_PHASE << 32 ) + ( (uint64_t) 255 << 40 ));
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000040,( DAC00_NCO_PHASE_RST << 32 ) + ( (uint64_t) 255 << 40 ));
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000050,( DAC0_SYSREF_INT_GATING << 32 ) + ( (uint64_t) 255 << 40 ));
-   
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000060,( DAC0_SYSREF_INT_REENABLE << 32 ) + ( (uint64_t) 255 << 40 ));
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000065,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
-   
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x00000000000000C0,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x00000000000000D0,( S00_AXIS_TVALID << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00000001);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x00000000000000E0,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) +(uint64_t) 0x00000000);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x00000000000000F0,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000015);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000100,( DAC00_NCO_UPDATE_EN << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)7);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000110,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x0005);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000140,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000600,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)0x00000000);
-   
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000610,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000001);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000620,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 244 << 40 ) + (uint64_t)0x0005);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000630,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
-    
-
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000A00,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 1 << 40 ) + (uint64_t)0x00000000);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000A10,( DAC00_NCO_FREQ << 32 ) + ( (uint64_t) 2 << 40 ) + (uint64_t)0x00000002);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000A20,( DAC0_NCO_UPDATE_REQ << 32 ) + ( (uint64_t) 255<< 40 ) + (uint64_t)0x0010);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000A30,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
-    
- 
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000D00,( S00_AXIS_TDATA << 32 ) + ( (uint64_t) 255 << 40 ) + (uint64_t)0x00007fff);
-    
-    reg128_write(XPAR_DAC_CONTROLLER_0_BASEADDR,(uint64_t)0x0000000000000D10,( UPDATE << 32 ) + ( (uint64_t) 255 << 40 ) + ( (uint64_t) 1 << 36 ) + (uint64_t)1);
-    
-
-    reg128_write(XPAR_TIMECONTROLLER_0_BASEADDR,(uint64_t)0,(uint64_t)2);
-    
-    reg128_write(XPAR_TIMECONTROLLER_0_BASEADDR,(uint64_t)0,(uint64_t)9);
-    */
-    
+    int64_t i = 0;
+    long double amp_val[] = {
+				0.000, 0.010, 0.020, 0.028, 0.037, 0.046, 0.055, 0.065,
+				0.073, 0.081, 0.088, 0.095, 0.102, 0.109, 0.116, 0.122,
+				0.128, 0.134, 0.140, 0.146, 0.152, 0.157, 0.162, 0.167,
+				0.172, 0.176, 0.180, 0.184, 0.188, 0.192, 0.196, 0.200,
+				0.204, 0.208, 0.212, 0.216, 0.220, 0.224, 0.227, 0.230,
+				0.233, 0.236, 0.239, 0.242, 0.245, 0.248, 0.251, 0.254,
+				0.257, 0.259, 0.261, 0.263, 0.265, 0.267, 0.269, 0.271,
+				0.273, 0.275, 0.277, 0.279, 0.280, 0.281, 0.282, 0.283,
+				0.284, 0.285, 0.286, 0.287, 0.288, 0.289, 0.290, 0.291,
+				0.293, 0.295, 0.297, 0.299, 0.303, 0.307, 0.311, 0.316,
+				0.323, 0.330, 0.338, 0.343, 0.350, 0.357, 0.363, 0.369,
+				1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000, 1.000,
+				0.990, 0.980, 0.970, 0.950, 0.920, 0.880, 0.700, 0.700,
+				0.700, 0.700, 0.700, 0.700, 0.700, 0.700, 0.701, 0.702,
+				0.703, 0.704, 0.705, 0.706, 0.707, 0.708, 0.709, 0.710,
+				0.700, 0.700, 0.700, 0.700, 0.700, 0.700, 0.700, 0.700,
+				0.690, 0.681, 0.683, 0.675, 0.670, 0.670, 0.670, 0.670,
+				0.600, 0.600, 0.600, 0.600, 0.600, 0.600, 0.600, 0.600,
+                                0.600, 0.600, 0.600, 0.600, 0.600, 0.600, 0.600, 0.600,
+                                0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500,
+                                0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500, 0.500,
+                                0.400, 0.400, 0.400, 0.400, 0.400, 0.400, 0.400, 0.400,
+                                0.350, 0.351, 0.352, 0.353, 0.354, 0.355, 0.356, 0.357,
+                                0.358, 0.359, 0.360, 0.361, 0.362, 0.363, 0.364, 0.600,
+                                0.600, 0.600, 0.600, 0.600, 0.600, 0.600, 0.600, 0.000
+                            };
+    while(1){
+	i++;
+        dac00.set_amp((uint64_t)7000 + i*30,(long double)amp_val[i % 200]);
+    }   
 }
