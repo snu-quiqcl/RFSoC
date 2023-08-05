@@ -1,6 +1,6 @@
-16:43:30 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
+17:09:01 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
 make all 
 make: Nothing to be done for 'all'.
 
-16:43:31 Build Finished (took 453ms)
+17:09:01 Build Finished (took 542ms)
 

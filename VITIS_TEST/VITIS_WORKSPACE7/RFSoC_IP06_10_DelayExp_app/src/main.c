@@ -233,16 +233,15 @@ int main()
 	print_ip_settings(&ipaddr, &netmask, &gw);
 
 #endif
-	// TEMP
-	//callee_function();
-	//xil_printf("calle_end\r\n");
-	//xil_printf("############################################################\r\n");
 	/* start the application (web server, rxtest, txtest, etc..) */
 	start_application();
 	set_clock(6400000);
 	/* set binary mode false*/
 	set_current_binary_mode(0);
 	/* receive and process packets */
+	//callee_function();
+	xil_printf("calle_end\r\n");
+	xil_printf("############################################################\r\n");
 	while (1) {
 		if (TcpFastTmrFlag) {
 			tcp_fasttmr();

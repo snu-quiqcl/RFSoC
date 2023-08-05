@@ -23,20 +23,24 @@ int64_t run_binary(){
 	// Set the stack pointer to STACK_END
 	uint64_t sp_val = DRAM_BASE_ADDRESS + bin_stack_start;
 	uint64_t main_addr = bin_entry_point;
-	unsigned char * base_addr = DRAM_BASE_ADDRESS;
-	int64_t * reg_addr;
-	reg_addr = STACK_START_PTR_ADDR;
-	*(reg_addr) = DRAM_BASE_ADDRESS + bin_stack_start;
-	xil_printf("STACK : %d\r\n",*(reg_addr));
-	reg_addr = STACK_END_PTR_ADDR;
-	*(reg_addr) = DRAM_BASE_ADDRESS + bin_stack_end;
-	reg_addr = HEAP_START_PTR_ADDR;
-	*(reg_addr) = DRAM_BASE_ADDRESS + bin_heap_start;
-	reg_addr = HEAP_END_PTR_ADDR;
-	*(reg_addr) = DRAM_BASE_ADDRESS + bin_heap_start;
-	reg_addr = ENTRY_PTR_ADDR;
-	*(reg_addr) = DRAM_BASE_ADDRESS + bin_entry_point;
-	xil_printf("ENTRY: %d\r\n",*(reg_addr));
+	volatile unsigned char * base_addr = DRAM_BASE_ADDRESS;
+	volatile int64_t * reg_addr;
+	reg_addr = (volatile int64_t *)STACK_START_PTR_ADDR;
+	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_stack_start);
+	reg_addr = (volatile int64_t *)STACK_END_PTR_ADDR;
+	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_stack_end);
+	reg_addr = (volatile int64_t *)HEAP_START_PTR_ADDR;
+	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_heap_start);
+	reg_addr = (volatile int64_t *)HEAP_END_PTR_ADDR;
+	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_heap_start);
+	reg_addr = (volatile int64_t *)ENTRY_PTR_ADDR;
+	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_entry_point);
+
+
+
+	xil_printf("DAC CONTROLLER BASE ADDRESS : %llx\r\n",XPAR_DAC_CONTROLLER_0_BASEADDR);
+
+	xil_printf("TIME CONTROLLER BASE ADDRESS : %llx\r\n",XPAR_TIMECONTROLLER_0_BASEADDR);
 
 	__asm__ __volatile__ (
 		"sub sp, sp, #256\n\t"

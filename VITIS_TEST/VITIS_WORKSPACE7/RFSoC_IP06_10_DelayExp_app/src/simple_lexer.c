@@ -5,7 +5,7 @@
 
 
 static int64_t binary_mode;
-static unsigned char * current_addr;
+static volatile unsigned char * current_addr;
 
 int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 	int64_t module_num = 0;
@@ -41,7 +41,7 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 					packet_number = get_param(inst,8,9);
 					run_bin_process(tpcb, fnct_num, entry_point, stack_start, stack_end, heap_start, heap_end, packet_number);
 					binary_mode = 1;
-					current_addr = DRAM_BASE_ADDRESS;
+					current_addr = (volatile unsigned char *)DRAM_BASE_ADDRESS;
 					current_packet_num = 0;
 				}
 				else if( fnct_num == 4 ){
@@ -51,7 +51,7 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 			else if(binary_mode == 1){
 				int64_t i = 0;
 				while( is_end(inst,i+2,i+3)!= 1 ){
-					*(current_addr) = get_param(inst,i+2,i+3);
+					*(current_addr) = (volatile unsigned char)get_param(inst,i+2,i+3);
 					current_addr++;
 					i++;
 				}

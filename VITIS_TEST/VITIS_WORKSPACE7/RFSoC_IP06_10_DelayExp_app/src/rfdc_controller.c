@@ -57,9 +57,6 @@ void set_clock(int64_t freq){
 
 void write_fifo(int64_t module_num, int64_t timestamp, int64_t instruction){
 	Xil_Out128(MODULE[module_num].addr,MAKE128CONST(timestamp,instruction));
-#ifdef DEBUG_RFDC
-	xil_printf("WRITE FIFO\r\n");
-#endif
 }
 
 int64_t read_sampling_freq(struct tcp_pcb *tpcb){
@@ -119,9 +116,6 @@ int64_t run_cpu_process(struct tcp_pcb *tpcb, int64_t fnct_num, int64_t param_nu
 }
 
 int64_t run_rtio_process(struct tcp_pcb *tpcb, int64_t module_num, int64_t fnct_num, int64_t timestamp_num, int64_t param_num){
-#ifdef DEBUG_RFDC
-	xil_printf("RTIO %d %d %d %d\r\n", module_num, fnct_num, timestamp_num, param_num);
-#endif
 	switch(fnct_num){
 		case 0:
 			write_fifo(module_num, timestamp_num, param_num);
