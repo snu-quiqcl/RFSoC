@@ -8,16 +8,16 @@ import TCPClient_v1_00 as TCP
 import C_compiler as elf_maker
 import python2C as interpreter
 
-class RFSoC_Mgr:
+class RFSoC_Mgr(TCP.RFSoC):
     def __init__(self):
         self.interpreter = interpreter.interpreter()
         self.comp = elf_maker.Compiler()
-        self.RFSoC = TCP.RFSoC()
-        self.file_name = 'RFSoC_Driver3'
+        self.file_name = 'RFSoC_Driver'
         self.do_compile = True
         self.comp.do_compile = self.do_compile
         
     def run_RFSoC(self):
+        # Compile C Code in ../C_Code/
         self.comp.compile_code(self.file_name)
         
         # Read the ELF file
@@ -29,16 +29,19 @@ class RFSoC_Mgr:
         # Save the C code to a file
         self.comp.save_c_code_to_file(c_code, self.file_name)
         
-        # self.RFSoC.tcp.write(self.comp.create_TCP_packet()[0])
-        # a = self.RFSoC.tcp.read()
-        # print(a)
-        self.RFSoC.send_bin(self.comp.create_TCP_packet())
-        self.RFSoC.tcp.write("#BIN#run_binary#!EOL#");
+        # Send ELF binary data to RFSoC
+        self.send_bin(self.comp.create_TCP_packet())
+        self.tcp.write("#BIN#run_binary#!EOL#");
         
     def connect(self):
-        self.RFSoC.connect()
+        self.connect()
+        
+    def set_file_name(self, file_name):
+        self.file_name = file_name.replace('.cpp', '').replace('.c', '')
         
 if __name__ == "__main__":
+    file_name = 'RFSoC_Driver'
     RFSoC_Mgr = RFSoC_Mgr()
+    RFSoC_Mgr.set_file_name(file_name)
     RFSoC_Mgr.connect()
     RFSoC_Mgr.run_RFSoC()

@@ -21,17 +21,17 @@ class Compiler:
         self.elf_data = None
         
     def read_elf_file(self, file_name):
-        elf_file_name = file_name + '.elf'
+        elf_file_name = '../C_Code/' + file_name + '.elf'
         with open(elf_file_name, 'rb') as f:
             self.elf_data = f.read()
             elf_file = ELFFile(f)
 
             # Print information about the ELF file
             print("ELF file information:")
-            print(f"  Entry point: 0x{elf_file.header.e_entry:x}")
             print(f"  Architecture: {elf_file.get_machine_arch()}")
             print(f"  Number of sections: {elf_file.num_sections()}")
             print(f"  Number of segments: {elf_file.num_segments()}")
+            print(f"ENTRY POINT: \t0x{elf_file.header.e_entry:x}")
 
             # Iterate over the sections and print information about each section
             # print("\nSections:")
@@ -40,7 +40,7 @@ class Compiler:
             
             self.entry_point = elf_file.header.e_entry
             
-            output_file = "ELF_BIN.txt"
+            output_file = "../C_Code/ELF_BIN.txt"
             with open(output_file, 'w') as output_f:
                 output_f.write("Contents of ELF file:\n")
                 hex_dump = [" ".join(f"{b:02X}" for b in self.elf_data[i:i+16]) for i in range(0, len(self.elf_data), 16)]
@@ -53,21 +53,17 @@ class Compiler:
                     # Iterate over all symbols in the symbol table
                     for symbol in section.iter_symbols():
                         if symbol.name == '__stack_start':
-                            # Get the address of the stack pointer
                             self.stack_start = symbol.entry.st_value
-                            print(f'STACK_START : {hex(self.stack_start)}')
+                            print(f'STACK_START : \t{hex(self.stack_start)}')
                         elif symbol.name == '_stack_end':
-                            # Get the address of the stack pointer
                             self.stack_end = symbol.entry.st_value
-                            print(f'STACK_END : {hex(self.stack_end)}')
+                            print(f'STACK_END : \t{hex(self.stack_end)}')
                         elif symbol.name == '_heap_start':
-                            # Get the address of the heap start pointer
                             self.heap_start = symbol.entry.st_value
-                            print(f'HEAP_SATRT : {hex(self.heap_start)}')
+                            print(f'HEAP_SATRT : \t{hex(self.heap_start)}')
                         elif symbol.name == '_heap_end':
-                            # Get the address of the heap end pointer
                             self.heap_end = symbol.entry.st_value
-                            print(f'HEAP_END : {hex(self.heap_end)}')
+                            print(f'HEAP_END : \t\t{hex(self.heap_end)}')
 
             # # You can also access the symbol table and print information about symbols
             # if '.symtab' in elf_file:
@@ -84,7 +80,7 @@ class Compiler:
                 md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
                 for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
                     elf_text += f"{insn.address}    {insn.mnemonic} {insn.op_str}\n"
-                with open("Instruction.txt", 'w') as f:
+                with open("../C_Code/Instruction.txt", 'w') as f:
                     f.write(elf_text)
             else:
                 print("No .text section found in the ELF file.")
@@ -103,32 +99,29 @@ class Compiler:
         c_code += ",\n".join(c_code_lines)
         c_code += "\n};\n"
         
-        # print(c_code)
-    
         return c_code
     
     def save_c_code_to_file(self, c_code, file_name):
-        output_filename = file_name + '_array.c'
+        output_filename = '../C_Code/' + file_name + '_array.c'
         with open(output_filename, 'w') as f:
             f.write(c_code)
             
     def compile_code(self, file_name):
         if self.do_compile == True:
             # Define the command to be executed
-            # command = f"aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T {file_name}.ld -I./include {file_name}.cpp ./lib/libxil.a ./lib/libmetal.a ./lib/libxilpm.a -o {file_name}.elf"
             cmd = [
                         'aarch64-none-elf-gcc',
                         '-march=armv8-a',
                         '-mcpu=cortex-a53',
                         '-nostartfiles',
                         '-w',
-                        '-T', f'{file_name}.ld',
-                        '-I./include',
-                        f'{file_name}.cpp',
-                        './lib/libxil.a',
-                        './lib/libmetal.a',
-                        './lib/libxilpm.a',
-                        '-o', f'{file_name}.elf'
+                        '-T', f'../C_Code/{file_name}.ld',
+                        '-I../C_Code//include',
+                        f'../C_Code/{file_name}.cpp',
+                        '../C_Code/lib/libxil.a',
+                        '../C_Code/lib/libmetal.a',
+                        '../C_Code/lib/libxilpm.a',
+                        '-o', f'../C_Code/{file_name}.elf'
                     ]
     
             # Execute the command
@@ -136,9 +129,9 @@ class Compiler:
             stdout, stderr = process.communicate()
     
             # Check the return code
-            if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: {file_name}.elf has a LOAD segment with RWX permissions\n"):
+            if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ../C_Code/{file_name}.elf has a LOAD segment with RWX permissions\n"):
                 print("Error Code")
-                print(stderr)
+                raise Exception(stderr)
             else:
                 print("Compilation successful.")
                 
@@ -189,4 +182,3 @@ if __name__ == "__main__":
 
     # Save the C code to a file
     comp.save_c_code_to_file(c_code, file_name)
-    #print(comp.create_TCP_packet())
