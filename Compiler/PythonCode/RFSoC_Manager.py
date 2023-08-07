@@ -10,6 +10,7 @@ import python2C as interpreter
 
 class RFSoC_Mgr(TCP.RFSoC):
     def __init__(self):
+        super().__init__()
         self.interpreter = interpreter.interpreter()
         self.comp = elf_maker.Compiler()
         self.file_name = 'RFSoC_Driver'
@@ -33,14 +34,11 @@ class RFSoC_Mgr(TCP.RFSoC):
         self.send_bin(self.comp.create_TCP_packet())
         self.tcp.write("#BIN#run_binary#!EOL#");
         
-    def connect(self):
-        self.connect()
-        
     def set_file_name(self, file_name):
         self.file_name = file_name.replace('.cpp', '').replace('.c', '')
         
 if __name__ == "__main__":
-    file_name = 'RFSoC_Driver'
+    file_name = 'MALLOC_EXP'
     RFSoC_Mgr = RFSoC_Mgr()
     RFSoC_Mgr.set_file_name(file_name)
     RFSoC_Mgr.connect()

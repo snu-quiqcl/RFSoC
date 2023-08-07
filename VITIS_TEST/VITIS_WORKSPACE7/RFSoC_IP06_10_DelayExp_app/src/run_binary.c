@@ -19,7 +19,7 @@ static int64_t bin_heap_end;
 
 int64_t run_binary(){
 	xil_printf("RUN BIN\r\n");
-	//Xil_DCacheFlush();
+	Xil_DCacheFlush();
 	// Set the stack pointer to STACK_END
 	uint64_t sp_val = DRAM_BASE_ADDRESS + bin_stack_start;
 	uint64_t main_addr = bin_entry_point;

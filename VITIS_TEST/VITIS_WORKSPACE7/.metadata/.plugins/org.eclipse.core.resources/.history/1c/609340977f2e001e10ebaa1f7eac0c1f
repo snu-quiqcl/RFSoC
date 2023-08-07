@@ -1,8 +1,0 @@
-class A{
-	int x;
-	int y;
-public:
-	A(int x , int y=0){
-		self.x = x;
-	}
-};

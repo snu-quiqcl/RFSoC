@@ -118,6 +118,12 @@ class Compiler:
                         '-T', f'../C_Code/{file_name}.ld',
                         '-I../C_Code//include',
                         f'../C_Code/{file_name}.cpp',
+                        '../C_Code/lib/_sbrk.o',
+                        '../C_Code/lib/sbrk.o',
+                        '../C_Code/lib/read.o',
+                        '../C_Code/lib/write.o',
+                        '../C_Code/lib/lseek.o', 
+                        '../C_Code/lib/close.o',
                         '../C_Code/lib/libxil.a',
                         '../C_Code/lib/libmetal.a',
                         '../C_Code/lib/libxilpm.a',
@@ -169,7 +175,7 @@ if __name__ == "__main__":
     do_compile = True
     
     comp = Compiler()
-    file_name = "RFSoC_Driver"
+    file_name = "MALLOC_EXP"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code(file_name)
