@@ -4,8 +4,10 @@
 #include "rfdc_controller.h"
 
 
-static int64_t binary_mode;
-static volatile unsigned char * current_addr;
+int64_t binary_mode = 0;
+int64_t packet_number = 0;
+int64_t current_packet_num = 0;
+unsigned char * current_addr = (unsigned char *)DRAM_BASE_ADDRESS;
 
 int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 	int64_t module_num = 0;
@@ -17,8 +19,6 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 	int64_t stack_end = 0;
 	int64_t heap_start = 0;
 	int64_t heap_end = 0;
-	static int64_t packet_number = 0;
-	static int64_t current_packet_num;
 	module_num = get_module(inst);
 
 	switch(module_num){
@@ -51,13 +51,15 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 			else if(binary_mode == 1){
 				int64_t i = 0;
 				while( is_end(inst,i+2,i+3)!= 1 ){
-					*(current_addr) = (volatile unsigned char)get_param(inst,i+2,i+3);
+					volatile unsigned char * current_addr_save = (volatile unsigned char * )current_addr;
+					*(current_addr_save)=(unsigned char)get_param(inst,i+2,i+3);
 					current_addr++;
 					i++;
 				}
 				current_packet_num++;
 				if( current_packet_num == packet_number){
 					xil_printf("\r\nEND PACKET NUM : %d\r\n",current_packet_num);
+					xil_printf("ELF size : %d bytes\r\n",current_addr - DRAM_BASE_ADDRESS);
 					binary_mode = 0;
 				}
 			}
@@ -74,11 +76,14 @@ int64_t simple_lexer(struct tcp_pcb *tpcb, const char * inst){
 }
 
 void clear_DRAM(){
-	unsigned char * addr = DRAM_BASE_ADDRESS;
+	volatile unsigned char * addr = (volatile unsigned char * ) DRAM_BASE_ADDRESS;
 	do{
 		*(addr) = 0;
 		addr++;
 	}while( addr != current_addr);
+	/*To prevent Bug when we upload code again, flush Data cache and Instruction cache after, and before ELF file run*/
+	Xil_DCacheFlush();
+	Xil_ICacheInvalidate();
 	xil_printf("DRAM CELANED\r\n");
 }
 

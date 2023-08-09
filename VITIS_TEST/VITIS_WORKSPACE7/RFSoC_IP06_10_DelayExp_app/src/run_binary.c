@@ -3,13 +3,19 @@
 #include "lwip/tcp.h"
 #include "rfdc_controller.h"
 #include "xil_exception.h"
-#include "xil_cache.h"
 
+#define DATA_BASE_ADDR 0x700000
 #define STACK_START_PTR_ADDR 0x700010
 #define STACK_END_PTR_ADDR 0x700020
 #define HEAP_START_PTR_ADDR 0x700030
 #define HEAP_END_PTR_ADDR 0x700040
 #define ENTRY_PTR_ADDR 0x700050
+
+#define STACK_START_PTR_BIAS 0x10
+#define STACK_END_PTR_BIAS 0x20
+#define HEAP_START_PTR_BIAS 0x30
+#define HEAP_END_PTR_BIAS 0x40
+#define ENTRY_PTR_BIAS 0x50
 
 static int64_t bin_entry_point;
 static int64_t bin_stack_start;
@@ -19,28 +25,30 @@ static int64_t bin_heap_end;
 
 int64_t run_binary(){
 	xil_printf("RUN BIN\r\n");
-	Xil_DCacheFlush();
 	// Set the stack pointer to STACK_END
 	uint64_t sp_val = DRAM_BASE_ADDRESS + bin_stack_start;
 	uint64_t main_addr = bin_entry_point;
+
 	volatile unsigned char * base_addr = DRAM_BASE_ADDRESS;
 	volatile int64_t * reg_addr;
+
 	reg_addr = (volatile int64_t *)STACK_START_PTR_ADDR;
 	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_stack_start);
+
 	reg_addr = (volatile int64_t *)STACK_END_PTR_ADDR;
 	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_stack_end);
+
 	reg_addr = (volatile int64_t *)HEAP_START_PTR_ADDR;
 	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_heap_start);
+
 	reg_addr = (volatile int64_t *)HEAP_END_PTR_ADDR;
 	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_heap_start);
+
 	reg_addr = (volatile int64_t *)ENTRY_PTR_ADDR;
 	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_entry_point);
 
-
-
-	xil_printf("DAC CONTROLLER BASE ADDRESS : %llx\r\n",XPAR_DAC_CONTROLLER_0_BASEADDR);
-
-	xil_printf("TIME CONTROLLER BASE ADDRESS : %llx\r\n",XPAR_TIMECONTROLLER_0_BASEADDR);
+	Xil_DCacheFlush();
+	Xil_ICacheInvalidate();
 
 	__asm__ __volatile__ (
 		"sub sp, sp, #256\n\t"
@@ -80,13 +88,9 @@ int64_t run_binary(){
 		"mov x2, #0x700000\n\t"
 		"str x0, [x2]\n\t"
 			/*save END*/
-		"mov x2, #0x700000\n\t"	// Set address which has sp value address to x2
-		"add x2, x2, #0x10\n\t"
-		"ldr x1, [x2]\n\t"    	// Load sp value to x1
+		"ldr x1, [%0]\n\t"    	// Load sp value to x1
 		"mov sp, x1\n\t"		// Move sp value to stack pointer (sp)
-		"mov x2, #0x700000\n\t" // Set address which has main address to x2
-		"add x2, x2, #0x50\n\t"
-		"ldr x1, [x2]\n\t"		// Load main address to x1
+		"ldr x1, [%1]\n\t"		// Load main address to x1
 			/*####JUMP TO MAIN####*/
 		"blr x1\n\t"         	// Branch to the address in x1 (MAIN function)
 			/*return SP*/
@@ -127,7 +131,7 @@ int64_t run_binary(){
 		"ldr x30, [sp, #248]\n\t"
 		"add sp, sp, #256\n\t"
 		:                // No output operands
-		:
+		: "r" (STACK_START_PTR_ADDR), "r" (ENTRY_PTR_ADDR)
 		:
 	);
 	xil_printf("\r\nELF DONE\r\n");

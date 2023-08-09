@@ -12,11 +12,20 @@
 extern u8 _heap_start[];
 extern u8 _heap_end[];
 
+int foo(){
+	static int i_foo = 50;
+	xil_printf("%d\r\n",i_foo);
+	i_foo++;
+}
+
 int main(){
 	xil_printf("hello world\r\n");
 	xil_printf("%llx\r\n",_heap_start);
 	xil_printf("%llx\r\n",_heap_end);
 	xil_printf("HELLO2\r\n");
+	foo();
+	foo();
+	foo();
 
 	return 0;
 }

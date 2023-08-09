@@ -59,3 +59,4 @@ platform active {RFSoC_IP06_10_DelayExp_plt}
 platform generate -domains 
 platform generate
 platform generate
+platform generate
