@@ -13392,3 +13392,11 @@ con
 
 17:57:49 INFO  : Launch script is exported to file 'E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE7\RFSoC_IP06_10_DelayExp_app_system\_ide\scripts\systemdebugger_rfsoc_ip06_10_delayexp_app_system_standalone.tcl'
 18:01:23 INFO  : Disconnected from the channel tcfchan#7.
+11:58:17 INFO  : Launching XSCT server: xsct.bat -n  -interactive E:\RFSoC\GIT\RFSoC\VITIS_TEST\VITIS_WORKSPACE7\temp_xsdb_launch_script.tcl
+11:58:20 INFO  : XSCT server has started successfully.
+11:58:20 INFO  : Successfully done setting XSCT server connection channel  
+11:58:20 INFO  : plnx-install-location is set to ''
+11:58:20 INFO  : Successfully done setting workspace for the tool. 
+11:58:26 INFO  : Platform repository initialization has completed.
+11:58:27 INFO  : Registering command handlers for Vitis TCF services
+11:58:28 INFO  : Successfully done query RDI_DATADIR 
