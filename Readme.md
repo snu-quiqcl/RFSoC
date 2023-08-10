@@ -9,9 +9,11 @@ RFDC Control through binary file(ELF) execution
 ## Software Project
 ### Python to C Code Interpreter
 Python Code : .\Compiler\PythonCode\python2C.py
+
 Simple function, python class to C++ class and function coversion done
 ### Compiler
 Python Code : .\Compiler\PythonCode\C_compiler.py
+
 Using 'aarch64-none-elf-gcc' GNU compiler and including libraries made by Xilinx, make ELF file which will run on RFSoC. 
 Data is send via TCP.
 
@@ -31,6 +33,9 @@ Data len should be changed from 32 bit to 64 bit. And other CMD option should be
 According to QSCOUT paper, GPIO(~100ns ) is faster than AXI interface. In addition QSCOUT uses DMA(~1us) for data send. We can make big advance using this characteristic.
 ### Paper reading
 QICK Paper reading -> Need Recall
+
 Artiq -> Seems to be nothing new in Verilog code.(Only PCB job is open source)
+
 Octet(QSCOUT) -> Should be studied more deeply
+
 Other Devices -> Should be read
