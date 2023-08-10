@@ -1,27 +1,12 @@
-Nothing to build in platform 'RFSoC_IP06_10_DelayExp_plt'
+Nothing to build in platform 'RFSoC_Controller_V1_0'
 
-16:49:32 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app ****
+15:49:07 **** Incremental Build of configuration Release for project RFSoC_Controller_V1_0_app ****
 make all 
-'Building file: ../src/main.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: RFSoC_IP06_10_DelayExp_app.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/standalone_domain/bsplib/lib -o "RFSoC_IP06_10_DelayExp_app.elf"  ./src/clock_config.o ./src/echo.o ./src/elf_exp.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/run_binary.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
-'Finished building target: RFSoC_IP06_10_DelayExp_app.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size RFSoC_IP06_10_DelayExp_app.elf  |tee "RFSoC_IP06_10_DelayExp_app.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 214100	  19952	4346092	4580144	 45e330	RFSoC_IP06_10_DelayExp_app.elf
-'Finished building: RFSoC_IP06_10_DelayExp_app.elf.size'
-' '
-16:49:33 **** Incremental Build of configuration Release for project RFSoC_IP06_10_DelayExp_app_system ****
+make: Nothing to be done for 'all'.
+15:49:08 **** Incremental Build of configuration Release for project RFSoC_Controller_V1_0_app_system ****
 make all 
 Generating bif file for the system project
-generate_system_bif.bat 55133 E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif
-sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/RFSoC_IP06_10_DelayExp_plt.xpfm --sys_config RFSoC_IP06_10_DelayExp_plt --bif E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/Release/RFSoC_IP06_10_DelayExp_app.elf,psu_cortexa53_0
-creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit
-Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
+generate_system_bif.bat 62330 E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/RFSoC_Controller_V1_0.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app_system/Release/system.bif
+sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/RFSoC_Controller_V1_0.xpfm --sys_config RFSoC_Controller_V1_0 --bif E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/Release/RFSoC_Controller_V1_0_app.elf,psu_cortexa53_0
+creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/_ide/bitstream/TEST_02_Block_wrapper.bit
+Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN

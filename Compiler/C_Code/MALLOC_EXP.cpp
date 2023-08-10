@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "malloc.h"
 #include "xil_printf.h"
+#include "xil_cache.h"
 
 //Shared Memory Address
 #define STACK_START_PTR_ADDR 0x700010
@@ -12,15 +12,14 @@
 
 extern u8 _heap_start[];
 extern u8 _heap_end[];
+extern char8 HeapBase[];
+extern char8 HeapLimit[];
 
 int main(){
 	xil_printf("hello world\r\n");
 	xil_printf("%llx\r\n",_heap_start);
 	xil_printf("%llx\r\n",_heap_end);
-	int * a;
-	//a = (int *) malloc(sizeof(int));
-	//*a = 33;
-	//xil_printf("%d\r\n",a);
-	//free(a);
+	xil_printf("%llx\r\n",HeapBase);
+	xil_printf("%llx\r\n",HeapLimit);
 	return 0;
 }

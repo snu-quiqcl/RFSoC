@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;RFSoC_IP06_10_DelayExp_app/src/cpp_ex.cpp&apos;" deleteContents="false" description="Delete resource &apos;RFSoC_IP06_10_DelayExp_app/src/cpp_ex.cpp&apos;" element1="/RFSoC_IP06_10_DelayExp_app/src/cpp_ex.cpp" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1690729150124"/>
-</session>

@@ -1,7 +1,0 @@
-//arch = zynqmp; split = false; format = BIN
-the_ROM_image:
-{
-	[bootloader, destination_cpu = a53-0]E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_plt/export/RFSoC_IP06_10_DelayExp_plt/sw/RFSoC_IP06_10_DelayExp_plt/boot/fsbl.elf
-	[destination_device = pl]E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/_ide/bitstream/TEST_02_Block_wrapper.bit
-	[destination_cpu = a53-0]E:/RFSoC/GIT/RFSoC/VITIS_TEST/VITIS_WORKSPACE7/RFSoC_IP06_10_DelayExp_app/Debug/RFSoC_IP06_10_DelayExp_app.elf
-}

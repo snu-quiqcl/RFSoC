@@ -1,0 +1,10 @@
+15:49:08 **** Incremental Build of configuration Release for project RFSoC_Controller_V1_0_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62330 E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/RFSoC_Controller_V1_0.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app_system/Release/system.bif
+sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/RFSoC_Controller_V1_0.xpfm --sys_config RFSoC_Controller_V1_0 --bif E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/_ide/bitstream/TEST_02_Block_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/Release/RFSoC_Controller_V1_0_app.elf,psu_cortexa53_0
+creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/_ide/bitstream/TEST_02_Block_wrapper.bit
+Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:49:17 Build Finished (took 9s.409ms)
+
