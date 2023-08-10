@@ -1,7 +1,7 @@
 # QuIQCL RFSoC
 ## Hardware Project
 ### V1_0
-Vivado : .\RFSoC_Design_V1_0
+Vivado : .\RFSoC_Design_V1_0\n
 Vitis : .\Vitis\VITIS_WORKSAPCE
 RFDC Control through binary file(ELF) execution
 ## Software Project
