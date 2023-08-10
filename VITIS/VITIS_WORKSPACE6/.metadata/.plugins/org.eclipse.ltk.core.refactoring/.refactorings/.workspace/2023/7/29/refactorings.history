@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;RFSoC_IP06_07_baremetal_echo/src/simple_lexer.h&apos;" deleteContents="false" description="Delete resource &apos;RFSoC_IP06_07_baremetal_echo/src/simple_lexer.h&apos;" element1="/RFSoC_IP06_07_baremetal_echo/src/simple_lexer.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1689662439907"/>
-</session>

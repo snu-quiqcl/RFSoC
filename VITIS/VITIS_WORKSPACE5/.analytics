@@ -1,4 +1,0 @@
-timestamp=[2023-07-13 14:17:42], mode=WORKBENCH_START, duration=0:00:05.463, duration_ms=5463, data={}
-timestamp=[2023-07-13 14:17:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.527, duration_ms=527, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
-timestamp=[2023-07-13 14:17:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.942, duration_ms=2942, data={}
-timestamp=[2023-07-13 14:22:25], mode=PLATFORM_CREATION, duration=0:00:34.741, duration_ms=34741, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
