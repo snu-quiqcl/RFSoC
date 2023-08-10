@@ -1,6 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/RFSoC_TEST_block_0/ip/RFSoC_TEST_block_0_proc_sys_reset_0_0/sim/RFSoC_TEST_block_0_proc_sys_reset_0_0.vhd" \
-"../../../bd/RFSoC_TEST_block_0/ip/RFSoC_TEST_block_0_dds_compiler_0_0/sim/RFSoC_TEST_block_0_dds_compiler_0_0.vhd" \
-"../../../bd/RFSoC_TEST_block_0/ip/RFSoC_TEST_block_0_proc_sys_reset_1_0/sim/RFSoC_TEST_block_0_proc_sys_reset_1_0.vhd" \
-
-nosort

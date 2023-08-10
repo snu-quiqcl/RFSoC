@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/TEST/TEST_RFSoC_3/TEST_RFSoC_3.srcs/sim_1/new/testbench_rfsoc_0.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module testbench_rfsoc_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Jeonghyun/GIT/RFSoC/TEST/TEST_RFSoC_3/TEST_RFSoC_3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

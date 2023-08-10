@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../RFSoC_Simplified01.ip_user_files/bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_proc_sys_reset_0_0/sim/RFSoC_Simple_block_01_proc_sys_reset_0_0.vhd" \
-
-# Do not sort compile order
-nosort

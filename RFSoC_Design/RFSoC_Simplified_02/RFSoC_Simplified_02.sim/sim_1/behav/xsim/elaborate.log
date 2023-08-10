@@ -1,8 +1,0 @@
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto ef15a49341ef4109acba871b6d4a7246 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_8 -L zynq_ultra_ps_e_vip_v1_0_8 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L fifo_generator_v13_2_5 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TestBench00_behav xil_defaultlib.TestBench00 xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-2063] Module <AXI2FIFO> not found while processing module instance <inst> [C:/Jeonghyun/GIT/RFSoC/RFSoC_Design/RFSoC_Simplified_02/RFSoC_Simplified_02.ip_user_files/bd/RFSoC_Simple_block_02/ip/RFSoC_Simple_block_02_AXI2FIFO_0_0/sim/RFSoC_Simple_block_02_AXI2FIFO_0_0.sv:175]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

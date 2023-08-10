@@ -1,8 +1,0 @@
-Vivado Simulator 2020.2
-Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 27f98cd14ef248cd9b4abaa0156feba4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_rfsoc_0_behav xil_defaultlib.testbench_rfsoc_0 xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-2063] Module <usp_rf_data_converter_0> not found while processing module instance <rfdc> [C:/Jeonghyun/GIT/RFSoC/TEST/TEST_RFSoC_3/TEST_RFSoC_3.srcs/sim_1/new/testbench_rfsoc_0.sv:126]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

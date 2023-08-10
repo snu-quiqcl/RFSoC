@@ -1,4 +1,0 @@
-vhdl xil_defaultlib  \
-"../../../bd/RFSoC_Simple_block_01/ip/RFSoC_Simple_block_01_proc_sys_reset_0_0/sim/RFSoC_Simple_block_01_proc_sys_reset_0_0.vhd" \
-
-nosort
