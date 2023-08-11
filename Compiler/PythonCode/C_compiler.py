@@ -3,8 +3,12 @@
 Created on Tue Aug  1 23:27:53 2023
 
 @author: QC109_4
+aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T../MALLOC_EXP.ld -I../include mallocr.c ../_sbrk.c ../close.c ../write.c ../lseek.c ../read.c ../inbyte.c ../lib/libxil.a -o mallocr.o
+aarch64-none-elf-gcc -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T../MALLOC_EXP.ld -I../include ../init/start_custom.S mallocr.c ../_sbrk.c ../close.c ../write.c ../lseek.c ../read.c ../inbyte.c ../lib/libxil.a -o mallocr.o
+-> this works -> dependency problem...
 """
 import subprocess
+import os
 from elftools.elf.elffile import ELFFile
 from capstone import *
 
@@ -19,6 +23,7 @@ class Compiler:
         self.heap_start = 0x00
         self.heap_end = 0x00
         self.elf_data = None
+        self.use_make = False
         
     def read_elf_file(self, file_name):
         elf_file_name = '../C_Code/' + file_name + '.elf'
@@ -52,7 +57,7 @@ class Compiler:
                 if section.header['sh_type'] == 'SHT_SYMTAB':
                     # Iterate over all symbols in the symbol table
                     for symbol in section.iter_symbols():
-                        # print(symbol.name)
+                        print(symbol.name)
                         if symbol.name == '__stack_start':
                             self.stack_start = symbol.entry.st_value
                             print(f'STACK_START : \t{hex(self.stack_start)}')
@@ -104,50 +109,128 @@ class Compiler:
         return c_code
     
     def save_c_code_to_file(self, c_code, file_name):
-        output_filename = '../C_Code/' + file_name + '_array.c'
+        output_filename = '../C_Code/' + file_name + '_array.txt'
         with open(output_filename, 'w') as f:
             f.write(c_code)
             
     def compile_code(self, file_name):
         if self.do_compile == True:
-            # Define the command to be executed
-            cmd = [
-                        'aarch64-none-elf-gcc',
-                        '-march=armv8-a',
-                        '-mcpu=cortex-a53',
-                        '-nostartfiles',
-                        '-w',
-                        '-T', f'../C_Code/{file_name}.ld',
-                        '-I../C_Code//include',
-                        '-I../C_Code/stdlib',
-                        f'../C_Code/{file_name}.cpp',
-                        '../C_Code/stdlib/mallocr.c',
-                        '../C_Code/lib/libxil.a',
-                        '../C_Code/lib/libmetal.a',
-                        '../C_Code/lib/libxilpm.a',
-                        '../C_Code/_sbrk.c',
-                        #'../C_Code/_open.c',
-                        #'../C_Code/_exit.c',
-                        '../C_Code/close.c',
-                        '../C_Code/write.c',
-                        '../C_Code/lseek.c',
-                        '../C_Code/read.c',
-                        '../C_Code/inbyte.c',
-                        '../C_Code/init/start_custom.S',
-                        '-o', f'../C_Code/{file_name}.elf'
-                    ]
-    
-            # Execute the command
-            process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            stdout, stderr = process.communicate()
-    
-            # Check the return code
-            if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ../C_Code/{file_name}.elf has a LOAD segment with RWX permissions\n"):
-                print("Error Code")
-                raise Exception(stderr)
+            if self.use_make == False:
+                # Define the command to be executed
+                cmd = [
+                            'aarch64-none-elf-gcc',
+                            '-march=armv8-a',
+                            '-mcpu=cortex-a53',
+                            '-nostartfiles',
+                            '-w',
+                            '-T', f'../C_Code/{file_name}.ld',
+                            '-I../C_Code//include',
+                            f'../C_Code/{file_name}.c',
+                            '../C_Code/lib/libxil.a',
+                            '../C_Code/lib/libmetal.a',
+                            '../C_Code/lib/libxilpm.a',
+                            '../C_Code/init/start_custom.S',
+                            '../C_Code/stdlib/mallocr.c',
+                            '../C_Code/_sbrk.c',
+                            #'../C_Code/_open.c',
+                            #'../C_Code/_exit.c',
+                            '../C_Code/close.c',
+                            '../C_Code/write.c',
+                            '../C_Code/lseek.c',
+                            '../C_Code/read.c',
+                            '../C_Code/inbyte.c',
+                            '-o', f'../C_Code/{file_name}.elf'
+                        ]
+        
+                # Execute the command
+                process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                stdout, stderr = process.communicate()
+        
+                # Check the return code
+                if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ../C_Code/{file_name}.elf has a LOAD segment with RWX permissions\n"):
+                    print("Error Code")
+                    raise Exception(stderr)
+                else:
+                    print("Compilation successful.")
             else:
-                print("Compilation successful.")
+                Makefile_code = f"""
+# Define the compiler and compiler flags
+CC = aarch64-none-elf-gcc
+CFLAGS = -march=armv8-a -mcpu=cortex-a53 -nostartfiles -I ../include
+
+# Define the linker and linker flags
+LD = aarch64-none-elf-gcc
+LDFLAGS = -march=armv8-a -mcpu=cortex-a53 -nostartfiles -T {file_name}.ld  -I ../include
+ADD_LIB =../lib/libxil.a
+
+# List all source files (cpp files) in the current folder
+SRCS := $(wildcard *.c *.cpp)
+
+# List all assembly files in the current folder
+ASMS := $(wildcard *.S)
+
+# List all object files corresponding to the source files
+OBJS = $(SRCS:.c=.o) $(ASMS:.S=.o)
+
+# Define the final target executable
+TARGET = {file_name}.elf
+
+# Default rule: build the executable
+all: $(TARGET)
+
+# Rule to compile each source file into object files
+%.o: %.cpp
+	$(CC) $(CFLAGS) -c $< $(ADD_LIB) -o $@
+
+# Rule to compile each source file into object files2
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< $(ADD_LIB) -o $@
+
+# Rule to assemble each assembly source file into object files
+%.o: %.S
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Rule to build the target executable
+$(TARGET): $(OBJS)
+	$(LD) $(LDFLAGS) -o $@ $^ $(ADD_LIB)
+
+# Clean rule: remove generated files
+clean:
+	del {file_name}.elf
+	del $(OBJS)
+	del $(TARGET)
+
+#print all dirs
+get-dir:
+	$(ALL_DIRS)
+                """
+                current_directory = os.getcwd()
+                  
+                # Construct the desired directory path relative to the current directory
+                directory_path = os.path.join(current_directory, "..", "C_Code", file_name)
                 
+                # Normalize the path (resolve "..", "." etc.)
+                directory_path = os.path.normpath(directory_path)
+                  
+                # Check if the directory exists
+                if not os.path.exists(directory_path):
+                    # If not, create the directory
+                    os.makedirs(directory_path)
+                  
+                # Change the current working directory
+                os.chdir(directory_path)
+                with open('Makefile', 'w') as f:
+                    f.write(Makefile_code)
+                cmd = [
+                'make'
+                ]
+                process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+                stdout, stderr = process.communicate()
+                if stderr:
+                    print("Error Code")
+                    raise Exception(stderr)
+                else:
+                    print("Compilation successful.")
         else:
             print("No Compile")
     def create_TCP_packet(self):

@@ -11,7 +11,6 @@ extern "C" {
 
 #include <reent.h>
 
-#define POINTER_UINT unsigned _POINTER_INT
 #define SEPARATE_OBJECTS
 #define HAVE_MMAP 0
 #define MORECORE_CLEARS 0
@@ -28,7 +27,6 @@ extern "C" {
 #define RONEARG
 #define RDECL
 #define RERRNO errno
-#define RCALL
 #define RONECALL
 
 #ifndef HAVE_MMAP
@@ -36,7 +34,7 @@ extern "C" {
 #endif
 
 #ifndef MORECORE
-#define MORECORE sbrk
+#define MORECORE _sbrk
 #endif
 
 #ifndef MORECORE_FAILURE
@@ -735,7 +733,7 @@ static void malloc_extend_top( INTERNAL_SIZE_T nb)
         SIZE_SZ|PREV_INUSE;
       /* If possible, release the rest. */
       if (old_top_size >= MINSIZE) 
-        fREe(RCALL chunk2mem(old_top));
+        fREe( chunk2mem(old_top));
     }
   }
 
@@ -1053,7 +1051,7 @@ void * mALLOc( size_t bytes)
 #endif
 
     /* Try to extend */
-    malloc_extend_top(RCALL nb);
+    malloc_extend_top( nb);
     remainder_size = long_sub_size_t(chunksize(top), nb);
     if (chunksize(top) < nb || remainder_size < (long)MINSIZE)
     {
@@ -1145,7 +1143,7 @@ void fREe( void * mem)
     set_head(p, sz | PREV_INUSE);
     top = p;
     if ((unsigned long)(sz) >= (unsigned long)trim_threshold) 
-      malloc_trim(RCALL top_pad); 
+      malloc_trim( top_pad); 
     
     return;
   }
@@ -1249,12 +1247,12 @@ void * rEALLOc( void* oldmem, size_t bytes)
   mchunkptr fwd;              /* misc temp for linking */
 
 #ifdef REALLOC_ZERO_BYTES_FREES
-  if (bytes == 0) { fREe(RCALL oldmem); return 0; }
+  if (bytes == 0) { fREe( oldmem); return 0; }
 #endif
 
 
   /* realloc of null is supposed to be same as malloc */
-  if (oldmem == 0) return mALLOc(RCALL bytes);
+  if (oldmem == 0) return mALLOc( bytes);
 
   
 
@@ -1289,7 +1287,7 @@ void * rEALLOc( void* oldmem, size_t bytes)
       return oldmem; /* do nothing */
     }
     /* Must alloc, copy, free. */
-    newmem = mALLOc(RCALL bytes);
+    newmem = mALLOc( bytes);
     if (newmem == 0)
     {
       
@@ -1398,7 +1396,7 @@ void * rEALLOc( void* oldmem, size_t bytes)
 
     /* Must allocate */
 
-    newmem = mALLOc (RCALL bytes);
+    newmem = mALLOc ( bytes);
 
     if (newmem == 0)  /* propagate failure */
     {
@@ -1418,7 +1416,7 @@ void * rEALLOc( void* oldmem, size_t bytes)
 
     /* Otherwise copy, free, and exit */
     MALLOC_COPY(newmem, oldmem, oldsize - SIZE_SZ);
-    fREe(RCALL oldmem);
+    fREe( oldmem);
     
     return newmem;
   }
@@ -1434,7 +1432,7 @@ void * rEALLOc( void* oldmem, size_t bytes)
     set_head_size(newp, nb);
     set_head(remainder, remainder_size | PREV_INUSE);
     set_inuse_bit_at_offset(remainder, remainder_size);
-    fREe(RCALL chunk2mem(remainder)); /* let free() deal with it */
+    fREe( chunk2mem(remainder)); /* let free() deal with it */
   }
   else
   {
@@ -1481,7 +1479,7 @@ void * mEMALIGn( size_t alignment, size_t bytes)
 
   /* If need less alignment than we give anyway, just relay to malloc */
 
-  if (alignment <= MALLOC_ALIGNMENT) return mALLOc(RCALL bytes);
+  if (alignment <= MALLOC_ALIGNMENT) return mALLOc( bytes);
 
   /* Otherwise, ensure that it is at least a minimum chunk size */
   
@@ -1498,7 +1496,7 @@ void * mEMALIGn( size_t alignment, size_t bytes)
     return 0;
   }
 
-  m  = (char*)(mALLOc(RCALL nb + alignment + MINSIZE));
+  m  = (char*)(mALLOc( nb + alignment + MINSIZE));
 
   if (m == 0) return 0; /* propagate failure */
 
@@ -1549,7 +1547,7 @@ void * mEMALIGn( size_t alignment, size_t bytes)
     set_head(newp, newsize | PREV_INUSE);
     set_inuse_bit_at_offset(newp, newsize);
     set_head_size(p, leadsize);
-    fREe(RCALL chunk2mem(p));
+    fREe( chunk2mem(p));
     p = newp;
 
     assert (newsize >= nb && (((unsigned long)(chunk2mem(p))) % alignment) == 0);
@@ -1564,7 +1562,7 @@ void * mEMALIGn( size_t alignment, size_t bytes)
     remainder = chunk_at_offset(p, nb);
     set_head(remainder, remainder_size | PREV_INUSE);
     set_head_size(p, nb);
-    fREe(RCALL chunk2mem(remainder));
+    fREe( chunk2mem(remainder));
   }
 
   check_inuse_chunk(p);
@@ -1600,7 +1598,7 @@ void * cALLOc( size_t n, size_t elem_size)
   oldtopsize = chunksize(top);
 #endif
 
-  mem = mALLOc (RCALL sz);
+  mem = mALLOc ( sz);
 
   if (mem == 0) 
   {
@@ -1647,4 +1645,10 @@ void * cALLOc( size_t n, size_t elem_size)
   cfree just calls free. It is needed/defined on some systems
   that pair it with calloc, presumably for odd historical reasons.
 
+*/
+/*
+int main(){
+	int * a;
+	a = malloc(sizeof(int));
+}
 */
