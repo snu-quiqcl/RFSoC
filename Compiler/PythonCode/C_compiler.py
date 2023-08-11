@@ -40,18 +40,19 @@ class Compiler:
             
             self.entry_point = elf_file.header.e_entry
             
-            output_file = "../C_Code/ELF_BIN.txt"
-            with open(output_file, 'w') as output_f:
-                output_f.write("Contents of ELF file:\n")
-                hex_dump = [" ".join(f"{b:02X}" for b in self.elf_data[i:i+16]) for i in range(0, len(self.elf_data), 16)]
-                for line in hex_dump:
-                    output_f.write(line + "\n")
+            # output_file = "../C_Code/ELF_BIN.txt"
+            # with open(output_file, 'w') as output_f:
+            #     output_f.write("Contents of ELF file:\n")
+            #     hex_dump = [" ".join(f"{b:02X}" for b in self.elf_data[i:i+16]) for i in range(0, len(self.elf_data), 16)]
+            #     for line in hex_dump:
+            #         output_f.write(line + "\n")
             
             for section in elf_file.iter_sections():
                 # Check if the section is of type SHT_SYMTAB (symbol table)
                 if section.header['sh_type'] == 'SHT_SYMTAB':
                     # Iterate over all symbols in the symbol table
                     for symbol in section.iter_symbols():
+                        # print(symbol.name)
                         if symbol.name == '__stack_start':
                             self.stack_start = symbol.entry.st_value
                             print(f'STACK_START : \t{hex(self.stack_start)}')
@@ -64,6 +65,7 @@ class Compiler:
                         elif symbol.name == '_heap_end':
                             self.heap_end = symbol.entry.st_value
                             print(f'HEAP_END : \t\t{hex(self.heap_end)}')
+                            
 
             # # You can also access the symbol table and print information about symbols
             # if '.symtab' in elf_file:
@@ -117,10 +119,21 @@ class Compiler:
                         '-w',
                         '-T', f'../C_Code/{file_name}.ld',
                         '-I../C_Code//include',
+                        '-I../C_Code/stdlib',
                         f'../C_Code/{file_name}.cpp',
+                        '../C_Code/stdlib/mallocr.c',
                         '../C_Code/lib/libxil.a',
                         '../C_Code/lib/libmetal.a',
                         '../C_Code/lib/libxilpm.a',
+                        '../C_Code/_sbrk.c',
+                        #'../C_Code/_open.c',
+                        #'../C_Code/_exit.c',
+                        '../C_Code/close.c',
+                        '../C_Code/write.c',
+                        '../C_Code/lseek.c',
+                        '../C_Code/read.c',
+                        '../C_Code/inbyte.c',
+                        '../C_Code/init/start_custom.S',
                         '-o', f'../C_Code/{file_name}.elf'
                     ]
     

@@ -6,6 +6,8 @@
 
 #include <errno.h>
 #include "xil_types.h"
+#include "xil_printf.h"
+#include "memory_region.h"
 #ifdef __cplusplus
 extern "C" {
 	__attribute__((weak)) char8 *sbrk (s32 nbytes);

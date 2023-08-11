@@ -1,6 +1,6 @@
-_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x1000;
-_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x1000;
-_START = 0x0000;
+_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0xD000;
+_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0xD000;
+_DRAM_BASE_OFFSET = 0xf00000;
 /* Define Memories in the system */
 
 MEMORY
@@ -13,7 +13,7 @@ MEMORY
 
 /* Specify the default entry point to the program */
 
-ENTRY(main)
+ENTRY(_start)
 
 /* Define the sections, and where they are mapped in memory */
 
@@ -22,10 +22,7 @@ SECTIONS
 .text : {
    *(.text)
    *(.text.*)
-} > psu_ddr_0_MEM_0
-
-.interp : {
-   KEEP (*(.interp))
+   _etext = .;
 } > psu_ddr_0_MEM_0
 
 .rodata : {
@@ -36,6 +33,14 @@ SECTIONS
    __rodata_end = .;
 } > psu_ddr_0_MEM_0
 
+.data : {
+   . = ALIGN(64);
+   __data_start__ = .;
+   *(.data)
+   *(.data.*)
+   __data_end__ = .;
+} > psu_ddr_0_MEM_0
+
 .bss (NOLOAD) : {
    . = ALIGN(64);
    __bss_start__ = .;
@@ -43,14 +48,6 @@ SECTIONS
    *(.bss.*)
    . = ALIGN(64);
    __bss_end__ = .;
-} > psu_ddr_0_MEM_0
-
-.data : {
-   . = ALIGN(64);
-   __data1_start = .;
-   *(.data)
-   *(.data.*)
-   __data_end = .;
 } > psu_ddr_0_MEM_0
 
 /* Generate Stack and Heap definitions */

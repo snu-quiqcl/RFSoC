@@ -11,6 +11,7 @@
 #include "xparameters.h"
 #include "xil_io.h"
 #include "xil_cache.h"
+#include "malloc.h"
 
 #ifndef __BAREMETAL__
 #define __BAREMETAL__
