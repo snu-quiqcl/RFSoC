@@ -15,7 +15,11 @@ Simple function, python class to C++ class and function coversion done
 Python Code : .\Compiler\PythonCode\C_compiler.py
 
 Using 'aarch64-none-elf-gcc' GNU compiler and including libraries made by Xilinx, make ELF file which will run on RFSoC. 
-Data is send via TCP.
+Data is send via TCP. 
+BSS section initialization works through ./Compiler/C_Code/init/startup.S code.
+Without BSS initialization, static variables without initialization have a garbage value, and this makes machine malfunction(e.g. malloc).
+Linker file makes sections of code and set origin of code(Note that if you set wrong origin, code will not work!!)
+Initial malloc requires very big memory size, so you have to big enough heap size to prevent from halt of machine(This is very important!).
 
 ## TODO
 ### PCB
