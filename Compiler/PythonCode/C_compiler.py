@@ -250,7 +250,7 @@ if __name__ == "__main__":
     do_compile = True
     
     comp = Compiler()
-    file_name = "MALLOC_EXP"
+    file_name = "VECTOR_EXP"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code(file_name)

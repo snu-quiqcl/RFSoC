@@ -1,45 +1,6 @@
-18:43:57 **** Incremental Build of configuration Release for project RFSoC_Controller_V1_0_app ****
+00:40:35 **** Incremental Build of configuration Release for project RFSoC_Controller_V1_0_app ****
 make all 
-'Building file: ../src/run_binary.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/run_binary.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/sw/RFSoC_Controller_V1_0/standalone_domain/bspinclude/include -MMD -MP -MF"src/run_binary.d" -MT"src/run_binary.o" -o "src/run_binary.o" "../src/run_binary.c"
-In file included from ../src/run_binary.c:4:
-../src/run_binary.c: In function 'run_binary':
-../src/rfdc_controller.h:44:27: warning: initialization of 'volatile unsigned char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-   44 | #define DRAM_BASE_ADDRESS 0xf00000
-      |                           ^~~~~~~~
-../src/run_binary.c:32:39: note: in expansion of macro 'DRAM_BASE_ADDRESS'
-   32 |  volatile unsigned char * base_addr = DRAM_BASE_ADDRESS;
-      |                                       ^~~~~~~~~~~~~~~~~
-../src/run_binary.c:32:27: warning: unused variable 'base_addr' [-Wunused-variable]
-   32 |  volatile unsigned char * base_addr = DRAM_BASE_ADDRESS;
-      |                           ^~~~~~~~~
-../src/run_binary.c:30:11: warning: unused variable 'main_addr' [-Wunused-variable]
-   30 |  uint64_t main_addr = bin_entry_point;
-      |           ^~~~~~~~~
-../src/run_binary.c:29:11: warning: unused variable 'sp_val' [-Wunused-variable]
-   29 |  uint64_t sp_val = DRAM_BASE_ADDRESS + bin_stack_start;
-      |           ^~~~~~
-../src/run_binary.c:139:1: warning: control reaches end of non-void function [-Wreturn-type]
-  139 | }
-      | ^
-../src/run_binary.c: In function 'save_binary':
-../src/run_binary.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
-  147 | }
-      | ^
-'Finished building: ../src/run_binary.c'
-' '
-'Building target: RFSoC_Controller_V1_0_app.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/sw/RFSoC_Controller_V1_0/standalone_domain/bsplib/lib -o "RFSoC_Controller_V1_0_app.elf"  ./src/clock_config.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/run_binary.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
-'Finished building target: RFSoC_Controller_V1_0_app.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size RFSoC_Controller_V1_0_app.elf  |tee "RFSoC_Controller_V1_0_app.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 130320	  19952	4346148	4496420	 449c24	RFSoC_Controller_V1_0_app.elf
-'Finished building: RFSoC_Controller_V1_0_app.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-18:43:58 Build Finished (took 1s.364ms)
+00:40:35 Build Finished (took 550ms)
 

@@ -32,3 +32,8 @@ bsp reload
 bsp reload
 platform active {RFSoC_Controller_V1_0}
 platform generate -domains 
+platform active {RFSoC_Controller_V1_0}
+bsp reload
+bsp config compiler "aarch64-none-elf-gcc"
+bsp reload
+platform generate -domains 
