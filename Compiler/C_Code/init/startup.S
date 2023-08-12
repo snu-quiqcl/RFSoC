@@ -1,4 +1,4 @@
-	.file 	"start_custom.S"
+	.file 	"startup.S"
 
 .Lbss_end:
 	.quad	__bss_end__
