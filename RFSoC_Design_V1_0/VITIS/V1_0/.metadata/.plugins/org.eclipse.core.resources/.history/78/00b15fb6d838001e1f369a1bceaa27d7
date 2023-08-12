@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="RFSoC_Controller_V1_0_app" location="E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app" platform="E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/RFSoC_Controller_V1_0.xpfm" platformUID="xilinx:zcu111::0.0(custom)" systemProject="RFSoC_Controller_V1_0_app_system" sysConfig="RFSoC_Controller_V1_0" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="21f6669eb086d27912fad19303d821d7">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.498709333" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1603630478" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

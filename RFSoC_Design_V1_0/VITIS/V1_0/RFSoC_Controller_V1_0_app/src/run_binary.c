@@ -33,19 +33,19 @@ int64_t run_binary(){
 	volatile int64_t * reg_addr;
 
 	reg_addr = (volatile int64_t *)STACK_START_PTR_ADDR;
-	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_stack_start);
+	*(reg_addr) = (volatile int64_t)(bin_stack_start);
 
 	reg_addr = (volatile int64_t *)STACK_END_PTR_ADDR;
-	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_stack_end);
+	*(reg_addr) = (volatile int64_t)(bin_stack_end);
 
 	reg_addr = (volatile int64_t *)HEAP_START_PTR_ADDR;
-	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_heap_start);
+	*(reg_addr) = (volatile int64_t)(bin_heap_start);
 
 	reg_addr = (volatile int64_t *)HEAP_END_PTR_ADDR;
-	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_heap_start);
+	*(reg_addr) = (volatile int64_t)(bin_heap_start);
 
 	reg_addr = (volatile int64_t *)ENTRY_PTR_ADDR;
-	*(reg_addr) = (volatile int64_t)(DRAM_BASE_ADDRESS + bin_entry_point);
+	*(reg_addr) = (volatile int64_t)(bin_entry_point);
 
 	Xil_DCacheFlush();
 	Xil_ICacheInvalidate();

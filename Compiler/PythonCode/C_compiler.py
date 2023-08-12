@@ -26,7 +26,7 @@ class Compiler:
         self.use_make = False
         
     def read_elf_file(self, file_name):
-        elf_file_name = '../C_Code/' + file_name + '.elf'
+        elf_file_name = f'../C_Code/{file_name}/' + file_name + '.elf'
         with open(elf_file_name, 'rb') as f:
             self.elf_data = f.read()
             elf_file = ELFFile(f)
@@ -57,7 +57,7 @@ class Compiler:
                 if section.header['sh_type'] == 'SHT_SYMTAB':
                     # Iterate over all symbols in the symbol table
                     for symbol in section.iter_symbols():
-                        print(symbol.name)
+                        # print(symbol.name)
                         if symbol.name == '__stack_start':
                             self.stack_start = symbol.entry.st_value
                             print(f'STACK_START : \t{hex(self.stack_start)}')
@@ -78,19 +78,7 @@ class Compiler:
             #     for symbol in elf_file.get_section_by_name('.symtab').iter_symbols():
             #         print(f"  {symbol.name} (value: 0x{symbol['st_value']:x}, size: {symbol['st_size']})")
             
-            text_section = elf_file.get_section_by_name('.text')
-            elf_text = ""
-            if text_section:
-                # Get the data from the section
-                data = text_section.data()
-                
-                md = Cs(CS_ARCH_ARM64, CS_MODE_ARM)
-                for insn in md.disasm(data, 0x0000):  # Replace 0x1000 with the address of the start of the section
-                    elf_text += f"{insn.address}    {insn.mnemonic} {insn.op_str}\n"
-                with open("../C_Code/Instruction.txt", 'w') as f:
-                    f.write(elf_text)
-            else:
-                print("No .text section found in the ELF file.")
+            
         return self.elf_data
     
     def create_c_code_array(self, data):
@@ -109,7 +97,7 @@ class Compiler:
         return c_code
     
     def save_c_code_to_file(self, c_code, file_name):
-        output_filename = '../C_Code/' + file_name + '_array.txt'
+        output_filename = f'../C_Code/{file_name}/' + file_name + '_array.txt'
         with open(output_filename, 'w') as f:
             f.write(c_code)
             
@@ -123,23 +111,20 @@ class Compiler:
                             '-mcpu=cortex-a53',
                             '-nostartfiles',
                             '-w',
-                            '-T', f'../C_Code/{file_name}.ld',
+                            '-T', f'../C_Code/{file_name}/{file_name}.ld',
                             '-I../C_Code//include',
-                            f'../C_Code/{file_name}.c',
+                            f'../C_Code/{file_name}/{file_name}.cpp',
                             '../C_Code/lib/libxil.a',
                             '../C_Code/lib/libmetal.a',
                             '../C_Code/lib/libxilpm.a',
-                            '../C_Code/init/start_custom.S',
-                            '../C_Code/stdlib/mallocr.c',
-                            '../C_Code/_sbrk.c',
-                            #'../C_Code/_open.c',
-                            #'../C_Code/_exit.c',
-                            '../C_Code/close.c',
-                            '../C_Code/write.c',
-                            '../C_Code/lseek.c',
-                            '../C_Code/read.c',
-                            '../C_Code/inbyte.c',
-                            '-o', f'../C_Code/{file_name}.elf'
+                            '../C_Code/init/startup.S',
+                            f'../C_Code/{file_name}/_sbrk.c',
+                            f'../C_Code/{file_name}/close.c',
+                            f'../C_Code/{file_name}/write.c',
+                            f'../C_Code/{file_name}/lseek.c',
+                            f'../C_Code/{file_name}/read.c',
+                            f'../C_Code/{file_name}/inbyte.c',
+                            '-o', f'../C_Code/{file_name}/{file_name}.elf'
                         ]
         
                 # Execute the command
@@ -147,7 +132,7 @@ class Compiler:
                 stdout, stderr = process.communicate()
         
                 # Check the return code
-                if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ../C_Code/{file_name}.elf has a LOAD segment with RWX permissions\n"):
+                if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ../C_Code/{file_name}/{file_name}.elf has a LOAD segment with RWX permissions\n"):
                     print("Error Code")
                     raise Exception(stderr)
                 else:
@@ -167,7 +152,7 @@ ADD_LIB =../lib/libxil.a
 SRCS := $(wildcard *.c *.cpp)
 
 # List all assembly files in the current folder
-ASMS := $(wildcard *.S)
+ASMS := ../init/startup.S
 
 # List all object files corresponding to the source files
 OBJS = $(SRCS:.c=.o) $(ASMS:.S=.o)

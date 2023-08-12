@@ -24,9 +24,9 @@ set mode [expr [mrd -value 0xFF5E0200] & 0xf]
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0/export/RFSoC_Controller_V1_0/sw/RFSoC_Controller_V1_0/boot/fsbl.elf
-set bp_15_35_fsbl_bp [bpadd -addr &XFsbl_Exit]
+set bp_55_18_fsbl_bp [bpadd -addr &XFsbl_Exit]
 con -block -timeout 60
-bpremove $bp_15_35_fsbl_bp
+bpremove $bp_55_18_fsbl_bp
 targets -set -nocase -filter {name =~ "*A53*#0"}
 rst -processor
 dow E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_0/VITIS/V1_0/RFSoC_Controller_V1_0_app/Release/RFSoC_Controller_V1_0_app.elf

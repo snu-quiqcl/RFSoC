@@ -1,4 +1,6 @@
 #include "custom_malloc.h"
+#include "xil_printf.h"
+#include "memory_region.h"
 #include <stddef.h>
 
 #ifdef __cplusplus
@@ -661,6 +663,7 @@ static void malloc_extend_top( INTERNAL_SIZE_T nb)
     sbrk_size = (sbrk_size + (pagesz - 1)) & ~(pagesz - 1);
 
   brk = (char*)(MORECORE (sbrk_size));
+  xil_printf("new brk: %llx\r\n",brk);
 
   /* Fail if sbrk failed or if a foreign sbrk call killed our space */
   if (brk == (char*)(MORECORE_FAILURE) || 
@@ -828,9 +831,11 @@ void * mALLOc( size_t bytes)
 
   INTERNAL_SIZE_T nb  = request2size(bytes);  /* padded request size; */
 
+  xil_printf("This is Malloc Function\r\n");
   /* Check for overflow and just fail, if so. */
   if (nb > INT_MAX || nb < bytes)
   {
+    xil_printf("Error\r\n");
     RERRNO = ENOMEM;
     return 0;
   }
@@ -839,7 +844,9 @@ void * mALLOc( size_t bytes)
 
   if (is_small_request(nb))  /* Faster version for small requests */
   {
-    idx = smallbin_index(nb); 
+    xil_printf("this is small request\r\n");
+    idx = smallbin_index(nb);
+    xil_printf("%llx\r\n",idx);
 
     /* No traversal or size check necessary for small bins.  */
 
@@ -850,16 +857,22 @@ void * mALLOc( size_t bytes)
     /* Also scan the next one, since it would have a remainder < MINSIZE */
     if (victim == q)
     {
+      xil_printf("victim == q\r\n");
       q = next_bin(q);
       victim = last(q);
     }
 #endif
     if (victim != q)
     {
+      xil_printf("victim != q\r\n");
       victim_size = chunksize(victim);
+      xil_printf("victim_size = %d\r\n",victim_size);
       unlink(victim, bck, fwd);
+      xil_printf("unlink\r\n");
       set_inuse_bit_at_offset(victim, victim_size);
+      xil_printf("set_inuse_bit_at_offset\r\n");
       check_malloced_chunk(victim, nb);
+      xil_printf("check malloced chunk\r\n");
       
       return chunk2mem(victim);
     }
@@ -869,6 +882,7 @@ void * mALLOc( size_t bytes)
   }
   else
   {
+    xil_printf("victim == q and MALLOC_ALIGN ==16\r\n");
     idx = bin_index(nb);
     bin = bin_at(idx);
 
@@ -1051,16 +1065,22 @@ void * mALLOc( size_t bytes)
 #endif
 
     /* Try to extend */
+    xil_printf("Extend Top of Heap\r\n");
     malloc_extend_top( nb);
     remainder_size = long_sub_size_t(chunksize(top), nb);
+    xil_printf("remainder size = %llx\r\n",remainder_size);
+    xil_printf("chunckise(top) = %llx\r\n",chunksize(top));
+    xil_printf("top = %llx\r\n",top);
     if (chunksize(top) < nb || remainder_size < (long)MINSIZE)
     {
+      xil_printf("Propagate failed\r\n");
       
       return 0; /* propagate failure */
     }
   }
 
   victim = top;
+  xil_printf("%llx\r\n",victim);
   set_head(victim, nb | PREV_INUSE);
   top = chunk_at_offset(victim, nb);
   set_head(top, remainder_size | PREV_INUSE);
