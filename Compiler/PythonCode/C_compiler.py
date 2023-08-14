@@ -24,6 +24,7 @@ class Compiler:
         self.heap_end = 0x00
         self.elf_data = None
         self.use_make = False
+        self.is_cpp = False
         
     def read_elf_file(self, file_name):
         elf_file_name = f'../C_Code/{file_name}/' + file_name + '.elf'
@@ -113,7 +114,13 @@ class Compiler:
                             '-w',
                             '-T', f'../C_Code/{file_name}/{file_name}.ld',
                             '-I../C_Code//include',
-                            f'../C_Code/{file_name}/{file_name}.cpp',
+                        ]
+                if self.is_cpp == True:
+                    cmd += [f'../C_Code/{file_name}/{file_name}.cpp']
+                else:
+                    cmd += [f'../C_Code/{file_name}/{file_name}.c']
+                
+                cmd += [
                             '../C_Code/lib/libxil.a',
                             '../C_Code/lib/libmetal.a',
                             '../C_Code/lib/libxilpm.a',
@@ -250,7 +257,7 @@ if __name__ == "__main__":
     do_compile = True
     
     comp = Compiler()
-    file_name = "VECTOR_EXP"
+    file_name = "EX_cython"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code(file_name)

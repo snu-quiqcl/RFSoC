@@ -541,21 +541,6 @@ class interpreter:
             f.write(c_code)
 
 if __name__ == "__main__":
-#     python_code = """
-# def foo(a: int = 10) -> char:
-#     b:int = a + 10
-#     30
-#     10+90
-#     goo(20+goo(30))
-#     a = 20
-#     return b
-
-# def bar(x: int, y: float = 10.3) -> int:
-#     z = x * (y + foo(10))
-#     z = 30 + 60
-#     return z
-# """
-
     python_code = """
 class dds:
     def __init__(self, a:int = 3):
@@ -604,7 +589,10 @@ def foo( a:int = 10 ):
     print(a)
 """
     interp = interpreter()
-    c_code = interp.python_to_c(python_code)
+    c_code = r'#include <stdio.h>' + '\r\n'
+    
+    c_code += '\r\n'
+    c_code += interp.python_to_c(python_code)
     print('Converted C')
     print('##################################################################')
     print('##################################################################')
