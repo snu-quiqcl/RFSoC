@@ -24,7 +24,7 @@ class Compiler:
         self.heap_end = 0x00
         self.elf_data = None
         self.use_make = False
-        self.is_cpp = False
+        self.is_cpp = True
         
     def read_elf_file(self, file_name):
         elf_file_name = f'../C_Code/{file_name}/' + file_name + '.elf'
@@ -107,7 +107,7 @@ class Compiler:
             if self.use_make == False:
                 # Define the command to be executed
                 cmd = [
-                            'aarch64-none-elf-gcc',
+                            'aarch64-none-elf-g++',                             #g++ also works
                             '-march=armv8-a',
                             '-mcpu=cortex-a53',
                             '-nostartfiles',
@@ -257,7 +257,7 @@ if __name__ == "__main__":
     do_compile = True
     
     comp = Compiler()
-    file_name = "EX_cython"
+    file_name = "VECTOR_EXP"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code(file_name)

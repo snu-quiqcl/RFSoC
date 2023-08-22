@@ -9,5 +9,5 @@ from distutils.core import setup
 from Cython.Build import cythonize
 
 setup(
-    ext_modules = cythonize("EX_cython.pyx", annotate=True)
+    ext_modules = cythonize("EX_cython2.py", annotate=True)
 )

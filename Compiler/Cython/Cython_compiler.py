@@ -24,7 +24,7 @@ class Compiler:
         self.heap_end = 0x00
         self.elf_data = None
         self.use_make = False
-        self.is_cpp = False
+        self.is_cpp = True
         
     def read_elf_file(self, file_name):
         elf_file_name = f'../C_Code/{file_name}/' + file_name + '.elf'
@@ -107,13 +107,19 @@ class Compiler:
         for dirpath, _, _ in os.walk(root):
             directory_list.append(dirpath)
         return directory_list
-            
+    def get_file_list(self, directory_path):
+        file_list = []
+        for filename in os.listdir(directory_path):
+            if os.path.isfile(os.path.join(directory_path, filename)):
+                file_list.append(filename)
+        return file_list
+    
     def compile_code(self, file_name):
         if self.do_compile == True:
             if self.use_make == False:
                 # Define the command to be executed
                 cmd = [
-                            'aarch64-none-elf-gcc',
+                            'aarch64-none-elf-g++',
                             '-march=armv8-a',
                             '-mcpu=cortex-a53',
                             '-nostartfiles',
@@ -137,6 +143,29 @@ class Compiler:
                 else:
                     cmd += [f'./{file_name}/{file_name}.c']
                 
+                # Replace 'path/to/your/directory' with the actual directory path
+                
+                # directory_paths = [
+                #             './lib'
+                #         ]
+                
+                # for directory_path in directory_paths:
+                #     files_in_directory = self.get_file_list(directory_path)
+                #     cmd += files_in_directory
+                
+                cmd += [
+                            './lib/libxil.a',
+                            './lib/libmetal.a',
+                            './lib/libxilpm.a',
+                            './init/startup.S',
+                            f'./{file_name}/_sbrk.c',
+                            f'./{file_name}/close.c',
+                            f'./{file_name}/write.c',
+                            f'./{file_name}/lseek.c',
+                            f'./{file_name}/read.c',
+                            f'./{file_name}/inbyte.c'
+                        ]
+                
                 cmd += [
                             '-o', f'./{file_name}/{file_name}.elf'
                         ]
@@ -148,7 +177,7 @@ class Compiler:
                 stdout, stderr = process.communicate()
         
                 # Check the return code
-                if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ../C_Code/{file_name}/{file_name}.elf has a LOAD segment with RWX permissions\n"):
+                if stderr and (stderr != f"c:/program files (x86)/arm gnu toolchain aarch64-none-elf/12.3 rel1/bin/../lib/gcc/aarch64-none-elf/12.3.1/../../../../aarch64-none-elf/bin/ld.exe: warning: ./{file_name}/{file_name}.elf has a LOAD segment with RWX permissions\n"):
                     print("Error Code")
                     raise Exception(stderr)
                 else:
@@ -266,7 +295,7 @@ if __name__ == "__main__":
     do_compile = True
     
     comp = Compiler()
-    file_name = "EX_cython"
+    file_name = "VECTOR_EXP"
     #Compile C Code
     comp.do_compile = do_compile
     comp.compile_code(file_name)

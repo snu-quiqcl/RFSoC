@@ -1,0 +1,39 @@
+//
+function Bloch1(du,u,p1,t)
+           if t < 10
+               du[1] = -u[1]+p1[3]*u[2]
+               du[2] = -u[2]-p1[3]*u[1]+p1[1]*u[3]
+               du[3] = -p1[4]*(1.0+u[3])-p1[1]*u[2]
+           else
+               du[1] = -u[1]+50*u[2]
+               du[2] = -u[2]-50*u[1]
+               du[3] = -p1[4]*(1.0+u[3])
+           end
+       end
+
+DATA
+find . -name "*" -exec perl -pi -e 's/]/\n/g' {} \;
+find . -name "*" -exec perl -pi -e 's/,//g' {} \;
+find . -name "*" -exec perl -pi -e 's/\[//g' {} \;
+
+DATA_T
+find . -name "*" -exec perl -pi -e 's/,/\n/g' {} \;
+find . -name "*" -exec perl -pi -e 's/\[/\n/g' {} \;
+find . -name "*" -exec perl -pi -e 's/\]/\n/g' {} \;
+
+//
+function Bloch2(du,u,p2,t)
+           if t < 10
+               du[1] = -u[1]+p2[3]*u[2]
+               du[2] = -u[2]-p2[3]*u[1]+p2[1]*u[3]
+               du[3] = -p2[4]*(1.0+u[3])-p2[1]*u[2]
+           elseif 10 <= t && t < 20
+               du[1] = -u[1]+p2[7]*u[2]
+               du[2] = -u[2]-p2[7]*u[1]+p2[5]*u[3]
+               du[3] = -p2[8]*(1.0+u[3])-p2[5]*u[2]
+           else
+               du[1] = -u[1]+p2[3]*u[2]
+               du[2] = -u[2]-p2[3]*u[1]+p2[1]*u[3]
+               du[3] = -p2[4]*(1.0+u[3])-p2[1]*u[2]
+           end
+       end

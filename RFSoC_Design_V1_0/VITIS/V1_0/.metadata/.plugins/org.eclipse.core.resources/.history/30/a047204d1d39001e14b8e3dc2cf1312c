@@ -1,7 +1,0 @@
-#include <vector>
-#include <iostream>
-#include "rfdc_controller.h"
-
-void vector_make(){
-	vector<int> v;
-}
