@@ -1,8 +1,8 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Wed Aug 23 12:33:26 2023
-//Host        : DESKTOP-MCBJ7EB running 64-bit major release  (build 9200)
+//Date        : Wed Aug 23 13:25:10 2023
+//Host        : LAPTOP-ETOV1IS0 running 64-bit major release  (build 9200)
 //Command     : generate_target TEST_02_Block.bd
 //Design      : TEST_02_Block
 //Purpose     : IP block netlist
