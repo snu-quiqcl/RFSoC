@@ -72,6 +72,23 @@ def generate_xilinx_dds_ip(folder_directory, total_dds_num):
     tcl_code = tcl_code.replace("\\","/")
     return tcl_code
 
+def generate_xilinx_RF_converter(folder_directory, total_rfdc_num):
+    tcl_code = ''
+    tcl_code += f'create_ip -dir {folder_directory} -name usp_rf_data_converter -vendor xilinx.com -library ip -version 2.4 -module_name usp_rf_data_converter_{total_rfdc_num}'
+    tcl_code += f'set_property -dict [list CONFIG.Analog_Detection {{0}} CONFIG.ADC0_Enable {{0}}'
+    tcl_code += f' CONFIG.ADC0_Fabric_Freq {{0.0}} CONFIG.ADC_Slice00_Enable {{false}}'
+    tcl_code += f' CONFIG.ADC_Decimation_Mode00 {{0}} CONFIG.ADC_Mixer_Type00 {{3}}'
+    tcl_code += f' CONFIG.ADC_RESERVED_1_00 {{0}} CONFIG.ADC_Slice01_Enable {{false}}'
+    tcl_code += f' CONFIG.ADC_Decimation_Mode01 {{0}} CONFIG.ADC_Mixer_Type01 {{3}}'
+    tcl_code += f' CONFIG.ADC_RESERVED_1_02 {{0}} CONFIG.ADC_OBS02 {{0}} CONFIG.DAC0_Enable {{1}}'
+    tcl_code += f' CONFIG.DAC0_Sampling_Rate {{1.6}} CONFIG.DAC0_Refclk_Freq {{1600.000}}'
+    tcl_code += f' CONFIG.DAC0_Outclk_Freq {{100.000}} CONFIG.DAC0_Fabric_Freq {{100.000}}'
+    tcl_code += f' CONFIG.DAC_Slice00_Enable {{true}} CONFIG.DAC_Interpolation_Mode00 {{1}}'
+    tcl_code += f' CONFIG.DAC_Mixer_Type00 {{0}} CONFIG.DAC_RESERVED_1_00 {{0}} CONFIG.DAC_RESERVED_1_01 {{0}}'
+    tcl_code += f' CONFIG.DAC_RESERVED_1_02 {{0}} CONFIG.DAC_RESERVED_1_03 {{0}}] [get_ips usp_rf_data_converter_{total_rfdc_num}]'
+    
+    return tcl_code
+
 def make_tcl(folder_directory,prj_name,part_name,board_path,board_name,file_type):
     file_name = prj_name+".tcl"
     print(file_name)
@@ -135,8 +152,8 @@ def run(folder_directory,prj_name,part_name,board_path,board_name,file_type,viva
 
 if __name__ == "__main__":
     # Replace "your_tcl_file.tcl" with the path to your actual TCL file
-    prj_name = "RFDC_DDS"
-    folder_directory = "E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS"
+    prj_name = "RFDC_DDS_test"
+    folder_directory = "E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test"
     part_name = "xczu28dr-ffvg1517-2-e"
     board_path = "E:/Xilinx/Vivado/2020.2/data/boards/board_files"
     board_name = "xilinx.com:zcu111:part0:1.4"

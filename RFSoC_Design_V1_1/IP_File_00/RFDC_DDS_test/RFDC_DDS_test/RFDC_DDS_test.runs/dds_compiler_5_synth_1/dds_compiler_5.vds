@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Aug 26 17:19:16 2023
+# Process ID: 19992
+# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.runs/dds_compiler_5_synth_1
+# Command line: vivado.exe -log dds_compiler_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dds_compiler_5.tcl
+# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.runs/dds_compiler_5_synth_1/dds_compiler_5.vds
+# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.runs/dds_compiler_5_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dds_compiler_5.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP dds_compiler_5, cache-ID = 9b6b943ae69b01fa.
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 17:19:26 2023...
