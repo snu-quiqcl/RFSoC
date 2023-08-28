@@ -191,6 +191,7 @@ end
 
 initial begin
     timestamp <= 64'h0;
+    manual_valid <= 1'b0;
 end
 
 always begin
@@ -225,6 +226,7 @@ reg [13:0] phase;
 reg [63:0] timestamp;
 reg [13:0] amp_offset;
 reg [63:0] time_offset;
+reg manual_valid;
 wire [255:0] m_axis_data_tdata;
 wire m_axis_data_tvalid;
 
@@ -259,7 +261,7 @@ usp_rf_data_converter_0 rfdc(
     .s_axi_wvalid(s_axi_wvalid),
     .s00_axis_tdata(m_axis_data_tdata),
     .s00_axis_tready(s00_axis_tready),
-    .s00_axis_tvalid(m_axis_data_tvalid),
+    .s00_axis_tvalid(manual_valid),
     .dac0_clk_n(dac0_clk_n),
     .dac0_clk_p(dac0_clk_p),
     .s_axi_aclk(s_axi_aclk),
@@ -276,6 +278,11 @@ initial begin
     phase <= 14'h0;
     amp_offset <= 14'h0;
     time_offset <= 64'h0;
+end
+
+always @(posedge s00_axis_tready) begin    
+    #10000
+    manual_valid <= 1'b1;
 end
 
 initial begin

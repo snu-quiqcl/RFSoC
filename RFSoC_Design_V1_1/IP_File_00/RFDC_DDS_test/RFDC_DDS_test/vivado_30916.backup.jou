@@ -2,17 +2,22 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Aug 27 17:52:06 2023
-# Process ID: 23108
+# Start of session at: Sun Aug 27 00:57:58 2023
+# Process ID: 30916
 # Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20136 E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test\RFDC_DDS_test\RFDC_DDS_test.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28164 E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test\RFDC_DDS_test\RFDC_DDS_test.xpr
 # Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/vivado.log
 # Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.xpr
 update_compile_order -fileset sources_1
+set_property -name {xsim.simulate.runtime} -value {1ms} -objects [get_filesets sim_1]
 launch_simulation
 source RFDC_DDS_TB00.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
 relaunch_sim
 close_sim

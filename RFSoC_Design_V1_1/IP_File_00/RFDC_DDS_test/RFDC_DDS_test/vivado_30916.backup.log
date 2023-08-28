@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sun Aug 27 17:52:06 2023
-# Process ID: 23108
+# Start of session at: Sun Aug 27 00:57:58 2023
+# Process ID: 30916
 # Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20136 E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test\RFDC_DDS_test\RFDC_DDS_test.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28164 E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test\RFDC_DDS_test\RFDC_DDS_test.xpr
 # Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/vivado.log
 # Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test\vivado.jou
 #-----------------------------------------------------------
@@ -16,8 +16,9 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
-open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1155.887 ; gain = 29.945
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:33 . Memory (MB): peak = 1165.129 ; gain = 156.043
 update_compile_order -fileset sources_1
+set_property -name {xsim.simulate.runtime} -value {1ms} -objects [get_filesets sim_1]
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
@@ -126,7 +127,7 @@ INFO: [VRFC 10-311] analyzing module RFDC_DDS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00
 WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:193]
-WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:202]
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:200]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
 "xvhdl --incr --relax -prj RFDC_DDS_TB00_vhdl.prj"
@@ -162,8 +163,356 @@ INFO: [VRFC 10-163] Analyzing VHDL file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP
 INFO: [VRFC 10-3107] analyzing entity 'dds_compiler_1'
 INFO: [VRFC 10-163] Analyzing VHDL file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/dds_compiler_0/sim/dds_compiler_0.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'dds_compiler_0'
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 1245.117 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '9' seconds
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1291.289 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '11' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xelab -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_n' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:267]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_p' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:268]
+WARNING: [VRFC 10-5021] port 'sysref_in_p' is not connected on this instance [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:241]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_20.dds_compiler_v6_0_20_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_20.pkg_dds_compiler_v6_0_20
+Compiling package dds_compiler_v6_0_20.dds_compiler_v6_0_20_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_20.pkg_betas
+Compiling package dds_compiler_v6_0_20.pkg_alphas
+Compiling package secureip.xil_hsdac_pack1
+Compiling package secureip.xil_hsdac_pack0
+Compiling package secureip.xil_hsadc_pack1
+Compiling package secureip.xil_hsadc_pack0
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20_rdy [\dds_compiler_v6_0_20_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.sin_cos [\sin_cos(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20_core [\dds_compiler_v6_0_20_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20_viv [\dds_compiler_v6_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20 [\dds_compiler_v6_0_20(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling architecture dds_compiler_2_arch of entity xil_defaultlib.dds_compiler_2 [dds_compiler_2_default]
+Compiling architecture dds_compiler_3_arch of entity xil_defaultlib.dds_compiler_3 [dds_compiler_3_default]
+Compiling architecture dds_compiler_4_arch of entity xil_defaultlib.dds_compiler_4 [dds_compiler_4_default]
+Compiling architecture dds_compiler_5_arch of entity xil_defaultlib.dds_compiler_5 [dds_compiler_5_default]
+Compiling architecture dds_compiler_6_arch of entity xil_defaultlib.dds_compiler_6 [dds_compiler_6_default]
+Compiling architecture dds_compiler_7_arch of entity xil_defaultlib.dds_compiler_7 [dds_compiler_7_default]
+Compiling architecture dds_compiler_8_arch of entity xil_defaultlib.dds_compiler_8 [dds_compiler_8_default]
+Compiling architecture dds_compiler_9_arch of entity xil_defaultlib.dds_compiler_9 [dds_compiler_9_default]
+Compiling architecture dds_compiler_10_arch of entity xil_defaultlib.dds_compiler_10 [dds_compiler_10_default]
+Compiling architecture dds_compiler_11_arch of entity xil_defaultlib.dds_compiler_11 [dds_compiler_11_default]
+Compiling architecture dds_compiler_12_arch of entity xil_defaultlib.dds_compiler_12 [dds_compiler_12_default]
+Compiling architecture dds_compiler_13_arch of entity xil_defaultlib.dds_compiler_13 [dds_compiler_13_default]
+Compiling architecture dds_compiler_14_arch of entity xil_defaultlib.dds_compiler_14 [dds_compiler_14_default]
+Compiling architecture dds_compiler_15_arch of entity xil_defaultlib.dds_compiler_15 [dds_compiler_15_default]
+Compiling module xil_defaultlib.RFDC_DDS
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module xil_defaultlib.usp_rf_data_converter_0_device_r...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_tile_con...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_por_fsm_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_arbi...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_bgt_fsm
+Compiling module xil_defaultlib.usp_rf_data_converter_0_por_fsm_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_por_fsm_...
+Compiling module unisims_ver.HSDAC(XPA_CFG0=1,XPA_NUM_DACS=1,...
+Compiling module unisims_ver.HSDAC(XPA_SAMPLE_RATE_MSPS=6400)
+Compiling module unisims_ver.HSADC(XPA_SAMPLE_RATE_MSPS=2000)
+Compiling module xil_defaultlib.usp_rf_data_converter_0_rf_wrapp...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_address_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_counter_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_slave_at...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_axi_lite...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_register...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_acce...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_cont...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_cont...
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=5,SR...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_irq_sync
+Compiling module xil_defaultlib.usp_rf_data_converter_0_irq_req_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_powerup_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_overvol_...
+Compiling module unisims_ver.BUFG_GT
+Compiling module xil_defaultlib.usp_rf_data_converter_0_bufg_gt_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_reset_co...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_block
+Compiling module xil_defaultlib.usp_rf_data_converter_0
+Compiling module xil_defaultlib.RFDC_DDS_TB00
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RFDC_DDS_TB00_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim/xsim.dir/RFDC_DDS_TB00_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sun Aug 27 02:24:21 2023...
+run_program: Time (s): cpu = 00:01:15 ; elapsed = 01:24:04 . Memory (MB): peak = 1291.289 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5044' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "RFDC_DDS_TB00_behav -key {Behavioral:sim_1:Functional:RFDC_DDS_TB00} -tclbatch {RFDC_DDS_TB00.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source RFDC_DDS_TB00.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1ms
+run: Time (s): cpu = 00:00:37 ; elapsed = 00:04:05 . Memory (MB): peak = 1291.289 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:43 ; elapsed = 00:04:18 . Memory (MB): peak = 1291.289 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'RFDC_DDS_TB00_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1ms
+launch_simulation: Time (s): cpu = 00:02:07 ; elapsed = 01:28:39 . Memory (MB): peak = 1291.289 ; gain = 56.910
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'RFDC_DDS_TB00' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj RFDC_DDS_TB00_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:193]
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:200]
+"xvhdl --incr --relax -prj RFDC_DDS_TB00_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1854.855 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xelab -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_n' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:267]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_p' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:268]
+WARNING: [VRFC 10-5021] port 'sysref_in_p' is not connected on this instance [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:241]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_20.dds_compiler_v6_0_20_viv_comp
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package dds_compiler_v6_0_20.pkg_dds_compiler_v6_0_20
+Compiling package dds_compiler_v6_0_20.dds_compiler_v6_0_20_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_20.pkg_betas
+Compiling package dds_compiler_v6_0_20.pkg_alphas
+Compiling package secureip.xil_hsdac_pack1
+Compiling package secureip.xil_hsdac_pack0
+Compiling package secureip.xil_hsadc_pack1
+Compiling package secureip.xil_hsadc_pack0
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20_rdy [\dds_compiler_v6_0_20_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.sin_cos [\sin_cos(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20_core [\dds_compiler_v6_0_20_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20_viv [\dds_compiler_v6_0_20_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_20.dds_compiler_v6_0_20 [\dds_compiler_v6_0_20(c_xdevicef...]
+Compiling architecture dds_compiler_0_arch of entity xil_defaultlib.dds_compiler_0 [dds_compiler_0_default]
+Compiling architecture dds_compiler_1_arch of entity xil_defaultlib.dds_compiler_1 [dds_compiler_1_default]
+Compiling architecture dds_compiler_2_arch of entity xil_defaultlib.dds_compiler_2 [dds_compiler_2_default]
+Compiling architecture dds_compiler_3_arch of entity xil_defaultlib.dds_compiler_3 [dds_compiler_3_default]
+Compiling architecture dds_compiler_4_arch of entity xil_defaultlib.dds_compiler_4 [dds_compiler_4_default]
+Compiling architecture dds_compiler_5_arch of entity xil_defaultlib.dds_compiler_5 [dds_compiler_5_default]
+Compiling architecture dds_compiler_6_arch of entity xil_defaultlib.dds_compiler_6 [dds_compiler_6_default]
+Compiling architecture dds_compiler_7_arch of entity xil_defaultlib.dds_compiler_7 [dds_compiler_7_default]
+Compiling architecture dds_compiler_8_arch of entity xil_defaultlib.dds_compiler_8 [dds_compiler_8_default]
+Compiling architecture dds_compiler_9_arch of entity xil_defaultlib.dds_compiler_9 [dds_compiler_9_default]
+Compiling architecture dds_compiler_10_arch of entity xil_defaultlib.dds_compiler_10 [dds_compiler_10_default]
+Compiling architecture dds_compiler_11_arch of entity xil_defaultlib.dds_compiler_11 [dds_compiler_11_default]
+Compiling architecture dds_compiler_12_arch of entity xil_defaultlib.dds_compiler_12 [dds_compiler_12_default]
+Compiling architecture dds_compiler_13_arch of entity xil_defaultlib.dds_compiler_13 [dds_compiler_13_default]
+Compiling architecture dds_compiler_14_arch of entity xil_defaultlib.dds_compiler_14 [dds_compiler_14_default]
+Compiling architecture dds_compiler_15_arch of entity xil_defaultlib.dds_compiler_15 [dds_compiler_15_default]
+Compiling module xil_defaultlib.RFDC_DDS
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module xil_defaultlib.usp_rf_data_converter_0_device_r...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_tile_con...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_por_fsm_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_arbi...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_bgt_fsm
+Compiling module xil_defaultlib.usp_rf_data_converter_0_por_fsm_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_por_fsm_...
+Compiling module unisims_ver.HSDAC(XPA_CFG0=1,XPA_NUM_DACS=1,...
+Compiling module unisims_ver.HSDAC(XPA_SAMPLE_RATE_MSPS=6400)
+Compiling module unisims_ver.HSADC(XPA_SAMPLE_RATE_MSPS=2000)
+Compiling module xil_defaultlib.usp_rf_data_converter_0_rf_wrapp...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_address_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_counter_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_slave_at...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_axi_lite...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_register...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_acce...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_cont...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_drp_cont...
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=5,SR...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_irq_sync
+Compiling module xil_defaultlib.usp_rf_data_converter_0_irq_req_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_powerup_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_overvol_...
+Compiling module unisims_ver.BUFG_GT
+Compiling module xil_defaultlib.usp_rf_data_converter_0_bufg_gt_...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_reset_co...
+Compiling module xil_defaultlib.usp_rf_data_converter_0_block
+Compiling module xil_defaultlib.usp_rf_data_converter_0
+Compiling module xil_defaultlib.RFDC_DDS_TB00
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot RFDC_DDS_TB00_behav
+run_program: Time (s): cpu = 00:01:10 ; elapsed = 01:23:48 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5029' seconds
+launch_simulation: Time (s): cpu = 00:01:10 ; elapsed = 01:23:49 . Memory (MB): peak = 1854.855 ; gain = 0.000
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run: Time (s): cpu = 00:01:02 ; elapsed = 00:03:57 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:01:03 ; elapsed = 00:04:12 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:02:15 ; elapsed = 01:28:14 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'RFDC_DDS_TB00' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj RFDC_DDS_TB00_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:193]
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:200]
+"xvhdl --incr --relax -prj RFDC_DDS_TB00_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1854.855 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xelab -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:24 ; elapsed = 00:21:18 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:25 ; elapsed = 00:21:19 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'RFDC_DDS_TB00' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj RFDC_DDS_TB00_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:193]
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:202]
+"xvhdl --incr --relax -prj RFDC_DDS_TB00_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1854.855 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
 "xelab -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log"
@@ -266,39 +615,14 @@ Compiling module xil_defaultlib.usp_rf_data_converter_0
 Compiling module xil_defaultlib.RFDC_DDS_TB00
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot RFDC_DDS_TB00_behav
-
-****** Webtalk v2020.2 (64-bit)
-  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
-  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
-
-source E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim/xsim.dir/RFDC_DDS_TB00_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-206] Exiting Webtalk at Sun Aug 27 19:20:42 2023...
-run_program: Time (s): cpu = 00:01:21 ; elapsed = 01:25:48 . Memory (MB): peak = 1284.051 ; gain = 38.934
-INFO: [USF-XSim-69] 'elaborate' step finished in '5149' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "RFDC_DDS_TB00_behav -key {Behavioral:sim_1:Functional:RFDC_DDS_TB00} -tclbatch {RFDC_DDS_TB00.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
+run_program: Time (s): cpu = 00:01:14 ; elapsed = 01:24:58 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5098' seconds
+launch_simulation: Time (s): cpu = 00:01:14 ; elapsed = 01:24:59 . Memory (MB): peak = 1854.855 ; gain = 0.000
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-source RFDC_DDS_TB00.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1ms
-run: Time (s): cpu = 00:01:32 ; elapsed = 00:08:47 . Memory (MB): peak = 1311.652 ; gain = 27.602
-xsim: Time (s): cpu = 00:01:39 ; elapsed = 00:08:59 . Memory (MB): peak = 1311.652 ; gain = 27.602
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'RFDC_DDS_TB00_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1ms
-launch_simulation: Time (s): cpu = 00:03:07 ; elapsed = 01:35:02 . Memory (MB): peak = 1311.652 ; gain = 74.562
+run: Time (s): cpu = 00:03:32 ; elapsed = 00:15:08 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:03:33 ; elapsed = 00:15:19 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:04:49 ; elapsed = 01:40:25 . Memory (MB): peak = 1854.855 ; gain = 0.000
 relaunch_sim
 Command: launch_simulation -simset sim_1 -mode behavioral
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
@@ -320,12 +644,10 @@ INFO: [VRFC 10-311] analyzing module RFDC_DDS
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00
 WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:193]
-WARNING: [VRFC 10-3380] identifier 'manual_valid' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:194]
-WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:203]
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:202]
 "xvhdl --incr --relax -prj RFDC_DDS_TB00_vhdl.prj"
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1900.301 ; gain = 0.000
 INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
-launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1900.301 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 1854.855 ; gain = 0.000
 Command: launch_simulation -simset sim_1 -mode behavioral
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
@@ -339,9 +661,54 @@ Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 87ccbaadcc
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_n' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:271]
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_p' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:272]
-WARNING: [VRFC 10-5021] port 'sysref_in_p' is not connected on this instance [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:245]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:14 ; elapsed = 00:17:10 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:17:11 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+INFO: [Common 17-344] 'relaunch_sim' was cancelled
+relaunch_sim
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+WARNING: [Memdata 28-176] There are no bmm files or elf files. Therefore Vivado could not produce any .mem files. Check the design for the existence of processors and associated elf files.
+INFO: [SIM-utils-54] Inspecting design source files for 'RFDC_DDS_TB00' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj RFDC_DDS_TB00_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:193]
+WARNING: [VRFC 10-3380] identifier 'timestamp' is used before its declaration [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:202]
+"xvhdl --incr --relax -prj RFDC_DDS_TB00_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1854.855 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.sim/sim_1/behav/xsim'
+"xelab -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 87ccbaadccb646118c5b09774a5b8a6f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_20 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot RFDC_DDS_TB00_behav xil_defaultlib.RFDC_DDS_TB00 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_n' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:269]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 1 for port 'vout00_p' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:270]
+WARNING: [VRFC 10-5021] port 'sysref_in_p' is not connected on this instance [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS_test/RFDC_DDS_test.srcs/sim_1/new/RFDC_DDS_TB00.sv:243]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -432,15 +799,15 @@ Compiling module xil_defaultlib.usp_rf_data_converter_0
 Compiling module xil_defaultlib.RFDC_DDS_TB00
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot RFDC_DDS_TB00_behav
-run_program: Time (s): cpu = 00:01:11 ; elapsed = 01:24:47 . Memory (MB): peak = 1900.301 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '5087' seconds
-launch_simulation: Time (s): cpu = 00:01:11 ; elapsed = 01:24:48 . Memory (MB): peak = 1900.301 ; gain = 0.000
+run_program: Time (s): cpu = 00:01:21 ; elapsed = 01:25:29 . Memory (MB): peak = 1854.855 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5128' seconds
+launch_simulation: Time (s): cpu = 00:01:21 ; elapsed = 01:25:29 . Memory (MB): peak = 1854.855 ; gain = 0.000
 Vivado Simulator 2020.2
 Time resolution is 1 ps
-run: Time (s): cpu = 00:07:32 ; elapsed = 00:59:51 . Memory (MB): peak = 1900.301 ; gain = 0.000
-relaunch_xsim_kernel: Time (s): cpu = 00:07:33 ; elapsed = 01:00:01 . Memory (MB): peak = 1900.301 ; gain = 0.000
-relaunch_sim: Time (s): cpu = 00:08:46 ; elapsed = 02:25:01 . Memory (MB): peak = 1900.301 ; gain = 0.000
+run: Time (s): cpu = 00:01:54 ; elapsed = 00:08:02 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_xsim_kernel: Time (s): cpu = 00:01:55 ; elapsed = 00:08:13 . Memory (MB): peak = 1854.855 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:03:18 ; elapsed = 01:33:48 . Memory (MB): peak = 1854.855 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Mon Aug 28 11:34:24 2023...
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 27 17:33:36 2023...
