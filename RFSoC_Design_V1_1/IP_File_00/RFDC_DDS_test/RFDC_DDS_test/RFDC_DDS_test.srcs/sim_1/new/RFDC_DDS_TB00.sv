@@ -76,14 +76,28 @@ reg         dac0_clk_n;
 reg         dac0_clk_p;
 
 initial begin
-    dac0_clk_n <= 1'b0;
-    dac0_clk_p <= 1'b1;
+    dac0_clk_n <= 1'b1;
+    dac0_clk_p <= 1'b0;
 end
+
+int i = 0;
+reg [15:0]temp_data;
 
 always begin
     #312.5
     dac0_clk_n <= ~dac0_clk_n;
     dac0_clk_p <= ~dac0_clk_p;
+end
+
+
+always@(posedge dac0_clk_p) begin
+    temp_data <= m_axis_data_tdata[16*i +: 16];
+    //temp_data <= ( manual_valid == 1'b1)? m_axis_data_tdata[16*i +: 16] : 256'h0;
+    i = ( i + 1 )% 16;
+end
+
+always@(posedge s_axi_aclk) begin
+    i = 0;
 end
 
 //////////////////////////////////////////////////////////////////////////////////
@@ -170,7 +184,7 @@ reg [1:0] dac0_controller_0_dac0_nco_update_busy;
 
 
 initial begin
-    s_axi_aclk <= 1'b0;
+    s_axi_aclk <= 1'b1;
 end
 
 always begin
@@ -186,7 +200,7 @@ reg         s0_axis_aresetn;
 reg         s0_axis_aclk;
 
 initial begin
-    s0_axis_aclk <= 1'b0;
+    s0_axis_aclk <= 1'b1;
 end
 
 initial begin
@@ -213,12 +227,15 @@ real dac00_n;
 reg[31:0] dac00_p_int;
 reg[31:0] dac00_n_int;
 
+//////////////////////////////////TEMP+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*
 always @ (*) begin
    dac00_p = rfdc.inst.usp_rf_data_converter_0_rf_wrapper_i.tx0_u_dac.SIP_HSDAC_INST.VOUT0_P;
    dac00_n = rfdc.inst.usp_rf_data_converter_0_rf_wrapper_i.tx0_u_dac.SIP_HSDAC_INST.VOUT0_N;
    dac00_p_int = dac00_p * (2 ** 31 - 1);
    dac00_n_int = dac00_n * (2 ** 31 - 1);
 end
+*/
 
 reg [47:0] freq;
 reg [13:0] amp;
@@ -228,7 +245,11 @@ reg [13:0] amp_offset;
 reg [63:0] time_offset;
 reg manual_valid;
 wire [255:0] m_axis_data_tdata;
+wire [255:0] m_axis_data_tdata_select;
 wire m_axis_data_tvalid;
+wire irq;
+
+reg do_input;
 
 RFDC_DDS rfdc_dds(
     .CLK100MHz(s0_axis_aclk),
@@ -241,7 +262,8 @@ RFDC_DDS rfdc_dds(
     .m_axis_data_tdata(m_axis_data_tdata),
     .m_axis_data_tvalid(m_axis_data_tvalid)
 );
-
+//////////////////////////////////TEMP+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+/*
 usp_rf_data_converter_0 rfdc(
     .s_axi_araddr(s_axi_araddr),
     .s_axi_arready(s_axi_arready),
@@ -259,7 +281,7 @@ usp_rf_data_converter_0 rfdc(
     .s_axi_wready(s_axi_wready),
     .s_axi_wstrb(s_axi_wstrb),
     .s_axi_wvalid(s_axi_wvalid),
-    .s00_axis_tdata(m_axis_data_tdata),
+    .s00_axis_tdata(m_axis_data_tdata_select),
     .s00_axis_tready(s00_axis_tready),
     .s00_axis_tvalid(manual_valid),
     .dac0_clk_n(dac0_clk_n),
@@ -269,21 +291,28 @@ usp_rf_data_converter_0 rfdc(
     .s0_axis_aresetn(s0_axis_aresetn),
     .s0_axis_aclk(s0_axis_aclk),
     .vout00_n(vout00_n),
-    .vout00_p(vout00_p)
+    .vout00_p(vout00_p),
+    .irq(irq)
 );
-
+*/
 initial begin
     freq <= 48'h003120000000;
     amp <= 14'h0;
     phase <= 14'h0;
     amp_offset <= 14'h0;
     time_offset <= 64'h0;
+    do_input <= 1'b0;
 end
 
 always @(posedge s00_axis_tready) begin    
-    #10000
+    #10000000 // 10us
     manual_valid <= 1'b1;
+    do_input <=1'b1;
+    #10000000 // 10us
+    freq <= 48'h005120000000;
 end
+
+assign m_axis_data_tdata_select = m_axis_data_tdata;
 
 initial begin
     s_axi_araddr    <= 18'b000000000000000000;
@@ -310,6 +339,7 @@ initial begin
     ////////////////////
     // restart machine
     ////////////////////
+    /*
     #10000000 // 10us
     #40000 // 40ns
     s_axi_awaddr    <= 18'h04004;
@@ -320,8 +350,7 @@ initial begin
     #10000 // 10ns
     s_axi_awvalid <= 1'b0;
     
-    #10000 // 10ns
-    s_axi_wvalid  <= 1'b0;
+    #10000000 // 10us
+    s_axi_wvalid  <= 1'b0;*/
 end
-
 endmodule

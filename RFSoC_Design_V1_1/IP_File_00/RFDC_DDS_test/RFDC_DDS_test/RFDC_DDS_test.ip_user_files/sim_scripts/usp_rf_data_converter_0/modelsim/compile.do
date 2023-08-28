@@ -1,17 +1,9 @@
 vlib modelsim_lib/work
 vlib modelsim_lib/msim
 
-vlib modelsim_lib/msim/xpm
 vlib modelsim_lib/msim/xil_defaultlib
 
-vmap xpm modelsim_lib/msim/xpm
 vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib
-
-vlog -work xpm  -incr -sv \
-"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-
-vcom -work xpm  -93 \
-"E:/Xilinx/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib  -incr \
 "../../../../RFDC_DDS_test.gen/sources_1/ip/usp_rf_data_converter_0/synth/usp_rf_data_converter_0_block.v" \

@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ps / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: SNU QuIQCL
 // Engineer: Jeonghyun Park
@@ -72,7 +72,7 @@ end
 genvar i;
 generate
     for (i = 0; i < 16; i = i + 1) begin : ASSIGN_GEN
-        assign m_axis_data_tdata[16*i +: 16] = {dds_output_wire[i][13],dds_output_wire[i][13], (dds_output_wire[i][13:0])};
+        assign m_axis_data_tdata[16*i +: 16] = dds_output_wire[i][15:0];
         assign full_product[i] = (freq * ( {timestamp,4'b0000} + i ));
         assign phase_input[i] = {2'h0, full_product[i][47:34] + phase};
     end

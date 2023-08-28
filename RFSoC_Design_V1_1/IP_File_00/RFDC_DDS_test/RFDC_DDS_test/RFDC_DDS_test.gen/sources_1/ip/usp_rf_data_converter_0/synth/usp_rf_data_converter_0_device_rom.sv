@@ -86,8 +86,8 @@ module usp_rf_data_converter_0_device_rom (
        30'h20600001,  // DAC00 Decoder Control
        30'h20610001,  // DAC00 Decoder Clock Enable
        30'h20710000,  // DAC00 MC_CONFIG0
-       30'h20734858,  // DAC00 MC_CONFIG2
-       30'h207487c0,  // DAC00 MC_CONFIG3
+       30'h2073a0d8,  // DAC00 MC_CONFIG2
+       30'h2074ffc0,  // DAC00 MC_CONFIG3
        30'h2006000f,  // DAC00 FABRIC_IMR
        30'h200f0fff,  // DAC00 DATAPATH_IMR
        30'h20070008,  // DAC00 FABRIC_DEBUG
