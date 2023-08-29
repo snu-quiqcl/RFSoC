@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS/RFDC_DDS.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RFDC_DDS
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS/RFDC_DDS/RFDC_DDS.srcs/sim_1/new/RFDC_DDS_TB00.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module RFDC_DDS_TB00

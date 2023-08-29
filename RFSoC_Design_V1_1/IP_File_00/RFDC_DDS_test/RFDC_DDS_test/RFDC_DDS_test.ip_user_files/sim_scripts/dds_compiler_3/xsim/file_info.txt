@@ -1,1 +1,0 @@
-dds_compiler_3.vhd,vhdl,xil_defaultlib,../../../../../dds_compiler_3/sim/dds_compiler_3.vhd,
