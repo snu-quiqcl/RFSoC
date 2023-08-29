@@ -1,0 +1,7 @@
+Running: xsim.dir/RFDC_DDS_TB00_behav/xsimk.exe -simmode gui -wdb RFDC_DDS_TB00_behav.wdb -simrunnum 0 -socket 2854
+Design successfully loaded
+Design Loading Memory Usage: 12968 KB (Peak: 12968 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 21992 KB (Peak: 21992 KB)
+Simulation CPU Usage: 921 ms

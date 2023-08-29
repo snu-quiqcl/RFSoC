@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="usp_rf_data_converter_0_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1693201117">
   <File Type="PA-TCL" Name="usp_rf_data_converter_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="usp_rf_data_converter_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="usp_rf_data_converter_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="usp_rf_data_converter_0.vds"/>
-  <File Type="RDS-UTIL" Name="usp_rf_data_converter_0_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="usp_rf_data_converter_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="usp_rf_data_converter_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="usp_rf_data_converter_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="usp_rf_data_converter_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/usp_rf_data_converter_0">
     <File Path="$PSRCDIR/sources_1/ip/usp_rf_data_converter_0/usp_rf_data_converter_0.xci">
       <FileInfo>

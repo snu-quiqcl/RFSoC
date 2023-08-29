@@ -1,4 +1,4 @@
-`timescale 1ps / 1ps
+`timescale 0.1ps / 0.1ps // This should be set to small enough not to occur errors in simulation
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -84,7 +84,7 @@ int i = 0;
 reg [15:0]temp_data;
 
 always begin
-    #312.5
+    #3125
     dac0_clk_n <= ~dac0_clk_n;
     dac0_clk_p <= ~dac0_clk_p;
 end
@@ -188,7 +188,7 @@ initial begin
 end
 
 always begin
-    #5000
+    #50000
     s_axi_aclk <= ~s_axi_aclk;
 end
 
@@ -209,7 +209,7 @@ initial begin
 end
 
 always begin
-    #5000
+    #50000
     s0_axis_aclk <= ~s0_axis_aclk;
 end
 
@@ -227,15 +227,14 @@ real dac00_n;
 reg[31:0] dac00_p_int;
 reg[31:0] dac00_n_int;
 
-//////////////////////////////////TEMP+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-/*
+
 always @ (*) begin
    dac00_p = rfdc.inst.usp_rf_data_converter_0_rf_wrapper_i.tx0_u_dac.SIP_HSDAC_INST.VOUT0_P;
    dac00_n = rfdc.inst.usp_rf_data_converter_0_rf_wrapper_i.tx0_u_dac.SIP_HSDAC_INST.VOUT0_N;
    dac00_p_int = dac00_p * (2 ** 31 - 1);
    dac00_n_int = dac00_n * (2 ** 31 - 1);
 end
-*/
+
 
 reg [47:0] freq;
 reg [13:0] amp;
@@ -262,8 +261,7 @@ RFDC_DDS rfdc_dds(
     .m_axis_data_tdata(m_axis_data_tdata),
     .m_axis_data_tvalid(m_axis_data_tvalid)
 );
-//////////////////////////////////TEMP+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-/*
+
 usp_rf_data_converter_0 rfdc(
     .s_axi_araddr(s_axi_araddr),
     .s_axi_arready(s_axi_arready),
@@ -294,7 +292,7 @@ usp_rf_data_converter_0 rfdc(
     .vout00_p(vout00_p),
     .irq(irq)
 );
-*/
+
 initial begin
     freq <= 48'h003120000000;
     amp <= 14'h0;
@@ -305,10 +303,10 @@ initial begin
 end
 
 always @(posedge s00_axis_tready) begin    
-    #10000000 // 10us
+    #100000000 // 10us
     manual_valid <= 1'b1;
     do_input <=1'b1;
-    #10000000 // 10us
+    #100000000 // 10us
     freq <= 48'h005120000000;
 end
 
@@ -332,25 +330,25 @@ initial begin
     s0_axis_aresetn <= 1'b0;
     
     
-    #100000 // 10us
+    #1000000 // 10us
     s_axi_aresetn <= 1'b1;
     s0_axis_aresetn <= 1'b1;
     
     ////////////////////
     // restart machine
     ////////////////////
-    /*
-    #10000000 // 10us
-    #40000 // 40ns
+    
+    #100000000 // 10us
+    #400000 // 40ns
     s_axi_awaddr    <= 18'h04004;
     s_axi_awvalid <= 1'b1;
     s_axi_wvalid  <= 1'b1;
     s_axi_wdata[31:0] <= 32'h1;
     
-    #10000 // 10ns
+    #100000 // 10ns
     s_axi_awvalid <= 1'b0;
     
-    #10000000 // 10us
-    s_axi_wvalid  <= 1'b0;*/
+    #100000000 // 10us
+    s_axi_wvalid  <= 1'b0;
 end
 endmodule

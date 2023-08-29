@@ -281,7 +281,7 @@ rfdc_controller_0
     .override_value(64'h0),
     .counter_matched(counter_matched),
     .gpo_in(rto_out),
-    .busy(dac0_nco_update_busy[0]),    // should be connected to RFDC busy line
+    .busy(1'b0),    // should be connected to RFDC busy line
     .error_data(),
     .overrided(),
     .busy_error(),
@@ -289,21 +289,6 @@ rfdc_controller_0
     //////////////////////////////////////////////////////////////////////////////////  
     // AXIS declaration for RFDC DAC
     //////////////////////////////////////////////////////////////////////////////////
-    .s00_axis_tdata(s00_axis_tdata),
-    .s00_axis_tvalid(s00_axis_tvalid),
-    .dac00_fast_shutdown(dac00_fast_shutdown),
-    .dac00_pl_event(dac00_pl_event),
-    .dac00_nco_freq(dac00_nco_freq),
-    .dac00_nco_phase(dac00_nco_phase),
-    .dac00_nco_phase_rst(dac00_nco_phase_rst),
-    .dac00_nco_update_en(dac00_nco_update_en),
-    .dac0_nco_update_req(dac0_nco_update_req),
-    .dac0_sysref_int_gating(dac0_sysref_int_gating),
-    .dac0_sysref_int_reenable(dac0_sysref_int_reenable),
-    
-    .s00_axis_tready(s00_axis_tready),
-    .dac00_datapath_overflow(dac00_datapath_overflow),
-    .dac0_nco_update_busy(dac0_nco_update_busy)
 );
     
 endmodule

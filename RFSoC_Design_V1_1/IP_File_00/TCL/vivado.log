@@ -2,55 +2,65 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Aug 26 16:41:58 2023
-# Process ID: 30048
-# Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL
-# Command line: vivado.exe -mode batch -source E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test\RFDC_DDS_test.tcl
-# Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL/vivado.log
-# Journal file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL\vivado.jou
+# Start of session at: Tue Aug 29 14:56:47 2023
+# Process ID: 20708
+# Current directory: C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL
+# Command line: vivado.exe -mode batch -source C:\Jeonghyun\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\DAC_Controller\DAC_Controller.tcl
+# Log file: C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL/vivado.log
+# Journal file: C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TCL\vivado.jou
 #-----------------------------------------------------------
-source {E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test\RFDC_DDS_test.tcl}
-# set project_name "RFDC_DDS_test"
-# set project_dir "E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test"
+source {C:\Jeonghyun\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\DAC_Controller\DAC_Controller.tcl}
+# set project_name "DAC_Controller"
+# set project_dir "C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller"
 # create_project ${project_name} ${project_dir}/${project_name} -part xczu28dr-ffvg1517-2-e
-# add_files -norecurse {E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test/RFDC_DDS.sv}
-# set boardpath {E:/Xilinx/Vivado/2020.2/data/boards/board_files}
-# set_param board.repoPaths [list $boardpath]
-# set_property BOARD_PART xilinx.com:zcu111:part0:1.4 [current_project]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_0
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DAC_Controller'
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/AXI2FIFO.sv}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DAC_Controller.sv}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DDS_Controller.sv}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/GPO_Core.sv}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/RFDC_DDS.sv}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/RTO_Core.sv}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/fifo_generator_0/fifo_generator_0.xci}
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
-create_ip: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1162.930 ; gain = 0.000
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/fifo_generator_1/fifo_generator_1.xci}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/fifo_generator_2/fifo_generator_2.xci}
+# add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/fifo_generator_3/fifo_generator_3.xci}
+# set boardpath {C:/Xilinx/Vivado/2020.2/data/boards/board_files}
+# set_param board.repoPaths [list $boardpath]
+# set_property BOARD_PART xilinx.com:zcu111:part0:1.4 [current_project]
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_0
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_0]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_1
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_1
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_1]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_2
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_2
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_2]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_3
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_3
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_3]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_4
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_4
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_4]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_5
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_5
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_5]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_6
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_6
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_6]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_7
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_7
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_7]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_8
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_8
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_8]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_9
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_9
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_9]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_10
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_10
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_10]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_11
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_11
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_11]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_12
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_12
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_12]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_13
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_13
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_13]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_14
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_14
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_14]
-# create_ip -dir E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/RFDC_DDS_test -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_15
+# create_ip -dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller -name dds_compiler -vendor xilinx.com -library ip -version 6.0 -module_name dds_compiler_15
 # set_property -dict [list CONFIG.PartsPresent {SIN_COS_LUT_only} CONFIG.Phase_Width {14} CONFIG.Output_Width {14} CONFIG.Output_Selection {Sine} CONFIG.Optimization_Goal {Speed} CONFIG.Latency_Configuration {Configurable} CONFIG.Latency {1} CONFIG.Parameter_Entry {Hardware_Parameters} CONFIG.Noise_Shaping {None} CONFIG.Has_Phase_Out {false} CONFIG.DATA_Has_TLAST {Not_Required} CONFIG.S_PHASE_Has_TUSER {Not_Required} CONFIG.M_DATA_Has_TUSER {Not_Required} CONFIG.Output_Frequency1 {0} CONFIG.PINC1 {0}] [get_ips dds_compiler_15]
-INFO: [Common 17-206] Exiting Vivado at Sat Aug 26 16:42:25 2023...
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 29 14:57:02 2023...

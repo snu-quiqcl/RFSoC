@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
+// Company: SNU QuIQCL
+// Engineer: Jeonghyun Park
 // 
 // Create Date: 2023/08/25 18:02:23
 // Design Name: 
@@ -41,12 +41,23 @@ always begin
     CLK100MHz <= ~CLK100MHz;
     #5
     timestamp <= timestamp + 64'h1;
+    amp <= amp + 64'h1;
 end
 
+/*
 initial begin
     freq <= 48'h003120000000;
-    amp <= 14'h0;
+    amp <= 14'h3fff;
     phase <= 14'h0;
+    amp_offset <= 14'h0;
+    time_offset <= 64'h0;
+end
+*/
+
+initial begin
+    freq <= 48'h0;
+    amp <= 14'h0;
+    phase <= 14'hfff;
     amp_offset <= 14'h0;
     time_offset <= 64'h0;
 end

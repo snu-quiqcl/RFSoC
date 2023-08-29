@@ -57,9 +57,7 @@ module RFDC_Contoller
     output reg dac0_sysref_int_gating,
     output reg dac0_sysref_int_reenable,
     
-    input wire s00_axis_tready,
-    input wire dac00_datapath_overflow,
-    input wire [1:0] dac0_nco_update_busy
+    input wire s00_axis_tready
     );
   
 //////////////////////////////////////////////////////////////////////////////////  
@@ -95,24 +93,6 @@ GPO_Core0(
 
 //////////////////////////////////////////////////////////////////////////////////  
 // internal register declaration
-// 1. data_strobe 8bit
-//   7     6     5     4     3     2     1     0
-// 4byte 4byte 4byte 4byte 4byte 4byte 4byte 4byte 
-// 2. dac00_mux_select
-//    4'h0 reg [255:0] s00_axis_tdata,
-//    4'h1 reg s00_axis_tvalid,
-//    4'h2 reg dac00_fast_shutdown,
-//    4'h3 reg dac00_pl_event,
-//    4'h4 reg [47:0] dac00_nco_freq,
-//    4'h5 reg [17:0] dac00_nco_phase,
-//    4'h6 reg dac00_nco_phase_rst,
-//    4'h7 reg [5:0] dac00_nco_update_en,
-//    4'h8 reg dac0_nco_update_req,
-//    4'h9 reg dac0_sysref_int_gating,
-//    4'ha reg dac0_sysref_int_reenable,
-// 3. gpo_00_buffer
-//  | 47:40 data_strobe | 39:38 fifo_mux_select | 37 use_fifo | 36 update 
-//  | 35:32 mux_select | 31:0 Data |
 //////////////////////////////////////////////////////////////////////////////////
 reg [7:0] data_strobe;
 reg [3:0] dac00_mux_select;

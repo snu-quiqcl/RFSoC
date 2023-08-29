@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../RFDC_DDS.sv" \
+"../../../../RFDC_DDS.srcs/sim_1/new/RFDC_DDS_TB00.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

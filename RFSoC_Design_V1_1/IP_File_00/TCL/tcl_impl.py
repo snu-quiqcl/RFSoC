@@ -152,16 +152,26 @@ def run(folder_directory,prj_name,part_name,board_path,board_name,file_type,viva
 
 if __name__ == "__main__":
     # Replace "your_tcl_file.tcl" with the path to your actual TCL file
-    prj_name = "RFDC_DDS_test"
-    folder_directory = "E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\RFDC_DDS_test"
+    # prj_name = "DAC_Controller"
+    # folder_directory = "E:\RFSoC\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\DAC_Controller"
+    # part_name = "xczu28dr-ffvg1517-2-e"
+    # board_path = "E:/Xilinx/Vivado/2020.2/data/boards/board_files"
+    # board_name = "xilinx.com:zcu111:part0:1.4"
+    # file_type = [".v", ".sv", ".xci"]
+    prj_name = "DAC_Controller"
+    folder_directory = "C:\Jeonghyun\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\DAC_Controller"
     part_name = "xczu28dr-ffvg1517-2-e"
-    board_path = "E:/Xilinx/Vivado/2020.2/data/boards/board_files"
+    board_path = "C:/Xilinx/Vivado/2020.2/data/boards/board_files"
     board_name = "xilinx.com:zcu111:part0:1.4"
     file_type = [".v", ".sv", ".xci"]
     
+    # make_tcl(folder_directory,prj_name,part_name,board_path,board_name,file_type)
+    
+    # file_path = folder_directory + '\\' + prj_name + '.tcl'
+    # vivado_path = r"E:\Xilinx\Vivado\2020.2\bin\vivado.bat"  
     make_tcl(folder_directory,prj_name,part_name,board_path,board_name,file_type)
     
     file_path = folder_directory + '\\' + prj_name + '.tcl'
-    vivado_path = r"E:\Xilinx\Vivado\2020.2\bin\vivado.bat"  
+    vivado_path = r"C:\Xilinx\Vivado\2020.2\bin\vivado.bat"  
     
     run_vivado_tcl(vivado_path, file_path)
