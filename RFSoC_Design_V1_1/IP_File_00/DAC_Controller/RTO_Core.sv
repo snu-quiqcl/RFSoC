@@ -21,9 +21,6 @@
 
 
 module RTO_Core
-#(
-    parameter INDEX = 0
-)
 (
     input wire clk,
     input wire auto_start,
@@ -86,67 +83,19 @@ assign counter_matched = counter_match;
 // Depth 8192, full threshold 8100 FIFO.
 //////////////////////////////////////////////////////////////////////////////////
 
-generate
-    if( INDEX == 0 ) begin
-        fifo_generator_0 RTO_Core_FIFO0(
-            .clk(clk),
-            .srst(flush_fifo),  // rst -> srst in Vivado 2020.2
-            .din(fifo_din),
-            .wr_en(wr_en),
-            .rd_en(rd_en),
-            .dout(fifo_dout),
-            .prog_full(full_wire),  // full -> prog_full to deal with full delay signal
-            .overflow(overflow_dummy_wire),
-            .empty(empty_wire),
-            .underflow(underflow_dummy_wire)
-        );
-    end
-    
-    else if( INDEX == 1 ) begin
-        fifo_generator_1 RTO_Core_FIFO1(
-            .clk(clk),
-            .srst(flush_fifo),  // rst -> srst in Vivado 2020.2
-            .din(fifo_din),
-            .wr_en(wr_en),
-            .rd_en(rd_en),
-            .dout(fifo_dout),
-            .prog_full(full_wire),  // full -> prog_full to deal with full delay signal
-            .overflow(overflow_dummy_wire),
-            .empty(empty_wire),
-            .underflow(underflow_dummy_wire)
-        );
-    end
-    
-    else if( INDEX == 2 ) begin
-        fifo_generator_2 RTO_Core_FIFO2(
-            .clk(clk),
-            .srst(flush_fifo),  // rst -> srst in Vivado 2020.2
-            .din(fifo_din),
-            .wr_en(wr_en),
-            .rd_en(rd_en),
-            .dout(fifo_dout),
-            .prog_full(full_wire),  // full -> prog_full to deal with full delay signal
-            .overflow(overflow_dummy_wire),
-            .empty(empty_wire),
-            .underflow(underflow_dummy_wire)
-        );
-    end
-    
-    else if( INDEX == 3 ) begin
-        fifo_generator_3 RTO_Core_FIFO3(
-            .clk(clk),
-            .srst(flush_fifo),  // rst -> srst in Vivado 2020.2
-            .din(fifo_din),
-            .wr_en(wr_en),
-            .rd_en(rd_en),
-            .dout(fifo_dout),
-            .prog_full(full_wire),  // full -> prog_full to deal with full delay signal
-            .overflow(overflow_dummy_wire),
-            .empty(empty_wire),
-            .underflow(underflow_dummy_wire)
-        );
-    end
-endgenerate
+
+fifo_generator_0 RTO_Core_FIFO0(
+    .clk(clk),
+    .srst(flush_fifo),  // rst -> srst in Vivado 2020.2
+    .din(fifo_din),
+    .wr_en(wr_en),
+    .rd_en(rd_en),
+    .dout(fifo_dout),
+    .prog_full(full_wire),  // full -> prog_full to deal with full delay signal
+    .overflow(overflow_dummy_wire),
+    .empty(empty_wire),
+    .underflow(underflow_dummy_wire)
+);
 
 always @(posedge clk) begin
     if( reset ) begin
