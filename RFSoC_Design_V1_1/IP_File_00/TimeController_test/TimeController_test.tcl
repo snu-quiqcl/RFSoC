@@ -19,3 +19,5 @@ ipx::package_project -root_dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_
 ipx::save_core [ipx::current_core]
 set_property  ip_repo_paths  C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TimeController_test [current_project]
 update_ip_catalog
+set_property top TimeController [current_fileset]
+set_property top_file { C:\Jeonghyun\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\TimeController/TimeController.sv } [current_fileset]

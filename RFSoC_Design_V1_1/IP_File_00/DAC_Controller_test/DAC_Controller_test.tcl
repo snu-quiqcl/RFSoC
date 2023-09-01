@@ -9,6 +9,7 @@ create_project ${project_name} ${project_dir}/${project_name} -part xczu28dr-ffv
 add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/AXI2FIFO.sv}
 add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DAC_Controller.sv}
 add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DDS_Controller.sv}
+add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DDS_Controller_TB00.sv}
 add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/GPO_Core.sv}
 add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/RFDC_DDS.sv}
 add_files -norecurse {C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/RTO_Core.sv}
@@ -56,3 +57,5 @@ ipx::package_project -root_dir C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_
 ipx::save_core [ipx::current_core]
 set_property  ip_repo_paths  C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller_test [current_project]
 update_ip_catalog
+set_property top DAC_Controller [current_fileset]
+set_property top_file { C:\Jeonghyun\GIT\RFSoC\RFSoC_Design_V1_1\IP_File_00\DAC_Controller/DAC_Controller.sv } [current_fileset]

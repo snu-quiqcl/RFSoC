@@ -6,7 +6,7 @@
 <Project Version="7" Minor="54" Path="C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TimeController_test/TimeController_test/TimeController_test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="4a57443eef7c486a967450434d2cf939"/>
+    <Option Name="Id" Val="7600ca67d5c747e7abb0c6be03309e35"/>
     <Option Name="Part" Val="xczu28dr-ffvg1517-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -102,7 +102,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="TimeController"/>
-        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="TopRTLFile" Val=" C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/TimeController/TimeController.sv "/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">

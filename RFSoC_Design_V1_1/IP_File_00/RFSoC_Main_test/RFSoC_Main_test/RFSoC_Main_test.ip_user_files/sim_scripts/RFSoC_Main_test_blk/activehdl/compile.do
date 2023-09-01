@@ -21,12 +21,12 @@ vlib activehdl/axi_infrastructure_v1_1_0
 vlib activehdl/axi_register_slice_v2_1_22
 vlib activehdl/axi_data_fifo_v2_1_21
 vlib activehdl/axi_crossbar_v2_1_23
+vlib activehdl/axi_vip_v1_1_8
+vlib activehdl/zynq_ultra_ps_e_vip_v1_0_8
 vlib activehdl/axi_protocol_converter_v2_1_22
 vlib activehdl/axi_clock_converter_v2_1_21
 vlib activehdl/blk_mem_gen_v8_4_4
 vlib activehdl/axi_dwidth_converter_v2_1_22
-vlib activehdl/axi_vip_v1_1_8
-vlib activehdl/zynq_ultra_ps_e_vip_v1_0_8
 
 vmap xilinx_vip activehdl/xilinx_vip
 vmap xpm activehdl/xpm
@@ -48,12 +48,12 @@ vmap axi_infrastructure_v1_1_0 activehdl/axi_infrastructure_v1_1_0
 vmap axi_register_slice_v2_1_22 activehdl/axi_register_slice_v2_1_22
 vmap axi_data_fifo_v2_1_21 activehdl/axi_data_fifo_v2_1_21
 vmap axi_crossbar_v2_1_23 activehdl/axi_crossbar_v2_1_23
+vmap axi_vip_v1_1_8 activehdl/axi_vip_v1_1_8
+vmap zynq_ultra_ps_e_vip_v1_0_8 activehdl/zynq_ultra_ps_e_vip_v1_0_8
 vmap axi_protocol_converter_v2_1_22 activehdl/axi_protocol_converter_v2_1_22
 vmap axi_clock_converter_v2_1_21 activehdl/axi_clock_converter_v2_1_21
 vmap blk_mem_gen_v8_4_4 activehdl/blk_mem_gen_v8_4_4
 vmap axi_dwidth_converter_v2_1_22 activehdl/axi_dwidth_converter_v2_1_22
-vmap axi_vip_v1_1_8 activehdl/axi_vip_v1_1_8
-vmap zynq_ultra_ps_e_vip_v1_0_8 activehdl/zynq_ultra_ps_e_vip_v1_0_8
 
 vlog -work xilinx_vip  -sv2k12 "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "C:/Xilinx/Vivado/2020.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
@@ -134,6 +134,7 @@ vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../RFSoC_Main_test.gen/sour
 "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/AXI2FIFO.sv" \
 "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/DAC_Controller.sv" \
 "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/DDS_Controller.sv" \
+"../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/DDS_Controller_TB00.sv" \
 "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/GPO_Core.sv" \
 "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/RFDC_DDS.sv" \
 "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/RTO_Core.sv" \
@@ -171,22 +172,6 @@ vlog -work axi_crossbar_v2_1_23  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_xbar_0/sim/RFSoC_Main_test_blk_xbar_0.v" \
-
-vlog -work axi_protocol_converter_v2_1_22  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
-
-vlog -work axi_clock_converter_v2_1_21  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
-
-vlog -work blk_mem_gen_v8_4_4  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
-
-vlog -work axi_dwidth_converter_v2_1_22  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
-
-vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
-"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_ds_0/sim/RFSoC_Main_test_blk_auto_ds_0.v" \
-"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_pc_0/sim/RFSoC_Main_test_blk_auto_pc_0.v" \
 "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_test_blk_usp_rf_data_converter_0_0_block.v" \
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
@@ -229,6 +214,22 @@ vlog -work zynq_ultra_ps_e_vip_v1_0_8  -sv2k12 "+incdir+../../../../RFSoC_Main_t
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
 "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_zynq_ultra_ps_e_0_0/sim/RFSoC_Main_test_blk_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+
+vlog -work axi_protocol_converter_v2_1_22  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work axi_clock_converter_v2_1_21  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+
+vlog -work blk_mem_gen_v8_4_4  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work axi_dwidth_converter_v2_1_22  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/ec67/hdl" "+incdir+../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/da1e/hdl" "+incdir+C:/Xilinx/Vivado/2020.2/data/xilinx_vip/include" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_ds_0/sim/RFSoC_Main_test_blk_auto_ds_0.v" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_pc_0/sim/RFSoC_Main_test_blk_auto_pc_0.v" \
 "../../../bd/RFSoC_Main_test_blk/sim/RFSoC_Main_test_blk.v" \
 
 vlog -work xil_defaultlib \

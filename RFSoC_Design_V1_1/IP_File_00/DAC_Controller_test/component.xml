@@ -398,7 +398,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f364fb36</spirit:value>
+            <spirit:value>f2bcf252</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -420,7 +420,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f364fb36</spirit:value>
+            <spirit:value>f2bcf252</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1240,6 +1240,10 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>../DAC_Controller/DDS_Controller_TB00.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>../DAC_Controller/GPO_Core.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
@@ -1373,6 +1377,10 @@
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>../DAC_Controller/DDS_Controller_TB00.sv</spirit:name>
+        <spirit:fileType>systemVerilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>../DAC_Controller/GPO_Core.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
       </spirit:file>
@@ -1477,13 +1485,13 @@
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
       </xilinx:xpmLibraries>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-08-31T08:51:36Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2023-09-01T06:38:18Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a613878a"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="d84603ee"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d0047c74"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="adf29326"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a39e12f8"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="cb24f0e9"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="420eb91b"/>

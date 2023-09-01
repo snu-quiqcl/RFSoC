@@ -77,6 +77,7 @@
   "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/AXI2FIFO.sv" \
   "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/DAC_Controller.sv" \
   "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/DDS_Controller.sv" \
+  "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/DDS_Controller_TB00.sv" \
   "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/GPO_Core.sv" \
   "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/RFDC_DDS.sv" \
   "../../../bd/RFSoC_Main_test_blk/ipshared/DAC_Controller/RTO_Core.sv" \
@@ -114,22 +115,6 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_xbar_0/sim/RFSoC_Main_test_blk_xbar_0.v" \
--endlib
--makelib ies_lib/axi_protocol_converter_v2_1_22 \
-  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/axi_clock_converter_v2_1_21 \
-  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/blk_mem_gen_v8_4_4 \
-  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
--endlib
--makelib ies_lib/axi_dwidth_converter_v2_1_22 \
-  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_ds_0/sim/RFSoC_Main_test_blk_auto_ds_0.v" \
-  "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_pc_0/sim/RFSoC_Main_test_blk_auto_pc_0.v" \
   "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_test_blk_usp_rf_data_converter_0_0_block.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib -sv \
@@ -172,6 +157,22 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_zynq_ultra_ps_e_0_0/sim/RFSoC_Main_test_blk_zynq_ultra_ps_e_0_0_vip_wrapper.v" \
+-endlib
+-makelib ies_lib/axi_protocol_converter_v2_1_22 \
+  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/5cee/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axi_clock_converter_v2_1_21 \
+  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/1304/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/blk_mem_gen_v8_4_4 \
+  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2985/simulation/blk_mem_gen_v8_4.v" \
+-endlib
+-makelib ies_lib/axi_dwidth_converter_v2_1_22 \
+  "../../../../RFSoC_Main_test.gen/sources_1/bd/RFSoC_Main_test_blk/ipshared/2394/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_ds_0/sim/RFSoC_Main_test_blk_auto_ds_0.v" \
+  "../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_auto_pc_0/sim/RFSoC_Main_test_blk_auto_pc_0.v" \
   "../../../bd/RFSoC_Main_test_blk/sim/RFSoC_Main_test_blk.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \

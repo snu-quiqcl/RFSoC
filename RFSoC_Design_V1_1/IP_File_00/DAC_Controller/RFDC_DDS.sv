@@ -73,7 +73,7 @@ end
 genvar i;
 generate
     for (i = 0; i < 16; i = i + 1) begin : ASSIGN_GEN
-        assign amp_full_product[i] = dds_output_wire[i] * amp;
+        assign amp_full_product[i] = {{16{dds_output_wire[i][15]}},dds_output_wire[i]} * {18'h0,amp};
         assign m_axis_data_tdata[16*i +: 16] = amp_full_product[i][29:14] + {2'b00,amp_offset[13:0]};
         assign phase_full_product[i] = (freq * ( {timestamp-time_offset,4'b0000} + i ));
         assign phase_input[i] = {2'h0, phase_full_product[i][47:34] + phase};
