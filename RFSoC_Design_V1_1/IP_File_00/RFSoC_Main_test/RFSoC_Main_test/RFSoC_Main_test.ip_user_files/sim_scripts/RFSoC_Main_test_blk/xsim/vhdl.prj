@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_15/sim/dds_compiler_15.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_14/sim/dds_compiler_14.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_13/sim/dds_compiler_13.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_12/sim/dds_compiler_12.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_11/sim/dds_compiler_11.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_10/sim/dds_compiler_10.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_9/sim/dds_compiler_9.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_8/sim/dds_compiler_8.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_7/sim/dds_compiler_7.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_6/sim/dds_compiler_6.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_5/sim/dds_compiler_5.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_4/sim/dds_compiler_4.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_3/sim/dds_compiler_3.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_2/sim/dds_compiler_2.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_1/sim/dds_compiler_1.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_DAC_Controller_0_0/dds_compiler_0/sim/dds_compiler_0.vhd" \
+"../../../bd/RFSoC_Main_test_blk/ip/RFSoC_Main_test_blk_proc_sys_reset_0_0/sim/RFSoC_Main_test_blk_proc_sys_reset_0_0.vhd" \
+
+nosort

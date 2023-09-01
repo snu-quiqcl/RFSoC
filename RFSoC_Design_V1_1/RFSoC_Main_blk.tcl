@@ -1,6 +1,6 @@
 
 ################################################################
-# This is a generated script based on design: RFSoC_Main_blk
+# This is a generated script based on design: RFSoC_Main_test_blk
 #
 # Though there are limitations about the generated script,
 # the main purpose of this utility is to make learning
@@ -35,7 +35,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 ################################################################
 
 # To test this script, run the following commands from Vivado Tcl console:
-# source RFSoC_Main_blk_script.tcl
+# source RFSoC_Main_test_blk_script.tcl
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
@@ -50,7 +50,7 @@ if { $list_projs eq "" } {
 
 # CHANGE DESIGN NAME HERE
 variable design_name
-set design_name RFSoC_Main_blk
+set design_name RFSoC_Main_test_blk
 
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
@@ -192,10 +192,12 @@ proc create_root_design { parentCell } {
 
 
   # Create interface ports
-  set vout00_0 [ create_bd_intf_port -mode Master -vlnv xilinx.com:interface:diff_analog_io_rtl:1.0 vout00_0 ]
-
 
   # Create ports
+  set RF3_CLKO_A_C_N [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_N ]
+  set RF3_CLKO_A_C_P [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_P ]
+  set RFMC_DAC_00_N [ create_bd_port -dir O RFMC_DAC_00_N ]
+  set RFMC_DAC_00_P [ create_bd_port -dir O RFMC_DAC_00_P ]
 
   # Create instance: DAC_Controller_0, and set properties
   set DAC_Controller_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:DAC_Controller:1.0 DAC_Controller_0 ]
@@ -898,16 +900,23 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net axi_interconnect_0_M00_AXI [get_bd_intf_pins DAC_Controller_0/s_axi] [get_bd_intf_pins axi_interconnect_0/M00_AXI]
   connect_bd_intf_net -intf_net axi_interconnect_0_M01_AXI [get_bd_intf_pins TimeController_0/s_axi] [get_bd_intf_pins axi_interconnect_0/M01_AXI]
   connect_bd_intf_net -intf_net axi_interconnect_0_M02_AXI [get_bd_intf_pins axi_interconnect_0/M02_AXI] [get_bd_intf_pins usp_rf_data_converter_0/s_axi]
-  connect_bd_intf_net -intf_net usp_rf_data_converter_0_vout00 [get_bd_intf_ports vout00_0] [get_bd_intf_pins usp_rf_data_converter_0/vout00]
+  connect_bd_intf_net -intf_net zynq_ultra_ps_e_0_M_AXI_HPM0_FPD [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
 
   # Create port connections
+  connect_bd_net -net RF3_CLKO_A_C_N_1 [get_bd_ports RF3_CLKO_A_C_N] [get_bd_pins usp_rf_data_converter_0/dac0_clk_n]
+  connect_bd_net -net RF3_CLKO_A_C_P_1 [get_bd_ports RF3_CLKO_A_C_P] [get_bd_pins usp_rf_data_converter_0/dac0_clk_p]
   connect_bd_net -net TimeController_0_auto_start [get_bd_pins DAC_Controller_0/auto_start] [get_bd_pins TimeController_0/auto_start]
   connect_bd_net -net TimeController_0_counter [get_bd_pins DAC_Controller_0/counter] [get_bd_pins TimeController_0/counter]
-  connect_bd_net -net proc_sys_reset_0_peripheral_reset [get_bd_pins DAC_Controller_0/s_axi_aresetn] [get_bd_pins TimeController_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_reset] [get_bd_pins usp_rf_data_converter_0/s0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn]
-  connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins DAC_Controller_0/m00_axis_aclk] [get_bd_pins DAC_Controller_0/s_axi_aclk] [get_bd_pins TimeController_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk] [get_bd_pins usp_rf_data_converter_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
-  connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins proc_sys_reset_0/aux_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+  connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins DAC_Controller_0/s_axi_aresetn] [get_bd_pins TimeController_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins usp_rf_data_converter_0/s0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn]
+  connect_bd_net -net usp_rf_data_converter_0_vout00_n [get_bd_ports RFMC_DAC_00_N] [get_bd_pins usp_rf_data_converter_0/vout00_n]
+  connect_bd_net -net usp_rf_data_converter_0_vout00_p [get_bd_ports RFMC_DAC_00_P] [get_bd_pins usp_rf_data_converter_0/vout00_p]
+  connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins DAC_Controller_0/m00_axis_aclk] [get_bd_pins DAC_Controller_0/s_axi_aclk] [get_bd_pins TimeController_0/s_axi_aclk] [get_bd_pins axi_interconnect_0/ACLK] [get_bd_pins axi_interconnect_0/M00_ACLK] [get_bd_pins axi_interconnect_0/M01_ACLK] [get_bd_pins axi_interconnect_0/M02_ACLK] [get_bd_pins axi_interconnect_0/S00_ACLK] [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins usp_rf_data_converter_0/s0_axis_aclk] [get_bd_pins usp_rf_data_converter_0/s_axi_aclk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+  connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
 
   # Create address segments
+  assign_bd_address -offset 0xA0000000 -range 0x00001000 -target_address_space [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs DAC_Controller_0/s_axi/reg0] -force
+  assign_bd_address -offset 0xA0010000 -range 0x00001000 -target_address_space [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs TimeController_0/s_axi/reg0] -force
+  assign_bd_address -offset 0xA0040000 -range 0x00008000 -target_address_space [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs usp_rf_data_converter_0/s_axi/Reg] -force
 
 
   # Restore current instance

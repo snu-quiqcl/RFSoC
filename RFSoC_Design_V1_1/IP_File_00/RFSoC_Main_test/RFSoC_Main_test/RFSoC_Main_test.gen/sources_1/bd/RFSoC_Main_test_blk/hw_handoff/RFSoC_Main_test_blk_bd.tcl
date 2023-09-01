@@ -117,42 +117,6 @@ if { $nRet != 0 } {
    return $nRet
 }
 
-set bCheckIPsPassed 1
-##################################################################
-# CHECK IPs
-##################################################################
-set bCheckIPs 1
-if { $bCheckIPs == 1 } {
-   set list_check_ips "\ 
-xilinx.com:user:DAC_Controller:1.0\
-xilinx.com:user:TimeController:1.0\
-xilinx.com:ip:proc_sys_reset:5.0\
-xilinx.com:ip:usp_rf_data_converter:2.4\
-xilinx.com:ip:zynq_ultra_ps_e:3.3\
-"
-
-   set list_ips_missing ""
-   common::send_gid_msg -ssname BD::TCL -id 2011 -severity "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
-
-   foreach ip_vlnv $list_check_ips {
-      set ip_obj [get_ipdefs -all $ip_vlnv]
-      if { $ip_obj eq "" } {
-         lappend list_ips_missing $ip_vlnv
-      }
-   }
-
-   if { $list_ips_missing ne "" } {
-      catch {common::send_gid_msg -ssname BD::TCL -id 2012 -severity "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
-      set bCheckIPsPassed 0
-   }
-
-}
-
-if { $bCheckIPsPassed != 1 } {
-  common::send_gid_msg -ssname BD::TCL -id 2023 -severity "WARNING" "Will not continue with creation of design due to the error(s) above."
-  return 3
-}
-
 ##################################################################
 # DESIGN PROCs
 ##################################################################
@@ -903,10 +867,10 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net zynq_ultra_ps_e_0_M_AXI_HPM0_FPD [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
 
   # Create port connections
+  connect_bd_net -net RF3_CLKO_A_C_N_1 [get_bd_ports RF3_CLKO_A_C_N] [get_bd_pins usp_rf_data_converter_0/dac0_clk_n]
+  connect_bd_net -net RF3_CLKO_A_C_P_1 [get_bd_ports RF3_CLKO_A_C_P] [get_bd_pins usp_rf_data_converter_0/dac0_clk_p]
   connect_bd_net -net TimeController_0_auto_start [get_bd_pins DAC_Controller_0/auto_start] [get_bd_pins TimeController_0/auto_start]
   connect_bd_net -net TimeController_0_counter [get_bd_pins DAC_Controller_0/counter] [get_bd_pins TimeController_0/counter]
-  connect_bd_net -net dac0_clk_n_0_1 [get_bd_ports RF3_CLKO_A_C_N] [get_bd_pins usp_rf_data_converter_0/dac0_clk_n]
-  connect_bd_net -net dac0_clk_p_0_1 [get_bd_ports RF3_CLKO_A_C_P] [get_bd_pins usp_rf_data_converter_0/dac0_clk_p]
   connect_bd_net -net proc_sys_reset_0_peripheral_aresetn [get_bd_pins DAC_Controller_0/s_axi_aresetn] [get_bd_pins TimeController_0/s_axi_aresetn] [get_bd_pins axi_interconnect_0/ARESETN] [get_bd_pins axi_interconnect_0/M00_ARESETN] [get_bd_pins axi_interconnect_0/M01_ARESETN] [get_bd_pins axi_interconnect_0/M02_ARESETN] [get_bd_pins axi_interconnect_0/S00_ARESETN] [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins usp_rf_data_converter_0/s0_axis_aresetn] [get_bd_pins usp_rf_data_converter_0/s_axi_aresetn]
   connect_bd_net -net usp_rf_data_converter_0_vout00_n [get_bd_ports RFMC_DAC_00_N] [get_bd_pins usp_rf_data_converter_0/vout00_n]
   connect_bd_net -net usp_rf_data_converter_0_vout00_p [get_bd_ports RFMC_DAC_00_P] [get_bd_pins usp_rf_data_converter_0/vout00_p]
@@ -922,6 +886,7 @@ proc create_root_design { parentCell } {
   # Restore current instance
   current_bd_instance $oldCurInst
 
+  validate_bd_design
   save_bd_design
 }
 # End of create_root_design()
@@ -933,6 +898,4 @@ proc create_root_design { parentCell } {
 
 create_root_design ""
 
-
-common::send_gid_msg -ssname BD::TCL -id 2053 -severity "WARNING" "This Tcl script was generated from a block design that has not been validated. It is possible that design <$design_name> may result in errors during validation."
 
