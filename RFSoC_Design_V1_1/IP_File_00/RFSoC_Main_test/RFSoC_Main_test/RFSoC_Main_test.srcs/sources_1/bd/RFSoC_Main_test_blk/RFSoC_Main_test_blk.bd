@@ -1664,12 +1664,6 @@
       }
     },
     "interface_nets": {
-      "axi_interconnect_0_M01_AXI": {
-        "interface_ports": [
-          "TimeController_0/s_axi",
-          "axi_interconnect_0/M01_AXI"
-        ]
-      },
       "axi_interconnect_0_M02_AXI": {
         "interface_ports": [
           "axi_interconnect_0/M02_AXI",
@@ -1680,6 +1674,12 @@
         "interface_ports": [
           "axi_interconnect_0/S00_AXI",
           "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD"
+        ]
+      },
+      "axi_interconnect_0_M01_AXI": {
+        "interface_ports": [
+          "TimeController_0/s_axi",
+          "axi_interconnect_0/M01_AXI"
         ]
       },
       "DAC_Controller_0_m00_axis": {

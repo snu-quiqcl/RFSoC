@@ -184,7 +184,6 @@ input wire [63 : 0] counter;
     .AXI_DATA_WIDTH(128),
     .AXI_STROBE_WIDTH(16),
     .AXI_STROBE_LEN(4),
-    .INDEX(0),
     .DEST_VAL(16'H0000),
     .CHANNEL_LENGTH(12),
     .AXIS_DATA_WIDTH(256)

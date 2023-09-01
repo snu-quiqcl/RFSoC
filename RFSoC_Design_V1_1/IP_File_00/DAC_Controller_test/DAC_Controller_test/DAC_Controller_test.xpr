@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller_test/DAC_Controller_test/DAC_Controller_test.xpr">
+<Project Version="7" Minor="54" Path="E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller_test/DAC_Controller_test/DAC_Controller_test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="637cb52f06474a57ae95c995a2627325"/>
+    <Option Name="Id" Val="17fb8bbc15484ac09aa4fec6af7dc2ec"/>
     <Option Name="Part" Val="xczu28dr-ffvg1517-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -215,13 +215,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../DAC_Controller/DDS_Controller_TB00.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PPRDIR/../../DAC_Controller/GPO_Core.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -249,7 +242,7 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="DAC_Controller"/>
-        <Option Name="TopRTLFile" Val=" C:/Jeonghyun/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DAC_Controller.sv "/>
+        <Option Name="TopRTLFile" Val=" E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_00/DAC_Controller/DAC_Controller.sv "/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
