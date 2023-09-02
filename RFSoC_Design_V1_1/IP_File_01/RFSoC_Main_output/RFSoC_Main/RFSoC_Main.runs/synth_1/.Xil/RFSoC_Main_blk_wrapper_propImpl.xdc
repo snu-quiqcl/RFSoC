@@ -1550,9 +1550,9 @@ set_property PACKAGE_PIN B31      [get_ports "FMCP_HSPC_DP10_C2M_P"] ;# Bank 131
 set_property src_info {type:XDC file:1 line:797 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN A33      [get_ports "FMCP_HSPC_DP11_C2M_P"] ;# Bank 131 - MGTYTXP3_131
 set_property src_info {type:XDC file:1 line:831 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN R4       [get_ports "RF3_CLKO_A_C_N"] ;# Bank 228 - DAC_CLK_N_228
+set_property PACKAGE_PIN R4       [get_ports "RF3_CLKO_A_C_N_228"] ;# Bank 228 - DAC_CLK_N_228
 set_property src_info {type:XDC file:1 line:832 export:INPUT save:INPUT read:READ} [current_design]
-set_property PACKAGE_PIN R5       [get_ports "RF3_CLKO_A_C_P"] ;# Bank 228 - DAC_CLK_P_228
+set_property PACKAGE_PIN R5       [get_ports "RF3_CLKO_A_C_P_228"] ;# Bank 228 - DAC_CLK_P_228
 set_property src_info {type:XDC file:1 line:836 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U1       [get_ports "RFMC_DAC_00_N"] ;# Bank 228 - DAC_VOUT0_N_228
 set_property src_info {type:XDC file:1 line:837 export:INPUT save:INPUT read:READ} [current_design]
@@ -1569,6 +1569,10 @@ set_property src_info {type:XDC file:1 line:842 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN L1       [get_ports "RFMC_DAC_03_N"] ;# Bank 228 - DAC_VOUT3_N_228
 set_property src_info {type:XDC file:1 line:843 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L2       [get_ports "RFMC_DAC_03_P"] ;# Bank 228 - DAC_VOUT3_P_228
+set_property src_info {type:XDC file:1 line:844 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N4       [get_ports "RF3_CLKO_A_C_N_229"] ;# Bank 229 - DAC_CLK_N_229
+set_property src_info {type:XDC file:1 line:845 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN N5       [get_ports "RF3_CLKO_A_C_P_229"] ;# Bank 229 - DAC_CLK_P_229
 set_property src_info {type:XDC file:1 line:846 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J1       [get_ports "RFMC_DAC_04_N"] ;# Bank 229 - DAC_VOUT0_N_229
 set_property src_info {type:XDC file:1 line:847 export:INPUT save:INPUT read:READ} [current_design]

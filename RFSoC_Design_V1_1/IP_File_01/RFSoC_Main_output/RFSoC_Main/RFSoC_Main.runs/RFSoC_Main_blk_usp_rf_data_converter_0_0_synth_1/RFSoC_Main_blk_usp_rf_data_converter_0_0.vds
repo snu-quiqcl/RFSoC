@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Sep  2 20:39:53 2023
-# Process ID: 29940
+# Start of session at: Sat Sep  2 22:01:59 2023
+# Process ID: 27324
 # Current directory: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/RFSoC_Main_blk_usp_rf_data_converter_0_0_synth_1
 # Command line: vivado.exe -log RFSoC_Main_blk_usp_rf_data_converter_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RFSoC_Main_blk_usp_rf_data_converter_0_0.tcl
 # Log file: E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/RFSoC_Main_blk_usp_rf_data_converter_0_0_synth_1/RFSoC_Main_blk_usp_rf_data_converter_0_0.vds
@@ -30,10 +30,10 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28d
 INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25812
+INFO: [Synth 8-7075] Helper process launched with PID 17340
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1808.012 ; gain = 186.586
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1807.574 ; gain = 187.773
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0.v:52]
 INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_usp_rf_data_converter_0_0_block' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0_block.v:56]
@@ -350,24 +350,23 @@ INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_usp_rf_data_conver
 INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_usp_rf_data_converter_0_0_block' (27#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0_block.v:56]
 INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' (28#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0.v:52]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1972.246 ; gain = 350.820
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1971.824 ; gain = 352.023
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1993.164 ; gain = 371.738
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1991.730 ; gain = 371.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1993.164 ; gain = 371.738
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1991.730 ; gain = 371.930
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.252 . Memory (MB): peak = 2005.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 2003.754 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2129.863 ; gain = 3.047
 Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0_ooc.xdc] for cell 'inst'
 Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
 Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/synth/RFSoC_Main_blk_usp_rf_data_converter_0_0_clocks.xdc] for cell 'inst'
@@ -386,14 +385,14 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/RFSoC_Main_b
 INFO: [Project 1-1715] 1 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2129.863 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2128.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 2131.805 ; gain = 1.941
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.176 . Memory (MB): peak = 2130.914 ; gain = 1.945
 load diablo GTM unisim library
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2131.805 ; gain = 510.379
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2130.914 ; gain = 511.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -401,7 +400,7 @@ Start Loading Part and Timing Information
 Loading part: xczu28dr-ffvg1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2131.805 ; gain = 510.379
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2130.914 ; gain = 511.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -512,7 +511,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/i_RFSoC_Main_blk_usp_rf_data
 Applied set_property KEEP_HIERARCHY = SOFT for inst/i_RFSoC_Main_blk_usp_rf_data_converter_0_0_irq_sync/sync_dac13_data_irq. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/i_RFSoC_Main_blk_usp_rf_data_converter_0_0_irq_sync/sync_dac13_fifo_irq. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 2131.805 ; gain = 510.379
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2130.914 ; gain = 511.113
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'tc_sm_state_reg' in module 'RFSoC_Main_blk_usp_rf_data_converter_0_0_tile_config'
 INFO: [Synth 8-802] inferred FSM for state register 'por_sm_state_reg' in module 'RFSoC_Main_blk_usp_rf_data_converter_0_0_por_fsm_disabled'
@@ -648,7 +647,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'access_cs_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'RFSoC_Main_blk_usp_rf_data_converter_0_0_drp_control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2131.805 ; gain = 510.379
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2130.914 ; gain = 511.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -759,7 +758,7 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:05 ; elapsed = 00:01:10 . Memory (MB): peak = 2209.074 ; gain = 587.648
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 2202.387 ; gain = 582.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -780,19 +779,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2513.754 ; gain = 892.328
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 2507.148 ; gain = 887.348
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:59 ; elapsed = 00:02:06 . Memory (MB): peak = 2719.074 ; gain = 1097.648
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:53 . Memory (MB): peak = 2712.863 ; gain = 1093.062
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:04 ; elapsed = 00:02:12 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Technology Mapping : Time (s): cpu = 00:01:54 ; elapsed = 00:01:58 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -810,37 +809,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:07 ; elapsed = 00:02:15 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished IO Insertion : Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:07 ; elapsed = 00:02:15 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:56 ; elapsed = 00:02:00 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:02:15 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:02:15 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:56 ; elapsed = 00:02:01 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:08 ; elapsed = 00:02:16 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:08 ; elapsed = 00:02:16 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -872,31 +871,31 @@ Report Cell Usage:
 |14    |FDSE    |   249|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:08 ; elapsed = 00:02:16 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:45 ; elapsed = 00:02:05 . Memory (MB): peak = 2724.949 ; gain = 964.883
-Synthesis Optimization Complete : Time (s): cpu = 00:02:08 ; elapsed = 00:02:16 . Memory (MB): peak = 2724.949 ; gain = 1103.523
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:35 ; elapsed = 00:01:50 . Memory (MB): peak = 2718.766 ; gain = 959.781
+Synthesis Optimization Complete : Time (s): cpu = 00:01:57 ; elapsed = 00:02:01 . Memory (MB): peak = 2718.766 ; gain = 1098.965
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 2724.949 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.176 . Memory (MB): peak = 2718.766 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/RFSoC_Main_blk_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC for BUFG_GT inst/i_RFSoC_Main_blk_usp_rf_data_converter_0_0_bufg_gt_ctrl/dac0_bufg_gt
 INFO: [Opt 31-441] Inserted BUFG_GT_SYNC inst/RFSoC_Main_blk_usp_rf_data_converter_0_0_rf_wrapper_i/BUFG_GT_SYNC_1 for BUFG_GT inst/i_RFSoC_Main_blk_usp_rf_data_converter_0_0_bufg_gt_ctrl/dac1_bufg_gt
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2740.859 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2733.688 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 108 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:19 ; elapsed = 00:02:30 . Memory (MB): peak = 2740.859 ; gain = 1578.309
+synth_design: Time (s): cpu = 00:02:07 ; elapsed = 00:02:14 . Memory (MB): peak = 2733.688 ; gain = 1570.828
 INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/RFSoC_Main_blk_usp_rf_data_converter_0_0_synth_1/RFSoC_Main_blk_usp_rf_data_converter_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
 INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP RFSoC_Main_blk_usp_rf_data_converter_0_0, cache-ID = fa8dcd599469e621
 INFO: [Coretcl 2-1174] Renamed 163 cell refs.
 INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/RFSoC_Main_blk_usp_rf_data_converter_0_0_synth_1/RFSoC_Main_blk_usp_rf_data_converter_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file RFSoC_Main_blk_usp_rf_data_converter_0_0_utilization_synth.rpt -pb RFSoC_Main_blk_usp_rf_data_converter_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Sep  2 20:42:39 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  2 22:04:28 2023...

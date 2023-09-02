@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date                      : Sat Sep  2 21:10:55 2023
+| Date                      : Sat Sep  2 22:26:10 2023
 | Host                      : DESKTOP-MCBJ7EB running 64-bit major release  (build 9200)
 | Command                   : report_io -file RFSoC_Main_blk_wrapper_io_placed.rpt
 | Design                    : RFSoC_Main_blk_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            18 |
+|            20 |
 +---------------+
 
 
@@ -1243,8 +1243,8 @@ Table of Contents
 | N1         | RFMC_DAC_02_N            | DAC              | DAC_VOUT2_N_228                    | OUTPUT        |             |     228 |         12 |                         | SLOW |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | N2         | RFMC_DAC_02_P            | DAC              | DAC_VOUT2_P_228                    | OUTPUT        |             |     228 |         12 |                         | SLOW |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | N3         |                          |                  | DAC_GND                            | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
-| N4         |                          | DAC              | DAC_CLK_N_229                      | DAC           |             |     229 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
-| N5         |                          | DAC              | DAC_CLK_P_229                      | DAC           |             |     229 |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
+| N4         | RF3_CLKO_A_C_N_229       | DAC              | DAC_CLK_N_229                      | INPUT         |             |     229 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| N5         | RF3_CLKO_A_C_P_229       | DAC              | DAC_CLK_P_229                      | INPUT         |             |     229 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | N6         |                          |                  | DAC_GND                            | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | N7         |                          |                  | DAC_AVCCAUX                        | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | N8         |                          |                  | DAC_GND                            | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
@@ -1321,8 +1321,8 @@ Table of Contents
 | R1         | RFMC_DAC_01_N            | DAC              | DAC_VOUT1_N_228                    | OUTPUT        |             |     228 |         12 |                         | SLOW |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | R2         | RFMC_DAC_01_P            | DAC              | DAC_VOUT1_P_228                    | OUTPUT        |             |     228 |         12 |                         | SLOW |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | R3         |                          |                  | DAC_GND                            | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
-| R4         | RF3_CLKO_A_C_N           | DAC              | DAC_CLK_N_228                      | INPUT         |             |     228 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
-| R5         | RF3_CLKO_A_C_P           | DAC              | DAC_CLK_P_228                      | INPUT         |             |     228 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| R4         | RF3_CLKO_A_C_N_228       | DAC              | DAC_CLK_N_228                      | INPUT         |             |     228 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
+| R5         | RF3_CLKO_A_C_P_228       | DAC              | DAC_CLK_P_228                      | INPUT         |             |     228 |            |                         |      |                   |                 NONE |           | FIXED      |           |          |      | NONE             |              |                   |              |
 | R6         |                          |                  | DAC_GND                            | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | R7         |                          |                  | DAC_AVCCAUX                        | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |
 | R8         |                          |                  | DAC_GND                            | DAC           |             |         |            |                         |      |                   |                      |           |            |           |          |      |                  |              |                   |              |

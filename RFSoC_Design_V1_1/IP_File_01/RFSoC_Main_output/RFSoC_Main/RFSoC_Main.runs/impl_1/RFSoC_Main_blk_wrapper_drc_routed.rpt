@@ -1,13 +1,13 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Sep  2 21:27:48 2023
+| Date         : Sat Sep  2 22:42:44 2023
 | Host         : DESKTOP-MCBJ7EB running 64-bit major release  (build 9200)
 | Command      : report_drc -file RFSoC_Main_blk_wrapper_drc_routed.rpt -pb RFSoC_Main_blk_wrapper_drc_routed.pb -rpx RFSoC_Main_blk_wrapper_drc_routed.rpx
 | Design       : RFSoC_Main_blk_wrapper
 | Device       : xczu28dr-ffvg1517-2-e
 | Speed File   : -2
-| Design State : Fully Placed
+| Design State : Fully Routed
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Report DRC
@@ -24,24 +24,18 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 3586
-+-----------+------------------+------------------------+------------+
-| Rule      | Severity         | Description            | Violations |
-+-----------+------------------+------------------------+------------+
-| RTSTAT-1  | Critical Warning | Unrouted nets          | 1          |
-| DPIP-2    | Warning          | Input pipelining       | 2176       |
-| DPOP-3    | Warning          | PREG Output pipelining | 896        |
-| DPOP-4    | Warning          | MREG Output pipelining | 512        |
-| RTSTAT-10 | Warning          | No routable loads      | 1          |
-+-----------+------------------+------------------------+------------+
+             Violations found: 3585
++-----------+----------+------------------------+------------+
+| Rule      | Severity | Description            | Violations |
++-----------+----------+------------------------+------------+
+| DPIP-2    | Warning  | Input pipelining       | 2176       |
+| DPOP-3    | Warning  | PREG Output pipelining | 896        |
+| DPOP-4    | Warning  | MREG Output pipelining | 512        |
+| RTSTAT-10 | Warning  | No routable loads      | 1          |
++-----------+----------+------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-RTSTAT-1#1 Critical Warning
-Unrouted nets  
-2 net(s) are unrouted. The problem bus(es) and/or net(s) are RF3_CLKO_A_C_N, RF3_CLKO_A_C_P.
-Related violations: <none>
-
 DPIP-2#1 Warning
 Input pipelining  
 DSP RFSoC_Main_blk_i/DAC_Controller_0/inst/rfdc_dds/amp_full_product[0] input RFSoC_Main_blk_i/DAC_Controller_0/inst/rfdc_dds/amp_full_product[0]/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.

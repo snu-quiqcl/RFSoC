@@ -1097,7 +1097,7 @@
       <xilinx:displayName>TimeController_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>1</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-09-02T11:28:41Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2023-09-02T12:50:17Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>

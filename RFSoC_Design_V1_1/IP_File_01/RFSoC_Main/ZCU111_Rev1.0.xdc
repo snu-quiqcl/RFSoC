@@ -828,8 +828,8 @@ set_property PACKAGE_PIN A33      [get_ports "FMCP_HSPC_DP11_C2M_P"] ;# Bank 131
 #Other net   PACKAGE_PIN AB2      - RFMC_ADC_06_P             Bank 227 - ADC_VIN_I01_P_227
 #Other net   PACKAGE_PIN Y1       - RFMC_ADC_07_N             Bank 227 - ADC_VIN_I23_N_227
 #Other net   PACKAGE_PIN Y2       - RFMC_ADC_07_P             Bank 227 - ADC_VIN_I23_P_227
-set_property PACKAGE_PIN R4       [get_ports "RF3_CLKO_A_C_N"] ;# Bank 228 - DAC_CLK_N_228
-set_property PACKAGE_PIN R5       [get_ports "RF3_CLKO_A_C_P"] ;# Bank 228 - DAC_CLK_P_228
+set_property PACKAGE_PIN R4       [get_ports "RF3_CLKO_A_C_N_228"] ;# Bank 228 - DAC_CLK_N_228
+set_property PACKAGE_PIN R5       [get_ports "RF3_CLKO_A_C_P_228"] ;# Bank 228 - DAC_CLK_P_228
 #Other net   PACKAGE_PIN W8       - N20238874                 Bank 228 - DAC_REXT_228
 #Other net   PACKAGE_PIN U4       - SYSREF_RFSOC_C_N          Bank 228 - SYSREF_N_228
 #Other net   PACKAGE_PIN U5       - SYSREF_RFSOC_C_P          Bank 228 - SYSREF_P_228
@@ -841,8 +841,8 @@ set_property PACKAGE_PIN N1       [get_ports "RFMC_DAC_02_N"] ;# Bank 228 - DAC_
 set_property PACKAGE_PIN N2       [get_ports "RFMC_DAC_02_P"] ;# Bank 228 - DAC_VOUT2_P_228
 set_property PACKAGE_PIN L1       [get_ports "RFMC_DAC_03_N"] ;# Bank 228 - DAC_VOUT3_N_228
 set_property PACKAGE_PIN L2       [get_ports "RFMC_DAC_03_P"] ;# Bank 228 - DAC_VOUT3_P_228
-#Other net   PACKAGE_PIN N4       - RF3_CLKO_A_C_N            Bank 229 - DAC_CLK_N_229
-#Other net   PACKAGE_PIN N5       - RF3_CLKO_A_C_P            Bank 229 - DAC_CLK_P_229
+set_property PACKAGE_PIN N4       [get_ports "RF3_CLKO_A_C_N_229"] ;# Bank 229 - DAC_CLK_N_229
+set_property PACKAGE_PIN N5       [get_ports "RF3_CLKO_A_C_P_229"] ;# Bank 229 - DAC_CLK_P_229
 set_property PACKAGE_PIN J1       [get_ports "RFMC_DAC_04_N"] ;# Bank 229 - DAC_VOUT0_N_229
 set_property PACKAGE_PIN J2       [get_ports "RFMC_DAC_04_P"] ;# Bank 229 - DAC_VOUT0_P_229
 set_property PACKAGE_PIN G1       [get_ports "RFMC_DAC_05_N"] ;# Bank 229 - DAC_VOUT1_N_229

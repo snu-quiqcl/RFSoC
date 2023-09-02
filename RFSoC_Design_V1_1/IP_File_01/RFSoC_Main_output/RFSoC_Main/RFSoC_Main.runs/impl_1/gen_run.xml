@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1693655358">
+<GenRun Id="impl_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1693659290">
   <File Type="BITSTR-BMM" Name="RFSoC_Main_blk_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="RFSoC_Main_blk_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="RFSoC_Main_blk_wrapper_timing_summary_init.rpt"/>
@@ -129,19 +129,19 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_5_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_4_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_TimeController_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_auto_ds_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_5_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_2_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_7_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_auto_ds_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_TimeController_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_usp_rf_data_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_zynq_ultra_ps_e_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_3_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_DAC_Controller_7_0"/>
 </GenRun>

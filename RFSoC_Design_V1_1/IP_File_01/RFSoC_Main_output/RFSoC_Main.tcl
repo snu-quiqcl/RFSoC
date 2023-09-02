@@ -21,8 +21,10 @@ set parentObj [get_bd_cells ""]
 set parentType [get_property TYPE $parentObj]
 current_bd_instance $parentObj
 
-set RF3_CLKO_A_C_N [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_N ]
-set RF3_CLKO_A_C_P [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_P ]
+set RF3_CLKO_A_C_N_228 [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_N_228 ]
+set RF3_CLKO_A_C_P_228 [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_P_228 ]
+set RF3_CLKO_A_C_N_229 [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_N_229 ]
+set RF3_CLKO_A_C_P_229 [ create_bd_port -dir I -type clk -freq_hz 1600000000 RF3_CLKO_A_C_P_229 ]
         
 set RFMC_DAC_00_N [ create_bd_port -dir O RFMC_DAC_00_N ]
 set RFMC_DAC_00_P [ create_bd_port -dir O RFMC_DAC_00_P ]
@@ -92,8 +94,10 @@ connect_bd_intf_net -intf_net axi_interconnect_0_M08_AXI [get_bd_intf_pins DAC_C
 connect_bd_intf_net -intf_net axi_interconnect_0_M09_AXI [get_bd_intf_pins DAC_Controller_7/s_axi] [get_bd_intf_pins axi_interconnect_0/M09_AXI]
 
 # Create port connections
-connect_bd_net -net RF3_CLKO_A_C_N_1 [get_bd_ports RF3_CLKO_A_C_N] [get_bd_pins usp_rf_data_converter_0/dac0_clk_n] [get_bd_pins usp_rf_data_converter_0/dac1_clk_n]
-connect_bd_net -net RF3_CLKO_A_C_P_1 [get_bd_ports RF3_CLKO_A_C_P] [get_bd_pins usp_rf_data_converter_0/dac0_clk_p] [get_bd_pins usp_rf_data_converter_0/dac1_clk_p]
+connect_bd_net -net RF3_CLKO_A_C_N_1 [get_bd_ports RF3_CLKO_A_C_N_228] [get_bd_pins usp_rf_data_converter_0/dac0_clk_n]
+connect_bd_net -net RF3_CLKO_A_C_N_2 [get_bd_ports RF3_CLKO_A_C_N_229] [get_bd_pins usp_rf_data_converter_0/dac1_clk_n]
+connect_bd_net -net RF3_CLKO_A_C_P_1 [get_bd_ports RF3_CLKO_A_C_P_228] [get_bd_pins usp_rf_data_converter_0/dac0_clk_p]
+connect_bd_net -net RF3_CLKO_A_C_P_2 [get_bd_ports RF3_CLKO_A_C_P_229] [get_bd_pins usp_rf_data_converter_0/dac1_clk_p]
         
 connect_bd_net -net TimeController_0_auto_start [get_bd_pins DAC_Controller_0/auto_start] [get_bd_pins DAC_Controller_1/auto_start] [get_bd_pins DAC_Controller_2/auto_start] [get_bd_pins DAC_Controller_3/auto_start] [get_bd_pins DAC_Controller_4/auto_start] [get_bd_pins DAC_Controller_5/auto_start] [get_bd_pins DAC_Controller_6/auto_start] [get_bd_pins DAC_Controller_7/auto_start] [get_bd_pins TimeController_0/auto_start]
 connect_bd_net -net TimeController_0_counter [get_bd_pins DAC_Controller_0/counter] [get_bd_pins DAC_Controller_1/counter] [get_bd_pins DAC_Controller_2/counter] [get_bd_pins DAC_Controller_3/counter] [get_bd_pins DAC_Controller_4/counter] [get_bd_pins DAC_Controller_5/counter] [get_bd_pins DAC_Controller_6/counter] [get_bd_pins DAC_Controller_7/counter] [get_bd_pins TimeController_0/counter]

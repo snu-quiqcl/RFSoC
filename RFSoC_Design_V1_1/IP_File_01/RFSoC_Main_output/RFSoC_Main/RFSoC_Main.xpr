@@ -6,7 +6,7 @@
 <Project Version="7" Minor="54" Path="E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="7e1277ab4eec4ad0b38bc40fbcabf601"/>
+    <Option Name="Id" Val="2e25da7c3daf4ea28de7b92dd0503442"/>
     <Option Name="Part" Val="xczu28dr-ffvg1517-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -89,50 +89,50 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_xbar_0/RFSoC_Main_blk_xbar_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_TimeController_0_0/RFSoC_Main_blk_TimeController_0_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_TimeController_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_auto_ds_0/RFSoC_Main_blk_auto_ds_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_auto_ds_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_auto_pc_0/RFSoC_Main_blk_auto_pc_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_auto_pc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_1_0/RFSoC_Main_blk_DAC_Controller_1_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_2_0/RFSoC_Main_blk_DAC_Controller_2_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_4_0/RFSoC_Main_blk_DAC_Controller_4_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_4_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_5_0/RFSoC_Main_blk_DAC_Controller_5_0.xci">
           <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_5_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_6_0/RFSoC_Main_blk_DAC_Controller_6_0.xci">
           <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_6_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_2_0/RFSoC_Main_blk_DAC_Controller_2_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_7_0/RFSoC_Main_blk_DAC_Controller_7_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_7_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_proc_sys_reset_0_0/RFSoC_Main_blk_proc_sys_reset_0_0.xci">
           <Proxy FileSetName="RFSoC_Main_blk_proc_sys_reset_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_auto_ds_0/RFSoC_Main_blk_auto_ds_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_auto_ds_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_0_0/RFSoC_Main_blk_DAC_Controller_0_0.xci">
           <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_TimeController_0_0/RFSoC_Main_blk_TimeController_0_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_TimeController_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_xbar_0/RFSoC_Main_blk_xbar_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_3_0/RFSoC_Main_blk_DAC_Controller_3_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_3_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_auto_pc_0/RFSoC_Main_blk_auto_pc_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_auto_pc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_4_0/RFSoC_Main_blk_DAC_Controller_4_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_4_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_1_0/RFSoC_Main_blk_DAC_Controller_1_0.xci">
+          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0.xci">
           <Proxy FileSetName="RFSoC_Main_blk_usp_rf_data_converter_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_zynq_ultra_ps_e_0_0/RFSoC_Main_blk_zynq_ultra_ps_e_0_0.xci">
           <Proxy FileSetName="RFSoC_Main_blk_zynq_ultra_ps_e_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_3_0/RFSoC_Main_blk_DAC_Controller_3_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_3_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="RFSoC_Main_blk.bd" FileRelPathName="ip/RFSoC_Main_blk_DAC_Controller_7_0/RFSoC_Main_blk_DAC_Controller_7_0.xci">
-          <Proxy FileSetName="RFSoC_Main_blk_DAC_Controller_7_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/RFSoC_Main_blk/hdl/RFSoC_Main_blk_wrapper.v">
@@ -182,48 +182,6 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="RFSoC_Main_blk_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_xbar_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_xbar_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_xbar_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_TimeController_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_TimeController_0_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_TimeController_0_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_TimeController_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_auto_ds_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_auto_ds_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_auto_ds_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_auto_ds_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_auto_pc_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_auto_pc_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_auto_pc_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_DAC_Controller_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_1_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_1_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_1_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_DAC_Controller_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_2_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_2_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_2_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_DAC_Controller_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_4_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_4_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_4_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="RFSoC_Main_blk_DAC_Controller_5_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_5_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_5_0">
       <Config>
         <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_5_0"/>
@@ -236,15 +194,69 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="RFSoC_Main_blk_DAC_Controller_2_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_2_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_2_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_2_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_DAC_Controller_7_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_7_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_7_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_7_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="RFSoC_Main_blk_proc_sys_reset_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_proc_sys_reset_0_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_proc_sys_reset_0_0">
       <Config>
         <Option Name="TopModule" Val="RFSoC_Main_blk_proc_sys_reset_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="RFSoC_Main_blk_auto_ds_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_auto_ds_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_auto_ds_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_auto_ds_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="RFSoC_Main_blk_DAC_Controller_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_0_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_0_0">
       <Config>
         <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_TimeController_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_TimeController_0_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_TimeController_0_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_TimeController_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_xbar_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_xbar_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_DAC_Controller_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_3_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_3_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_3_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_auto_pc_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_auto_pc_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_auto_pc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_DAC_Controller_4_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_4_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_4_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_4_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="RFSoC_Main_blk_DAC_Controller_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_1_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_1_0">
+      <Config>
+        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_1_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -257,18 +269,6 @@
     <FileSet Name="RFSoC_Main_blk_zynq_ultra_ps_e_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_zynq_ultra_ps_e_0_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_zynq_ultra_ps_e_0_0">
       <Config>
         <Option Name="TopModule" Val="RFSoC_Main_blk_zynq_ultra_ps_e_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_DAC_Controller_3_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_3_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_3_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_3_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="RFSoC_Main_blk_DAC_Controller_7_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/RFSoC_Main_blk_DAC_Controller_7_0" RelGenDir="$PGENDIR/RFSoC_Main_blk_DAC_Controller_7_0">
-      <Config>
-        <Option Name="TopModule" Val="RFSoC_Main_blk_DAC_Controller_7_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -304,90 +304,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="RFSoC_Main_blk_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_xbar_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_xbar_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_TimeController_0_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_TimeController_0_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_TimeController_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_TimeController_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_TimeController_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_auto_ds_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_auto_ds_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_ds_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_auto_pc_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_auto_pc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_pc_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_1_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_1_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_1_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_2_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_2_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_2_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_2_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_4_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_4_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_4_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_4_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="RFSoC_Main_blk_DAC_Controller_5_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_5_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_5_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_5_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_5_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
@@ -412,6 +328,30 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_2_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_2_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_2_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_2_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_2_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_7_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_7_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_7_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_7_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_7_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="RFSoC_Main_blk_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_proc_sys_reset_0_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_proc_sys_reset_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_proc_sys_reset_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
@@ -424,7 +364,91 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="RFSoC_Main_blk_auto_ds_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_auto_ds_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_ds_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_auto_ds_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_ds_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="RFSoC_Main_blk_DAC_Controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_0_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_TimeController_0_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_TimeController_0_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_TimeController_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_TimeController_0_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_TimeController_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_xbar_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_xbar_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_xbar_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_3_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_3_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_3_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_3_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_auto_pc_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_auto_pc_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_pc_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_4_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_4_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_4_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_4_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_4_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_1_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_1_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_1_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_1_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -460,30 +484,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_3_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_3_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_3_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_3_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_3_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_7_0_synth_1" Type="Ft3:Synth" SrcSet="RFSoC_Main_blk_DAC_Controller_7_0" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_7_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/RFSoC_Main_blk_DAC_Controller_7_0_synth_1" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_7_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
@@ -500,139 +500,6 @@
         <Step Id="write_bitstream"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_xbar_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_TimeController_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_TimeController_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_TimeController_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_TimeController_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_auto_ds_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_ds_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_auto_ds_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_ds_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_pc_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_1_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_2_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_2_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_4_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_4_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -675,6 +542,44 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_2_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_2_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_2_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_2_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_7_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_7_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_7_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_7_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="RFSoC_Main_blk_proc_sys_reset_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_proc_sys_reset_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_proc_sys_reset_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_proc_sys_reset_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
@@ -694,7 +599,140 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="RFSoC_Main_blk_auto_ds_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_ds_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_auto_ds_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_ds_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="RFSoC_Main_blk_DAC_Controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_TimeController_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_TimeController_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_TimeController_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_TimeController_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_xbar_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_3_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_3_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_3_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_auto_pc_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_4_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_4_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_4_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_4_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="RFSoC_Main_blk_DAC_Controller_1_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_1_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_1_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_1_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>
@@ -733,44 +771,6 @@
       <RQSFiles/>
     </Run>
     <Run Id="RFSoC_Main_blk_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_zynq_ultra_ps_e_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_3_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_3_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_3_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_3_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="RFSoC_Main_blk_DAC_Controller_7_0_impl_1" Type="Ft2:EntireDesign" Part="xczu28dr-ffvg1517-2-e" ConstrsSet="RFSoC_Main_blk_DAC_Controller_7_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="RFSoC_Main_blk_DAC_Controller_7_0_synth_1" IncludeInArchive="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/RFSoC_Main_blk_DAC_Controller_7_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

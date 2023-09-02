@@ -1,18 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Sep  2 20:33:48 2023" VIVADOVERSION="2020.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Sep  2 21:54:42 2023" VIVADOVERSION="2020.2">
 
   <SYSTEMINFO ARCH="zynquplusRFSOC" BOARD="xilinx.com:zcu111:part0:1.4" DEVICE="xczu28dr" NAME="RFSoC_Main_blk" PACKAGE="ffvg1517" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
-    <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="RF3_CLKO_A_C_N" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N">
+    <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="RF3_CLKO_A_C_N_228" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N_228">
       <CONNECTIONS>
         <CONNECTION INSTANCE="usp_rf_data_converter_0" PORT="dac0_clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="RF3_CLKO_A_C_P_228" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P_228">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="usp_rf_data_converter_0" PORT="dac0_clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="RF3_CLKO_A_C_N_229" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N_229">
+      <CONNECTIONS>
         <CONNECTION INSTANCE="usp_rf_data_converter_0" PORT="dac1_clk_n"/>
       </CONNECTIONS>
     </PORT>
-    <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="RF3_CLKO_A_C_P" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P">
+    <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="RF3_CLKO_A_C_P_229" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P_229">
       <CONNECTIONS>
-        <CONNECTION INSTANCE="usp_rf_data_converter_0" PORT="dac0_clk_p"/>
         <CONNECTION INSTANCE="usp_rf_data_converter_0" PORT="dac1_clk_p"/>
       </CONNECTIONS>
     </PORT>
@@ -7145,25 +7153,25 @@
         <PARAMETER NAME="C_HIGHADDR" VALUE="0xA00FFFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac0_clk_p" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P">
+        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac0_clk_p" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P_228">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_P"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_P_228"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac0_clk_n" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N">
+        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac0_clk_n" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N_228">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_N"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_N_228"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_dac0" SIGIS="clk"/>
-        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac1_clk_p" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P">
+        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac1_clk_p" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_P_229">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_P"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_P_229"/>
           </CONNECTIONS>
         </PORT>
-        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac1_clk_n" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N">
+        <PORT CLKFREQUENCY="1600000000" DIR="I" NAME="dac1_clk_n" SIGIS="clk" SIGNAME="External_Ports_RF3_CLKO_A_C_N_229">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_N"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="RF3_CLKO_A_C_N_229"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_dac1" SIGIS="clk"/>

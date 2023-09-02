@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="RFSoC_Main_blk_DAC_Controller_2_0_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1693654431">
+<GenRun Id="RFSoC_Main_blk_DAC_Controller_2_0_synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1693659286">
   <File Type="PA-TCL" Name="RFSoC_Main_blk_DAC_Controller_2_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="RFSoC_Main_blk_DAC_Controller_2_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="RFSoC_Main_blk_DAC_Controller_2_0_reports.tcl"/>

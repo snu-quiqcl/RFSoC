@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Sat Sep  2 20:31:43 2023
+//Date        : Sat Sep  2 21:52:38 2023
 //Host        : DESKTOP-MCBJ7EB running 64-bit major release  (build 9200)
 //Command     : generate_target RFSoC_Main_blk.bd
 //Design      : RFSoC_Main_blk
@@ -11,8 +11,10 @@
 
 (* CORE_GENERATION_INFO = "RFSoC_Main_blk,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=RFSoC_Main_blk,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=27,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=12,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "RFSoC_Main_blk.hwdef" *) 
 module RFSoC_Main_blk
-   (RF3_CLKO_A_C_N,
-    RF3_CLKO_A_C_P,
+   (RF3_CLKO_A_C_N_228,
+    RF3_CLKO_A_C_N_229,
+    RF3_CLKO_A_C_P_228,
+    RF3_CLKO_A_C_P_229,
     RFMC_DAC_00_N,
     RFMC_DAC_00_P,
     RFMC_DAC_01_N,
@@ -29,8 +31,10 @@ module RFSoC_Main_blk
     RFMC_DAC_06_P,
     RFMC_DAC_07_N,
     RFMC_DAC_07_P);
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RF3_CLKO_A_C_N CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RF3_CLKO_A_C_N, CLK_DOMAIN RFSoC_Main_blk_RF3_CLKO_A_C_N, FREQ_HZ 1600000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input RF3_CLKO_A_C_N;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RF3_CLKO_A_C_P CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RF3_CLKO_A_C_P, CLK_DOMAIN RFSoC_Main_blk_RF3_CLKO_A_C_P, FREQ_HZ 1600000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input RF3_CLKO_A_C_P;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RF3_CLKO_A_C_N_228 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RF3_CLKO_A_C_N_228, CLK_DOMAIN RFSoC_Main_blk_RF3_CLKO_A_C_N_228, FREQ_HZ 1600000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input RF3_CLKO_A_C_N_228;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RF3_CLKO_A_C_N_229 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RF3_CLKO_A_C_N_229, CLK_DOMAIN RFSoC_Main_blk_RF3_CLKO_A_C_N_229, FREQ_HZ 1600000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input RF3_CLKO_A_C_N_229;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RF3_CLKO_A_C_P_228 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RF3_CLKO_A_C_P_228, CLK_DOMAIN RFSoC_Main_blk_RF3_CLKO_A_C_P_228, FREQ_HZ 1600000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input RF3_CLKO_A_C_P_228;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.RF3_CLKO_A_C_P_229 CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.RF3_CLKO_A_C_P_229, CLK_DOMAIN RFSoC_Main_blk_RF3_CLKO_A_C_P_229, FREQ_HZ 1600000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000" *) input RF3_CLKO_A_C_P_229;
   output RFMC_DAC_00_N;
   output RFMC_DAC_00_P;
   output RFMC_DAC_01_N;
@@ -73,7 +77,9 @@ module RFSoC_Main_blk
   wire DAC_Controller_7_m00_axis_TREADY;
   wire DAC_Controller_7_m00_axis_TVALID;
   wire RF3_CLKO_A_C_N_1;
+  wire RF3_CLKO_A_C_N_2;
   wire RF3_CLKO_A_C_P_1;
+  wire RF3_CLKO_A_C_P_2;
   wire TimeController_0_auto_start;
   wire [63:0]TimeController_0_counter;
   wire [17:0]axi_interconnect_0_M00_AXI_ARADDR;
@@ -431,8 +437,10 @@ module RFSoC_Main_blk
   wire zynq_ultra_ps_e_0_pl_clk0;
   wire zynq_ultra_ps_e_0_pl_resetn0;
 
-  assign RF3_CLKO_A_C_N_1 = RF3_CLKO_A_C_N;
-  assign RF3_CLKO_A_C_P_1 = RF3_CLKO_A_C_P;
+  assign RF3_CLKO_A_C_N_1 = RF3_CLKO_A_C_N_228;
+  assign RF3_CLKO_A_C_N_2 = RF3_CLKO_A_C_N_229;
+  assign RF3_CLKO_A_C_P_1 = RF3_CLKO_A_C_P_228;
+  assign RF3_CLKO_A_C_P_2 = RF3_CLKO_A_C_P_229;
   assign RFMC_DAC_00_N = usp_rf_data_converter_0_vout00_n;
   assign RFMC_DAC_00_P = usp_rf_data_converter_0_vout00_p;
   assign RFMC_DAC_01_N = usp_rf_data_converter_0_vout01_n;
@@ -1175,8 +1183,8 @@ module RFSoC_Main_blk
   RFSoC_Main_blk_usp_rf_data_converter_0_0 usp_rf_data_converter_0
        (.dac0_clk_n(RF3_CLKO_A_C_N_1),
         .dac0_clk_p(RF3_CLKO_A_C_P_1),
-        .dac1_clk_n(RF3_CLKO_A_C_N_1),
-        .dac1_clk_p(RF3_CLKO_A_C_P_1),
+        .dac1_clk_n(RF3_CLKO_A_C_N_2),
+        .dac1_clk_p(RF3_CLKO_A_C_P_2),
         .s00_axis_tdata(DAC_Controller_0_m00_axis_TDATA),
         .s00_axis_tready(DAC_Controller_0_m00_axis_TREADY),
         .s00_axis_tvalid(DAC_Controller_0_m00_axis_TVALID),
