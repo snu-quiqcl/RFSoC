@@ -9,6 +9,12 @@ RFDC Control through binary file(ELF) execution
 
 ###DDS
 Using full hardware function(e.g. NCO, x8 interpolation) in 100MHz makes 300ns latency. However 100MHz without additional function has 100ns latency and 200MHz has a 80~90ns latency. So DDS has to be implemented in Verilog code. In addition AD9910 latency which is located in data sheet should be compared.
+
+### V1_1
+Vivado : .\RFSoC_Design_V1_1\IP_FILES00
+
+Verilog code is created through automatic indexing using pyrhon code. In addition TCL code for each verilog code is created respectively. DAC Clock for each tile should be  connected separately.
+
 ## Software Project
 ### Python to C Code Interpreter
 Python Code : .\Compiler\PythonCode\python2C.py

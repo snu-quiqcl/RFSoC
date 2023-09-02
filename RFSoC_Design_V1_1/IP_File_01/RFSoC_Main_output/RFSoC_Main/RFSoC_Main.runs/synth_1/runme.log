@@ -1,0 +1,508 @@
+
+*** Running vivado
+    with args -log RFSoC_Main_blk_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RFSoC_Main_blk_wrapper.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source RFSoC_Main_blk_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_2'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_3'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_4'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_5'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_6'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/DAC_Controller_output_7'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/TimeController_output'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.cache/ip 
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:30 . Memory (MB): peak = 1162.734 ; gain = 0.000
+Command: synth_design -top RFSoC_Main_blk_wrapper -part xczu28dr-ffvg1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu28dr'
+INFO: [Device 21-403] Loading part xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11760
+load diablo GTM unisim library
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1884.211 ; gain = 185.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_wrapper' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/hdl/RFSoC_Main_blk_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:13]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_0_0' (1#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_1_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_1_0' (2#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_2_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_2_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_2_0' (3#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_2_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_3_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_3_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_3_0' (4#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_3_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_4_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_4_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_4_0' (5#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_4_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_5_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_5_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_5_0' (6#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_5_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_6_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_6_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_6_0' (7#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_6_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_DAC_Controller_7_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_7_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_DAC_Controller_7_0' (8#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_DAC_Controller_7_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_TimeController_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_TimeController_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_TimeController_0_0' (9#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_TimeController_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_axi_interconnect_0_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1290]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_JV7A2F' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3876]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_auto_ds_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_auto_ds_0' (10#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_auto_pc_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_auto_pc_0' (11#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'RFSoC_Main_blk_auto_pc_0' is unconnected for instance 'auto_pc' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4227]
+WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'RFSoC_Main_blk_auto_pc_0' is unconnected for instance 'auto_pc' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4227]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'RFSoC_Main_blk_auto_pc_0' has 56 connections declared, but only 54 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4227]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_JV7A2F' (12#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3876]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1J54PSG' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4284]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1J54PSG' (13#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4284]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_180JIRC' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4514]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_180JIRC' (14#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4514]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_8QXNRZ' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4744]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_8QXNRZ' (15#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4744]
+INFO: [Synth 8-6157] synthesizing module 'm04_couplers_imp_CXP23S' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4974]
+INFO: [Synth 8-6155] done synthesizing module 'm04_couplers_imp_CXP23S' (16#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:4974]
+INFO: [Synth 8-6157] synthesizing module 'm05_couplers_imp_1CRAEHB' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5204]
+INFO: [Synth 8-6155] done synthesizing module 'm05_couplers_imp_1CRAEHB' (17#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5204]
+INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1WPMUAV' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5434]
+INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1WPMUAV' (18#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5434]
+INFO: [Synth 8-6157] synthesizing module 'm07_couplers_imp_WVQLKW' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5664]
+INFO: [Synth 8-6155] done synthesizing module 'm07_couplers_imp_WVQLKW' (19#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5664]
+INFO: [Synth 8-6157] synthesizing module 'm08_couplers_imp_15I4NBD' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5894]
+INFO: [Synth 8-6155] done synthesizing module 'm08_couplers_imp_15I4NBD' (20#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:5894]
+INFO: [Synth 8-6157] synthesizing module 'm09_couplers_imp_5QP7HQ' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:6124]
+INFO: [Synth 8-6155] done synthesizing module 'm09_couplers_imp_5QP7HQ' (21#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:6124]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_11IU3EQ' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:6354]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_11IU3EQ' (22#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:6354]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_xbar_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_xbar_0' (23#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arcache' does not match port width (40) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3796]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_arlock' does not match port width (10) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3799]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (30) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3800]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arqos' does not match port width (40) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3801]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_arregion' does not match port width (40) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3803]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awcache' does not match port width (40) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3809]
+WARNING: [Synth 8-689] width (1) of port connection 'm_axi_awlock' does not match port width (10) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3812]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (30) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3813]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awqos' does not match port width (40) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3814]
+WARNING: [Synth 8-689] width (4) of port connection 'm_axi_awregion' does not match port width (40) of module 'RFSoC_Main_blk_xbar_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:3816]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_axi_interconnect_0_0' (24#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1290]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_proc_sys_reset_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_proc_sys_reset_0_0' (25#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'RFSoC_Main_blk_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1168]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'RFSoC_Main_blk_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1168]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'RFSoC_Main_blk_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1168]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'RFSoC_Main_blk_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1168]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'RFSoC_Main_blk_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1168]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_usp_rf_data_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' (26#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_usp_rf_data_converter_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'clk_dac0' of module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' is unconnected for instance 'usp_rf_data_converter_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1175]
+WARNING: [Synth 8-7071] port 'clk_dac1' of module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' is unconnected for instance 'usp_rf_data_converter_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1175]
+WARNING: [Synth 8-7071] port 'irq' of module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' is unconnected for instance 'usp_rf_data_converter_0' [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1175]
+WARNING: [Synth 8-7023] instance 'usp_rf_data_converter_0' of module 'RFSoC_Main_blk_usp_rf_data_converter_0_0' has 72 connections declared, but only 69 given [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:1175]
+INFO: [Synth 8-6157] synthesizing module 'RFSoC_Main_blk_zynq_ultra_ps_e_0_0' [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_zynq_ultra_ps_e_0_0' (27#1) [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/.Xil/Vivado-17528-DESKTOP-MCBJ7EB/realtime/RFSoC_Main_blk_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk' (28#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/synth/RFSoC_Main_blk.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'RFSoC_Main_blk_wrapper' (29#1) [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/hdl/RFSoC_Main_blk_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1938.008 ; gain = 239.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1955.941 ; gain = 257.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1955.941 ; gain = 257.066
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.170 . Memory (MB): peak = 1955.941 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_0_0/RFSoC_Main_blk_DAC_Controller_0_0/RFSoC_Main_blk_DAC_Controller_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_0'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_0_0/RFSoC_Main_blk_DAC_Controller_0_0/RFSoC_Main_blk_DAC_Controller_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_0'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_1_0/RFSoC_Main_blk_DAC_Controller_1_0/RFSoC_Main_blk_DAC_Controller_1_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_1'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_1_0/RFSoC_Main_blk_DAC_Controller_1_0/RFSoC_Main_blk_DAC_Controller_1_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_1'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_2_0/RFSoC_Main_blk_DAC_Controller_2_0/RFSoC_Main_blk_DAC_Controller_2_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_2'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_2_0/RFSoC_Main_blk_DAC_Controller_2_0/RFSoC_Main_blk_DAC_Controller_2_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_2'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_3_0/RFSoC_Main_blk_DAC_Controller_3_0/RFSoC_Main_blk_DAC_Controller_3_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_3'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_3_0/RFSoC_Main_blk_DAC_Controller_3_0/RFSoC_Main_blk_DAC_Controller_3_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_3'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_4_0/RFSoC_Main_blk_DAC_Controller_4_0/RFSoC_Main_blk_DAC_Controller_4_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_4'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_4_0/RFSoC_Main_blk_DAC_Controller_4_0/RFSoC_Main_blk_DAC_Controller_4_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_4'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_5_0/RFSoC_Main_blk_DAC_Controller_5_0/RFSoC_Main_blk_DAC_Controller_5_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_5'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_5_0/RFSoC_Main_blk_DAC_Controller_5_0/RFSoC_Main_blk_DAC_Controller_5_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_5'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_6_0/RFSoC_Main_blk_DAC_Controller_6_0/RFSoC_Main_blk_DAC_Controller_6_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_6'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_6_0/RFSoC_Main_blk_DAC_Controller_6_0/RFSoC_Main_blk_DAC_Controller_6_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_6'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_7_0/RFSoC_Main_blk_DAC_Controller_7_0/RFSoC_Main_blk_DAC_Controller_7_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_7'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_DAC_Controller_7_0/RFSoC_Main_blk_DAC_Controller_7_0/RFSoC_Main_blk_DAC_Controller_7_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/DAC_Controller_7'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_proc_sys_reset_0_0/RFSoC_Main_blk_proc_sys_reset_0_0/RFSoC_Main_blk_proc_sys_reset_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/proc_sys_reset_0'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_proc_sys_reset_0_0/RFSoC_Main_blk_proc_sys_reset_0_0/RFSoC_Main_blk_proc_sys_reset_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/proc_sys_reset_0'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_TimeController_0_0/RFSoC_Main_blk_TimeController_0_0/RFSoC_Main_blk_TimeController_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/TimeController_0'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_TimeController_0_0/RFSoC_Main_blk_TimeController_0_0/RFSoC_Main_blk_TimeController_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/TimeController_0'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_xbar_0/RFSoC_Main_blk_xbar_0/RFSoC_Main_blk_xbar_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/axi_interconnect_0/xbar'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_xbar_0/RFSoC_Main_blk_xbar_0/RFSoC_Main_blk_xbar_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/axi_interconnect_0/xbar'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_auto_ds_0/RFSoC_Main_blk_auto_ds_0/RFSoC_Main_blk_auto_ds_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/axi_interconnect_0/m00_couplers/auto_ds'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_auto_ds_0/RFSoC_Main_blk_auto_ds_0/RFSoC_Main_blk_auto_ds_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/axi_interconnect_0/m00_couplers/auto_ds'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_auto_pc_0/RFSoC_Main_blk_auto_pc_0/RFSoC_Main_blk_auto_pc_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/axi_interconnect_0/m00_couplers/auto_pc'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_auto_pc_0/RFSoC_Main_blk_auto_pc_0/RFSoC_Main_blk_auto_pc_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/axi_interconnect_0/m00_couplers/auto_pc'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/usp_rf_data_converter_0'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/usp_rf_data_converter_0'
+Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_zynq_ultra_ps_e_0_0/RFSoC_Main_blk_zynq_ultra_ps_e_0_0/RFSoC_Main_blk_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_zynq_ultra_ps_e_0_0/RFSoC_Main_blk_zynq_ultra_ps_e_0_0/RFSoC_Main_blk_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'RFSoC_Main_blk_i/zynq_ultra_ps_e_0'
+Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CKE'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CKE'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_RESET_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_RESET_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CAS_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CAS_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CS_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CS_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_WE_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_WE_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_ALERT_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_ALERT_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_BG0'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_BG0'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_0_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_0_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_ACT_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_ACT_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_ODT'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_ODT'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_RAS_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_RAS_B'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A0'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A0'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_PARITY'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_PARITY'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A1'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A1'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A2'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A2'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A3'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A3'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A4'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A4'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A5'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A5'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A6'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A6'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A7'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A7'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A8'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A8'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A9'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A9'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A10'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A10'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A11'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A11'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CK0_C'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CK0_C'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CK0_T'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_CK0_T'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_N'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_N'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_P'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'USER_SI570_P'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_2_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_2_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_3_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_3_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_BA0'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_BA0'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_BA1'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_BA1'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_4_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_4_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_5_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_5_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A12'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A12'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A13'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'PL_DDR4_A13'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_6_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_6_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_7_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_7_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_1_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'PMOD0_1_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'VRP_69'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'VRP_69'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_0_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_0_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_1_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_1_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_2_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_2_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_3_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'MSP430_GPIO_PL_3_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_0_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_0_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_1_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:106]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_1_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_2_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_2_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_3_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_3_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_4_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_4_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_5_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'PMOD1_5_LS'. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:115]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc:115]
+Finished Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/RFSoC_Main_blk_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main/ZCU111_Rev1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RFSoC_Main_blk_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RFSoC_Main_blk_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2022.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2022.809 ; gain = 0.000
+load diablo GTM unisim library
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2022.809 ; gain = 323.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu28dr-ffvg1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2022.809 ; gain = 323.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for RF3_CLKO_A_C_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RF3_CLKO_A_C_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for RF3_CLKO_A_C_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RF3_CLKO_A_C_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_00_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_00_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 16).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_00_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 17).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_00_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 18).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_01_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 19).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_01_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 20).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_01_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 21).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_01_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 22).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_02_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 23).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_02_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 24).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_02_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 25).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_02_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 26).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_03_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 27).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_03_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 28).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_03_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 29).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_03_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 30).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_04_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 31).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_04_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 32).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_04_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 33).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_04_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 34).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_05_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 35).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_05_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 36).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_05_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 37).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_05_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 38).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_06_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 39).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_06_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 40).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_06_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 41).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_06_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 42).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_07_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 43).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_07_N. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 44).
+Applied set_property IO_BUFFER_TYPE = NONE for RFMC_DAC_07_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 45).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for RFMC_DAC_07_P. (constraint file  e:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.gen/sources_1/bd/RFSoC_Main_blk/ip/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0/RFSoC_Main_blk_usp_rf_data_converter_0_0_in_context.xdc, line 46).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/DAC_Controller_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/proc_sys_reset_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/TimeController_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/axi_interconnect_0/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/axi_interconnect_0/m00_couplers/auto_ds. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/axi_interconnect_0/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/axi_interconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/usp_rf_data_converter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for RFSoC_Main_blk_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2022.809 ; gain = 323.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2022.809 ; gain = 323.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2022.809 ; gain = 323.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2477.617 ; gain = 778.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2480.332 ; gain = 781.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 2500.359 ; gain = 801.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------------------+----------+
+|      |BlackBox name                            |Instances |
++------+-----------------------------------------+----------+
+|1     |RFSoC_Main_blk_xbar_0                    |         1|
+|2     |RFSoC_Main_blk_auto_ds_0                 |         1|
+|3     |RFSoC_Main_blk_auto_pc_0                 |         1|
+|4     |RFSoC_Main_blk_DAC_Controller_0_0        |         1|
+|5     |RFSoC_Main_blk_DAC_Controller_1_0        |         1|
+|6     |RFSoC_Main_blk_DAC_Controller_2_0        |         1|
+|7     |RFSoC_Main_blk_DAC_Controller_3_0        |         1|
+|8     |RFSoC_Main_blk_DAC_Controller_4_0        |         1|
+|9     |RFSoC_Main_blk_DAC_Controller_5_0        |         1|
+|10    |RFSoC_Main_blk_DAC_Controller_6_0        |         1|
+|11    |RFSoC_Main_blk_DAC_Controller_7_0        |         1|
+|12    |RFSoC_Main_blk_TimeController_0_0        |         1|
+|13    |RFSoC_Main_blk_proc_sys_reset_0_0        |         1|
+|14    |RFSoC_Main_blk_usp_rf_data_converter_0_0 |         1|
+|15    |RFSoC_Main_blk_zynq_ultra_ps_e_0_0       |         1|
++------+-----------------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |RFSoC_Main_blk_DAC_Controller_0        |     1|
+|2     |RFSoC_Main_blk_DAC_Controller_1        |     1|
+|3     |RFSoC_Main_blk_DAC_Controller_2        |     1|
+|4     |RFSoC_Main_blk_DAC_Controller_3        |     1|
+|5     |RFSoC_Main_blk_DAC_Controller_4        |     1|
+|6     |RFSoC_Main_blk_DAC_Controller_5        |     1|
+|7     |RFSoC_Main_blk_DAC_Controller_6        |     1|
+|8     |RFSoC_Main_blk_DAC_Controller_7        |     1|
+|9     |RFSoC_Main_blk_TimeController_0        |     1|
+|10    |RFSoC_Main_blk_auto_ds                 |     1|
+|11    |RFSoC_Main_blk_auto_pc                 |     1|
+|12    |RFSoC_Main_blk_proc_sys_reset_0        |     1|
+|13    |RFSoC_Main_blk_usp_rf_data_converter_0 |     1|
+|14    |RFSoC_Main_blk_xbar                    |     1|
+|15    |RFSoC_Main_blk_zynq_ultra_ps_e_0       |     1|
++------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 2505.078 ; gain = 739.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2505.078 ; gain = 806.203
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 2505.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2564.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 2570.852 ; gain = 1408.117
+INFO: [Common 17-1381] The checkpoint 'E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/IP_File_01/RFSoC_Main_output/RFSoC_Main/RFSoC_Main.runs/synth_1/RFSoC_Main_blk_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RFSoC_Main_blk_wrapper_utilization_synth.rpt -pb RFSoC_Main_blk_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  2 20:45:18 2023...
