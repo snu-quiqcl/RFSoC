@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xczu28dr-ffvg1517-2-e" LaunchTime="1693915586">
   <File Type="PA-TCL" Name="RFSoC_Main_blk_wrapper.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="RFSoC_Main_blk_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="RFSoC_Main_blk_wrapper_reports.tcl"/>
   <File Type="RDS-RDS" Name="RFSoC_Main_blk_wrapper.vds"/>
   <File Type="RDS-UTIL" Name="RFSoC_Main_blk_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="RFSoC_Main_blk_wrapper_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="RFSoC_Main_blk_wrapper.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="RFSoC_Main_blk_wrapper_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="RFSoC_Main_blk_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/RFSoC_Main_blk/RFSoC_Main_blk.bd">
@@ -50,9 +47,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="RFSoC_Main_blk_auto_ds_0"/>
