@@ -1,5 +1,7 @@
 # QuIQCL RFSoC
-<img width="80%" src=https://github.com/snu-quiqcl/RFSoC/assets/49219392/631d51b6-a57a-445f-93e1-66d5c2fcf174>
+<img width="80%" src=https://github.com/snu-quiqcl/RFSoC/assets/49219392/bf634ad1-1cfc-435a-8099-047dcc1560ea>
+
+
 ## Hardware Project
 ### V1_0
 Vivado : .\RFSoC_Design_V1_0
