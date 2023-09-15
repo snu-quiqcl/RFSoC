@@ -1,5 +1,5 @@
 # QuIQCL RFSoC
-<img width="80%" src=https://github.com/snu-quiqcl/RFSoC/assets/49219392/bf634ad1-1cfc-435a-8099-047dcc1560ea>
+<img width="80%" src=https://github.com/snu-quiqcl/RFSoC/assets/49219392/304ff119-cee9-46a9-b3de-0a288b984e47>
 
 
 ## Hardware Project
