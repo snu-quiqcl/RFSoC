@@ -1,4 +1,5 @@
 # QuIQCL RFSoC
+<img width="80%" src=https://github.com/snu-quiqcl/RFSoC/assets/49219392/631d51b6-a57a-445f-93e1-66d5c2fcf174>
 ## Hardware Project
 ### V1_0
 Vivado : .\RFSoC_Design_V1_0
@@ -13,7 +14,7 @@ Using full hardware function(e.g. NCO, x8 interpolation) in 100MHz makes 300ns l
 ### V1_1
 Vivado : .\RFSoC_Design_V1_1\IP_FILES00
 
-Verilog code is created through automatic indexing using pyrhon code. In addition TCL code for each verilog code is created respectively. DAC Clock for each tile should be  connected separately.
+Verilog code is created through automatic indexing using pyrhon code. In addition TCL code for each verilog code is created respectively. DAC Clock for each tile should be  connected separately. See "VivadoPrjManager" to make TCL code and make verilog code.
 
 ## Software Project
 ### Python to C Code Interpreter
