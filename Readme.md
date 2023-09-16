@@ -18,6 +18,14 @@ Vivado : .\RFSoC_Design_V1_1\IP_FILES00
 
 Verilog code is created through automatic indexing using pyrhon code. In addition TCL code for each verilog code is created respectively. DAC Clock for each tile should be  connected separately. See "VivadoPrjManager" to make TCL code and make verilog code.
 
+250MHz version is updated. To resolve timing problem,
+
+1) pipelined multipication in DDS
+
+2) AXI, RTO Core buffer 
+
+is added to V1_0 code. PL side works in 250MHz, and RF DAC works in 4GHz. We changed PL frequency to make TTL module through OSERDES IP(1ns scale).
+
 ## Software Project
 ### Python to C Code Interpreter
 Python Code : .\Compiler\PythonCode\python2C.py
