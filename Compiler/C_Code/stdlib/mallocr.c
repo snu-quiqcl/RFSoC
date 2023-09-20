@@ -283,12 +283,12 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 #define SIZE_SZ                (sizeof(INTERNAL_SIZE_T))
 #ifndef MALLOC_ALIGNMENT
 #define MALLOC_ALIGN           8
-#define MALLOC_ALIGNMENT       (SIZE_SZ < 4 ? 8 : (SIZE_SZ + SIZE_SZ))
+#define MALLOC_ALIGNMENT       (SIZE_SZ < 4 ? 8 : (SIZE_SZ + SIZE_SZ)) 	//SIZE_SZ = 8 -> return 8 + 8 = 16
 #else
 #define MALLOC_ALIGN           MALLOC_ALIGNMENT
 #endif
-#define MALLOC_ALIGN_MASK      (MALLOC_ALIGNMENT - 1)
-#define MINSIZE                (sizeof(struct malloc_chunk))
+#define MALLOC_ALIGN_MASK      (MALLOC_ALIGNMENT - 1) 			//MALLOC_ALIGNMENT - 1 = 16 - 1 = 15
+#define MINSIZE                (sizeof(struct malloc_chunk))		// sizeof(struct malloc_chunk) = 32 
 
 /* conversion from malloc headers to user pointers, and back */
 
@@ -301,6 +301,13 @@ nextchunk-> +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
  (((unsigned long)((req) + (SIZE_SZ + MALLOC_ALIGN_MASK)) < \
   (unsigned long)(MINSIZE + MALLOC_ALIGN_MASK)) ? ((MINSIZE + MALLOC_ALIGN_MASK) & ~(MALLOC_ALIGN_MASK)) : \
    (((req) + (SIZE_SZ + MALLOC_ALIGN_MASK)) & ~(MALLOC_ALIGN_MASK)))
+
+/*
+ * req + SIZE_SZ + MALLOC_ALIGNMENT_MASK = req + 8 + 15 = req + 23
+ * MINSIZE + MALLOC_ALIGN_MASK = 32 + 15 = 47 = 2'b101111
+ * req + 23 < 47 -> MINSIZE + MALLOC_ALIGN_MAKS & ~(MALLOC_ALIGN_MASK) = 2'b101111 & 2'b1100000 = 2'b100000 = 32
+ * req + 23 >= 47 -> (req) + (SIZE_SZ + MALLOC_ALIGN_MASK) & ~2'b11..1100000
+ */
 
 /* Check if m has acceptable alignment */
 
@@ -492,6 +499,10 @@ static mbinptr av_[NAV * 2 + 2] = {
  IAV(120), IAV(121), IAV(122), IAV(123), IAV(124), IAV(125), IAV(126), IAV(127)
 };
 
+/*
+ * av_[ 128*2 + 2 ] = {}
+ */
+
 /* field-extraction macros */
 
 #define first(b) ((b)->fd)
@@ -519,13 +530,14 @@ static mbinptr av_[NAV * 2 + 2] = {
 #define SMALLBIN_WIDTH_BITS   3
 #define MAX_SMALLBIN        (MAX_SMALLBIN_SIZE / SMALLBIN_WIDTH) - 1
 
-#define smallbin_index(sz)  (((unsigned long)(sz)) >> SMALLBIN_WIDTH_BITS)
+#define smallbin_index(sz)  (((unsigned long)(sz)) >> SMALLBIN_WIDTH_BITS)	// sz >> 3
 
 /* 
    Requests are `small' if both the corresponding and the next bin are small
 */
 
-#define is_small_request(nb) (nb < MAX_SMALLBIN_SIZE - SMALLBIN_WIDTH)
+#define is_small_request(nb) (nb < MAX_SMALLBIN_SIZE - SMALLBIN_WIDTH)		// MAX_SMALLBIN_SIZE - SMALLBIN_WIDTH
+										// = 512 - 8 = 504
 
 
 /*
@@ -842,16 +854,16 @@ void * mALLOc( size_t bytes)
 
   /* Check for exact match in a bin */
 
-  if (is_small_request(nb))  /* Faster version for small requests */
+  if (is_small_request(nb))  /* Faster version for small requests */ 		// nb < 512 - 8 =504?
   {
     xil_printf("this is small request\r\n");
-    idx = smallbin_index(nb);
+    idx = smallbin_index(nb);							// idx = nb >> 3
     xil_printf("%llx\r\n",idx);
 
     /* No traversal or size check necessary for small bins.  */
 
-    q = bin_at(idx);
-    victim = last(q);
+    q = bin_at(idx);								// ((char*)&(av_[2*(i) + 2]) - 2*SIZE_SZ)
+    victim = last(q);								// q -> bk
 
 #if MALLOC_ALIGN != 16
     /* Also scan the next one, since it would have a remainder < MINSIZE */

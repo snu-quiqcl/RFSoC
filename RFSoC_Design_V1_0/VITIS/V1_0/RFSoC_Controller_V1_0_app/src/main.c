@@ -235,8 +235,8 @@ int main()
 #endif
 	/* start the application (web server, rxtest, txtest, etc..) */
 	start_application();
-	//set_clock(6400000);
-	xil_printf("SET CLOCK DISABLED IN MAIN.C TEMPORARILY");
+	set_clock(6400000);
+	//xil_printf("SET CLOCK DISABLED IN MAIN.C TEMPORARILY");
 	/* set binary mode false*/
 	set_current_binary_mode(0);
 	/* receive and process packets */

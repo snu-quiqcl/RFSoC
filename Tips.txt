@@ -24,3 +24,6 @@ https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/18841881/Zynq+SD+Standalon
 For SD Card Boot, SD Card should be partitioned into smaller than charateristic capacity!!! (e.g. Partition0 1GB FAT32, Partition1 not allocated). Note that ZCU111 does not recognize 119GB SD Card!!!
 
 Malloc Free : http://www2.lawrence.edu/fast/GREGGJ/CMSC480/malloc/malloc.html, https://support.xilinx.com/s/question/0D52E00006hpT8fSAE/standalone-bsp-mallocfree-source?language=en_US, https://stackoverflow.com/questions/9334957/malloc-in-an-embedded-system-without-an-operating-system
+
+How to make customized IP
+https://rubber-tree.tistory.com/67
