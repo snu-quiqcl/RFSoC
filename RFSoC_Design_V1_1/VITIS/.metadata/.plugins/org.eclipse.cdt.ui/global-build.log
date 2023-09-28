@@ -1,0 +1,252 @@
+Nothing to build in platform 'RFSoC_Firmware_plt'
+
+18:55:48 **** Build of configuration Release for project RFSoC_Firmware_app ****
+make all 
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/clock_config.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/clock_config.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/clock_config.d" -MT"src/clock_config.o" -o "src/clock_config.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/clock_config.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/clock_config.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/echo.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/echo.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/echo.d" -MT"src/echo.o" -o "src/echo.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/echo.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/echo.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/i2c_access.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/i2c_access.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/i2c_access.d" -MT"src/i2c_access.o" -o "src/i2c_access.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/i2c_access.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/i2c_access.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/iic_phyreset.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/iic_phyreset.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/iic_phyreset.d" -MT"src/iic_phyreset.o" -o "src/iic_phyreset.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/iic_phyreset.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/iic_phyreset.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/main.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/main.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_mb.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_mb.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_mb.d" -MT"src/platform_mb.o" -o "src/platform_mb.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_mb.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_mb.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_ppc.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_ppc.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_ppc.d" -MT"src/platform_ppc.o" -o "src/platform_ppc.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_ppc.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_ppc.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynq.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_zynq.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_zynq.d" -MT"src/platform_zynq.o" -o "src/platform_zynq.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynq.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynq.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynqmp.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/platform_zynqmp.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform_zynqmp.d" -MT"src/platform_zynqmp.o" -o "src/platform_zynqmp.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynqmp.c"
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynqmp.c: In function 'platform_clear_interrupt':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynqmp.c:137:6: warning: variable 'StatusEvent' set but not used [-Wunused-but-set-variable]
+  137 |  u32 StatusEvent;
+      |      ^~~~~~~~~~~
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/platform_zynqmp.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/rfdc_controller.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/rfdc_controller.d" -MT"src/rfdc_controller.o" -o "src/rfdc_controller.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c"
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c: In function 'read_sampling_freq':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c:75:1: warning: control reaches end of non-void function [-Wreturn-type]
+   75 | }
+      | ^
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c: In function 'run_cpu_process':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c:116:1: warning: control reaches end of non-void function [-Wreturn-type]
+  116 | }
+      | ^
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c: In function 'run_rtio_process':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c:127:1: warning: control reaches end of non-void function [-Wreturn-type]
+  127 | }
+      | ^
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c: In function 'run_bin_process':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c:149:1: warning: control reaches end of non-void function [-Wreturn-type]
+  149 | }
+      | ^
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/run_binary.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/run_binary.d" -MT"src/run_binary.o" -o "src/run_binary.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c"
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c: In function 'run_binary':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:44:27: warning: initialization of 'volatile unsigned char *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   44 | #define DRAM_BASE_ADDRESS 0xf00000
+      |                           ^~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:32:39: note: in expansion of macro 'DRAM_BASE_ADDRESS'
+   32 |  volatile unsigned char * base_addr = DRAM_BASE_ADDRESS;
+      |                                       ^~~~~~~~~~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:32:27: warning: unused variable 'base_addr' [-Wunused-variable]
+   32 |  volatile unsigned char * base_addr = DRAM_BASE_ADDRESS;
+      |                           ^~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:30:11: warning: unused variable 'main_addr' [-Wunused-variable]
+   30 |  uint64_t main_addr = bin_entry_point;
+      |           ^~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:29:11: warning: unused variable 'sp_val' [-Wunused-variable]
+   29 |  uint64_t sp_val = DRAM_BASE_ADDRESS + bin_stack_start;
+      |           ^~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:139:1: warning: control reaches end of non-void function [-Wreturn-type]
+  139 | }
+      | ^
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c: In function 'save_binary':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c:147:1: warning: control reaches end of non-void function [-Wreturn-type]
+  147 | }
+      | ^
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/run_binary.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/sfp.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/sfp.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/sfp.d" -MT"src/sfp.o" -o "src/sfp.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/sfp.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/sfp.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/si5324.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/si5324.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/si5324.d" -MT"src/si5324.o" -o "src/si5324.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/si5324.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/si5324.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/simple_lexer.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/simple_lexer.d" -MT"src/simple_lexer.o" -o "src/simple_lexer.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c"
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c: In function 'simple_lexer':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:28:4: warning: implicit declaration of function 'run_cpu_process' [-Wimplicit-function-declaration]
+   28 |    run_cpu_process(tpcb,fnct_num,param_num);
+      |    ^~~~~~~~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:42:6: warning: implicit declaration of function 'run_bin_process' [-Wimplicit-function-declaration]
+   42 |      run_bin_process(tpcb, fnct_num, entry_point, stack_start, stack_end, heap_start, heap_end, packet_number);
+      |      ^~~~~~~~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:44:19: warning: assignment discards 'volatile' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   44 |      current_addr = (volatile unsigned char *)DRAM_BASE_ADDRESS;
+      |                   ^
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:72:4: warning: implicit declaration of function 'run_rtio_process'; did you mean 'inst_process'? [-Wimplicit-function-declaration]
+   72 |    run_rtio_process(tpcb,module_num, fnct_num, timestamp_num, param_num);
+      |    ^~~~~~~~~~~~~~~~
+      |    inst_process
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c: In function 'get_module':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:99:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   99 |  pos1 = string_count(inst,1,'#')+1;
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:100:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  100 |  pos2 = string_count(inst,2,'#');
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:102:21: warning: passing argument 2 of 'substring' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  102 |  substring(temp_str,inst,pos1,pos2);
+      |                     ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:84:8: note: expected 'char *' but argument is of type 'const char *'
+   84 | char * substring(char * str_dest,char * str,int64_t start,int64_t end);
+      |        ^~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c: In function 'get_fnct':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:117:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  117 |  pos1 = string_count(inst,2,'#')+1;
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:118:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  118 |  pos2 = string_count(inst,3,'#');
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:120:21: warning: passing argument 2 of 'substring' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  120 |  substring(temp_str,inst,pos1,pos2);
+      |                     ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:84:8: note: expected 'char *' but argument is of type 'const char *'
+   84 | char * substring(char * str_dest,char * str,int64_t start,int64_t end);
+      |        ^~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c: In function 'get_param':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:135:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  135 |  pos1 = string_count(inst,start_index,'#')+1;
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:136:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  136 |  pos2 = string_count(inst,end_index,'#');
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:138:21: warning: passing argument 2 of 'substring' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  138 |  substring(temp_str,inst,pos1,pos2);
+      |                     ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:84:8: note: expected 'char *' but argument is of type 'const char *'
+   84 | char * substring(char * str_dest,char * str,int64_t start,int64_t end);
+      |        ^~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c: In function 'is_end':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:146:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  146 |  pos1 = string_count(inst,start_index,'#')+1;
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:147:22: warning: passing argument 1 of 'string_count' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  147 |  pos2 = string_count(inst,end_index,'#');
+      |                      ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:85:28: note: expected 'char *' but argument is of type 'const char *'
+   85 | int64_t string_count(char* str, int64_t pos, char spc);
+      |                      ~~~~~~^~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:149:21: warning: passing argument 2 of 'substring' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  149 |  substring(temp_str,inst,pos1,pos2);
+      |                     ^~~~
+In file included from E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:4:
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/rfdc_controller.h:84:8: note: expected 'char *' but argument is of type 'const char *'
+   84 | char * substring(char * str_dest,char * str,int64_t start,int64_t end);
+      |        ^~~~~~~~~
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c: In function 'simple_lexer':
+E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c:76:1: warning: control reaches end of non-void function [-Wreturn-type]
+   76 | }
+      | ^
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/simple_lexer.c'
+' '
+'Building file: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/string_process.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/string_process.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/string_process.d" -MT"src/string_process.o" -o "src/string_process.o" "E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/string_process.c"
+'Finished building: E:/RFSoC/GIT/Vivado_prj_manager/Vitis_main/RFSoC_Firmware/string_process.c'
+' '
+'Building target: RFSoC_Firmware_app.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bsplib/lib -o "RFSoC_Firmware_app.elf"  ./src/clock_config.o ./src/echo.o ./src/i2c_access.o ./src/iic_phyreset.o ./src/main.o ./src/platform.o ./src/platform_mb.o ./src/platform_ppc.o ./src/platform_zynq.o ./src/platform_zynqmp.o ./src/rfdc_controller.o ./src/run_binary.o ./src/sfp.o ./src/si5324.o ./src/simple_lexer.o ./src/string_process.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
+'Finished building target: RFSoC_Firmware_app.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size RFSoC_Firmware_app.elf  |tee "RFSoC_Firmware_app.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 130272	  19952	4280596	4430820	 439be4	RFSoC_Firmware_app.elf
+'Finished building: RFSoC_Firmware_app.elf.size'
+' '
+18:55:53 **** Build of configuration Release for project RFSoC_Firmware_app_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 55723 E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/RFSoC_Firmware_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_app_system/Release/system.bif
+sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/RFSoC_Firmware_plt.xpfm --sys_config RFSoC_Firmware_plt --bif E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_app_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_app/_ide/bitstream/RFSoC_Main_blk_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_app/Release/RFSoC_Firmware_app.elf,psu_cortexa53_0
+creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_app/_ide/bitstream/RFSoC_Main_blk_wrapper.bit
+Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS/RFSoC_Firmware_app_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
