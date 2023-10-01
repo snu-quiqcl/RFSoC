@@ -1,0 +1,27 @@
+Nothing to build in platform 'RFSoC_Firmware_plt'
+
+21:19:26 **** Incremental Build of configuration Release for project ASDSD ****
+make all 
+'Building file: ../src/hello_world.cpp'
+'Invoking: ARM v8 g++ compiler'
+aarch64-none-elf-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/hello_world.o" -D __BAREMETAL__ -IE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bspinclude/include -MMD -MP -MF"src/hello_world.d" -MT"src/hello_world.o" -o "src/hello_world.o" "../src/hello_world.cpp"
+'Finished building: ../src/hello_world.cpp'
+' '
+'Building target: ASDSD.elf'
+'Invoking: ARM v8 g++ linker'
+aarch64-none-elf-g++ -Wl,-T -Wl,../src/lscript.ld -LE:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/sw/RFSoC_Firmware_plt/standalone_domain/bsplib/lib -o "ASDSD.elf"  ./src/hello_world.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxil,-lmetal,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-lgcc,-lc,-lmetal,--end-group
+'Finished building target: ASDSD.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size ASDSD.elf  |tee "ASDSD.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 931332	   5016	  31391	 967739	  ec43b	ASDSD.elf
+'Finished building: ASDSD.elf.size'
+' '
+21:19:28 **** Incremental Build of configuration Release for project ASDSD_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 50305 E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/RFSoC_Firmware_plt.xpfm standalone_domain E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/ASDSD_system/Release/system.bif
+sdcard_gen --xpfm E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/RFSoC_Firmware_plt/export/RFSoC_Firmware_plt/RFSoC_Firmware_plt.xpfm --sys_config RFSoC_Firmware_plt --bif E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/ASDSD_system/Release/system.bif --bitstream E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/ASDSD/_ide/bitstream/RFSoC_Main_blk_wrapper.bit --elf E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/ASDSD/Release/ASDSD.elf,psu_cortexa53_0
+creating BOOT.BIN using E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/ASDSD/_ide/bitstream/RFSoC_Main_blk_wrapper.bit
+Running E:/Xilinx/Vitis/2020.2/bin/bootgen -arch zynqmp -image E:/RFSoC/GIT/RFSoC/RFSoC_Design_V1_1/VITIS_CPP/ASDSD_system/Release/sd_card_temp/boot.bif -w -o i BOOT.BIN
