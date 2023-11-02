@@ -27,3 +27,6 @@ Malloc Free : http://www2.lawrence.edu/fast/GREGGJ/CMSC480/malloc/malloc.html, h
 
 How to make customized IP
 https://rubber-tree.tistory.com/67
+
+Board Set
+http://www.hitechglobal.com/fmcmodules/fmc_sma.htm
